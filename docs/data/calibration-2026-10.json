@@ -1,9 +1,111 @@
 {
   "title": "October 2026 Oxalis feasibility pilot",
-  "protocol_version": "1.0.0",
+  "protocol_version": "1.1.0",
+  "original_protocol_version": "1.0.0",
+  "original_audit": "calibration-2026-10-v1.0.0.json",
+  "corrections": [
+    {
+      "observation_id": 47936191,
+      "index": 6,
+      "field_id": 8625,
+      "previous_value": "white",
+      "new_value": null,
+      "new_status": "uncertain_color",
+      "protocol_version": "1.1.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "reason": "White versus blue unresolved: the upper tissue has a pale cool wash in mixed sun and shade. It overlaps the near-white appearance of Figure 1 I-J as well as the white group. The single photograph cannot establish a paper-consistent boundary.",
+      "status": "verified",
+      "submitted_at": "2026-10-18T05:06:00.578Z",
+      "verified_at": "2026-10-18T05:09:32.002Z"
+    },
+    {
+      "observation_id": 79732055,
+      "index": 13,
+      "field_id": 8625,
+      "previous_value": "blue",
+      "new_value": null,
+      "new_status": "uncertain_color",
+      "protocol_version": "1.1.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "reason": "White versus blue unresolved: both photographs show cool pale tissue, but repeat views under similar illumination do not distinguish diffuse pigment from camera or lighting cast. Figure 1 and the methods do not supply a reproducible cutoff. Original blue confidence was overstated.",
+      "status": "verified",
+      "submitted_at": "2026-10-18T05:05:03.664Z",
+      "verified_at": "2026-10-18T05:09:32.002Z"
+    },
+    {
+      "observation_id": 224945056,
+      "index": 55,
+      "field_id": 8625,
+      "previous_value": "white",
+      "new_value": null,
+      "new_status": "uncertain_color",
+      "protocol_version": "1.1.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "reason": "White versus blue unresolved: small pale flowers look cool in both views, with different exposure. The visible evidence does not distinguish the paper's near-white blue examples from white; repetition is not a color reference.",
+      "status": "verified",
+      "submitted_at": "2026-10-18T05:06:39.443Z",
+      "verified_at": "2026-10-18T05:09:32.002Z"
+    },
+    {
+      "observation_id": 266706266,
+      "index": 62,
+      "field_id": 8625,
+      "previous_value": "white",
+      "new_value": null,
+      "new_status": "uncertain_color",
+      "protocol_version": "1.1.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "reason": "White versus blue unresolved: the brighter view appears near-white while the darker view appears cooler. Exposure and illumination prevent a defensible assignment to the paper's pale white/blue boundary.",
+      "status": "verified",
+      "submitted_at": "2026-10-18T05:06:48.957Z",
+      "verified_at": "2026-10-18T05:09:32.002Z"
+    },
+    {
+      "observation_id": 374804145,
+      "index": 93,
+      "field_id": 8625,
+      "previous_value": "white",
+      "new_value": null,
+      "new_status": "uncertain_color",
+      "protocol_version": "1.1.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "reason": "White, blue, or very pale purple remain plausible: the tissue has a subtle cool/lilac appearance in the only view. The paper's plate does not justify calling it confidently neutral white, and no replacement color is established.",
+      "status": "verified",
+      "submitted_at": "2026-10-18T05:07:00.826Z",
+      "verified_at": "2026-10-18T05:09:32.002Z"
+    },
+    {
+      "observation_id": 375733116,
+      "index": 94,
+      "field_id": 8625,
+      "previous_value": "blue",
+      "new_value": null,
+      "new_status": "uncertain_color",
+      "protocol_version": "1.1.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "reason": "White versus blue unresolved: the close and wide views share a cool cast, already noted in the original vein-hue notes. Cool-looking tissue alone cannot establish the paper's blue category. Retain the independent conspicuous-vein judgment.",
+      "status": "verified",
+      "submitted_at": "2026-10-18T05:05:12.148Z",
+      "verified_at": "2026-10-18T05:09:32.002Z"
+    },
+    {
+      "observation_id": 402076814,
+      "index": 100,
+      "field_id": 8625,
+      "previous_value": "white",
+      "new_value": null,
+      "new_status": "uncertain_color",
+      "protocol_version": "1.1.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "reason": "White versus blue unresolved: the interveinal tissue is pale and cool, separate from the purple lines. The wider second view provides insufficient flower detail to settle that boundary. Do not use the veins or expected geographic color to decide.",
+      "status": "verified",
+      "submitted_at": "2026-10-18T05:07:28.777Z",
+      "verified_at": "2026-10-18T05:09:32.002Z"
+    }
+  ],
   "reviewer": "Codex, one AI reviewer; no independent human or second-rater validation",
   "sampled_at": "2026-10-18T03:41:20.104Z",
-  "api_verified_at": "2026-10-18T04:21:41.397Z",
+  "api_verified_at": "2026-10-18T05:09:32.002Z",
   "seed": "oxalis-feasibility-2026-10-18-v1",
   "sampling_method": "Fifty observations per currently identified taxon, selected by SHA256(seed:observation_id) ascending from the full public API pool with photos and Flowers annotation. All quality grades; no geographic/color filtering. This is a single-agent feasibility review, not independent-rater validation. Annotation and taxon-selection biases apply.",
   "pools": [
@@ -25,23 +127,26 @@
     "Crop widths are approximate manual flower diameters. Color-only crops below 300 source pixels do not support vein scores.",
     "Vein-hue notes began partway through the review and are exploratory, not a systematic hue census.",
     "The owner authorized pilot field additions before independent validation. The reliability gate is not met.",
-    "Initial in-page confirmations were reconciled against fresh pages and the public observation detail API; only final unique saved values are counted."
+    "Initial in-page confirmations were reconciled against fresh pages and the public observation detail API; only final unique saved values are counted.",
+    "The v1.1.0 source-paper recheck screened all 74 available selected crops, including all 52 original color judgments, against Figure 1; all source-photo sheets were reopened for the seven revised cases. This was a targeted self-review, not a second full independent review.",
+    "Unchanged records retain protocol version 1.0.0. Corrected records carry 1.1.0; the original audit and each original color judgment are preserved. No author clarification or author-labeled original image set has been obtained."
   ],
   "counts": {
     "reviewed": 100,
     "photos": 174,
-    "observations_with_writes": 63,
-    "field_values_written": 87,
+    "observations_with_writes": 58,
+    "field_values_written": 80,
+    "originally_written": 87,
+    "values_withdrawn": 7,
     "blocked_observations": 2,
-    "no_eligible_traits": 35,
+    "no_eligible_traits": 40,
     "color_scored": {
-      "white": 29,
+      "white": 24,
       "purple": 19,
-      "blue": 2,
       "pink": 2
     },
     "color_abstentions": {
-      "uncertain_color": 29,
+      "uncertain_color": 36,
       "unscorable": 16,
       "no_open_flower": 3
     },
@@ -54,9 +159,8 @@
       "no_open_flower": 3
     },
     "color_written": {
-      "white": 27,
+      "white": 22,
       "purple": 19,
-      "blue": 2,
       "pink": 2
     },
     "veins_written": {
@@ -214,8 +318,9 @@
       "branching_note": "unresolved: focus softness prevents reliable tracing of junctions",
       "vein_color_note": null,
       "timestamp_note": "Timestamp recorded at final audit; original judgment was not timestamped.",
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 1535362,
@@ -275,8 +380,9 @@
       "branching_note": "unresolved: insufficient source pixels",
       "vein_color_note": null,
       "timestamp_note": "Timestamp recorded at final audit; original judgment was not timestamped.",
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 6228711,
@@ -309,6 +415,7 @@
       "branching_note": "unresolved: folded/wet petals",
       "vein_color_note": null,
       "timestamp_note": "Timestamp recorded at final audit; original judgment was not timestamped.",
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -380,8 +487,9 @@
       "branching_note": "Visible distal Y-forks on several veins; no clear closed mesh.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 40737370,
@@ -446,23 +554,24 @@
       "branching_note": "Some distal forks visible; fine longitudinal lines predominate.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 47936191,
       "taxon_id": 1464017,
       "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
-      "reviewed_at": "2026-10-18T03:46:50.379Z",
-      "protocol_version": "1.0.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "protocol_version": "1.1.0",
       "examined_photo_ids": [
         76041307
       ],
       "color": {
-        "value": "white",
-        "status": "scored",
-        "confidence": "high",
-        "reason": "Both visible flowers have white upper petal tissue.",
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "White versus blue unresolved: the upper tissue has a pale cool wash in mixed sun and shade. It overlaps the near-white appearance of Figure 1 I-J as well as the white group. The single photograph cannot establish a paper-consistent boundary.",
         "evidence": [
           {
             "photo_id": 76041307,
@@ -489,14 +598,8 @@
         ]
       },
       "existing_fields": [],
-      "write_status": "verified",
-      "verified_fields": [
-        {
-          "field_id": 8625,
-          "value": "white",
-          "verified_at": "2026-10-18T03:45:40.683Z"
-        }
-      ],
+      "write_status": "withdrawn",
+      "verified_fields": [],
       "index": 6,
       "crop": [
         820,
@@ -506,8 +609,39 @@
       "branching_note": "Unresolved: low contrast and fine-detail softness.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [
+        {
+          "observation_id": 47936191,
+          "index": 6,
+          "field_id": 8625,
+          "previous_value": "white",
+          "new_value": null,
+          "new_status": "uncertain_color",
+          "protocol_version": "1.1.0",
+          "reviewed_at": "2026-10-18T05:03:13.639Z",
+          "reason": "White versus blue unresolved: the upper tissue has a pale cool wash in mixed sun and shade. It overlaps the near-white appearance of Figure 1 I-J as well as the white group. The single photograph cannot establish a paper-consistent boundary.",
+          "status": "verified",
+          "submitted_at": "2026-10-18T05:06:00.578Z",
+          "verified_at": "2026-10-18T05:09:32.002Z",
+          "original_color": {
+            "value": "white",
+            "status": "scored",
+            "confidence": "high",
+            "reason": "Both visible flowers have white upper petal tissue.",
+            "evidence": [
+              {
+                "photo_id": 76041307,
+                "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+                "source_diameter_px": 440,
+                "assessment_diameter_px": 300,
+                "visible_upper_petals": 5
+              }
+            ]
+          }
+        }
+      ],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": null
     },
     {
       "observation_id": 48617846,
@@ -571,8 +705,9 @@
       "branching_note": "Multiple clear distal Y-forks, especially lower and left petals; no definite closed mesh.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 60287817,
@@ -625,6 +760,7 @@
       "branching_note": "unresolved: oblique view and focus",
       "vein_color_note": null,
       "timestamp_note": "Timestamp recorded at final audit; original judgment was not timestamped.",
+      "revisions": [],
       "blocked_reason": "Observer only allows site curators to add observation fields",
       "api_verified_at": null
     },
@@ -691,8 +827,9 @@
       "branching_note": "Sparse forks can be seen; finer branch order cannot be reliably traced.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 74473645,
@@ -745,6 +882,7 @@
       "branching_note": "unresolved: blur",
       "vein_color_note": null,
       "timestamp_note": "Timestamp recorded at final audit; original judgment was not timestamped.",
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -810,8 +948,9 @@
       "branching_note": "Some forks visible in the top petal; focus varies among petals.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 79171578,
@@ -890,24 +1029,25 @@
       "branching_note": "Unresolved: faint lines and focus softness.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 79732055,
       "taxon_id": 47757,
       "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
-      "reviewed_at": "2026-10-18T03:48:02.589Z",
-      "protocol_version": "1.0.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "protocol_version": "1.1.0",
       "examined_photo_ids": [
         130619488,
         130619503
       ],
       "color": {
-        "value": "blue",
-        "status": "scored",
-        "confidence": "high",
-        "reason": "Clearly cool pale-blue interveinal background in both flower views.",
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "White versus blue unresolved: both photographs show cool pale tissue, but repeat views under similar illumination do not distinguish diffuse pigment from camera or lighting cast. Figure 1 and the methods do not supply a reproducible cutoff. Original blue confidence was overstated.",
         "evidence": [
           {
             "photo_id": 130619503,
@@ -937,11 +1077,6 @@
       "write_status": "verified",
       "verified_fields": [
         {
-          "field_id": 8625,
-          "value": "blue",
-          "verified_at": "2026-10-18T03:48:18.670Z"
-        },
-        {
           "field_id": 23007,
           "value": "conspicuous",
           "verified_at": "2026-10-18T03:48:48.638Z"
@@ -956,8 +1091,39 @@
       "branching_note": "Distal Y-forks visible, especially the lower petals; no definite closed loops.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [
+        {
+          "observation_id": 79732055,
+          "index": 13,
+          "field_id": 8625,
+          "previous_value": "blue",
+          "new_value": null,
+          "new_status": "uncertain_color",
+          "protocol_version": "1.1.0",
+          "reviewed_at": "2026-10-18T05:03:13.639Z",
+          "reason": "White versus blue unresolved: both photographs show cool pale tissue, but repeat views under similar illumination do not distinguish diffuse pigment from camera or lighting cast. Figure 1 and the methods do not supply a reproducible cutoff. Original blue confidence was overstated.",
+          "status": "verified",
+          "submitted_at": "2026-10-18T05:05:03.664Z",
+          "verified_at": "2026-10-18T05:09:32.002Z",
+          "original_color": {
+            "value": "blue",
+            "status": "scored",
+            "confidence": "high",
+            "reason": "Clearly cool pale-blue interveinal background in both flower views.",
+            "evidence": [
+              {
+                "photo_id": 130619503,
+                "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+                "source_diameter_px": 350,
+                "assessment_diameter_px": 300,
+                "visible_upper_petals": 5
+              }
+            ]
+          }
+        }
+      ],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 83534547,
@@ -1021,8 +1187,9 @@
       "branching_note": "Unresolved: too little pigment contrast to trace branching.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 88226135,
@@ -1055,6 +1222,7 @@
       "branching_note": "Unresolved: unsuitable angle.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -1115,8 +1283,9 @@
       "branching_note": "Unresolved: insufficient source size.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 102137933,
@@ -1175,8 +1344,9 @@
       "branching_note": "Unresolved: insufficient source size.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 107127267,
@@ -1230,6 +1400,7 @@
       "branching_note": "Unresolved: wrinkles imitate vein junctions.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -1296,8 +1467,9 @@
       "branching_note": "Repeated distal branching visible, varying between petals; no secure closed mesh.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 110643768,
@@ -1359,8 +1531,9 @@
       "branching_note": "Repeated Y-forks clearly visible in rear petals; front reverse-side network excluded from upper-petal scoring.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 112009692,
@@ -1419,8 +1592,9 @@
       "branching_note": "Only delicate traces; branch junctions not secure at standardized scale.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 115647528,
@@ -1453,6 +1627,7 @@
       "branching_note": "Unresolved: insufficient source size.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -1487,6 +1662,7 @@
       "branching_note": "Unresolved: closed buds.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -1553,8 +1729,9 @@
       "branching_note": "Some distal forks, but softness limits secondary branching.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 118710031,
@@ -1618,8 +1795,9 @@
       "branching_note": "Longitudinal lines visible; forks not reliably separable in the soft photograph.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 121173010,
@@ -1678,8 +1856,9 @@
       "branching_note": "Sparse forks suggested; blur prevents complete tracing.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 121740818,
@@ -1740,8 +1919,9 @@
       "branching_note": "Unresolved: source size and soft detail.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 122916973,
@@ -1806,8 +1986,9 @@
       "branching_note": "Mostly long longitudinal lines, with a few distal Y-forks; no definite closed reticulum.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 124076011,
@@ -1872,8 +2053,9 @@
       "branching_note": "Mainly long lines with sparse forks; fine junctions less visible in bright areas.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 124656877,
@@ -1926,6 +2108,7 @@
       "branching_note": "Unresolved: small and shaded.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -1960,6 +2143,7 @@
       "branching_note": "Unresolved: small flower.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -1994,6 +2178,7 @@
       "branching_note": "Unresolved: small flower.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -2049,6 +2234,7 @@
       "branching_note": "Unresolved: small and partly overexposed.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -2083,6 +2269,7 @@
       "branching_note": "Unresolved: small flower.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -2148,8 +2335,9 @@
       "branching_note": "A few Y-forks visible on rear petals; much of each vein remains longitudinal.",
       "vein_color_note": "Purple veins visibly darker than lilac background.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 142160694,
@@ -2182,6 +2370,7 @@
       "branching_note": "Unresolved: small flower.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -2217,6 +2406,7 @@
       "branching_note": "Unresolved: blur.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -2277,8 +2467,9 @@
       "branching_note": "Unresolved: insufficient source size.",
       "vein_color_note": null,
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 159854837,
@@ -2337,8 +2528,9 @@
       "branching_note": "Fine branched network; possible connections cannot be confirmed at 300px.",
       "vein_color_note": "Veins read gray-purple against rose-lilac background; pigment hue is uncertain in shade.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 163518960,
@@ -2402,8 +2594,9 @@
       "branching_note": "Clear distal Y-forks on multiple petals; no unequivocal closed mesh at 300px.",
       "vein_color_note": "Veins read gray-purple on white petals, with darker/lighter segments along a single line.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 167137198,
@@ -2462,8 +2655,9 @@
       "branching_note": "Unresolved: insufficient source size.",
       "vein_color_note": "Fine purple-gray lines suggested; not enough detail for hue.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 170044428,
@@ -2516,6 +2710,7 @@
       "branching_note": "Sparse distal forks visible; mostly longitudinal lines.",
       "vein_color_note": "Gray to very pale pink veins; shadow and relief may affect apparent hue.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": "Observer only allows site curators to add observation fields",
       "api_verified_at": null
     },
@@ -2552,6 +2747,7 @@
       "branching_note": "Unresolved: softness and small flower.",
       "vein_color_note": "Purple lines visible but fine hue comparison unreliable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -2612,8 +2808,9 @@
       "branching_note": "Unresolved: insufficient source size.",
       "vein_color_note": "Too little detail to separate vein and background hue.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 203300661,
@@ -2675,8 +2872,9 @@
       "branching_note": "Unresolved: glare and fine texture.",
       "vein_color_note": "Fine lines read gray-purple, varying with sunlight within a petal.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 212818728,
@@ -2733,6 +2931,7 @@
       "branching_note": "Unresolved: oblique view and glare.",
       "vein_color_note": "Some pale pink lines; insufficient consistent exposure for hue.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -2798,8 +2997,9 @@
       "branching_note": "Occasional forks visible; thin lines become indistinct distally.",
       "vein_color_note": "Fine gray-purple lines under cool canopy light.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 214927467,
@@ -2859,8 +3059,9 @@
       "branching_note": "Repeated distal forks across several petals; network remains mainly longitudinal, with no secure closed loops.",
       "vein_color_note": "Darker purple-magenta veins against similar-hued background; contrast more evident than hue difference.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 217545480,
@@ -2919,8 +3120,9 @@
       "branching_note": "Unresolved: specular highlights and relief.",
       "vein_color_note": "Cannot separate vein hue from background and reflected light.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 218580827,
@@ -2985,8 +3187,9 @@
       "branching_note": "Repeated distal forks; apparent fine mesh is confounded by grain and petal texture.",
       "vein_color_note": "Veins appear gray-purple with some pinker segments; grain affects hue precision.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 218778730,
@@ -3019,6 +3222,7 @@
       "branching_note": "Unresolved: view/size.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -3084,8 +3288,9 @@
       "branching_note": "Mostly long lines with sparse forks; many fine distal lines are unresolved.",
       "vein_color_note": "Gray-violet lines on pale lilac; saturation is weak.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 221711637,
@@ -3119,6 +3324,7 @@
       "branching_note": "Unresolved: size and shade.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -3184,24 +3390,25 @@
       "branching_note": "Several fork-like junctions visible; softness prevents reliable branch counts.",
       "vein_color_note": "Pale purple-gray lines, slightly warmer near center.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 224945056,
       "taxon_id": 47757,
       "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
-      "reviewed_at": "2026-10-18T03:55:55.379Z",
-      "protocol_version": "1.0.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "protocol_version": "1.1.0",
       "examined_photo_ids": [
         398749793,
         398749837
       ],
       "color": {
-        "value": "white",
-        "status": "scored",
-        "confidence": "high",
-        "reason": "White upper background in open flowers in both photographs.",
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "White versus blue unresolved: small pale flowers look cool in both views, with different exposure. The visible evidence does not distinguish the paper's near-white blue examples from white; repetition is not a color reference.",
         "evidence": [
           {
             "photo_id": 398749793,
@@ -3228,14 +3435,8 @@
         ]
       },
       "existing_fields": [],
-      "write_status": "verified",
-      "verified_fields": [
-        {
-          "field_id": 8625,
-          "value": "white",
-          "verified_at": "2026-10-18T03:56:52.277Z"
-        }
-      ],
+      "write_status": "withdrawn",
+      "verified_fields": [],
       "index": 55,
       "crop": [
         690,
@@ -3245,8 +3446,39 @@
       "branching_note": "Unresolved: small flower.",
       "vein_color_note": "Too small to assign hue.",
       "timestamp_note": null,
+      "revisions": [
+        {
+          "observation_id": 224945056,
+          "index": 55,
+          "field_id": 8625,
+          "previous_value": "white",
+          "new_value": null,
+          "new_status": "uncertain_color",
+          "protocol_version": "1.1.0",
+          "reviewed_at": "2026-10-18T05:03:13.639Z",
+          "reason": "White versus blue unresolved: small pale flowers look cool in both views, with different exposure. The visible evidence does not distinguish the paper's near-white blue examples from white; repetition is not a color reference.",
+          "status": "verified",
+          "submitted_at": "2026-10-18T05:06:39.443Z",
+          "verified_at": "2026-10-18T05:09:32.002Z",
+          "original_color": {
+            "value": "white",
+            "status": "scored",
+            "confidence": "high",
+            "reason": "White upper background in open flowers in both photographs.",
+            "evidence": [
+              {
+                "photo_id": 398749793,
+                "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+                "source_diameter_px": 190,
+                "assessment_diameter_px": 300,
+                "visible_upper_petals": 5
+              }
+            ]
+          }
+        }
+      ],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": null
     },
     {
       "observation_id": 239565096,
@@ -3308,8 +3540,9 @@
       "branching_note": "Unresolved: blur.",
       "vein_color_note": "Pinkish traces near center; blur prevents hue assessment.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 259825317,
@@ -3343,6 +3576,7 @@
       "branching_note": "Unresolved: closed flower.",
       "vein_color_note": "Outside petal color excluded.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -3452,8 +3686,9 @@
       "branching_note": "Sparse distal forks; finer branches cannot be traced consistently.",
       "vein_color_note": "Very pale pink-gray lines on cream-white tissue.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 260618638,
@@ -3555,8 +3790,9 @@
       "branching_note": "Unresolved: small flowers.",
       "vein_color_note": "Insufficient detail for hue.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 261807305,
@@ -3624,8 +3860,9 @@
       "branching_note": "Repeated distal forks visible on multiple petals; apparent branch density varies between petals.",
       "vein_color_note": "Purple to magenta veins, darker near flower center; no secure distinct hue class from other purple veins.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 263320108,
@@ -3689,24 +3926,25 @@
       "branching_note": "Longitudinal lines with some distal forks; line thickness masks fine junctions.",
       "vein_color_note": "Dark purple, same broad hue as background.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 266706266,
       "taxon_id": 1464017,
       "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
-      "reviewed_at": "2026-10-18T03:58:05.035Z",
-      "protocol_version": "1.0.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "protocol_version": "1.1.0",
       "examined_photo_ids": [
         479207358,
         479207377
       ],
       "color": {
-        "value": "white",
-        "status": "scored",
-        "confidence": "high",
-        "reason": "White background in both photographs despite exposure difference.",
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "White versus blue unresolved: the brighter view appears near-white while the darker view appears cooler. Exposure and illumination prevent a defensible assignment to the paper's pale white/blue boundary.",
         "evidence": [
           {
             "photo_id": 479207358,
@@ -3733,14 +3971,8 @@
         ]
       },
       "existing_fields": [],
-      "write_status": "verified",
-      "verified_fields": [
-        {
-          "field_id": 8625,
-          "value": "white",
-          "verified_at": "2026-10-18T03:58:36.385Z"
-        }
-      ],
+      "write_status": "withdrawn",
+      "verified_fields": [],
       "index": 62,
       "crop": [
         925,
@@ -3750,8 +3982,39 @@
       "branching_note": "Unresolved: source size.",
       "vein_color_note": "Unscorable at this size.",
       "timestamp_note": null,
+      "revisions": [
+        {
+          "observation_id": 266706266,
+          "index": 62,
+          "field_id": 8625,
+          "previous_value": "white",
+          "new_value": null,
+          "new_status": "uncertain_color",
+          "protocol_version": "1.1.0",
+          "reviewed_at": "2026-10-18T05:03:13.639Z",
+          "reason": "White versus blue unresolved: the brighter view appears near-white while the darker view appears cooler. Exposure and illumination prevent a defensible assignment to the paper's pale white/blue boundary.",
+          "status": "verified",
+          "submitted_at": "2026-10-18T05:06:48.957Z",
+          "verified_at": "2026-10-18T05:09:32.002Z",
+          "original_color": {
+            "value": "white",
+            "status": "scored",
+            "confidence": "high",
+            "reason": "White background in both photographs despite exposure difference.",
+            "evidence": [
+              {
+                "photo_id": 479207358,
+                "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+                "source_diameter_px": 185,
+                "assessment_diameter_px": 300,
+                "visible_upper_petals": 5
+              }
+            ]
+          }
+        }
+      ],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": null
     },
     {
       "observation_id": 266997543,
@@ -3810,8 +4073,9 @@
       "branching_note": "Unresolved: source size.",
       "vein_color_note": "Dark lines too small for hue.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 267242736,
@@ -3844,6 +4108,7 @@
       "branching_note": "Unresolved: source size.",
       "vein_color_note": "No reliable vein hue.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -3906,8 +4171,9 @@
       "branching_note": "Repeated Y-forks prominent around the cup; softness prevents confirming apparent closed connections.",
       "vein_color_note": "Warm magenta-purple lines against cooler background; exact pink versus purple class uncertain.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 278123426,
@@ -3940,6 +4206,7 @@
       "branching_note": "Unresolved: occlusion.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -3974,6 +4241,7 @@
       "branching_note": "Unresolved: occlusion and angle.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -4034,8 +4302,9 @@
       "branching_note": "Several clear distal forks on exposed petals; droplets hide much of the petal margins.",
       "vein_color_note": "Purple-magenta lines; variable brightness along the same vein.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 284620563,
@@ -4068,6 +4337,7 @@
       "branching_note": "Unresolved: source size.",
       "vein_color_note": "Insufficient detail.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -4133,8 +4403,9 @@
       "branching_note": "Unresolved: grain and softness.",
       "vein_color_note": "Dark violet-gray lines on violet background.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 286981859,
@@ -4194,8 +4465,9 @@
       "branching_note": "Unresolved: blur and curvature.",
       "vein_color_note": "Gray-pink lines too faint for a secure hue category.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 290497359,
@@ -4228,6 +4500,7 @@
       "branching_note": "Unresolved: source size.",
       "vein_color_note": "Insufficient detail.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -4293,8 +4566,9 @@
       "branching_note": "No reliable branching trace at standardized scale; not evidence of anatomical absence.",
       "vein_color_note": "Fine gray-pink traces on pale pink background.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 294875487,
@@ -4327,6 +4601,7 @@
       "branching_note": "Unresolved: source size.",
       "vein_color_note": "Fine pink-purple lines cannot be resolved reliably.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -4387,8 +4662,9 @@
       "branching_note": "A few distal forks suggested; fine branch order not securely traceable.",
       "vein_color_note": "Veins shift from pink-purple to gray-violet among differently lit petals.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 298270903,
@@ -4448,8 +4724,9 @@
       "branching_note": "Sparse clear distal Y-forks, particularly on lower petal; others mostly longitudinal.",
       "vein_color_note": "Gray-purple veins; saturation weak and varying among petals.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 315606328,
@@ -4485,6 +4762,7 @@
       "branching_note": "Unresolved: senescence.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -4545,8 +4823,9 @@
       "branching_note": "Unresolved: size and glare.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 333824221,
@@ -4608,8 +4887,9 @@
       "branching_note": "Unresolved: focus/partial petals.",
       "vein_color_note": "Veins do not clearly separate in hue from violet background.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 343235423,
@@ -4673,8 +4953,9 @@
       "branching_note": "Unresolved: low vein contrast; no anatomical absence inferred.",
       "vein_color_note": "No independently discernible vein hue at this scale.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 343717584,
@@ -4734,8 +5015,9 @@
       "branching_note": "Distinct distal Y-forks on several petals in diffuse-light view; glare obscures details in second view.",
       "vein_color_note": "Same veins appear purple in diffuse light and yellow-gray/pale in overexposed image; poor basis for a hue field.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 344098956,
@@ -4794,6 +5076,7 @@
       "branching_note": "Few fork-like lines visible, but soft/low-contrast junctions cannot be traced reliably.",
       "vein_color_note": "Veins similar in hue to the pigmented background; weak separation.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -4854,8 +5137,9 @@
       "branching_note": "Unresolved: source size.",
       "vein_color_note": "Too small to assess hue reliably.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 347384272,
@@ -4888,6 +5172,7 @@
       "branching_note": "Unresolved: angle/glare.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -4944,6 +5229,7 @@
       "branching_note": "Unresolved: focus and overlap.",
       "vein_color_note": "Little separation from background hue; soft detail.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -4978,6 +5264,7 @@
       "branching_note": "Unresolved: source size.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -5043,8 +5330,9 @@
       "branching_note": "Sparse distal forks on multiple petals, mostly longitudinal organization.",
       "vein_color_note": "Fine gray-purple to pink lines, weak saturation.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 360761568,
@@ -5077,6 +5365,7 @@
       "branching_note": "Unresolved: source size.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -5137,8 +5426,9 @@
       "branching_note": "Unresolved: fine low-contrast junctions.",
       "vein_color_note": "Vein hue not clearly separable from background.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 365473769,
@@ -5172,6 +5462,7 @@
       "branching_note": "Unresolved: wet/folded petals.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -5206,6 +5497,7 @@
       "branching_note": "Unscorable: closed flower.",
       "vein_color_note": "Unscorable: outer surface only.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -5241,6 +5533,7 @@
       "branching_note": "Unresolved: source size.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -5248,16 +5541,16 @@
       "observation_id": 374804145,
       "taxon_id": 1464017,
       "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
-      "reviewed_at": "2026-10-18T04:06:37.925Z",
-      "protocol_version": "1.0.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "protocol_version": "1.1.0",
       "examined_photo_ids": [
         685112848
       ],
       "color": {
-        "value": "white",
-        "status": "scored",
-        "confidence": "high",
-        "reason": "Neutral white upper tissue on five open petals.",
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "White, blue, or very pale purple remain plausible: the tissue has a subtle cool/lilac appearance in the only view. The paper's plate does not justify calling it confidently neutral white, and no replacement color is established.",
         "evidence": [
           {
             "photo_id": 685112848,
@@ -5284,14 +5577,8 @@
         ]
       },
       "existing_fields": [],
-      "write_status": "verified",
-      "verified_fields": [
-        {
-          "field_id": 8625,
-          "value": "white",
-          "verified_at": "2026-10-18T04:06:43.802Z"
-        }
-      ],
+      "write_status": "withdrawn",
+      "verified_fields": [],
       "index": 93,
       "crop": [
         930,
@@ -5301,24 +5588,55 @@
       "branching_note": "Fine longitudinal lines; junctions not resolved reliably.",
       "vein_color_note": "Pale gray lines with weak saturation; hue uncertain.",
       "timestamp_note": null,
+      "revisions": [
+        {
+          "observation_id": 374804145,
+          "index": 93,
+          "field_id": 8625,
+          "previous_value": "white",
+          "new_value": null,
+          "new_status": "uncertain_color",
+          "protocol_version": "1.1.0",
+          "reviewed_at": "2026-10-18T05:03:13.639Z",
+          "reason": "White, blue, or very pale purple remain plausible: the tissue has a subtle cool/lilac appearance in the only view. The paper's plate does not justify calling it confidently neutral white, and no replacement color is established.",
+          "status": "verified",
+          "submitted_at": "2026-10-18T05:07:00.826Z",
+          "verified_at": "2026-10-18T05:09:32.002Z",
+          "original_color": {
+            "value": "white",
+            "status": "scored",
+            "confidence": "high",
+            "reason": "Neutral white upper tissue on five open petals.",
+            "evidence": [
+              {
+                "photo_id": 685112848,
+                "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+                "source_diameter_px": 350,
+                "assessment_diameter_px": 300,
+                "visible_upper_petals": 5
+              }
+            ]
+          }
+        }
+      ],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": null
     },
     {
       "observation_id": 375733116,
       "taxon_id": 47757,
       "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
-      "reviewed_at": "2026-10-18T04:06:37.927Z",
-      "protocol_version": "1.0.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "protocol_version": "1.1.0",
       "examined_photo_ids": [
         686925417,
         686925428
       ],
       "color": {
-        "value": "blue",
-        "status": "scored",
-        "confidence": "high",
-        "reason": "Cool blue interveinal upper tissue in both photographs.",
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "White versus blue unresolved: the close and wide views share a cool cast, already noted in the original vein-hue notes. Cool-looking tissue alone cannot establish the paper's blue category. Retain the independent conspicuous-vein judgment.",
         "evidence": [
           {
             "photo_id": 686925417,
@@ -5348,11 +5666,6 @@
       "write_status": "verified",
       "verified_fields": [
         {
-          "field_id": 8625,
-          "value": "blue",
-          "verified_at": "2026-10-18T04:06:46.283Z"
-        },
-        {
           "field_id": 23007,
           "value": "conspicuous",
           "verified_at": "2026-10-18T04:06:47.658Z"
@@ -5367,8 +5680,39 @@
       "branching_note": "Longitudinal veins with visible distal Y-forks on several petals; no discrete new arrangement.",
       "vein_color_note": "Blue-gray to purple lines on blue petal background; scene has a cool cast.",
       "timestamp_note": null,
+      "revisions": [
+        {
+          "observation_id": 375733116,
+          "index": 94,
+          "field_id": 8625,
+          "previous_value": "blue",
+          "new_value": null,
+          "new_status": "uncertain_color",
+          "protocol_version": "1.1.0",
+          "reviewed_at": "2026-10-18T05:03:13.639Z",
+          "reason": "White versus blue unresolved: the close and wide views share a cool cast, already noted in the original vein-hue notes. Cool-looking tissue alone cannot establish the paper's blue category. Retain the independent conspicuous-vein judgment.",
+          "status": "verified",
+          "submitted_at": "2026-10-18T05:05:12.148Z",
+          "verified_at": "2026-10-18T05:09:32.002Z",
+          "original_color": {
+            "value": "blue",
+            "status": "scored",
+            "confidence": "high",
+            "reason": "Cool blue interveinal upper tissue in both photographs.",
+            "evidence": [
+              {
+                "photo_id": 686925417,
+                "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+                "source_diameter_px": 720,
+                "assessment_diameter_px": 300,
+                "visible_upper_petals": 5
+              }
+            ]
+          }
+        }
+      ],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 377017094,
@@ -5421,6 +5765,7 @@
       "branching_note": "Unresolved: blur.",
       "vein_color_note": "Unscorable: blur.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -5481,8 +5826,9 @@
       "branching_note": "Mostly longitudinal lines with sparse distal forks; number differs among petals.",
       "vein_color_note": "Purple lines on pale blue-white background.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 388475200,
@@ -5542,8 +5888,9 @@
       "branching_note": "Unresolved: source size.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 391771143,
@@ -5598,6 +5945,7 @@
       "branching_note": "Junctions unresolved in soft upper-surface view; underside view cannot substitute.",
       "vein_color_note": "Pink-gray lines beside pink skin; reflected light and blur confound hue.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
       "api_verified_at": null
     },
@@ -5659,24 +6007,25 @@
       "branching_note": "Longitudinal lines with occasional distal splits; folded fifth petal cannot be compared.",
       "vein_color_note": "Purple to pink-purple lines; not a separately validated color class.",
       "timestamp_note": null,
+      "revisions": [],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": "2026-10-18T05:09:32.002Z"
     },
     {
       "observation_id": 402076814,
       "taxon_id": 47757,
       "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
-      "reviewed_at": "2026-10-18T04:06:37.927Z",
-      "protocol_version": "1.0.0",
+      "reviewed_at": "2026-10-18T05:03:13.639Z",
+      "protocol_version": "1.1.0",
       "examined_photo_ids": [
         738076697,
         738076699
       ],
       "color": {
-        "value": "white",
-        "status": "scored",
-        "confidence": "high",
-        "reason": "White interveinal upper tissue on five petals; purple lines and yellow-green throat excluded.",
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "White versus blue unresolved: the interveinal tissue is pale and cool, separate from the purple lines. The wider second view provides insufficient flower detail to settle that boundary. Do not use the veins or expected geographic color to decide.",
         "evidence": [
           {
             "photo_id": 738076697,
@@ -5703,14 +6052,8 @@
         ]
       },
       "existing_fields": [],
-      "write_status": "verified",
-      "verified_fields": [
-        {
-          "field_id": 8625,
-          "value": "white",
-          "verified_at": "2026-10-18T04:07:05.483Z"
-        }
-      ],
+      "write_status": "withdrawn",
+      "verified_fields": [],
       "index": 100,
       "crop": [
         440,
@@ -5720,8 +6063,39 @@
       "branching_note": "Unresolved: source size.",
       "vein_color_note": "Unscorable.",
       "timestamp_note": null,
+      "revisions": [
+        {
+          "observation_id": 402076814,
+          "index": 100,
+          "field_id": 8625,
+          "previous_value": "white",
+          "new_value": null,
+          "new_status": "uncertain_color",
+          "protocol_version": "1.1.0",
+          "reviewed_at": "2026-10-18T05:03:13.639Z",
+          "reason": "White versus blue unresolved: the interveinal tissue is pale and cool, separate from the purple lines. The wider second view provides insufficient flower detail to settle that boundary. Do not use the veins or expected geographic color to decide.",
+          "status": "verified",
+          "submitted_at": "2026-10-18T05:07:28.777Z",
+          "verified_at": "2026-10-18T05:09:32.002Z",
+          "original_color": {
+            "value": "white",
+            "status": "scored",
+            "confidence": "high",
+            "reason": "White interveinal upper tissue on five petals; purple lines and yellow-green throat excluded.",
+            "evidence": [
+              {
+                "photo_id": 738076697,
+                "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+                "source_diameter_px": 285,
+                "assessment_diameter_px": 300,
+                "visible_upper_petals": 5
+              }
+            ]
+          }
+        }
+      ],
       "blocked_reason": null,
-      "api_verified_at": "2026-10-18T04:21:41.397Z"
+      "api_verified_at": null
     }
   ]
 }

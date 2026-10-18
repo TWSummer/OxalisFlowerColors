@@ -27,7 +27,8 @@ export function validateReview(r, config) {
   }
   if (!Array.isArray(r.existing_fields)) errors.push('existing_fields must be an array');
   else for (const f of r.existing_fields) if (keys(f, ['field_id', 'value'], 'existing_fields') && (!positiveInt(f.field_id) || typeof f.value !== 'string')) errors.push('Invalid existing field');
-  if (!['not_attempted', 'already_present', 'conflict', 'blocked', 'attempted', 'verified', 'failed'].includes(r.write_status)) errors.push('Invalid write_status');
+  if (!['not_attempted', 'already_present', 'conflict', 'blocked', 'attempted', 'verified', 'failed', 'withdrawn'].includes(r.write_status)) errors.push('Invalid write_status');
+  if (r.write_status === 'withdrawn' && r.verified_fields?.length) errors.push('Withdrawn-only status cannot retain verified fields');
   if (!Array.isArray(r.verified_fields)) errors.push('verified_fields must be an array');
   else {
     if (r.write_status === 'verified' && !r.verified_fields.length) errors.push('Verified status requires returned field evidence');

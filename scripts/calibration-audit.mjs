@@ -13,8 +13,10 @@ const records=decisions.map(d=>{
   const evidence=d.crop?[{photo_id:d.photo_id,flower:'Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.',source_diameter_px:d.crop[2],assessment_diameter_px:300,visible_upper_petals:d.petals}]:[];
   const trait=(name)=>({value:d[name]||null,status:d[name]?'scored':(d[name==='color'?'color_status':'vein_status']||(name==='color'?'uncertain_color':'unscorable')),confidence:d[name]?'high':'not_applicable',reason:d[name==='color'?'color_reason':'vein_reason'],evidence});
   const verified=writes.filter(w=>w.observation_id===o.observation_id).map(({field_id,value,verified_at})=>({field_id,value,verified_at}));
-  return {observation_id:o.observation_id,taxon_id:o.taxon_id,reviewer:'Codex single-agent visual review; not an independent-rater calibration',reviewed_at:d.reviewed_at||manifest.created_at,protocol_version:config.protocolVersion,examined_photo_ids:o.photos.map(p=>p.id),color:trait('color'),veins:trait('veins'),existing_fields:o.existing_fields,write_status:verified.length?'verified':blocked.some(b=>b.observation_id===o.observation_id)?'blocked':'not_attempted',verified_fields:verified};
+  return {observation_id:o.observation_id,taxon_id:o.taxon_id,reviewer:'Codex single-agent visual review; not an independent-rater calibration',reviewed_at:d.reviewed_at||manifest.created_at,protocol_version:'1.0.0',examined_photo_ids:o.photos.map(p=>p.id),color:trait('color'),veins:trait('veins'),existing_fields:o.existing_fields,write_status:verified.length?'verified':blocked.some(b=>b.observation_id===o.observation_id)?'blocked':'not_attempted',verified_fields:verified};
 });
-for(const r of records){const errors=validateReview(r,config);if(errors.length)throw new Error(`${r.observation_id}: ${errors.join('; ')}`);}
+// This file regenerates the historical v1.0.0 judgments, never upgrades them silently.
+// Verified corrections are overlaid by calibration-report.mjs.
+for(const r of records){const errors=validateReview(r,{...config,protocolVersion:'1.0.0'});if(errors.length)throw new Error(`${r.observation_id}: ${errors.join('; ')}`);}
 await writeFile(new URL('reviews.jsonl',base),records.map(r=>JSON.stringify(r)).join('\n')+'\n');
 console.log(JSON.stringify({reviewed:records.length,color:records.filter(r=>r.color.status==='scored').length,veins:records.filter(r=>r.veins.status==='scored').length,verifiedWrites:writes.length,blocked:blocked.length}));

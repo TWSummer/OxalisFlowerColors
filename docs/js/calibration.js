@@ -15,13 +15,26 @@ const descriptions = {
   14: ['White · faint / not visible', 'A contrasting vein state within the same background-color class. Faint means the contrast threshold was not met with adequate detail; it does not mean anatomical veins are absent.'],
   80: ['Purple · faint / not visible', 'A pigmented background does not automatically make the vein contrast conspicuous. This was one of only three faint-vein judgments.'],
   81: ['Two views, different apparent vein color', 'The diffuse-light view shows purple lines; the brighter view makes them much paler. The reviewer used the usable view for contrast and did not assign a vein-hue category.'],
-  94: ['Blue · conspicuous veins', 'Distinct darker lines and distal forks on a blue background. The blue class was represented by only two scored observations.']
+  94: ['Color withheld · conspicuous veins', 'Originally called blue; the cool-looking tissue cannot reliably be separated from a photographic cast or pale white in the paper’s categories. This is an uncertainty example, not a blue reference. The vein-contrast judgment is independent.']
 };
 try {
   const response = await fetch('data/calibration-2026-10.json');
   if (!response.ok) throw new Error(`Audit unavailable (HTTP ${response.status}).`);
   const data = await response.json(), c = data.counts;
-  $('verification').textContent = `All ${c.field_values_written} unique saved values confirmed by the public iNaturalist observation-detail API on ${new Date(data.api_verified_at).toLocaleString()}. Map snapshot reconciled with those responses.`;
+  $('current-observations').textContent = c.observations_with_writes;
+  $('current-values').textContent = c.field_values_written;
+  $('current-summary').textContent = `${sum(c.color_written)} retained background-color values and ${sum(c.veins_written)} vein-contrast values. Originally 87 values were saved across 63 observations; ${c.values_withdrawn} color values have since been withdrawn. Two other observations blocked field additions; ${c.no_eligible_traits} now have neither trait scored. All original judgments and corrections are retained.`;
+  $('verification').textContent = `All ${c.field_values_written} retained values confirmed by the public iNaturalist observation-detail API on ${new Date(data.api_verified_at).toLocaleString()}. Map snapshot reconciled with those responses.`;
+  const corrections = data.corrections || [], verified = corrections.filter(c => c.status === 'verified');
+  $('correction-status').textContent = `${verified.length} of ${corrections.length} color withdrawals verified on iNaturalist. ${corrections.length - verified.length} awaiting completion. ${verified.length === corrections.length ? 'The two blue judgments and five white judgments now have uncertain color in the audit, with their color fields unset on iNaturalist.' : 'The proposed replacement is uncertainty in the audit, with no substitute color field.'} Vein fields are retained.`;
+  for (const c of corrections) {
+    const item = el('details', undefined, 'audit-row');
+    item.append(el('summary', `${c.observation_id} · ${c.previous_value} → uncertain color · ${c.status === 'verified' ? 'withdrawal verified' : 'withdrawal proposed'}`));
+    const body = el('div', undefined, 'audit-body');
+    body.append(link('Open observation ↗', observationUrl(c.observation_id)), el('p', c.reason));
+    if (c.verified_at) body.append(el('p', `Field 8625 absent in public detail response at ${c.verified_at}.`));
+    item.append(body); $('correction-records').append(item);
+  }
   for (const [name, count] of [['Background color', sum(c.color_scored)], ['Vein contrast', sum(c.veins_scored)]]) {
     const item = el('div', undefined, 'coverage-item');
     item.append(el('h3', name));
@@ -54,7 +67,7 @@ try {
   function renderAudit() {
     const outcome = $('audit-outcome').value, taxon = $('audit-taxon').value, query = $('audit-search').value.trim();
     const rows = data.records.filter(r => (!taxon || r.taxon_id === Number(taxon)) && (!query || String(r.observation_id).includes(query))
-      && (!outcome || (outcome === 'written' && r.verified_fields.length) || (outcome === 'blocked' && r.blocked_reason) || (outcome === 'withheld' && !r.color.value && !r.veins.value)));
+      && (!outcome || (outcome === 'written' && r.verified_fields.length) || (outcome === 'corrected' && r.revisions?.length) || (outcome === 'blocked' && r.blocked_reason) || (outcome === 'withheld' && !r.color.value && !r.veins.value)));
     $('audit-count').textContent = `${rows.length} of ${data.records.length} observations`;
     $('audit-records').replaceChildren();
     for (const r of rows) {
@@ -63,6 +76,7 @@ try {
       const body = el('div', undefined, 'audit-body');
       body.append(link('Open observation on iNaturalist ↗', observationUrl(r.observation_id)));
       for (const [name, trait] of [['Color', r.color], ['Veins', r.veins]]) body.append(el('p', `${name}: ${human(trait.value || trait.status)}. ${trait.reason}`));
+      for (const revision of r.revisions || []) body.append(el('p', `Correction (${revision.protocol_version}, ${revision.status}): originally ${revision.previous_value}. Original reason: ${revision.original_color.reason} Revised reason: ${revision.reason}`));
       body.append(el('p', `Branching note: ${r.branching_note}`), el('p', `Vein-hue note: ${r.vein_color_note || 'Not separately recorded; hue notes began partway through the pilot.'}`));
       if (r.blocked_reason) body.append(el('p', r.blocked_reason));
       if (r.verified_fields.length) body.append(el('p', `Saved fields: ${r.verified_fields.map(f=>`#${f.field_id} = ${f.value}`).join('; ')}. API checked ${r.api_verified_at}.`));
@@ -77,6 +91,6 @@ try {
   $('audit-search').addEventListener('input',renderAudit);
   renderAudit();
 } catch (error) {
-  $('verification').textContent = 'The audit could not be loaded; totals above describe the completed October pilot.';
+  $('verification').textContent = 'The audit could not be loaded; do not infer correction status from this page.';
   $('load-error').hidden = false; $('load-error').textContent = `${error.message} Use the downloadable audit or try reloading.`;
 }

@@ -12,6 +12,8 @@ A static GitHub Pages website and a reproducible labeling protocol for **Oxalis 
 
 The site reads **Primary flower color (8625)** by default; the older **Flower Color (43)** is optional. **Oxalis petal vein contrast v1 (23007)** is active as a pilot field. The October 2026 feasibility review inspected 100 observations / 174 photos and added 87 field values across 63 observations with the owner's explicit authorization. See [the pilot report](docs/calibration.html) and its downloadable audit. This was one agent's review, not independent-rater validation. Existing community labels are not assumed to follow this protocol.
 
+**Protocol v1.1.0 clarifies the unresolved white/blue boundary.** The original paper includes nearly white-looking blue flowers but supplies no reproducible cutoff. Schematics are not calibration standards. Seven original pilot color decisions (two blue, five white) were identified for withdrawal; the report shows which withdrawals have been verified and the current retained counts. The original v1.0.0 audit remains available as history, not a training key. Bulk color labeling awaits identifiable author-labeled references or clarification and an independent human review; never force labels to match the paper's geographic pattern.
+
 ## Preview
 
 ```sh
@@ -59,7 +61,7 @@ Commit and push `docs/data/observations.json`. The sync uses public unauthentica
 
 The vein field is configured as **23007**. Its pilot labels are available on the map, but independent agreement and class-coverage gates remain unmet. Keep the configuration, human protocol, and audit schema consistent when versioning the protocol. No credentials belong in configuration or GitHub Pages.
 
-The October pilot files are in ignored `review-work/calibration-2026-10/`. `calibration-sample.mjs` records a deterministic, taxon-stratified sample from observations with a Flowers annotation; it is narrower than the production inventory. `calibration-images.py` prepares unenhanced previews for manual review. `calibration-record.mjs` records manual decisions; `calibration-audit.mjs` validates them. `calibration-verify.mjs` checks all 100 records through the public observation-detail API and reconciles their atlas records; `calibration-report.mjs` exports the verified public audit without coordinates or downloaded photos. These utilities do not predict or submit labels. Do not rerun sampling over an active review directory.
+The October pilot files are in ignored `review-work/calibration-2026-10/`. `calibration-sample.mjs` records a deterministic, taxon-stratified sample from observations with a Flowers annotation; it is narrower than the production inventory. `calibration-images.py` prepares unenhanced previews for manual review. `calibration-record.mjs` records manual decisions; `calibration-audit.mjs` regenerates and validates the historical v1.0.0 decisions without silently changing their protocol version. `calibration-verify.mjs` checks all 100 records through the public observation-detail API, verifies submitted color withdrawals, and reconciles their atlas records; `calibration-report.mjs` overlays verified corrections and exports the public audit without coordinates or downloaded photos. `corrections.json` records each proposed/submitted/verified withdrawal with its reason and timestamps. Do not mark a withdrawal submitted without actually performing it in iNaturalist. These utilities do not predict or submit labels. Do not rerun sampling over an active review directory.
 
 ## Tests and limitations
 

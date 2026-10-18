@@ -1,6 +1,6 @@
 # Oxalis flower scoring protocol
 
-Version 1.0.0 · Rules dated 17 October 2026 · Status updated 18 October: single-agent feasibility review complete; independent validation pending
+Version 1.1.0 · Revised 18 October 2026 · Source-paper alignment clarified; independent validation pending
 
 ## Purpose and scope
 
@@ -11,6 +11,14 @@ One observation is the unit of labeling and mapping, not one photograph or one f
 The reference is Chris Brinegar (2022), *The true redwood sorrel: Reinstatement of Oxalis smalliana (Oxalidaceae) as a species separate from Oxalis oregana*, Madroño 69(4):304–326, [DOI](https://doi.org/10.3120/0024-9637-69.4.304), especially Methods pp. 305–306, Figure 1 and Results p. 308, and discussion p. 316. The study used four subjective color classes for 1,078 Research Grade iNaturalist flower images from 2015–2019. Figure 1 contains four examples per color, not sixteen formal pattern types. Its white group includes flowers with strongly colored veins.
 
 This protocol adds operational rules for consistent review. Its pixel thresholds, uncertainty rules, vein categories, and acceptance criteria are project proposals, not methods validated in that paper. No hue measurement, genetic diagnosis, or proven inter-rater reliability is claimed.
+
+### What the paper establishes, and what remains unresolved
+
+Read Methods pp. 305–306 and Figure 1 on p. 308 together. The author explicitly used subjective visual classes because the photographs differed in lighting, resolution, focus, and camera response; he did not quantify digital color. Figure 1 groups **pink A–D, purple E–H, blue I–L, and white M–P**. A–O are described as *O. smalliana* and P as *O. oregana*. These assignments describe the reference plate, not a rule to infer color from a current identification.
+
+The blue row includes very pale, nearly white-looking examples I and J, as well as the more visibly blue L. The white row includes cream-looking M and N and strongly purple-veined O and P. These appearance descriptions are our reading of the published plate. **The paper does not specify an operational white–blue cutoff, a color standard, or an inter-rater test.** A cool tint alone cannot reproduce the author's decisions. Nor does “looks almost white” exclude the paper's blue category.
+
+Our field values use the paper's four names, but are conservative photographic judgments, not a replication of its classification. The paper assigned every analyzed image to a class; we allow abstention and aggregate all photos at observation level. Our schematic colors are navigation aids, not sampled colors from Figure 1, thresholds, or calibration targets. Consult the original plate through the [paper](https://doi.org/10.3120/0024-9637-69.4.304); never recolor a source photo to match it.
 
 ## Which iNaturalist fields to use
 
@@ -45,12 +53,22 @@ If no open flower is visible, log `no_open_flower`. If an open flower is visible
 
 Inspect the **interveinal background of the upper petal surface**, especially the middle and outer portions. Ignore narrow colored veins, yellow/orange basal spots, the throat, anthers, pollen, cast shadows, and the lower/back surface. Look across at least three assessable petals. The background category must be consistent across those petals and across other equally informative photos of the same flower.
 
-- **`white`**: the background is neutral white or ivory, with no convincing diffuse blue, violet, or rose tint. Purple veins can be extremely prominent while the background remains white. Reference: Figure 1 M–P. Do not invent “northern white” or “southern white” as color categories.
-- **`blue`**: the background has a convincing cool blue tint, pale or saturated, rather than a rose or violet tint. Reference: Figure 1 I–L. A blue-looking photograph with unresolved whole-image color cast is not enough.
+- **`white`**: clearly neutral white or ivory interveinal tissue in usable views, without a plausible diffuse colored background. Purple veins can be extremely prominent while the background remains white, as in Figure 1 O–P. M–N illustrate other white appearances. Do not turn every very pale flower into white, and do not invent “northern white” or “southern white” categories.
+- **`blue`**: an apparent diffuse blue background, judged with Figure 1 I–L in mind. The paper includes very pale examples: blue does not have to match a saturated sky-blue swatch. However, no minimum blueness is established by the paper. A subtle cool cast, or multiple photos taken under the same light, is insufficient to resolve white versus blue. Withhold borderline cases under the rule below.
 - **`purple`**: the background is violet/lilac, a combination of blue and red rather than clearly blue or clearly rose. Pale and dark violet belong here. Reference: Figure 1 E–H. Pale purple must not be moved to pink solely because it is light.
 - **`pink`**: the background is rose to magenta and visibly warmer/redder than violet. Pale and deep rose belong here. Reference: Figure 1 A–D. Ignore purple venation when deciding.
 
 If two categories remain plausible, publish neither. Log the alternatives and `uncertain_color`. Strong versus pale pigmentation is not a separate category. For an unexpected yellow/red/other flower, recheck that the photographed flower is the target organism, log `unexpected_trait`, and escalate rather than extending the four-color vocabulary.
+
+**White–blue decision sequence:**
+
+1. Separate broad interveinal tissue from colored veins and throat. Strong purple lines do not establish purple or blue background.
+2. Inspect all usable views at adequate resolution. Check whether apparent color changes with exposure, shadow, reflections, or camera cast. Several photos in the same conditions are not independent color calibration.
+3. Compare the full range of Figure 1 I–P, rather than one blue schematic versus one white schematic. Record the relevant panel letters and alternatives in the reason. A resemblance supports discussion; it does not prove the author's label for a new image.
+4. If the tissue is near-white with a subtle cool/gray/lilac tint and white and blue remain plausible, record `value: null`, `status: uncertain_color`, and explain the competing interpretations. Do not write `white` as a fallback, `blue` from coolness alone, or an uncertainty word into field 8625. A wider ambiguity can include purple.
+5. Keep species, latitude, county, and the paper's regional percentages out of adjudication. Geographic agreement cannot validate a photographic judgment; disagreement is a reason to investigate sampling and scoring, not force a matching label.
+
+**Bulk color labeling remains on hold.** Before claiming paper-comparable white/blue assignments, obtain identifiable author-labeled source photographs or clarification of how those pale cases were separated, and test them with an independent human reviewer. No author clarification has yet been obtained. Until then, retain only defensible provisional judgments and log ambiguous cases without a color write. Do not invent a white/blue threshold to unlock production.
 
 There are no defensible universal RGB/HSV cutoffs for these uncalibrated photographs. Do not average the flower's pixels: that would mix the veins, throat, background, and lighting. Do not auto-white-balance, recolor, sharpen, use generative enhancement, or use a computer-vision confidence score as a replacement for visible evidence.
 
@@ -97,11 +115,13 @@ Before bulk color work, create a **100-observation calibration set** (or as many
 
 Have two reviewers score it independently and blind to each other's labels. At least one should be a human reviewer familiar with the visual rules. Two passes of the same model are a stability check, not independent validation. Save the images/links and decisions so the same evidence can be rescored.
 
-For color, report a confusion matrix including an “abstain” outcome, exact agreement over all paired decisions, agreement on jointly scorable cases, per-class disagreement, and abstention rate. A proposed launch gate is at least **90% overall agreement** and **Cohen's kappa ≥0.80**, with no unresolved recurring blue/purple or purple/pink boundary problem. These targets are project decisions. If categories are missing or kappa is undefined, report that and expand the pilot instead of declaring a pass. Revise definitions and repeat with a fresh holdout if needed.
+For color, report a confusion matrix including an “abstain” outcome, exact agreement over all paired decisions, agreement on jointly scorable cases, per-class disagreement, and abstention rate. A proposed launch gate is at least **90% overall agreement** and **Cohen's kappa ≥0.80**, with no unresolved recurring white/blue, blue/purple, or purple/pink boundary problem. Agreement between new reviewers alone does not prove agreement with Brinegar's labels: separately report performance on identifiable author-labeled reference images. These targets are project decisions. If categories are missing or kappa is undefined, report that and expand the pilot instead of declaring a pass. Revise definitions and repeat with a fresh holdout if needed.
 
 For veins, require at least **90% overall agreement**, **kappa ≥0.80** including `unscorable`, both scorable states well represented (aim for at least 20 each), and at least **70% scorable coverage among the clear open-flower photos**. Also confirm that contrasting vein states occur within at least one color class; otherwise it adds little beyond color in the pilot. Treat these as feasibility gates, not proof of biological significance. If the gate fails, omit routine vein labeling and keep a color-only project.
 
 Normally adjudicate disagreements before writing pilot labels. For the October 2026 feasibility run, the project owner explicitly requested adding eligible fields during review; 87 values were saved across 63 observations before independent review. This authorized exception does not satisfy the reliability gate. The sample included 50 observations per taxon drawn from Flowers-annotated records, rather than the balanced calibration set described above. Pink, blue, and faint-vein coverage fell short; agreement and kappa cannot be calculated with one reviewer. Expand those classes and obtain a blinded human second review before production.
+
+The v1.1.0 source-paper recheck identified seven color judgments for withdrawal: the two original blue assignments and five pale/cool white assignments. Their current correction status, original reasons, and revised reasons are in the [pilot report](calibration.html). No replacement color is justified for those records; their independent vein judgments remain applicable. This is the same reviewer's correction, not independent validation. The archived v1.0.0 audit is historical and must not supply training labels. The sample's geographic imbalance and different eligibility rules also prevent direct comparison with Figure 2's regional percentages.
 
 Retain the original independent judgments. During production, independently audit at least 10% of newly scored observations (sample across labels and reviewers) and review all unexpected traits. Pause the affected class and recalibrate if consistency falls below the chosen gate. Version any rule changes; do not mix versions silently.
 

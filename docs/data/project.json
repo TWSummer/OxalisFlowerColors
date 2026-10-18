@@ -1,5 +1,5 @@
 {
-  "protocolVersion": "1.0.0",
+  "protocolVersion": "1.1.0",
   "title": "Oxalis Flower Atlas",
   "taxa": [
     { "id": 47757, "name": "Oxalis oregana", "commonName": "Oregon woodsorrel" },
@@ -12,7 +12,7 @@
     "name": "Oxalis petal vein contrast v1",
     "status": "pilot",
     "values": ["conspicuous", "faint_or_not_visible", "unscorable"],
-    "description": "Optional photographic trait for Oxalis oregana and O. smalliana. Score the upper surface of an open flower, independently of petal background color. At a 300-pixel flower diameter, conspicuous requires at least two distinct pigmented vein lines on each of at least three assessable petals, extending for at least half the exposed petal length. Faint_or_not_visible requires adequate detail and lighting but no qualifying conspicuous network. Borderline or inadequate evidence is unscorable. See the project's version 1.0.0 protocol; this is a proposed photographic contrast score, not a species diagnosis."
+    "description": "Optional photographic trait for Oxalis oregana and O. smalliana. Score the upper surface of an open flower, independently of petal background color. At a 300-pixel flower diameter, conspicuous requires at least two distinct pigmented vein lines on each of at least three assessable petals, extending for at least half the exposed petal length. Faint_or_not_visible requires adequate detail and lighting but no qualifying conspicuous network. Borderline or inadequate evidence is unscorable. See the project's version 1.1.0 protocol; this is a proposed photographic contrast score, not a species diagnosis."
   },
   "apiBase": "https://api.inaturalist.org/v1",
   "requestIntervalMs": 1100,

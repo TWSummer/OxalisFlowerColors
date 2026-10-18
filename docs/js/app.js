@@ -5,8 +5,8 @@ const $ = id => document.getElementById(id);
 let config, snapshot, records = [], visible = [], selected = null, map, layer, recordLimit = 24;
 const miniMaps = [];
 const colorText = {
-  white: ['Neutral or ivory background, even with dark purple veins.', 'Paper Figure 1: M–P'],
-  blue: ['A cool blue background between veins, including pale blue.', 'Paper Figure 1: I–L'],
+  white: ['Clearly neutral or ivory tissue can have dark purple veins. Near-white with an unresolved cool tint: withhold.', 'Paper Figure 1: M–P'],
+  blue: ['The paper includes nearly white-looking blue examples. Coolness alone does not establish blue; withhold white/blue ambiguity.', 'Paper Figure 1: I–L · boundary unresolved'],
   purple: ['Violet or lilac background: blue and red together, from pale to deep.', 'Paper Figure 1: E–H'],
   pink: ['A rose or magenta background, visibly warmer than violet.', 'Paper Figure 1: A–D']
 };

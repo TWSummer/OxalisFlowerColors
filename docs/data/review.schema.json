@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Oxalis review audit entry v1.0.0",
+  "title": "Oxalis review audit entry v1.1.0",
   "type": "object",
   "additionalProperties": false,
   "required": ["observation_id", "taxon_id", "reviewer", "reviewed_at", "protocol_version", "examined_photo_ids", "color", "veins", "existing_fields", "write_status", "verified_fields"],
@@ -9,12 +9,12 @@
     "taxon_id": { "type": "integer", "minimum": 1 },
     "reviewer": { "type": "string", "minLength": 1 },
     "reviewed_at": { "type": "string", "format": "date-time" },
-    "protocol_version": { "const": "1.0.0" },
+    "protocol_version": { "const": "1.1.0" },
     "examined_photo_ids": { "type": "array", "items": { "type": "integer", "minimum": 1 }, "uniqueItems": true },
     "color": { "$ref": "#/$defs/color" },
     "veins": { "$ref": "#/$defs/veins" },
     "existing_fields": { "type": "array", "items": { "$ref": "#/$defs/field" } },
-    "write_status": { "enum": ["not_attempted", "already_present", "conflict", "blocked", "attempted", "verified", "failed"] },
+    "write_status": { "enum": ["not_attempted", "already_present", "conflict", "blocked", "attempted", "verified", "failed", "withdrawn"] },
     "verified_fields": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["field_id", "value", "verified_at"], "properties": { "field_id": { "type": "integer", "minimum": 1 }, "value": { "type": "string" }, "verified_at": { "type": "string", "format": "date-time" } } } }
   },
   "$defs": {

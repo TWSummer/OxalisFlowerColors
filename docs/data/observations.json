@@ -314,59 +314,6 @@
       ]
     },
     {
-      "id": 47936191,
-      "observed_on": "2015-04-24",
-      "quality_grade": "research",
-      "license_code": "cc-by-nc",
-      "captive": false,
-      "obscured": false,
-      "geoprivacy": null,
-      "taxon_geoprivacy": null,
-      "geojson": {
-        "type": "Point",
-        "coordinates": [
-          -121.9063722222,
-          36.4593083333
-        ]
-      },
-      "positional_accuracy": null,
-      "taxon": {
-        "id": 1464017,
-        "name": "Oxalis smalliana",
-        "ancestor_ids": [
-          48460,
-          47126,
-          211194,
-          47125,
-          47124,
-          70233,
-          47759,
-          47758,
-          864989,
-          1023136,
-          1464017
-        ]
-      },
-      "user": {
-        "login": "gina-genduso"
-      },
-      "ofvs": [
-        {
-          "field_id": 8625,
-          "name": "Primary flower color",
-          "value": "white"
-        }
-      ],
-      "photos": [
-        {
-          "id": 76041307,
-          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76041307/square.jpg",
-          "license_code": "cc-by-nc",
-          "attribution": "(c) Gina Genduso, some rights reserved (CC BY-NC)"
-        }
-      ]
-    },
-    {
       "id": 48617846,
       "observed_on": "2020-06-05",
       "quality_grade": "research",
@@ -744,11 +691,6 @@
         "login": "laurahikes"
       },
       "ofvs": [
-        {
-          "field_id": 8625,
-          "name": "Primary flower color",
-          "value": "blue"
-        },
         {
           "field_id": 23007,
           "name": "Oxalis petal vein contrast v1",
@@ -2528,65 +2470,6 @@
       ]
     },
     {
-      "id": 224945056,
-      "observed_on": "2024-06-21",
-      "quality_grade": "research",
-      "license_code": "cc-by-nc",
-      "captive": false,
-      "obscured": false,
-      "geoprivacy": null,
-      "taxon_geoprivacy": null,
-      "geojson": {
-        "type": "Point",
-        "coordinates": [
-          -123.6825866667,
-          45.961955
-        ]
-      },
-      "positional_accuracy": 8,
-      "taxon": {
-        "id": 47757,
-        "name": "Oxalis oregana",
-        "ancestor_ids": [
-          48460,
-          47126,
-          211194,
-          47125,
-          47124,
-          70233,
-          47759,
-          47758,
-          864989,
-          1023136,
-          47757
-        ]
-      },
-      "user": {
-        "login": "pnwgresh"
-      },
-      "ofvs": [
-        {
-          "field_id": 8625,
-          "name": "Primary flower color",
-          "value": "white"
-        }
-      ],
-      "photos": [
-        {
-          "id": 398749793,
-          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/398749793/square.jpg",
-          "license_code": "cc-by-nc",
-          "attribution": "(c) Patrick Gresh, some rights reserved (CC BY-NC)"
-        },
-        {
-          "id": 398749837,
-          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/398749837/square.jpg",
-          "license_code": "cc-by-nc",
-          "attribution": "(c) Patrick Gresh, some rights reserved (CC BY-NC)"
-        }
-      ]
-    },
-    {
       "id": 239565096,
       "observed_on": "2024-08-31",
       "quality_grade": "research",
@@ -3035,65 +2918,6 @@
           "url": "https://static.inaturalist.org/photos/473029049/square.jpg",
           "license_code": null,
           "attribution": "(c) Emily Benson, all rights reserved"
-        }
-      ]
-    },
-    {
-      "id": 266706266,
-      "observed_on": "2025-03-23",
-      "quality_grade": "research",
-      "license_code": "cc-by-nc",
-      "captive": false,
-      "obscured": false,
-      "geoprivacy": null,
-      "taxon_geoprivacy": null,
-      "geojson": {
-        "type": "Point",
-        "coordinates": [
-          -122.6068234071,
-          37.8970413373
-        ]
-      },
-      "positional_accuracy": 301,
-      "taxon": {
-        "id": 1464017,
-        "name": "Oxalis smalliana",
-        "ancestor_ids": [
-          48460,
-          47126,
-          211194,
-          47125,
-          47124,
-          70233,
-          47759,
-          47758,
-          864989,
-          1023136,
-          1464017
-        ]
-      },
-      "user": {
-        "login": "intricate_nautilus"
-      },
-      "ofvs": [
-        {
-          "field_id": 8625,
-          "name": "Primary flower color",
-          "value": "white"
-        }
-      ],
-      "photos": [
-        {
-          "id": 479207358,
-          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/479207358/square.jpeg",
-          "license_code": "cc-by-nc",
-          "attribution": "(c) intricate_nautilus, some rights reserved (CC BY-NC)"
-        },
-        {
-          "id": 479207377,
-          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/479207377/square.jpeg",
-          "license_code": "cc-by-nc",
-          "attribution": "(c) intricate_nautilus, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -3961,59 +3785,6 @@
       ]
     },
     {
-      "id": 374804145,
-      "observed_on": "2026-06-20",
-      "quality_grade": "research",
-      "license_code": "cc-by-nc",
-      "captive": false,
-      "obscured": false,
-      "geoprivacy": null,
-      "taxon_geoprivacy": null,
-      "geojson": {
-        "type": "Point",
-        "coordinates": [
-          -123.92728,
-          40.3842263889
-        ]
-      },
-      "positional_accuracy": null,
-      "taxon": {
-        "id": 1464017,
-        "name": "Oxalis smalliana",
-        "ancestor_ids": [
-          48460,
-          47126,
-          211194,
-          47125,
-          47124,
-          70233,
-          47759,
-          47758,
-          864989,
-          1023136,
-          1464017
-        ]
-      },
-      "user": {
-        "login": "sarahcoty"
-      },
-      "ofvs": [
-        {
-          "field_id": 8625,
-          "name": "Primary flower color",
-          "value": "white"
-        }
-      ],
-      "photos": [
-        {
-          "id": 685112848,
-          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/685112848/square.jpg",
-          "license_code": "cc-by-nc",
-          "attribution": "(c) Sarah Coty, some rights reserved (CC BY-NC)"
-        }
-      ]
-    },
-    {
       "id": 375733116,
       "observed_on": "2026-06-23",
       "quality_grade": "research",
@@ -4051,11 +3822,6 @@
         "login": "dinomama789"
       },
       "ofvs": [
-        {
-          "field_id": 8625,
-          "name": "Primary flower color",
-          "value": "blue"
-        },
         {
           "field_id": 23007,
           "name": "Oxalis petal vein contrast v1",
@@ -4247,65 +4013,6 @@
           "attribution": "(c) Donald W. Grimm, Ph.D., all rights reserved"
         }
       ]
-    },
-    {
-      "id": 402076814,
-      "observed_on": "2026-06-15",
-      "quality_grade": "research",
-      "license_code": "cc-by-nc-sa",
-      "captive": false,
-      "obscured": true,
-      "geoprivacy": "obscured",
-      "taxon_geoprivacy": null,
-      "geojson": {
-        "type": "Point",
-        "coordinates": [
-          -124.0306256741,
-          41.2423147682
-        ]
-      },
-      "positional_accuracy": 27816,
-      "taxon": {
-        "id": 47757,
-        "name": "Oxalis oregana",
-        "ancestor_ids": [
-          48460,
-          47126,
-          211194,
-          47125,
-          47124,
-          70233,
-          47759,
-          47758,
-          864989,
-          1023136,
-          47757
-        ]
-      },
-      "user": {
-        "login": "gulsmor"
-      },
-      "ofvs": [
-        {
-          "field_id": 8625,
-          "name": "Primary flower color",
-          "value": "white"
-        }
-      ],
-      "photos": [
-        {
-          "id": 738076697,
-          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/738076697/square.jpg",
-          "license_code": "cc-by-nc-sa",
-          "attribution": "(c) Ren Deru, some rights reserved (CC BY-NC-SA)"
-        },
-        {
-          "id": 738076699,
-          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/738076699/square.jpg",
-          "license_code": "cc-by-nc-sa",
-          "attribution": "(c) Ren Deru, some rights reserved (CC BY-NC-SA)"
-        }
-      ]
     }
   ],
   "complete": true,
@@ -4339,5 +4046,10 @@
       "description": "Optional photographic trait for Oxalis oregana and O. smalliana. Score the upper surface of an open flower, independently of petal background color. At a 300-pixel flower diameter, conspicuous requires at least two distinct pigmented vein lines on each of at least three assessable petals, extending for at least half the exposed petal length. Faint_or_not_visible requires adequate detail and lighting but no qualifying conspicuous network. Borderline or inadequate evidence is unscorable. See the project's version 1.0.0 protocol; this is a proposed photographic contrast score, not a species diagnosis."
     }
   ],
-  "pilotDetailVerificationAt": "2026-10-18T04:21:41.397Z"
+  "pilotDetailVerificationAt": "2026-10-18T05:09:32.002Z",
+  "pilotCorrections": {
+    "protocolVersion": "1.1.0",
+    "verifiedAt": "2026-10-18T05:09:32.002Z",
+    "colorValuesWithdrawn": 7
+  }
 }

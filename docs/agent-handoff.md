@@ -1,6 +1,8 @@
 # Handoff to a flower-labeling agent
 
-Read `protocol.md`, `calibration.html`, and `data/project.json` before reviewing observations. Protocol version 1.0.0 has **not yet passed independent reliability validation**. A 100-observation single-agent feasibility review is complete. Its public audit is `data/calibration-2026-10.json`; retain the original judgments when arranging independent review. Do not treat those judgments as ground truth.
+Read `protocol.md`, `calibration.html`, and `data/project.json` before reviewing observations. Protocol version 1.1.0 has **not yet passed independent reliability validation**. A 100-observation single-agent feasibility review and a targeted source-paper recheck are documented in `data/calibration-2026-10.json`. Read its revisions as well as its original judgments. Neither is ground truth.
+
+**Do not start bulk color writes yet.** The paper's pale white/blue boundary remains unresolved. Figure 1 assigns pink A–D, purple E–H, blue I–L, and white M–P; some blue examples are nearly white-looking. The website's schematics are not calibration standards. Obtain identifiable author-labeled reference photos or clarification, then an independent human review before claiming paper-comparable labels. Do not choose white by default, choose blue from a cool cast, or decide from species/location. Record `uncertain_color` with a null value and alternatives in the reason when the boundary cannot be resolved. Seven original pilot color judgments have been flagged for withdrawal; check the report's verification status before making any further write to them.
 
 ## Task
 
@@ -13,7 +15,7 @@ Optional vein contrast is a pilot extension: `conspicuous`, `faint_or_not_visibl
 ## Before production
 
 1. Inventory the records with `npm run prepare-review`. Output is in ignored `review-work/`, not the deployed website. The script reads public metadata and does not download all photos or label anything.
-2. Follow the protocol's 100-observation calibration and independent-review gate. Ask the project owner to arrange the human review if you cannot supply it; do not claim independent validation from repeated self-scoring.
+2. Follow the protocol's source-reference, 100-observation calibration, and independent-review gates. Include pale examples from both the paper's white and blue groups, not only saturated colors or labels invented by another agent. Ask the project owner to arrange the human review if you cannot supply it; do not claim independent validation from repeated self-scoring.
 3. Use `data/review.schema.json` for each JSONL audit entry. For each trait, record `value`, `status`, `confidence`, `reason`, and `evidence`. Record `null` with an abstention reason when appropriate. Example shape is in `data/review.example.json`; it is synthetic and must never be submitted.
 4. Run `npm run validate-reviews -- review-work/reviews.jsonl` before considering writes. Schema validation checks structure and guards; it cannot verify botanical judgments or account authorization.
 5. Once the pilot passes and production is authorized, only submit high-confidence eligible decisions from the passed protocol. Use the account's own login and permitted official UI/API. Never request credentials in a public log or commit them to the repository.

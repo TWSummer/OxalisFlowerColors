@@ -1,0 +1,5727 @@
+{
+  "title": "October 2026 Oxalis feasibility pilot",
+  "protocol_version": "1.0.0",
+  "reviewer": "Codex, one AI reviewer; no independent human or second-rater validation",
+  "sampled_at": "2026-10-18T03:41:20.104Z",
+  "api_verified_at": "2026-10-18T04:21:41.397Z",
+  "seed": "oxalis-feasibility-2026-10-18-v1",
+  "sampling_method": "Fifty observations per currently identified taxon, selected by SHA256(seed:observation_id) ascending from the full public API pool with photos and Flowers annotation. All quality grades; no geographic/color filtering. This is a single-agent feasibility review, not independent-rater validation. Annotation and taxon-selection biases apply.",
+  "pools": [
+    {
+      "taxon_id": 47757,
+      "candidates": 2185,
+      "sampled": 50,
+      "max_observation_id": 407714524
+    },
+    {
+      "taxon_id": 1464017,
+      "candidates": 2259,
+      "sampled": 50,
+      "max_observation_id": 408971793
+    }
+  ],
+  "notes": [
+    "All 174 photographs were inspected in observation sheets; selected source crops were examined at a 300px square view without sharpening or recoloring.",
+    "Crop widths are approximate manual flower diameters. Color-only crops below 300 source pixels do not support vein scores.",
+    "Vein-hue notes began partway through the review and are exploratory, not a systematic hue census.",
+    "The owner authorized pilot field additions before independent validation. The reliability gate is not met.",
+    "Initial in-page confirmations were reconciled against fresh pages and the public observation detail API; only final unique saved values are counted."
+  ],
+  "counts": {
+    "reviewed": 100,
+    "photos": 174,
+    "observations_with_writes": 63,
+    "field_values_written": 87,
+    "blocked_observations": 2,
+    "no_eligible_traits": 35,
+    "color_scored": {
+      "white": 29,
+      "purple": 19,
+      "blue": 2,
+      "pink": 2
+    },
+    "color_abstentions": {
+      "uncertain_color": 29,
+      "unscorable": 16,
+      "no_open_flower": 3
+    },
+    "veins_scored": {
+      "conspicuous": 35,
+      "faint_or_not_visible": 3
+    },
+    "veins_abstentions": {
+      "unscorable": 59,
+      "no_open_flower": 3
+    },
+    "color_written": {
+      "white": 27,
+      "purple": 19,
+      "blue": 2,
+      "pink": 2
+    },
+    "veins_written": {
+      "conspicuous": 34,
+      "faint_or_not_visible": 3
+    }
+  },
+  "examples": [
+    {
+      "index": 4,
+      "observation_id": 6491178,
+      "photos": [
+        {
+          "id": 8212797,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/8212797/square.jpg",
+          "original_dimensions": {
+            "width": 1536,
+            "height": 2048
+          },
+          "license_code": "cc-by-nc",
+          "attribution": "(c) freelc, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "observation_id": 83534547,
+      "photos": [
+        {
+          "id": 137203402,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/137203402/square.jpg",
+          "original_dimensions": {
+            "width": 2048,
+            "height": 1536
+          },
+          "license_code": "cc-by-nc",
+          "attribution": "(c) sbfromthelt, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "observation_id": 343235423,
+      "photos": [
+        {
+          "id": 625192632,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/625192632/square.jpg",
+          "original_dimensions": {
+            "width": 1536,
+            "height": 2048
+          },
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Adam Waite, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "observation_id": 343717584,
+      "photos": [
+        {
+          "id": 626173553,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/626173553/square.jpg",
+          "original_dimensions": {
+            "width": 1536,
+            "height": 2048
+          },
+          "license_code": "cc-by-nc",
+          "attribution": "(c) John Tyler, some rights reserved (CC BY-NC)"
+        },
+        {
+          "id": 626173552,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/626173552/square.jpg",
+          "original_dimensions": {
+            "width": 1536,
+            "height": 2048
+          },
+          "license_code": "cc-by-nc",
+          "attribution": "(c) John Tyler, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "observation_id": 375733116,
+      "photos": [
+        {
+          "id": 686925417,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/686925417/square.jpg",
+          "original_dimensions": {
+            "width": 1536,
+            "height": 2048
+          },
+          "license_code": "cc-by-nc",
+          "attribution": "(c) dinomama789, some rights reserved (CC BY-NC)"
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "observation_id": 835334,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:15:06.396Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        1056243
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Pale lilac-rose background near the pink/purple boundary; insufficiently certain for a public color label.",
+        "evidence": [
+          {
+            "photo_id": 1056243,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 310,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Multiple dark longitudinal lines extend beyond half length on all five petals at the normalized view.",
+        "evidence": [
+          {
+            "photo_id": 1056243,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 310,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:44:53.861Z"
+        }
+      ],
+      "index": 1,
+      "crop": [
+        450,
+        608,
+        310
+      ],
+      "branching_note": "unresolved: focus softness prevents reliable tracing of junctions",
+      "vein_color_note": null,
+      "timestamp_note": "Timestamp recorded at final audit; original judgment was not timestamped.",
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 1535362,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:15:06.397Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        1902240,
+        1902247
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White interveinal tissue despite prominent purple lines; second photo shows only foliage.",
+        "evidence": [
+          {
+            "photo_id": 1902240,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 175,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower only about 170 source pixels across, below the 300-pixel rule.",
+        "evidence": [
+          {
+            "photo_id": 1902240,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 175,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:45:12.453Z"
+        }
+      ],
+      "index": 2,
+      "crop": [
+        138,
+        345,
+        175
+      ],
+      "branching_note": "unresolved: insufficient source pixels",
+      "vein_color_note": null,
+      "timestamp_note": "Timestamp recorded at final audit; original judgment was not timestamped.",
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 6228711,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:15:06.397Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        7826949
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Wet folded/damaged flower lacks three clearly assessable upper petals.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Folded petals, droplets, and limited exposed surface.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 3,
+      "crop": null,
+      "branching_note": "unresolved: folded/wet petals",
+      "vein_color_note": null,
+      "timestamp_note": "Timestamp recorded at final audit; original judgment was not timestamped.",
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 6491178,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:46:50.376Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        8212797,
+        8212799
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White interveinal tissue in close view and wider second photo; purple is confined to veins.",
+        "evidence": [
+          {
+            "photo_id": 8212797,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1210,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Many strong purple lines exceed half petal length on five petals.",
+        "evidence": [
+          {
+            "photo_id": 8212797,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1210,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [
+        {
+          "field_id": 1759,
+          "value": "flowers"
+        }
+      ],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T04:15:11.092Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:45:33.638Z"
+        }
+      ],
+      "index": 4,
+      "crop": [
+        30,
+        240,
+        1210
+      ],
+      "branching_note": "Visible distal Y-forks on several veins; no clear closed mesh.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 40737370,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:46:50.379Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        64581254,
+        64581264
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Cool lilac background across the upper petals, consistent in both photographs.",
+        "evidence": [
+          {
+            "photo_id": 64581254,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 650,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Distinct fine pigmented lines exceed half length on at least three petals at 300px view.",
+        "evidence": [
+          {
+            "photo_id": 64581254,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 650,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:45:36.132Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:45:37.519Z"
+        }
+      ],
+      "index": 5,
+      "crop": [
+        760,
+        400,
+        650
+      ],
+      "branching_note": "Some distal forks visible; fine longitudinal lines predominate.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 47936191,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:46:50.379Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        76041307
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Both visible flowers have white upper petal tissue.",
+        "evidence": [
+          {
+            "photo_id": 76041307,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 440,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Gray-pink lines visible in some petals but contrast and qualifying length are borderline across three petals.",
+        "evidence": [
+          {
+            "photo_id": 76041307,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 440,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:45:40.683Z"
+        }
+      ],
+      "index": 6,
+      "crop": [
+        820,
+        1150,
+        440
+      ],
+      "branching_note": "Unresolved: low contrast and fine-detail softness.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 48617846,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:46:50.379Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        77152494
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Neutral white tissue between pigmented vein lines.",
+        "evidence": [
+          {
+            "photo_id": 77152494,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 845,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Distinct pink-purple longitudinal lines on all five petals.",
+        "evidence": [
+          {
+            "photo_id": 77152494,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 845,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:45:49.054Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:45:50.333Z"
+        }
+      ],
+      "index": 7,
+      "crop": [
+        410,
+        705,
+        845
+      ],
+      "branching_note": "Multiple clear distal Y-forks, especially lower and left petals; no definite closed mesh.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 60287817,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:15:06.397Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        96388617
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White upper tissue in front, right, and upper petal, despite purple veins.",
+        "evidence": [
+          {
+            "photo_id": 96388617,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1000,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Only two petals expose a clear enough vein network; others folded or occluded, with soft focus.",
+        "evidence": [
+          {
+            "photo_id": 96388617,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1000,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "blocked",
+      "verified_fields": [],
+      "index": 8,
+      "crop": [
+        500,
+        460,
+        1000
+      ],
+      "branching_note": "unresolved: oblique view and focus",
+      "vein_color_note": null,
+      "timestamp_note": "Timestamp recorded at final audit; original judgment was not timestamped.",
+      "blocked_reason": "Observer only allows site curators to add observation fields",
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 73278626,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:46:50.379Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        119612626,
+        119612647
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Violet/lilac upper petal background in both photos and both open flowers.",
+        "evidence": [
+          {
+            "photo_id": 119612626,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 500,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Multiple fine purple lines visible over more than half of at least three petals at 300px view.",
+        "evidence": [
+          {
+            "photo_id": 119612626,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 500,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:46:59.797Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:47:01.177Z"
+        }
+      ],
+      "index": 9,
+      "crop": [
+        930,
+        175,
+        500
+      ],
+      "branching_note": "Sparse forks can be seen; finer branch order cannot be reliably traced.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 74473645,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:15:06.397Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        121719157
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Pale magenta/lilac appearance close to pink-purple boundary and bright exposure; not confidently distinguishable.",
+        "evidence": [
+          {
+            "photo_id": 121719157,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 365,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Fine detail too soft to distinguish pigmented lines confidently.",
+        "evidence": [
+          {
+            "photo_id": 121719157,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 365,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 10,
+      "crop": [
+        440,
+        730,
+        365
+      ],
+      "branching_note": "unresolved: blur",
+      "vein_color_note": null,
+      "timestamp_note": "Timestamp recorded at final audit; original judgment was not timestamped.",
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 75682148,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:48:02.587Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        123844114
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White interveinal background across the open flower.",
+        "evidence": [
+          {
+            "photo_id": 123844114,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 375,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "At least three petals show distinct dark-purple lines past half length at the normalized view.",
+        "evidence": [
+          {
+            "photo_id": 123844114,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 375,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:48:10.352Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:15:25.574Z"
+        }
+      ],
+      "index": 11,
+      "crop": [
+        434,
+        928,
+        375
+      ],
+      "branching_note": "Some forks visible in the top petal; focus varies among petals.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 79171578,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:48:02.589Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        129649508,
+        129649536,
+        129649576,
+        129649606
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Cream-white upper petals in front-facing photograph; other flower view shows reverse side, remaining photos foliage.",
+        "evidence": [
+          {
+            "photo_id": 129649576,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 470,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Pale lines are visible but the contrast/length threshold is borderline in the soft front view.",
+        "evidence": [
+          {
+            "photo_id": 129649576,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 470,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [
+        {
+          "field_id": 13339,
+          "value": "Flora PNW 2nd ed"
+        },
+        {
+          "field_id": 10,
+          "value": "Understory of maple, hemlock, and douglas fir forest"
+        },
+        {
+          "field_id": 4892,
+          "value": "A (abundant, >100)"
+        },
+        {
+          "field_id": 1759,
+          "value": "flowers"
+        }
+      ],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:48:14.587Z"
+        }
+      ],
+      "index": 12,
+      "crop": [
+        1140,
+        520,
+        470
+      ],
+      "branching_note": "Unresolved: faint lines and focus softness.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 79732055,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:48:02.589Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        130619488,
+        130619503
+      ],
+      "color": {
+        "value": "blue",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Clearly cool pale-blue interveinal background in both flower views.",
+        "evidence": [
+          {
+            "photo_id": 130619503,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 350,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Multiple purple lines over half length are distinct on five petals at 300px.",
+        "evidence": [
+          {
+            "photo_id": 130619503,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 350,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "blue",
+          "verified_at": "2026-10-18T03:48:18.670Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:48:48.638Z"
+        }
+      ],
+      "index": 13,
+      "crop": [
+        600,
+        675,
+        350
+      ],
+      "branching_note": "Distal Y-forks visible, especially the lower petals; no definite closed loops.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 83534547,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:48:02.589Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        137203402
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White upper petal background; the unopened bud is excluded.",
+        "evidence": [
+          {
+            "photo_id": 137203402,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 430,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "faint_or_not_visible",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Adequately exposed lower/side petals show only very faint lines, below the conspicuous threshold; no dark network.",
+        "evidence": [
+          {
+            "photo_id": 137203402,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 430,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:48:51.187Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "faint_or_not_visible",
+          "verified_at": "2026-10-18T03:48:52.396Z"
+        }
+      ],
+      "index": 14,
+      "crop": [
+        810,
+        560,
+        430
+      ],
+      "branching_note": "Unresolved: too little pigment contrast to trace branching.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 88226135,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:47:41.457Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        145543859
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Nodding/cupped flowers expose mainly side or lower surfaces, without three clear upper petals.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Insufficient upper-petal view.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 15,
+      "crop": null,
+      "branching_note": "Unresolved: unsuitable angle.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 94675188,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:47:41.457Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        157080653
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White tissue between purple veins despite an irregular petal outline.",
+        "evidence": [
+          {
+            "photo_id": 157080653,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 280,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower about 270 source pixels across, below the required 300.",
+        "evidence": [
+          {
+            "photo_id": 157080653,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 280,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:48:55.010Z"
+        }
+      ],
+      "index": 16,
+      "crop": [
+        510,
+        1080,
+        280
+      ],
+      "branching_note": "Unresolved: insufficient source size.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 102137933,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:47:41.457Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        170680013
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Distinct lilac-violet background across all upper petals.",
+        "evidence": [
+          {
+            "photo_id": 170680013,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 290,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower about 285 source pixels across, below the required 300.",
+        "evidence": [
+          {
+            "photo_id": 170680013,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 290,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:48:57.323Z"
+        }
+      ],
+      "index": 17,
+      "crop": [
+        895,
+        980,
+        290
+      ],
+      "branching_note": "Unresolved: insufficient source size.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 107127267,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:48:02.589Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        180113671,
+        180113697
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Pale periwinkle background near blue-purple boundary; no confident separation.",
+        "evidence": [
+          {
+            "photo_id": 180113671,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 620,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Some long lines visible, but wrinkles and lighting make pigment contrast uncertain on three petals.",
+        "evidence": [
+          {
+            "photo_id": 180113671,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 620,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 18,
+      "crop": [
+        440,
+        930,
+        620
+      ],
+      "branching_note": "Unresolved: wrinkles imitate vein junctions.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 107763068,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:48:02.589Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        181310190,
+        181310200
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Very pale lilac/gray tissue may be white affected by veins or a pale purple background; withheld.",
+        "evidence": [
+          {
+            "photo_id": 181310190,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 535,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Many distinct purple-gray longitudinal veins exceed half length on five petals.",
+        "evidence": [
+          {
+            "photo_id": 181310190,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 535,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [
+        {
+          "field_id": 10,
+          "value": "Central California Coastal Redwoods Forest"
+        }
+      ],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:49:00.202Z"
+        }
+      ],
+      "index": 19,
+      "crop": [
+        720,
+        1040,
+        535
+      ],
+      "branching_note": "Repeated distal branching visible, varying between petals; no secure closed mesh.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 110643768,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:48:02.589Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        186683134,
+        186683140,
+        186683127,
+        186683149
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Strong purple vein coverage and oblique/backlit view make the very pale background uncertain.",
+        "evidence": [
+          {
+            "photo_id": 186683134,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 760,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Three rear upper petals each show many distinct purple lines over half their exposed length.",
+        "evidence": [
+          {
+            "photo_id": 186683134,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 760,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:49:02.929Z"
+        }
+      ],
+      "index": 20,
+      "crop": [
+        300,
+        570,
+        760
+      ],
+      "branching_note": "Repeated Y-forks clearly visible in rear petals; front reverse-side network excluded from upper-petal scoring.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 112009692,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:50:00.479Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        189160260
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Lilac-violet background spread across all five petals.",
+        "evidence": [
+          {
+            "photo_id": 189160260,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 410,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Fine lines visible but pigmented contrast versus relief is borderline at 300px; withheld.",
+        "evidence": [
+          {
+            "photo_id": 189160260,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 410,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:50:13.739Z"
+        }
+      ],
+      "index": 21,
+      "crop": [
+        850,
+        480,
+        410
+      ],
+      "branching_note": "Only delicate traces; branch junctions not secure at standardized scale.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 115647528,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:49:39.588Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        195182404
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flowers are too small for the 150-source-pixel color rule; no sufficiently detailed open flower.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Distant small flowers below the vein size threshold.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 22,
+      "crop": null,
+      "branching_note": "Unresolved: insufficient source size.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 118201684,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:49:39.588Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        199675920
+      ],
+      "color": {
+        "value": null,
+        "status": "no_open_flower",
+        "confidence": "not_applicable",
+        "reason": "Only closed pale buds are visible.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "no_open_flower",
+        "confidence": "not_applicable",
+        "reason": "No open upper petals.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 23,
+      "crop": null,
+      "branching_note": "Unresolved: closed buds.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 118511468,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:50:00.480Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        200241908,
+        200241926
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Rich violet petal background consistent in both photographs.",
+        "evidence": [
+          {
+            "photo_id": 200241926,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 410,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "At least two distinct purple bands/lines over half length on all five upper petals.",
+        "evidence": [
+          {
+            "photo_id": 200241926,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 410,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:50:16.288Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:50:17.438Z"
+        }
+      ],
+      "index": 24,
+      "crop": [
+        570,
+        850,
+        410
+      ],
+      "branching_note": "Some distal forks, but softness limits secondary branching.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 118710031,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:50:00.480Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        200599983
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "All three open flowers have violet/lilac upper petal background.",
+        "evidence": [
+          {
+            "photo_id": 200599983,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 435,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Distinct longitudinal darker-purple lines exceed half length on at least three petals.",
+        "evidence": [
+          {
+            "photo_id": 200599983,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 435,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T04:15:37.753Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:50:21.059Z"
+        }
+      ],
+      "index": 25,
+      "crop": [
+        620,
+        820,
+        435
+      ],
+      "branching_note": "Longitudinal lines visible; forks not reliably separable in the soft photograph.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 121173010,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:50:00.480Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        205022762
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Pale lavender-white interveinal tissue is near the white/purple boundary.",
+        "evidence": [
+          {
+            "photo_id": 205022762,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 480,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Multiple purple lines over half length on all five exposed petals.",
+        "evidence": [
+          {
+            "photo_id": 205022762,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 480,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:50:23.360Z"
+        }
+      ],
+      "index": 26,
+      "crop": [
+        290,
+        940,
+        480
+      ],
+      "branching_note": "Sparse forks suggested; blur prevents complete tracing.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 121740818,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:49:39.588Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        206561915,
+        206561976,
+        206562060
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Violet background in the front-facing flower; side view consistent, wide shot has same appearance.",
+        "evidence": [
+          {
+            "photo_id": 206561915,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 290,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Best front view is below 300 source pixels across, with soft detail.",
+        "evidence": [
+          {
+            "photo_id": 206561915,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 290,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:50:34.324Z"
+        }
+      ],
+      "index": 27,
+      "crop": [
+        630,
+        1260,
+        290
+      ],
+      "branching_note": "Unresolved: source size and soft detail.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 122916973,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:50:00.480Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        208170937,
+        208170973
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Neutral white tissue between magenta veins; second photo foliage only.",
+        "evidence": [
+          {
+            "photo_id": 208170937,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 875,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Many distinct magenta lines extend over half the length on all five petals.",
+        "evidence": [
+          {
+            "photo_id": 208170937,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 875,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T04:15:41.541Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:50:39.818Z"
+        }
+      ],
+      "index": 28,
+      "crop": [
+        690,
+        225,
+        875
+      ],
+      "branching_note": "Mostly long longitudinal lines, with a few distal Y-forks; no definite closed reticulum.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 124076011,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:50:00.480Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        210265098,
+        210265107
+      ],
+      "color": {
+        "value": "pink",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Warm rose-magenta upper petal background in both images; yellow throat excluded.",
+        "evidence": [
+          {
+            "photo_id": 210265098,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 455,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Distinct darker rose lines extend beyond half length on at least three petals.",
+        "evidence": [
+          {
+            "photo_id": 210265098,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 455,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "pink",
+          "verified_at": "2026-10-18T03:50:43.482Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:15:51.285Z"
+        }
+      ],
+      "index": 29,
+      "crop": [
+        820,
+        510,
+        455
+      ],
+      "branching_note": "Mainly long lines with sparse forks; fine junctions less visible in bright areas.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 124656877,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:49:39.588Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        211310035
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Very pale petal hue under a strong cool shadow cast; white versus pale purple not secure.",
+        "evidence": [
+          {
+            "photo_id": 211310035,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 230,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower about 230 source pixels across, below the 300-pixel rule.",
+        "evidence": [
+          {
+            "photo_id": 211310035,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 230,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 30,
+      "crop": [
+        330,
+        670,
+        230
+      ],
+      "branching_note": "Unresolved: small and shaded.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 127519723,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:51:22.675Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        216498110
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Very small pale blue/lilac appearance; insufficient confidence to separate blue, purple, or cast on white.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower below 300 source pixels.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 31,
+      "crop": null,
+      "branching_note": "Unresolved: small flower.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 133387831,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:51:22.676Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        227196516
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Distant flower below 150 source pixels.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Insufficient source resolution.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 32,
+      "crop": null,
+      "branching_note": "Unresolved: small flower.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 134624286,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:51:55.500Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        229500621,
+        229500859
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Normalized close inspection reveals extensive blown-out lower petals and lilac-tinted upper areas; cannot establish three reliably colored upper petals.",
+        "evidence": [
+          {
+            "photo_id": 229500859,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 270,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower is below 300 source pixels; bright glare also reduces detail.",
+        "evidence": [
+          {
+            "photo_id": 229500859,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 270,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 33,
+      "crop": [
+        400,
+        1180,
+        270
+      ],
+      "branching_note": "Unresolved: small and partly overexposed.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 135193767,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:51:22.676Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        230549133
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Small partly cupped flower about 115 source pixels across, below minimum.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Insufficient source size and angle.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 34,
+      "crop": null,
+      "branching_note": "Unresolved: small flower.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 137451401,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:51:55.501Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        234756895
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Lilac-violet interveinal background on the three exposed rear upper petals.",
+        "evidence": [
+          {
+            "photo_id": 234756895,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 630,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Three exposed rear upper petals each have multiple long purple veins; front reverse-side petal excluded.",
+        "evidence": [
+          {
+            "photo_id": 234756895,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 630,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:52:02.410Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:52:03.693Z"
+        }
+      ],
+      "index": 35,
+      "crop": [
+        585,
+        440,
+        630
+      ],
+      "branching_note": "A few Y-forks visible on rear petals; much of each vein remains longitudinal.",
+      "vein_color_note": "Purple veins visibly darker than lilac background.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 142160694,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:51:22.676Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        243684497
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower about 140 source pixels across, below the minimum.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Insufficient source size.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 36,
+      "crop": null,
+      "branching_note": "Unresolved: small flower.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 154642800,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:51:22.676Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        267225375,
+        269539215
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Both photographs miss focus on the flower; saturated magenta/purple hue cannot be confidently separated.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower detail out of focus in both photos.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 37,
+      "crop": null,
+      "branching_note": "Unresolved: blur.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 154838826,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:51:22.676Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        267581357
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Clear lilac-purple upper surface across five petals.",
+        "evidence": [
+          {
+            "photo_id": 267581357,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 275,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower below 300 source pixels.",
+        "evidence": [
+          {
+            "photo_id": 267581357,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 275,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:52:06.560Z"
+        }
+      ],
+      "index": 38,
+      "crop": [
+        800,
+        800,
+        275
+      ],
+      "branching_note": "Unresolved: insufficient source size.",
+      "vein_color_note": null,
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 159854837,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:51:55.501Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        276213522
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Dark rose-lilac lies near pink/purple boundary, with uneven shade; withheld.",
+        "evidence": [
+          {
+            "photo_id": 276213522,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1030,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Distinct darker lines extend over half length on all five petals.",
+        "evidence": [
+          {
+            "photo_id": 276213522,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1030,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:52:09.110Z"
+        }
+      ],
+      "index": 39,
+      "crop": [
+        620,
+        190,
+        1030
+      ],
+      "branching_note": "Fine branched network; possible connections cannot be confirmed at 300px.",
+      "vein_color_note": "Veins read gray-purple against rose-lilac background; pigment hue is uncertain in shade.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 163518960,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:51:55.501Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        282825903
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White background tissue between dark veins; insects do not obscure most petal area.",
+        "evidence": [
+          {
+            "photo_id": 282825903,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 605,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Multiple strongly contrasting lines across all five petals.",
+        "evidence": [
+          {
+            "photo_id": 282825903,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 605,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:52:11.232Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:16:00.828Z"
+        }
+      ],
+      "index": 40,
+      "crop": [
+        450,
+        575,
+        605
+      ],
+      "branching_note": "Clear distal Y-forks on multiple petals; no unequivocal closed mesh at 300px.",
+      "vein_color_note": "Veins read gray-purple on white petals, with darker/lighter segments along a single line.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 167137198,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:53:05.619Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        289443021
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "The several open flowers show white interveinal tissue consistently.",
+        "evidence": [
+          {
+            "photo_id": 289443021,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 275,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Individual flowers below 300 source pixels.",
+        "evidence": [
+          {
+            "photo_id": 289443021,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 275,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:54:20.650Z"
+        }
+      ],
+      "index": 41,
+      "crop": [
+        980,
+        910,
+        275
+      ],
+      "branching_note": "Unresolved: insufficient source size.",
+      "vein_color_note": "Fine purple-gray lines suggested; not enough detail for hue.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 170044428,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:53:26.321Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        294872418
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Neutral cream-white petal tissue; orange-yellow throat excluded.",
+        "evidence": [
+          {
+            "photo_id": 294872418,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 760,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Distinct gray-purple lines reach beyond half length on at least three petals at 300px.",
+        "evidence": [
+          {
+            "photo_id": 294872418,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 760,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "blocked",
+      "verified_fields": [],
+      "index": 42,
+      "crop": [
+        680,
+        330,
+        760
+      ],
+      "branching_note": "Sparse distal forks visible; mostly longitudinal lines.",
+      "vein_color_note": "Gray to very pale pink veins; shadow and relief may affect apparent hue.",
+      "timestamp_note": null,
+      "blocked_reason": "Observer only allows site curators to add observation fields",
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 175934502,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:53:05.622Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        305812351,
+        305812325,
+        305812384
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Very pale blue-white upper tissue near white/blue boundary, with different light in the two flower views.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Best flower view around the 300-pixel limit and soft; cannot establish sufficient detail confidently.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 43,
+      "crop": null,
+      "branching_note": "Unresolved: softness and small flower.",
+      "vein_color_note": "Purple lines visible but fine hue comparison unreliable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 177441981,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:53:05.622Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        308612084
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Clear violet background on the upper petals.",
+        "evidence": [
+          {
+            "photo_id": 308612084,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 285,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower below 300 source pixels.",
+        "evidence": [
+          {
+            "photo_id": 308612084,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 285,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:54:32.739Z"
+        }
+      ],
+      "index": 44,
+      "crop": [
+        545,
+        800,
+        285
+      ],
+      "branching_note": "Unresolved: insufficient source size.",
+      "vein_color_note": "Too little detail to separate vein and background hue.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 203300661,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:53:26.323Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        359165728,
+        359165816,
+        359165860,
+        359165864
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Three rear/side upper petals show neutral white-gray background consistently in four similar photos; blown highlights on front petals excluded.",
+        "evidence": [
+          {
+            "photo_id": 359165728,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 470,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Three usable petals have gray-pink lines, but glare and surface texture make the contrast threshold borderline.",
+        "evidence": [
+          {
+            "photo_id": 359165728,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 470,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:54:40.359Z"
+        }
+      ],
+      "index": 45,
+      "crop": [
+        835,
+        525,
+        470
+      ],
+      "branching_note": "Unresolved: glare and fine texture.",
+      "vein_color_note": "Fine lines read gray-purple, varying with sunlight within a petal.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 212818728,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:53:26.323Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        376089950,
+        376089965,
+        376089968,
+        376089985,
+        376089966
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Close review shows only two securely exposed upper petals; others are folded, occluded or shown from the side. White appearance is plausible but fails the three-petal rule.",
+        "evidence": [
+          {
+            "photo_id": 376089965,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 720,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Folded and occluded upper surfaces plus mixed glare/shadow prevent three clear vein networks.",
+        "evidence": [
+          {
+            "photo_id": 376089965,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 720,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 46,
+      "crop": [
+        910,
+        1040,
+        720
+      ],
+      "branching_note": "Unresolved: oblique view and glare.",
+      "vein_color_note": "Some pale pink lines; insufficient consistent exposure for hue.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 213273720,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:53:26.323Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        376904362
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White upper tissue in front flower, consistent with background flower.",
+        "evidence": [
+          {
+            "photo_id": 376904362,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 510,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "At least three petals show two or more discrete gray-purple lines extending beyond half length.",
+        "evidence": [
+          {
+            "photo_id": 376904362,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 510,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:54:54.480Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:16:46.503Z"
+        }
+      ],
+      "index": 47,
+      "crop": [
+        775,
+        415,
+        510
+      ],
+      "branching_note": "Occasional forks visible; thin lines become indistinct distally.",
+      "vein_color_note": "Fine gray-purple lines under cool canopy light.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 214927467,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:53:26.323Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        379946271,
+        379947868
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Rose-lilac/purple background lies near pink-purple boundary; wider second photo too small to resolve hue.",
+        "evidence": [
+          {
+            "photo_id": 379946271,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1540,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 4
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Four exposed upper petals each show distinct long darker lines; leaf-occluded part excluded.",
+        "evidence": [
+          {
+            "photo_id": 379946271,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1540,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 4
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:54:58.366Z"
+        }
+      ],
+      "index": 48,
+      "crop": [
+        190,
+        265,
+        1540
+      ],
+      "branching_note": "Repeated distal forks across several petals; network remains mainly longitudinal, with no secure closed loops.",
+      "vein_color_note": "Darker purple-magenta veins against similar-hued background; contrast more evident than hue difference.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 217545480,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:53:05.622Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        384864315
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Saturated violet upper petals across the open flower.",
+        "evidence": [
+          {
+            "photo_id": 384864315,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 665,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Strong direct light, glare and petal relief prevent confident vein-contrast scoring.",
+        "evidence": [
+          {
+            "photo_id": 384864315,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 665,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:55:06.319Z"
+        }
+      ],
+      "index": 49,
+      "crop": [
+        600,
+        490,
+        665
+      ],
+      "branching_note": "Unresolved: specular highlights and relief.",
+      "vein_color_note": "Cannot separate vein hue from background and reflected light.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 218580827,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:53:26.323Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        386807404,
+        386807421
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White interveinal tissue with purple-gray veins; wider view is consistent.",
+        "evidence": [
+          {
+            "photo_id": 386807404,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1260,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Numerous distinct pigmented lines over half length on all five petals.",
+        "evidence": [
+          {
+            "photo_id": 386807404,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1260,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:55:10.326Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:17:01.445Z"
+        }
+      ],
+      "index": 50,
+      "crop": [
+        250,
+        430,
+        1260
+      ],
+      "branching_note": "Repeated distal forks; apparent fine mesh is confounded by grain and petal texture.",
+      "vein_color_note": "Veins appear gray-purple with some pinker segments; grain affects hue precision.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 218778730,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:55:55.377Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        387173273
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Small side-facing flower lacks three assessable upper petals.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Unsuitable angle and resolution.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 51,
+      "crop": null,
+      "branching_note": "Unresolved: view/size.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 221246202,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:56:10.496Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        391802607
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Pale lilac upper background is apparent across five petals.",
+        "evidence": [
+          {
+            "photo_id": 391802607,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1200,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "At least three petals show multiple fine gray-purple lines extending beyond half length at 300px.",
+        "evidence": [
+          {
+            "photo_id": 391802607,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1200,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:56:18.804Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:17:14.649Z"
+        }
+      ],
+      "index": 52,
+      "crop": [
+        215,
+        355,
+        1200
+      ],
+      "branching_note": "Mostly long lines with sparse forks; many fine distal lines are unresolved.",
+      "vein_color_note": "Gray-violet lines on pale lilac; saturation is weak.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 221711637,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:55:55.379Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        392641586,
+        392641621
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Small flower in deep cool shadow; pale lilac versus white cannot be separated confidently.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Small, shaded, cupped flower with insufficient detail.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 53,
+      "crop": null,
+      "branching_note": "Unresolved: size and shade.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 224059851,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:56:10.497Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        397065568
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White upper petal tissue in three exposed front/side petals.",
+        "evidence": [
+          {
+            "photo_id": 397065568,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 690,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Three exposed front/right upper petals show at least two long discrete purple lines at 300px.",
+        "evidence": [
+          {
+            "photo_id": 397065568,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 690,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:56:24.871Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:56:26.111Z"
+        }
+      ],
+      "index": 54,
+      "crop": [
+        150,
+        1280,
+        690
+      ],
+      "branching_note": "Several fork-like junctions visible; softness prevents reliable branch counts.",
+      "vein_color_note": "Pale purple-gray lines, slightly warmer near center.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 224945056,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:55:55.379Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        398749793,
+        398749837
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White upper background in open flowers in both photographs.",
+        "evidence": [
+          {
+            "photo_id": 398749793,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 190,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower below 300 source pixels.",
+        "evidence": [
+          {
+            "photo_id": 398749793,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 190,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:56:52.277Z"
+        }
+      ],
+      "index": 55,
+      "crop": [
+        690,
+        1035,
+        190
+      ],
+      "branching_note": "Unresolved: small flower.",
+      "vein_color_note": "Too small to assign hue.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 239565096,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:55:55.379Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        426690688,
+        426690677,
+        426690678,
+        426690679
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Cream-white upper petal background in front-facing flower; side view consistent; remaining photos show leaves.",
+        "evidence": [
+          {
+            "photo_id": 426690688,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 840,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Front-facing flower is out of focus; side photograph exposes reverse surfaces.",
+        "evidence": [
+          {
+            "photo_id": 426690688,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 840,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:56:56.456Z"
+        }
+      ],
+      "index": 56,
+      "crop": [
+        690,
+        160,
+        840
+      ],
+      "branching_note": "Unresolved: blur.",
+      "vein_color_note": "Pinkish traces near center; blur prevents hue assessment.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 259825317,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:55:55.379Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        466492038,
+        466492058
+      ],
+      "color": {
+        "value": null,
+        "status": "no_open_flower",
+        "confidence": "not_applicable",
+        "reason": "Both photographs show a closed flower from the outside.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "no_open_flower",
+        "confidence": "not_applicable",
+        "reason": "No exposed upper surface.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 57,
+      "crop": null,
+      "branching_note": "Unresolved: closed flower.",
+      "vein_color_note": "Outside petal color excluded.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 260297658,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:56:10.497Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        467429407,
+        467429460,
+        467429475,
+        467429492
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White/ivory background consistent across four views.",
+        "evidence": [
+          {
+            "photo_id": 467429407,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 400,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Fine pink-gray veins are distinct over half length on at least three petals at 300px.",
+        "evidence": [
+          {
+            "photo_id": 467429407,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 400,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [
+        {
+          "field_id": 2860,
+          "value": "Oxalidaceae"
+        },
+        {
+          "field_id": 456,
+          "value": "Alysha Schjelderup"
+        },
+        {
+          "field_id": 86,
+          "value": "1"
+        },
+        {
+          "field_id": 51,
+          "value": "Found directly at trailhead of campus reserve behind Baskin Engineering building. About 5 meters behind the trail sign."
+        },
+        {
+          "field_id": 1374,
+          "value": "Forest"
+        },
+        {
+          "field_id": 10044,
+          "value": "Redwood forest understory, limited light, damp soil."
+        },
+        {
+          "field_id": 32,
+          "value": "Rubus ursinus, Polystichum munitum, Sequoia sempervirens."
+        },
+        {
+          "field_id": 5665,
+          "value": "Nutt., 1838"
+        },
+        {
+          "field_id": 68,
+          "value": "273"
+        },
+        {
+          "field_id": 3499,
+          "value": "Flowering"
+        }
+      ],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:56:59.682Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:57:01.036Z"
+        }
+      ],
+      "index": 58,
+      "crop": [
+        510,
+        960,
+        400
+      ],
+      "branching_note": "Sparse distal forks; finer branches cannot be traced consistently.",
+      "vein_color_note": "Very pale pink-gray lines on cream-white tissue.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 260618638,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:55:55.379Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        468062915,
+        468062920,
+        468062922
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White interveinal tissue in both usable flower views; wide habitat image consistent.",
+        "evidence": [
+          {
+            "photo_id": 468062915,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 230,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "All individual flower views below 300 source pixels.",
+        "evidence": [
+          {
+            "photo_id": 468062915,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 230,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [
+        {
+          "field_id": 2860,
+          "value": "Oxalidaceae"
+        },
+        {
+          "field_id": 456,
+          "value": "Emilia Prograce"
+        },
+        {
+          "field_id": 86,
+          "value": "2"
+        },
+        {
+          "field_id": 51,
+          "value": "Santa Cruz, California. UCSC Campus Natural Reserve. Found along spring road trail. Near remnants of an old trail guide sign."
+        },
+        {
+          "field_id": 1374,
+          "value": "Forest"
+        },
+        {
+          "field_id": 10044,
+          "value": "Low sunlight. Heavy tree cover. Deep redwood needle litter. Soil very moist."
+        },
+        {
+          "field_id": 32,
+          "value": "Sequoia sempervirens, Notholithocarpus densiflorus, Stachys bullata"
+        },
+        {
+          "field_id": 5665,
+          "value": "R. Knuth, 1954"
+        },
+        {
+          "field_id": 68,
+          "value": "262"
+        },
+        {
+          "field_id": 3499,
+          "value": "Flowering"
+        }
+      ],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:57:05.314Z"
+        }
+      ],
+      "index": 59,
+      "crop": [
+        590,
+        1300,
+        230
+      ],
+      "branching_note": "Unresolved: small flowers.",
+      "vein_color_note": "Insufficient detail for hue.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 261807305,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:56:10.497Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        470422808,
+        470422831,
+        470422845,
+        470422860,
+        470422869
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Lilac-violet background in the close and wider flower views; leaf views excluded.",
+        "evidence": [
+          {
+            "photo_id": 470422808,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 660,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Many strong purple lines beyond half length on at least three petals, despite irregular edges.",
+        "evidence": [
+          {
+            "photo_id": 470422808,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 660,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:57:09.297Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:57:10.615Z"
+        }
+      ],
+      "index": 60,
+      "crop": [
+        450,
+        695,
+        660
+      ],
+      "branching_note": "Repeated distal forks visible on multiple petals; apparent branch density varies between petals.",
+      "vein_color_note": "Purple to magenta veins, darker near flower center; no secure distinct hue class from other purple veins.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 263320108,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:58:17.778Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        473029049
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Distinct violet background across five upper petals; lower closed flower excluded.",
+        "evidence": [
+          {
+            "photo_id": 473029049,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1020,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Strong darker purple lines over half length on five petals.",
+        "evidence": [
+          {
+            "photo_id": 473029049,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1020,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:58:32.336Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:17:30.403Z"
+        }
+      ],
+      "index": 61,
+      "crop": [
+        305,
+        640,
+        1020
+      ],
+      "branching_note": "Longitudinal lines with some distal forks; line thickness masks fine junctions.",
+      "vein_color_note": "Dark purple, same broad hue as background.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 266706266,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:58:05.035Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        479207358,
+        479207377
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White background in both photographs despite exposure difference.",
+        "evidence": [
+          {
+            "photo_id": 479207358,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 185,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower below 300 source pixels.",
+        "evidence": [
+          {
+            "photo_id": 479207358,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 185,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:58:36.385Z"
+        }
+      ],
+      "index": 62,
+      "crop": [
+        925,
+        695,
+        185
+      ],
+      "branching_note": "Unresolved: source size.",
+      "vein_color_note": "Unscorable at this size.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 266997543,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:58:05.035Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        479764026
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Lowest open flower has white upper background, consistent with the other flowers; about 155 source pixels across.",
+        "evidence": [
+          {
+            "photo_id": 479764026,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 160,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Low-resolution source; flower below 300 pixels.",
+        "evidence": [
+          {
+            "photo_id": 479764026,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 160,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T03:58:40.217Z"
+        }
+      ],
+      "index": 63,
+      "crop": [
+        175,
+        490,
+        160
+      ],
+      "branching_note": "Unresolved: source size.",
+      "vein_color_note": "Dark lines too small for hue.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 267242736,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:58:05.035Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        480233810
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Rose-lilac flower near pink-purple boundary, with insufficient detail for a secure hue judgment.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower below 300 source pixels and soft.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 64,
+      "crop": null,
+      "branching_note": "Unresolved: source size.",
+      "vein_color_note": "No reliable vein hue.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 269478378,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:58:17.779Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        484529161,
+        484529223,
+        484529279
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Pale periwinkle/lilac upper tissue near blue-purple boundary; other photos show mainly outside surfaces.",
+        "evidence": [
+          {
+            "photo_id": 484529223,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 395,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 4
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Front-facing cupped flower has at least three upper petals with multiple long magenta-purple lines.",
+        "evidence": [
+          {
+            "photo_id": 484529223,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 395,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 4
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:58:50.255Z"
+        }
+      ],
+      "index": 65,
+      "crop": [
+        600,
+        870,
+        395
+      ],
+      "branching_note": "Repeated Y-forks prominent around the cup; softness prevents confirming apparent closed connections.",
+      "vein_color_note": "Warm magenta-purple lines against cooler background; exact pink versus purple class uncertain.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 278123426,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:58:05.035Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        499385980
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flowers small, partly hidden by leaves, without a usable three-petal upper view.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Occluded and too small.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 66,
+      "crop": null,
+      "branching_note": "Unresolved: occlusion.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 278895136,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:58:05.035Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        500796131
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Leaf occlusion and oblique angle leave fewer than three clear upper petals.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Insufficient exposed upper surface.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 67,
+      "crop": null,
+      "branching_note": "Unresolved: occlusion and angle.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 281932712,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:58:17.779Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        506486838
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Very pale cool blue-white tissue under wet/shaded conditions; white versus blue not secure.",
+        "evidence": [
+          {
+            "photo_id": 506486838,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 620,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "At least three exposed petals have strong purple lines over half length; droplets on tips excluded.",
+        "evidence": [
+          {
+            "photo_id": 506486838,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 620,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 3
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T03:58:54.143Z"
+        }
+      ],
+      "index": 68,
+      "crop": [
+        675,
+        1300,
+        620
+      ],
+      "branching_note": "Several clear distal forks on exposed petals; droplets hide much of the petal margins.",
+      "vein_color_note": "Purple-magenta lines; variable brightness along the same vein.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 284620563,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:58:05.035Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        511529208
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Very pale rose/lilac upper tissue near white/pink/purple boundary; damage and small size reduce certainty.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower below 300 source pixels.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 69,
+      "crop": null,
+      "branching_note": "Unresolved: source size.",
+      "vein_color_note": "Insufficient detail.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 284729546,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T03:58:17.779Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        511739153
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Clear cool lilac-violet background across five petals.",
+        "evidence": [
+          {
+            "photo_id": 511739153,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 335,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Noise and soft focus make vein pigmentation versus folds uncertain at the required scale.",
+        "evidence": [
+          {
+            "photo_id": 511739153,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 335,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [
+        {
+          "field_id": 994,
+          "value": "redwood forest"
+        }
+      ],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T03:58:58.475Z"
+        }
+      ],
+      "index": 70,
+      "crop": [
+        510,
+        1160,
+        335
+      ],
+      "branching_note": "Unresolved: grain and softness.",
+      "vein_color_note": "Dark violet-gray lines on violet background.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 286981859,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:00:32.567Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        515983121,
+        515983132
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White/ivory upper surfaces in both views.",
+        "evidence": [
+          {
+            "photo_id": 515983121,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 570,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Soft focus and petal curvature make gray lines versus relief uncertain at 300px.",
+        "evidence": [
+          {
+            "photo_id": 515983121,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 570,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T04:00:40.380Z"
+        }
+      ],
+      "index": 71,
+      "crop": [
+        550,
+        970,
+        570
+      ],
+      "branching_note": "Unresolved: blur and curvature.",
+      "vein_color_note": "Gray-pink lines too faint for a secure hue category.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 290497359,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:00:04.263Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        522594843
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Very pale blue-white flower in cool canopy light; blue versus a cast on white is uncertain.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower below 300 source pixels.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 72,
+      "crop": null,
+      "branching_note": "Unresolved: source size.",
+      "vein_color_note": "Insufficient detail.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 294114815,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:00:32.569Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        529361899
+      ],
+      "color": {
+        "value": "pink",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Pale warm rose background, consistent in both open flowers.",
+        "evidence": [
+          {
+            "photo_id": 529361899,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 340,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "faint_or_not_visible",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Petal texture is visible, but only faint short basal lines; fewer than three petals meet the long pigmented-line threshold.",
+        "evidence": [
+          {
+            "photo_id": 529361899,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 340,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "pink",
+          "verified_at": "2026-10-18T04:00:42.562Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "faint_or_not_visible",
+          "verified_at": "2026-10-18T04:17:44.579Z"
+        }
+      ],
+      "index": 73,
+      "crop": [
+        920,
+        360,
+        340
+      ],
+      "branching_note": "No reliable branching trace at standardized scale; not evidence of anatomical absence.",
+      "vein_color_note": "Fine gray-pink traces on pale pink background.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 294875487,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:00:04.263Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        530797019
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Small very pale rose/lilac appearance, uncertain white versus pigmented background.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower below 300 source pixels.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 74,
+      "crop": null,
+      "branching_note": "Unresolved: source size.",
+      "vein_color_note": "Fine pink-purple lines cannot be resolved reliably.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 295899118,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:00:32.569Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        532736996
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Upper petals appear rose-pink while lower petals appear lilac; lighting/hue boundary unresolved.",
+        "evidence": [
+          {
+            "photo_id": 532736996,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 455,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Three or more upper petals each show multiple discrete lines extending beyond half exposed length.",
+        "evidence": [
+          {
+            "photo_id": 532736996,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 455,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:00:46.417Z"
+        }
+      ],
+      "index": 75,
+      "crop": [
+        615,
+        695,
+        455
+      ],
+      "branching_note": "A few distal forks suggested; fine branch order not securely traceable.",
+      "vein_color_note": "Veins shift from pink-purple to gray-violet among differently lit petals.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 298270903,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:00:32.569Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        537244847,
+        537244900
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Flower appears nearly white in wider view and pale blue in close view; lighting/cast versus pigmentation uncertain.",
+        "evidence": [
+          {
+            "photo_id": 537244900,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 530,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Several discrete purple-gray lines exceed half length on five petals in close view.",
+        "evidence": [
+          {
+            "photo_id": 537244900,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 530,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:00:50.222Z"
+        }
+      ],
+      "index": 76,
+      "crop": [
+        470,
+        505,
+        530
+      ],
+      "branching_note": "Sparse clear distal Y-forks, particularly on lower petal; others mostly longitudinal.",
+      "vein_color_note": "Gray-purple veins; saturation weak and varying among petals.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 315606328,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:00:04.263Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        570223796,
+        570726239,
+        570726266,
+        570726299
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Only a wilted/collapsed flower and reverse-side view; no fresh three-petal upper surface.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Senescence and folding prevent assessment.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 77,
+      "crop": null,
+      "branching_note": "Unresolved: senescence.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 325980036,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:00:04.263Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        590307867
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Several target flowers are white; small yellow flower at lower-left belongs to a different-looking plant and is excluded.",
+        "evidence": [
+          {
+            "photo_id": 590307867,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 230,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Individual flowers below 300 source pixels and brightly exposed.",
+        "evidence": [
+          {
+            "photo_id": 590307867,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 230,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T04:00:58.989Z"
+        }
+      ],
+      "index": 78,
+      "crop": [
+        715,
+        410,
+        230
+      ],
+      "branching_note": "Unresolved: size and glare.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 333824221,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:00:32.569Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        606089704,
+        606089720,
+        606089736,
+        606089748
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Violet upper background consistent across all flower views.",
+        "evidence": [
+          {
+            "photo_id": 606089704,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 335,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Fine texture and highlights are prominent, but whole-flower and cropped macro views do not support a confident assessment of three complete vein networks.",
+        "evidence": [
+          {
+            "photo_id": 606089704,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 335,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T04:01:01.495Z"
+        }
+      ],
+      "index": 79,
+      "crop": [
+        840,
+        555,
+        335
+      ],
+      "branching_note": "Unresolved: focus/partial petals.",
+      "vein_color_note": "Veins do not clearly separate in hue from violet background.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 343235423,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:00:32.569Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        625192632
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Saturated violet-magenta upper petals, with a cool purple appearance.",
+        "evidence": [
+          {
+            "photo_id": 625192632,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 320,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "faint_or_not_visible",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Flower texture and center are resolved, but pigmented lines are faint/basal and do not meet the conspicuous threshold across three petals.",
+        "evidence": [
+          {
+            "photo_id": 625192632,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 320,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T04:01:05.175Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "faint_or_not_visible",
+          "verified_at": "2026-10-18T04:01:06.504Z"
+        }
+      ],
+      "index": 80,
+      "crop": [
+        600,
+        380,
+        320
+      ],
+      "branching_note": "Unresolved: low vein contrast; no anatomical absence inferred.",
+      "vein_color_note": "No independently discernible vein hue at this scale.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 343717584,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:02:47.024Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        626173553,
+        626173552
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Two photos differ strongly in exposure/white balance: pale blue-lilac versus washed white-yellow. Background hue uncertain.",
+        "evidence": [
+          {
+            "photo_id": 626173553,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 340,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Diffuse-light image clearly shows multiple long purple lines on at least three petals; overexposed view excluded.",
+        "evidence": [
+          {
+            "photo_id": 626173553,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 340,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:02:55.124Z"
+        }
+      ],
+      "index": 81,
+      "crop": [
+        650,
+        890,
+        340
+      ],
+      "branching_note": "Distinct distal Y-forks on several petals in diffuse-light view; glare obscures details in second view.",
+      "vein_color_note": "Same veins appear purple in diffuse light and yellow-gray/pale in overexposed image; poor basis for a hue field.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 344098956,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:02:47.026Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        626924015,
+        626924058,
+        626924121,
+        626924163,
+        626924198,
+        626924229,
+        626924259
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Rich rose-violet/magenta lies near pink-purple boundary with cool scene cast; no secure hue class across views.",
+        "evidence": [
+          {
+            "photo_id": 626924015,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 850,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Veins are visible but low contrast against similar-colored petals; threshold across three petals is borderline.",
+        "evidence": [
+          {
+            "photo_id": 626924015,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 850,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 82,
+      "crop": [
+        310,
+        720,
+        850
+      ],
+      "branching_note": "Few fork-like lines visible, but soft/low-contrast junctions cannot be traced reliably.",
+      "vein_color_note": "Veins similar in hue to the pigmented background; weak separation.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 344609687,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:02:04.847Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        627920899
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Cool violet/lilac background in both exposed open flowers.",
+        "evidence": [
+          {
+            "photo_id": 627920899,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 265,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flowers below 300 source pixels.",
+        "evidence": [
+          {
+            "photo_id": 627920899,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 265,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T04:02:57.818Z"
+        }
+      ],
+      "index": 83,
+      "crop": [
+        440,
+        880,
+        265
+      ],
+      "branching_note": "Unresolved: source size.",
+      "vein_color_note": "Too small to assess hue reliably.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 347384272,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:02:04.847Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        633379632
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Strongly oblique, mostly outside view with blown highlights; fewer than three assessable upper petals.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Unsuitable view and glare.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 84,
+      "crop": null,
+      "branching_note": "Unresolved: angle/glare.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 347719180,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:02:47.026Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        634046692,
+        634046721,
+        634046758
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Rose-violet near pink-purple boundary under a cool scene cast; neither class secure.",
+        "evidence": [
+          {
+            "photo_id": 634046692,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 390,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Soft focus and overlapping cupped petals prevent a confident contrast decision.",
+        "evidence": [
+          {
+            "photo_id": 634046692,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 390,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 85,
+      "crop": [
+        480,
+        840,
+        390
+      ],
+      "branching_note": "Unresolved: focus and overlap.",
+      "vein_color_note": "Little separation from background hue; soft detail.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 348219966,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:02:04.847Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        635041241
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Many flowers visible but each below 150 source pixels; white flowers of another plant also present.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Insufficient individual-flower source size.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 86,
+      "crop": null,
+      "branching_note": "Unresolved: source size.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 358173497,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:02:47.026Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        653363110
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White interveinal upper tissue on all five petals.",
+        "evidence": [
+          {
+            "photo_id": 653363110,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 435,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "At least two distinct gray-purple lines over half length on all five petals at 300px.",
+        "evidence": [
+          {
+            "photo_id": 653363110,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 435,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T04:02:59.961Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:03:01.242Z"
+        }
+      ],
+      "index": 87,
+      "crop": [
+        1000,
+        335,
+        435
+      ],
+      "branching_note": "Sparse distal forks on multiple petals, mostly longitudinal organization.",
+      "vein_color_note": "Fine gray-purple to pink lines, weak saturation.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 360761568,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:02:04.847Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        658322955
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Cupped flower below about 150 source pixels; insufficient color evidence.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Insufficient source size.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 88,
+      "crop": null,
+      "branching_note": "Unresolved: source size.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 361316839,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:02:47.026Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        659394020
+      ],
+      "color": {
+        "value": "purple",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Lilac-violet upper tissue around a white/yellow center.",
+        "evidence": [
+          {
+            "photo_id": 659394020,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 410,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Some lines present, but glare/softness and low contrast make the three-petal threshold borderline.",
+        "evidence": [
+          {
+            "photo_id": 659394020,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 410,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "purple",
+          "verified_at": "2026-10-18T04:03:03.551Z"
+        }
+      ],
+      "index": 89,
+      "crop": [
+        400,
+        860,
+        410
+      ],
+      "branching_note": "Unresolved: fine low-contrast junctions.",
+      "vein_color_note": "Vein hue not clearly separable from background.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 365473769,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:02:04.847Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        667273459,
+        667273532
+      ],
+      "color": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Wet, folded petals with droplets and soft focus lack three reliably assessable upper surfaces.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Wet collapsed surfaces and blur.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 90,
+      "crop": null,
+      "branching_note": "Unresolved: wet/folded petals.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 365612485,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:06:04.791Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        667538733
+      ],
+      "color": {
+        "value": null,
+        "status": "no_open_flower",
+        "confidence": "not_applicable",
+        "reason": "Only a hanging closed flower with outer surfaces visible.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "no_open_flower",
+        "confidence": "not_applicable",
+        "reason": "No assessable open upper petals.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 91,
+      "crop": null,
+      "branching_note": "Unscorable: closed flower.",
+      "vein_color_note": "Unscorable: outer surface only.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 367872730,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:06:04.792Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        671844918,
+        671844964
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Small pale blue-gray/white flower; background hue uncertain in cool illumination.",
+        "evidence": []
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Flower below 300 source pixels; second photo shows foliage.",
+        "evidence": []
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 92,
+      "crop": null,
+      "branching_note": "Unresolved: source size.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 374804145,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:06:37.925Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        685112848
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Neutral white upper tissue on five open petals.",
+        "evidence": [
+          {
+            "photo_id": 685112848,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 350,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Very fine low-contrast lines, marginal focus and bright petals leave the three-petal contrast threshold uncertain at 300px.",
+        "evidence": [
+          {
+            "photo_id": 685112848,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 350,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T04:06:43.802Z"
+        }
+      ],
+      "index": 93,
+      "crop": [
+        930,
+        540,
+        350
+      ],
+      "branching_note": "Fine longitudinal lines; junctions not resolved reliably.",
+      "vein_color_note": "Pale gray lines with weak saturation; hue uncertain.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 375733116,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:06:37.927Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        686925417,
+        686925428
+      ],
+      "color": {
+        "value": "blue",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "Cool blue interveinal upper tissue in both photographs.",
+        "evidence": [
+          {
+            "photo_id": 686925417,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 720,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "At least two distinct dark lines over half petal length on at least three petals at 300px.",
+        "evidence": [
+          {
+            "photo_id": 686925417,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 720,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "blue",
+          "verified_at": "2026-10-18T04:06:46.283Z"
+        },
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:06:47.658Z"
+        }
+      ],
+      "index": 94,
+      "crop": [
+        335,
+        530,
+        720
+      ],
+      "branching_note": "Longitudinal veins with visible distal Y-forks on several petals; no discrete new arrangement.",
+      "vein_color_note": "Blue-gray to purple lines on blue petal background; scene has a cool cast.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 377017094,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:06:37.927Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        689396749
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Normalized crop shows pale blue-white tissue; blur and cool cast prevent a confident white-versus-blue choice.",
+        "evidence": [
+          {
+            "photo_id": 689396749,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 580,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Fine lines cannot be judged in out-of-focus flower.",
+        "evidence": [
+          {
+            "photo_id": 689396749,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 580,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 95,
+      "crop": [
+        485,
+        645,
+        580
+      ],
+      "branching_note": "Unresolved: blur.",
+      "vein_color_note": "Unscorable: blur.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 380719456,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:06:37.927Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        696547613
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Very pale blue-white interveinal tissue; cannot confidently separate blue from a cool white photograph.",
+        "evidence": [
+          {
+            "photo_id": 696547613,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 770,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "At least two distinct purple lines over half length on each of at least three petals at 300px.",
+        "evidence": [
+          {
+            "photo_id": 696547613,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 770,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:06:51.581Z"
+        }
+      ],
+      "index": 96,
+      "crop": [
+        160,
+        805,
+        770
+      ],
+      "branching_note": "Mostly longitudinal lines with sparse distal forks; number differs among petals.",
+      "vein_color_note": "Purple lines on pale blue-white background.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 388475200,
+      "taxon_id": 1464017,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:06:04.792Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        711491354,
+        711491392
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White upper tissue in the first photo; second view is consistent.",
+        "evidence": [
+          {
+            "photo_id": 711491354,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 295,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Each flower below 300 source pixels.",
+        "evidence": [
+          {
+            "photo_id": 711491354,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 295,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T04:06:59.454Z"
+        }
+      ],
+      "index": 97,
+      "crop": [
+        630,
+        770,
+        295
+      ],
+      "branching_note": "Unresolved: source size.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 391771143,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:06:37.927Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        717896335,
+        717896410,
+        717896464
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "Very pale blue-white upper petals; cool lighting and reflected skin color make classification uncertain.",
+        "evidence": [
+          {
+            "photo_id": 717896410,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1250,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Close-up has enough source pixels but substantial blur; fine contrast threshold not reliable on three petals.",
+        "evidence": [
+          {
+            "photo_id": 717896410,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 1250,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "not_attempted",
+      "verified_fields": [],
+      "index": 98,
+      "crop": [
+        200,
+        90,
+        1250
+      ],
+      "branching_note": "Junctions unresolved in soft upper-surface view; underside view cannot substitute.",
+      "vein_color_note": "Pink-gray lines beside pink skin; reflected light and blur confound hue.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": null
+    },
+    {
+      "observation_id": 396600263,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:06:37.927Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        727311387,
+        727311413
+      ],
+      "color": {
+        "value": null,
+        "status": "uncertain_color",
+        "confidence": "not_applicable",
+        "reason": "White versus very pale lilac background remains ambiguous beside strong purple veins.",
+        "evidence": [
+          {
+            "photo_id": 727311387,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 825,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 4
+          }
+        ]
+      },
+      "veins": {
+        "value": "conspicuous",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "At least two distinct purple lines on four exposed petals extend over half length at 300px.",
+        "evidence": [
+          {
+            "photo_id": 727311387,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 825,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 4
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 23007,
+          "value": "conspicuous",
+          "verified_at": "2026-10-18T04:07:02.050Z"
+        }
+      ],
+      "index": 99,
+      "crop": [
+        580,
+        295,
+        825
+      ],
+      "branching_note": "Longitudinal lines with occasional distal splits; folded fifth petal cannot be compared.",
+      "vein_color_note": "Purple to pink-purple lines; not a separately validated color class.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    },
+    {
+      "observation_id": 402076814,
+      "taxon_id": 47757,
+      "reviewer": "Codex single-agent visual review; not an independent-rater calibration",
+      "reviewed_at": "2026-10-18T04:06:37.927Z",
+      "protocol_version": "1.0.0",
+      "examined_photo_ids": [
+        738076697,
+        738076699
+      ],
+      "color": {
+        "value": "white",
+        "status": "scored",
+        "confidence": "high",
+        "reason": "White interveinal upper tissue on five petals; purple lines and yellow-green throat excluded.",
+        "evidence": [
+          {
+            "photo_id": 738076697,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 285,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "veins": {
+        "value": null,
+        "status": "unscorable",
+        "confidence": "not_applicable",
+        "reason": "Largest flower below 300 source pixels.",
+        "evidence": [
+          {
+            "photo_id": 738076697,
+            "flower": "Manually selected open flower; crop coordinates in decisions.json; diameter is an approximate visual measurement.",
+            "source_diameter_px": 285,
+            "assessment_diameter_px": 300,
+            "visible_upper_petals": 5
+          }
+        ]
+      },
+      "existing_fields": [],
+      "write_status": "verified",
+      "verified_fields": [
+        {
+          "field_id": 8625,
+          "value": "white",
+          "verified_at": "2026-10-18T04:07:05.483Z"
+        }
+      ],
+      "index": 100,
+      "crop": [
+        440,
+        970,
+        285
+      ],
+      "branching_note": "Unresolved: source size.",
+      "vein_color_note": "Unscorable.",
+      "timestamp_note": null,
+      "blocked_reason": null,
+      "api_verified_at": "2026-10-18T04:21:41.397Z"
+    }
+  ]
+}
