@@ -5,7 +5,7 @@ const config = JSON.parse(await readFile(new URL('../docs/data/project.json', im
 try {
   const data = await fetchFieldRecords(config, { onProgress: ({ field, loaded }) => console.log(`${field}: ${loaded} unique records`) });
   if (!data.complete) throw new Error('Page safety limit reached. Refusing to replace the snapshot with partial data.');
-  const snapshot = { ...data, protocolVersion: config.protocolVersion, source: 'iNaturalist public API v1; unauthenticated', fields: [config.colorField, config.legacyColorField, ...(config.patternField.id ? [config.patternField] : [])], records: data.records.map(publicRecord) };
+  const snapshot = { ...data, protocolVersion: config.protocolVersion, source: 'iNaturalist public API v1; unauthenticated', fields: Object.values(config.fields), records: data.records.map(publicRecord) };
   const destination = new URL('../docs/data/observations.json', import.meta.url);
   const temp = new URL('../docs/data/observations.json.tmp', import.meta.url);
   await writeFile(temp, JSON.stringify(snapshot, null, 2) + '\n');

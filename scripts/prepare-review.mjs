@@ -1,7 +1,7 @@
 import { readFile, writeFile, mkdir, readdir, rename } from 'node:fs/promises';
 import { makeClient, queryUrl } from '../docs/js/api.js';
 const config = JSON.parse(await readFile(new URL('../docs/data/project.json', import.meta.url), 'utf8'));
-const root = new URL('../review-work/', import.meta.url);
+const root = new URL(`../review-work/protocol-${config.protocolVersion}/`, import.meta.url);
 await mkdir(root, { recursive: true });
 const checkpoint = new URL('inventory-checkpoint.json', root);
 const request = makeClient({ interval: config.requestIntervalMs });
@@ -14,8 +14,8 @@ if (!state) {
   state = { scope, protocolVersion: config.protocolVersion, startedAt: new Date().toISOString(), cutoffId: latest.results[0]?.id || 0, cursor: 0, count: 0, complete: false };
   await atomic(checkpoint, JSON.stringify(state, null, 2));
 }
-if (state.scope !== scope) throw new Error('Taxon scope differs from checkpoint. Preserve this inventory and start a separate review-work directory.');
-if (state.complete) { console.log(`Inventory complete through observation ${state.cutoffId}: ${state.count} records. See review-work/candidates.jsonl.`); process.exit(0); }
+if (state.scope !== scope || state.protocolVersion !== config.protocolVersion) throw new Error('Taxon scope or protocol differs from checkpoint. Preserve this inventory and start a separate review-work directory.');
+if (state.complete) { console.log(`Inventory complete through observation ${state.cutoffId}: ${state.count} records. See review-work/protocol-${config.protocolVersion}/candidates.jsonl.`); process.exit(0); }
 // Each batch is named by its starting cursor. A crash before checkpointing safely replaces
 // the same batch on resume, rather than appending duplicates to the final inventory.
 while (true) {

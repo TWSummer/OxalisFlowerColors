@@ -1,11 +1,11 @@
 import {readFile,writeFile} from 'node:fs/promises';
-import {validateReview} from './review-validation.mjs';
+import {validateReview} from './historical-review-validation.mjs';
 const base=new URL('../review-work/calibration-2026-10/',import.meta.url);
 const json=async n=>JSON.parse(await readFile(new URL(n,base),'utf8'));
 const manifest=await json('manifest.json'), decisions=await json('decisions.json');
 const writes=await json('writes.json');
 let blocked=[];try{blocked=await json('blocked.json');}catch(e){if(e.code!=='ENOENT')throw e;}
-const config=JSON.parse(await readFile(new URL('../docs/data/project.json',import.meta.url),'utf8'));
+const config=JSON.parse(await readFile(new URL('../docs/data/archive/project-v1.1.0.json',import.meta.url),'utf8'));
 const records=decisions.map(d=>{
   const o=manifest.observations[d.index-1];
   if(!o || !o.photos.some(p=>p.id===d.photo_id))throw new Error(`Invalid evidence photo at index ${d.index}`);

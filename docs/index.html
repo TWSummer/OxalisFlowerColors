@@ -16,14 +16,14 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
     <a class="wordmark" href="#"><img src="assets/favicon.svg" alt="" width="32" height="32"> Oxalis <span>Flower Atlas</span></a>
-    <nav aria-label="Main navigation"><a href="#guide">Field guide</a><a href="#atlas">Explore the maps</a><a href="calibration.html">Pilot results</a><a href="#method">The method</a></nav>
+    <nav aria-label="Main navigation"><a href="#guide">Field guide</a><a href="#atlas">Explore the maps</a><a href="#graphs">Trait graphs</a><a href="#method">The method</a></nav>
   </header>
   <main id="main">
     <section class="hero wrap">
       <div class="hero-copy">
         <p class="eyebrow"><span class="tiny-line"></span> A community natural history project</p>
         <h1>A study in<br><em>small differences.</em></h1>
-        <p class="lead">White, blue, purple, pink. Follow the changing flowers of two woodland sorrels, one observation at a time.</p>
+        <p class="lead">White, pink, purple. Look closer at veins, center rings, and changing petal pigment in two woodland sorrels.</p>
         <p class="species-line"><i>Oxalis oregana</i><span> & </span><i>Oxalis smalliana</i></p>
         <div class="hero-actions"><a class="button primary" href="#atlas">Explore the atlas <span aria-hidden="true">↗</span></a><a class="text-link" href="#guide">Learn the colors <span aria-hidden="true">→</span></a></div>
       </div>
@@ -36,51 +36,74 @@
     <div class="intro-strip"><div class="wrap"><p><strong>Observe the background.</strong> Record the veins separately.</p><p>Inspired by Brinegar (2022) <span aria-hidden="true">↗</span> <a href="https://doi.org/10.3120/0024-9637-69.4.304" target="_blank" rel="noopener">Read the study</a></p></div></div>
 
     <section id="guide" class="section wrap">
-      <div class="section-heading"><div><p class="eyebrow">01 / The field guide</p><h2>Four colors. Look between the lines.</h2></div><p>Score the upper petal surface of an open, fresh flower. Ignore the veins, yellow throat, anthers, and petal underside.</p></div>
-      <div class="guide-tabs" role="tablist" aria-label="Guide trait"><button role="tab" id="tab-color" aria-selected="true" aria-controls="color-guide">Petal background</button><button role="tab" id="tab-veins" aria-selected="false" aria-controls="vein-guide" tabindex="-1">Vein contrast <span class="badge">Pilot</span></button></div>
+      <div class="section-heading"><div><p class="eyebrow">01 / The field guide</p><h2>Three colors. Four ways to look.</h2></div><p>Score each trait independently on fresh, open flowers. These are our project categories, with Figure 1 as a visual reference.</p></div>
+      <div class="guide-note"><span class="note-icon" aria-hidden="true">i</span><p><strong>Our own reading of the reference plate.</strong> Pink A–F; Purple G–H; White I–P. These assignments intentionally differ from the paper’s groups. The drawings below illustrate the rules; they are not photographs or measured color standards. See <a href="https://doi.org/10.3120/0024-9637-69.4.304">Brinegar (2022), Figure 1, p. 308</a>.</p></div>
+      <div class="guide-tabs" role="tablist" aria-label="Guide trait">
+        <button role="tab" id="tab-color" aria-selected="true" aria-controls="color-guide">Petal color</button>
+        <button role="tab" id="tab-veins" aria-selected="false" aria-controls="veins-guide" tabindex="-1">Vein contrast</button>
+        <button role="tab" id="tab-ring" aria-selected="false" aria-controls="ring-guide" tabindex="-1">White center ring</button>
+        <button role="tab" id="tab-variation" aria-selected="false" aria-controls="variation-guide" tabindex="-1">Pigment variation</button>
+      </div>
       <div id="color-guide" role="tabpanel" aria-labelledby="tab-color">
-        <div class="guide-note"><span class="note-icon" aria-hidden="true">!</span><div><p><strong>The paper’s white–blue boundary is unresolved.</strong> Figure 1 includes very pale blue flowers (I–J) and cream or purple-veined white flowers (M–P), but gives no reproducible cutoff. These drawings are conceptual illustrations, not colors sampled from the paper or labeling standards.</p><p>Inspect the <a href="https://doi.org/10.3120/0024-9637-69.4.304">original Figure 1, p. 308</a>. If white and blue are both plausible, leave color unset. Neither species nor geography can settle it. <a href="protocol.md">Read the revised decision sequence →</a></p></div></div>
+        <p class="small">Field: <a id="color-field"></a>. Look between the veins, outside the yellow/orange throat and any white center ring.</p>
         <div id="color-cards" class="color-grid"></div>
-        <div class="guide-note"><span class="note-icon" aria-hidden="true">!</span><p><strong>A purple-veined white flower is still white.</strong> Faint color is not automatically white, and pale purple is not automatically pink. If background hue cannot be separated from lighting or camera cast, leave the color field unset. Bulk color labeling awaits source-reference calibration and independent review. <a href="calibration.html#corrections">See the pilot corrections.</a></p></div>
+        <p class="trait-note">A purple-veined white flower is White. A flower with pink base and edges remains Pink even if its middle is nearly white, as in F. Pale cool-looking I–L are White in this project; there is no Blue category.</p>
       </div>
-      <div id="vein-guide" role="tabpanel" aria-labelledby="tab-veins" hidden>
-        <div class="pattern-intro"><h3>One useful pattern trait, kept deliberately simple.</h3><p>The paper describes variation in purple venation, especially among white flowers. Test vein contrast as an independent photographic trait. It is a project proposal, not a classification validated by the paper.</p></div>
-        <div id="pattern-cards" class="pattern-grid"></div>
-        <p class="small">Assess at a displayed flower diameter of 300 px, using a source flower at least 300 px across. Require three clear upper petals. Do not sharpen, recolor, or upscale. The <a href="protocol.md">full protocol</a> defines the threshold. The <a href="calibration.html">100-observation pilot</a> supports further testing of contrast; vein hue and branching remain exploratory. Independent reliability has not been established.</p>
+      <div id="veins-guide" role="tabpanel" aria-labelledby="tab-veins" hidden>
+        <p class="small">Field: <a id="veins-field"></a>. Judge how strongly the vein lines stand out against the nearby background, not their hue or branching.</p>
+        <div id="veins-cards" class="color-grid"></div>
+        <p class="trait-note"><strong>Our complete Figure 1 key:</strong> High O, P; Medium A, F, H; Low B, C, D, E, G, I, J, K, L, M, N. Assess a flower at a 300 px display diameter from a source at least 300 px across.</p>
       </div>
-      <details class="photo-detail"><summary>See two real-photo teaching examples <span>with source credits</span></summary><div id="teaching-photos" class="teaching-grid"></div><p class="small">These illustrate the scoring task. They are not a validated training set or new iNaturalist field submissions. The four diagrams above are conceptual examples, not calibrated color standards. Consult Figure 1 in the paper for the full photographic reference plate.</p></details>
+      <div id="ring-guide" role="tabpanel" aria-labelledby="tab-ring" hidden>
+        <p class="small">Field: <a id="ring-field"></a>. Inspect the transition just outside the yellow/orange throat on at least three visible petals.</p>
+        <div id="ring-cards" class="color-grid two-cards"></div>
+        <p class="trait-note"><strong>Cannot be determined:</strong> an all-white flower with no distinguishable outer ring boundary, a hidden center, glare, or an unresolved transition. Do not automatically call a white flower Present or Absent. Other plate panels have not been assigned ring anchors.</p>
+      </div>
+      <div id="variation-guide" role="tabpanel" aria-labelledby="tab-variation" hidden>
+        <p class="small">Field: <a id="variation-field"></a>. Look for changes in pigment intensity within the broad areas between veins on the same petal.</p>
+        <div id="variation-cards" class="color-grid"></div>
+        <p class="trait-note">Exclude the yellow/orange throat, vein lines, any distinct white center ring, shadows, glare, folds, and damage. A center ring alone does not increase variation: B and G remain None. Low is a written intermediate category; no plate photo has been designated its anchor.</p>
+      </div>
+      <div class="guide-note"><span class="note-icon" aria-hidden="true">?</span><p><strong>Every field includes “Cannot be determined.”</strong> Use it when an open flower is visible but that trait cannot be resolved. Score the other traits independently. If no open flower is visible, log the skip locally rather than adding four indeterminate values. Keep location and species out of the visual judgment. <a href="protocol.md">Read the full scoring rules →</a></p></div>
     </section>
 
     <section id="atlas" class="atlas-section">
       <div class="wrap">
-        <div class="section-heading"><div><p class="eyebrow">02 / The living atlas</p><h2>Where the colors turn up.</h2></div><p>Every point comes from a saved iNaturalist field. Unlabeled observations are not assigned a color. These are occurrence records, not estimates of population frequency.</p></div>
+        <div class="section-heading"><div><p class="eyebrow">02 / The living atlas</p><h2>Where the traits turn up.</h2></div><p>Every point comes from one of our four new Redwood Sorrel fields. Switch traits to explore their geography. These are observation counts, not estimates of population frequency.</p></div>
         <div class="data-banner" aria-live="polite"><span id="data-status">Loading the saved public-data snapshot…</span><button id="refresh" class="small-button">Refresh from iNaturalist</button></div>
         <noscript><p class="notice">Enable JavaScript for the interactive maps. The <a href="protocol.md">labeling protocol</a> and <a href="data/observations.json">saved data</a> are available directly.</p></noscript>
         <div class="atlas-toolbar">
           <label>Species<select id="species"><option value="">Both species</option><option value="47757">O. oregana</option><option value="1464017">O. smalliana</option></select></label>
-          <label>Map trait<select id="trait"><option value="color">Petal background color</option><option value="pattern">Vein contrast · pilot</option></select></label>
+          <label>Map trait<select id="trait"><option value="color">Petal background color</option><option value="veins">Petal vein contrast</option><option value="ring">White center ring</option><option value="variation">Petal pigment variation</option></select></label>
           <label>Quality grade<select id="grade"><option value="">All grades</option><option value="research">Research Grade</option><option value="needs_id">Needs ID</option><option value="casual">Casual</option></select></label>
           <label>Establishment<select id="captive"><option value="">All records</option><option value="wild">Not marked cultivated</option><option value="cultivated">Marked cultivated</option></select></label>
           <button id="reset" class="small-button reset-button">Reset filters</button>
         </div>
-        <details class="advanced"><summary>Dates, location privacy & alternate field</summary><div class="advanced-fields"><label>From<input type="date" id="date-from"></label><label>Through<input type="date" id="date-to"></label><label class="check"><input type="checkbox" id="approximate"> Include obscured public locations</label><label class="check"><input type="checkbox" id="legacy"> Include alternate “Flower Color” field #43</label></div><p class="small">Obscured points are approximate and drawn as dashed circles. Private locations are never requested. Conflicting color fields are excluded when the alternate field is included.</p></details>
+        <details class="advanced"><summary>Dates & location privacy</summary><div class="advanced-fields"><label>From<input type="date" id="date-from"></label><label>Through<input type="date" id="date-to"></label><label class="check"><input type="checkbox" id="approximate"> Include obscured public locations</label></div><p class="small">Obscured points are approximate and drawn as dashed circles. Private locations are never requested. Conflicting values within a new field are excluded from that trait’s map.</p></details>
         <p id="filter-error" class="error" role="alert" hidden></p>
         <div class="map-layout">
           <aside class="map-sidebar"><p class="eyebrow" id="legend-title">Petal background</p><div id="legend"></div><div class="map-total"><strong id="mapped-count">—</strong><span>mapped observations</span></div><p id="coverage" class="small"></p><div class="sidebar-rule"></div><p class="small">Select a legend item to isolate it. Select it again to show all.</p><button id="download" class="small-button">Download filtered CSV ↓</button><p class="small" id="export-note">Export includes the selected categories and location-privacy setting.</p></aside>
           <div class="map-frame"><div class="map-actions"><button id="fit" class="map-button">Fit records</button><button id="west" class="map-button">West coast</button><button id="world" class="map-button">World</button></div><div id="map" aria-label="Map of labeled Oxalis observations"></div><div id="map-message" class="map-message" hidden></div><div class="map-footer"><span id="map-caption">Only public coordinates are used.</span><span id="display-count"></span></div></div>
         </div>
-        <div class="below-map"><p><span class="status-dot"></span> Labels are shown as recorded. <a href="calibration.html">Pilot judgments are documented</a>; independent reliability is not established. Other community labels are not assumed to follow this protocol.</p><button id="compare-toggle" class="text-link" aria-expanded="false" aria-controls="compare-panel">Compare colors side by side +</button></div>
-        <div id="compare-panel" hidden><p class="small">Four maps at the same extent. They use the current species, grade, date, cultivation, and privacy filters, independently of the main map’s selected color.</p><div id="compare-maps" class="compare-grid"></div></div>
+        <div class="below-map"><p><span class="status-dot"></span> Only the new Redwood Sorrel fields feed these maps and graphs. The <a href="calibration.html">earlier pilot</a> is historical and has not been converted to this key.</p><button id="compare-toggle" class="text-link" aria-expanded="false" aria-controls="compare-panel">Compare colors side by side +</button></div>
+        <div id="compare-panel" hidden><p class="small">Three maps at the same extent. They use the current species, grade, date, cultivation, and privacy filters, independently of the main map’s selected color.</p><div id="compare-maps" class="compare-grid"></div></div>
+        <section id="graphs" class="graphs-section" aria-labelledby="graphs-title">
+          <div class="section-heading"><div><p class="eyebrow">The labels in numbers</p><h2 id="graphs-title">Four traits, counted separately.</h2></div><p>Percentages use only assessable labels for each trait. “Cannot be determined” is an explicit review outcome, separate from a missing label.</p></div>
+          <p id="chart-total" class="small" aria-live="polite"></p>
+          <div id="charts" class="charts-grid"></div>
+          <p class="small">Charts follow the species, grade, establishment, and date filters above. They include matching fetched records without public coordinates and with obscured locations. Map trait, legend selection, and location-privacy controls do not change these counts. “Not labeled” counts only records fetched through at least one new field, not all iNaturalist observations.</p>
+          <button id="download-chart" class="small-button">Download chart records CSV ↓</button><p class="small">Includes all four trait values and their states. Obscured coordinates are omitted unless enabled above.</p>
+        </section>
         <details class="records-panel"><summary>Browse the mapped records <span id="record-total"></span></summary><div id="records" class="record-grid"></div><button id="more-records" class="small-button" hidden>Show more records</button></details>
       </div>
     </section>
 
     <section id="method" class="section wrap method-section">
-      <div><p class="eyebrow">03 / A repeatable method</p><h2>Good data starts <br>with knowing when <br><em>not to label.</em></h2><p>Use the same written rules for people and agents. Keep an audit trail of every decision, including skips.</p><a class="button primary" href="agent-handoff.md" download>Download agent instructions ↓</a><a class="text-link protocol-link" href="protocol.md">Read the complete protocol →</a></div>
-      <ol class="method-steps"><li><span>01</span><div><h3>Find the flower</h3><p>Check all photos. Leaves, closed buds, backs of flowers, and unusable close-ups cannot establish petal color. Flower annotations can help prioritize review, but are not a complete inventory.</p></div></li><li><span>02</span><div><h3>Score what you can see</h3><p>Choose white, blue, purple, or pink from the interveinal background. Keep species and location out of the color decision. Different flower colors in one record require review, not majority voting.</p></div></li><li><span>03</span><div><h3>Keep the evidence</h3><p>Log the photo ID, visible flower, color decision, confidence, and reason. Preserve existing values. Validate the pilot before scaling; record the verified field value after a write.</p></div></li></ol>
+      <div><p class="eyebrow">03 / A repeatable method</p><h2>Good data starts <br>with a shared <br><em>way of looking.</em></h2><p>Use the same written rules for people and agents. Keep an audit trail of every decision, including skips.</p><a class="button primary" href="agent-handoff.md" download>Download agent instructions ↓</a><a class="text-link protocol-link" href="protocol.md">Read the complete protocol →</a></div>
+      <ol class="method-steps"><li><span>01</span><div><h3>Find the flower</h3><p>Check all photos. Leaves, closed buds, backs of flowers, and unusable close-ups cannot establish petal color. Flower annotations can help prioritize review, but are not a complete inventory.</p></div></li><li><span>02</span><div><h3>Score what you can see</h3><p>Score color, vein contrast, white center ring, and pigment variation separately. Use Cannot be determined for unresolved traits. Different outcomes among flowers require review, not majority voting.</p></div></li><li><span>03</span><div><h3>Keep the evidence</h3><p>Log the photos examined, focal flower, each trait’s decision, and its reason. Preserve existing values. Re-read iNaturalist after each write and record the returned field value.</p></div></li></ol>
     </section>
-    <section class="research-note wrap"><div><p class="eyebrow">The research behind the atlas</p><h3>Inspired by a taxonomic study.<br>Built for an ongoing observation project.</h3></div><div><p>Brinegar’s study used four subjective color categories and 1,078 Research Grade iNaturalist flower images from 2015–2019. Figure 1 shows variation within those categories, including vein intensity among white flowers. It is not a 16-type pattern key.</p><p>Our atlas follows current iNaturalist identifications and all observation dates. Camera color, uneven sampling, cultivation, and taxonomic changes affect interpretation. A map of labels cannot independently test a species boundary that was itself identified using color.</p><a href="https://doi.org/10.3120/0024-9637-69.4.304" target="_blank" rel="noopener">Brinegar (2022), Madroño 69: 304–326 ↗</a></div></section>
+    <section class="research-note wrap"><div><p class="eyebrow">The research behind the atlas</p><h3>Inspired by a taxonomic study.<br>Built for an ongoing observation project.</h3></div><div><p>Brinegar’s study used four subjective color categories and 1,078 Research Grade iNaturalist flower images from 2015–2019. Our project deliberately regroups Figure 1 into three colors and adds three separate visual traits. This new key has not yet been assessed for agreement between independent reviewers.</p><p>Our atlas follows current iNaturalist identifications and all observation dates. Camera color, uneven sampling, cultivation, and taxonomic changes affect interpretation. A map of labels cannot independently test a species boundary that was itself identified using color.</p><a href="https://doi.org/10.3120/0024-9637-69.4.304" target="_blank" rel="noopener">Brinegar (2022), Madroño 69: 304–326 ↗</a></div></section>
   </main>
-  <footer class="wrap"><p class="wordmark">Oxalis <span>Flower Atlas</span></p><p>An independent project using <a href="https://www.inaturalist.org">iNaturalist</a> data.<br>Protocol v1.1.0 · <a href="credits.html">Sources & credits</a> · <a href="data/project.json">Field configuration</a></p><a href="#">Back to top ↑</a></footer>
+  <footer class="wrap"><p class="wordmark">Oxalis <span>Flower Atlas</span></p><p>An independent project using <a href="https://www.inaturalist.org">iNaturalist</a> data.<br>Protocol v2.0.0 · <a href="credits.html">Sources & credits</a> · <a href="data/project.json">Field configuration</a></p><a href="#">Back to top ↑</a></footer>
 </body>
 </html>

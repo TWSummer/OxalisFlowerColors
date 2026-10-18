@@ -25,7 +25,7 @@ export function queryUrl(config, parameters = {}) {
   return `${config.apiBase}/observations?${params}`;
 }
 export async function fetchFieldRecords(config, { request = makeClient({ interval: config.requestIntervalMs }), onProgress = () => {}, signal, maxPages = 250 } = {}) {
-  const fields = [config.colorField, config.legacyColorField, ...(config.patternField.id ? [config.patternField] : [])];
+  const fields = Object.values(config.fields);
   const records = new Map();
   let complete = true;
   for (const field of fields) {

@@ -25,7 +25,7 @@ if (records.length !== manifest.observations.length || missing.length || failedW
 else {
   for (const c of withdrawals) { c.status = 'verified'; c.verified_at = result.verified_at; }
   await writeFile(new URL('corrections.json', root), JSON.stringify(corrections, null, 2) + '\n');
-  const snapshotUrl = new URL('../docs/data/observations.json', import.meta.url);
+  const snapshotUrl = new URL('../docs/data/archive/observations-v1.1.0.json', import.meta.url);
   const snapshot = JSON.parse(await readFile(snapshotUrl, 'utf8'));
   snapshot.records = snapshot.records.map(o => records.find(r => r.id === o.id) || o).filter(o => o.ofvs.some(f => [8625,43,23007].includes(f.field_id)));
   snapshot.pilotDetailVerificationAt = result.verified_at;

@@ -2,24 +2,72 @@
   "observation_id": 1,
   "taxon_id": 47757,
   "reviewer": "SYNTHETIC EXAMPLE ONLY - do not submit",
-  "reviewed_at": "2026-10-17T12:00:00-05:00",
-  "protocol_version": "1.1.0",
-  "examined_photo_ids": [1],
+  "reviewed_at": "2026-10-18T12:00:00-05:00",
+  "protocol_version": "2.0.0",
+  "examined_photo_ids": [
+    1
+  ],
   "color": {
-    "value": "white",
+    "value": "White",
     "status": "scored",
     "confidence": "high",
-    "reason": "Synthetic example: neutral interveinal tissue on three clear upper petals; purple restricted to vein lines.",
-    "evidence": [{ "photo_id": 1, "flower": "Synthetic focal flower at center", "source_diameter_px": 650, "assessment_diameter_px": 300, "visible_upper_petals": 5 }]
+    "reason": "SYNTHETIC: white interveinal tissue on five clear upper petals; vein color excluded.",
+    "evidence": [
+      {
+        "photo_id": 1,
+        "flower": "Synthetic focal flower at center",
+        "source_diameter_px": 650,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      }
+    ]
   },
   "veins": {
-    "value": null,
-    "status": "not_assessed",
-    "confidence": "not_applicable",
-    "reason": "Pattern pilot has not been completed.",
-    "evidence": []
+    "value": "High",
+    "status": "scored",
+    "confidence": "high",
+    "reason": "SYNTHETIC: prominent contrasting network across five petals, like our O/P reference class.",
+    "evidence": [
+      {
+        "photo_id": 1,
+        "flower": "Synthetic focal flower at center",
+        "source_diameter_px": 650,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      }
+    ]
   },
   "existing_fields": [],
   "write_status": "not_attempted",
-  "verified_fields": []
+  "verified_fields": [],
+  "ring": {
+    "value": "Cannot be determined",
+    "status": "cannot_be_determined",
+    "confidence": "not_applicable",
+    "reason": "SYNTHETIC: uniformly white petal background provides no distinguishable outer boundary for a separate white center ring.",
+    "evidence": [
+      {
+        "photo_id": 1,
+        "flower": "Synthetic focal flower at center",
+        "source_diameter_px": 650,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      }
+    ]
+  },
+  "variation": {
+    "value": "None",
+    "status": "scored",
+    "confidence": "high",
+    "reason": "SYNTHETIC: nearly uniform interveinal background; veins and yellow throat excluded.",
+    "evidence": [
+      {
+        "photo_id": 1,
+        "flower": "Synthetic focal flower at center",
+        "source_diameter_px": 650,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      }
+    ]
+  }
 }

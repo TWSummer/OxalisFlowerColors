@@ -1,25 +1,25 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { readField, coordinates, publicRecord, classify, filterRecords, photoUrl, csvCell, recordsCsv } from '../docs/js/data.js';
+import { readField, coordinates, publicRecord, classify, summarizeTrait, filterRecords, photoUrl, csvCell, recordsCsv } from '../docs/js/data.js';
 import { fetchFieldRecords, makeClient } from '../docs/js/api.js';
 import { validateReview } from '../scripts/review-validation.mjs';
 const config = JSON.parse(await readFile(new URL('../docs/data/project.json', import.meta.url), 'utf8'));
 const example = JSON.parse(await readFile(new URL('../docs/data/review.example.json', import.meta.url), 'utf8'));
-const observation = (id, color = 'white') => ({ id, taxon: { id: 47757, name: 'Oxalis oregana', ancestor_ids: [] }, ofvs: [{ field_id: 8625, value: color }], geojson: { type: 'Point', coordinates: [-123, 44] }, captive: false, quality_grade: 'research', observed_on: '2026-04-01' });
+const observation = (id, color = 'White') => ({ id, taxon: { id: 47757, name: 'Oxalis oregana', ancestor_ids: [] }, ofvs: [{ field_id: config.fields.color.id, value: color }], geojson: { type: 'Point', coordinates: [-123, 44] }, captive: false, quality_grade: 'research', observed_on: '2026-04-01' });
 test('normalizes only known values; no invented lavender mapping or unknown default', () => {
-  assert.deepEqual(readField([{ field_id: 8625, value: ' White ' }], 8625, config.colorField.values), { value: 'white', state: 'valid' });
-  for (const color of ['lavender', 'unknown', '', 'n/a']) assert.equal(classify(observation(1, color), config).color, null);
+  assert.deepEqual(readField([{ field_id: config.fields.color.id, value: ' White ' }], config.fields.color.id, config.fields.color.values), { value: 'white', state: 'valid' });
+  for (const color of ['blue', 'lavender', 'unknown', '', 'n/a']) assert.equal(classify(observation(1, color), config).color, null);
   assert.equal(classify({ ...observation(1), ofvs: [] }, config).color, null);
 });
 test('duplicate agreeing values deduplicate; disagreements never become a color', () => {
-  const o = observation(1); o.ofvs.push({ field_id: 8625, value: 'white' }); assert.equal(classify(o, config).color, 'white');
-  o.ofvs.push({ field_id: 8625, value: 'pink' }); assert.equal(classify(o, config).colorState, 'conflict');
+  const o = observation(1); o.ofvs.push({ field_id: config.fields.color.id, value: 'white' }); assert.equal(classify(o, config).color, 'white');
+  o.ofvs.push({ field_id: config.fields.color.id, value: 'pink' }); assert.equal(classify(o, config).colorState, 'conflict');
 });
-test('alternate field is opt-in, and disagreement excludes records', () => {
-  const o = observation(1); o.ofvs.push({ field_id: 43, value: 'pink' });
-  assert.equal(classify(o, config).color, 'white'); assert.equal(classify(o, config, true).colorState, 'conflict');
-  o.ofvs.shift(); assert.equal(classify(o, config).color, null); assert.equal(classify(o, config, true).color, 'pink');
+test('old fields never supply or override new labels', () => {
+  const o = observation(1); o.ofvs.push({ field_id: 43, value: 'pink' }, { field_id: 8625, value: 'purple' }, { field_id: 23007, value: 'conspicuous' });
+  assert.equal(classify(o, config).color, 'white'); assert.equal(classify(o, config).veins, null);
+  o.ofvs.shift(); assert.equal(classify(o, config).color, null);
 });
 test('never falls back to private coordinates; accepts zero and rejects invalid positions', () => {
   assert.equal(coordinates({ private_geojson: { coordinates: [12, 34] } }), null);
@@ -38,12 +38,19 @@ test('filters respect taxa, descendants, unknown cultivation, grade, dates', () 
   assert.equal(filterRecords([a], { grade: 'needs_id' }).length, 0);
   assert.equal(filterRecords([classify({ ...observation(4), taxon: { id: 3 } }, config)], {}).length, 0);
 });
-test('pattern requires a configured field and does not derive from color', () => {
-  assert.equal(classify(observation(1), config).pattern, null);
-  const cfg = structuredClone(config); cfg.patternField.id = 999;
-  const o = observation(1); o.ofvs.push({ field_id: 999, value: 'conspicuous' });
-  assert.equal(classify(o, cfg).pattern, 'conspicuous');
-  o.ofvs[1].value = 'unscorable'; assert.equal(classify(o, cfg).pattern, null);
+test('each trait is independent and indeterminate is distinct from missing and conflicting', () => {
+  for (const [key, field] of Object.entries(config.fields)) {
+    const o = observation(1); o.ofvs = [{ field_id: field.id, value: 'Cannot be determined' }];
+    const c = classify(o, config); assert.equal(c[key], 'cannot be determined'); assert.equal(c[`${key}State`], 'undetermined');
+    for (const other of Object.keys(config.fields).filter(k => k !== key)) assert.equal(c[other], null);
+    o.ofvs.push({ field_id: field.id, value: field.values[0] }); assert.equal(classify(o, config)[`${key}State`], 'conflict');
+  }
+});
+test('chart denominators count only assessable labels, without requiring map coordinates', () => {
+  const fixtures = [observation(1), {...observation(2,'Pink'),geojson:null}, observation(3,'Cannot be determined'), {...observation(4),ofvs:[]}, observation(5,'invalid'), {...observation(6),ofvs:[{field_id:config.fields.color.id,value:'White'},{field_id:config.fields.color.id,value:'Pink'}]}];
+  const summary=summarizeTrait(fixtures.map(o=>classify(o,config)),'color');
+  assert.deepEqual(summary,{counts:{white:1,pink:1,purple:0},assessable:2,undetermined:1,missing:1,conflict:1,unrecognized:1,total:6});
+  assert.equal(summarizeTrait([],'ring').assessable,0);
 });
 test('photo URLs require recognized licenses and trusted HTTPS hosts', () => {
   assert.equal(photoUrl({ url: 'https://static.inaturalist.org/photos/1/square.jpg', license_code: null }), null);
@@ -63,14 +70,13 @@ test('cursor pagination crosses 10,000 results and deduplicates field queries', 
   const request = async url => {
     calls++; const params = new URL(url).searchParams; assert.equal(params.get('verifiable'), 'any'); assert.equal(params.get('order_by'), 'id');
     const cursor = Number(params.get('id_above'));
-    if (params.has('field:Flower Color')) return { results: [observation(1)] };
+    if (!params.has(`field:${config.fields.color.name}`)) return { results: [observation(1)] };
     const length = Math.min(200, Math.max(0, 10205 - cursor));
     return { results: Array.from({ length }, (_, i) => observation(cursor + i + 1)) };
   };
   const data = await fetchFieldRecords(config, { request });
   assert.equal(data.records.length, 10205); assert.equal(data.complete, true);
-  // Primary color and the active vein field each paginate; the legacy fixture has one page.
-  assert.equal(calls, 52 * (config.patternField.id ? 2 : 1) + 1);
+  assert.equal(calls, 52 + 3);
 });
 test('partial limit is explicit and stuck pagination fails', async () => {
   const full = Array.from({ length: 200 }, (_, i) => observation(i + 1));
@@ -90,5 +96,12 @@ test('review audit rejects insufficient visual evidence, fake verifications, and
   const low = structuredClone(example); low.color.evidence[0].source_diameter_px = 70; assert.ok(validateReview(low, config).length);
   const fake = structuredClone(example); fake.write_status = 'verified'; assert.ok(validateReview(fake, config).length);
   const unsafe = structuredClone(example); unsafe.token = 'secret'; assert.ok(validateReview(unsafe, config).some(x => x.includes('not allowed')));
-  const veins = structuredClone(example); veins.veins = { ...veins.color, value: 'conspicuous' }; veins.veins.evidence[0].assessment_diameter_px = 600; assert.ok(validateReview(veins, config).length);
+  for (const key of ['veins','variation']) { const bad = structuredClone(example); bad[key].evidence[0].assessment_diameter_px = 600; assert.ok(validateReview(bad, config).length); }
+});
+test('audit accepts verified indeterminate outcomes and rejects fabricated or mismatched ones', () => {
+  const r = structuredClone(example); r.write_status='verified'; r.verified_fields=[{field_id:config.fields.ring.id,value:'Cannot be determined',verified_at:r.reviewed_at}];
+  assert.deepEqual(validateReview(r,config),[]);
+  r.ring.evidence=[]; assert.ok(validateReview(r,config).length);
+  const bad=structuredClone(example); bad.ring.status='no_open_flower'; assert.ok(validateReview(bad,config).length);
+  const fake=structuredClone(example); fake.write_status='verified'; fake.verified_fields=[{field_id:8625,value:'White',verified_at:fake.reviewed_at}]; assert.ok(validateReview(fake,config).length);
 });

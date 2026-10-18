@@ -1,89 +1,75 @@
 # Oxalis Flower Atlas
 
-A static GitHub Pages website and a reproducible labeling protocol for **Oxalis oregana** and **Oxalis smalliana**. No build, backend, API key, or account login is needed for the website. Node 20+ is needed only for the local utilities/tests.
+A static GitHub Pages website and labeling protocol for **Oxalis oregana** and **Oxalis smalliana**. No build, backend, API key, or login is needed for the website. Local utilities use Node 20+ and have no npm dependencies.
 
-## What is included
+## Current project key
 
-- Four-color visual guide (white, blue, purple, pink), original botanical schematics, and attributed photo examples.
-- Full interactive map, four comparable color maps, optional vein-contrast map, observation links, filters, and CSV export.
-- A real, dated snapshot of existing public iNaturalist field values, plus a user-triggered live refresh. No synthetic mapped observations.
-- Agent/human instructions, a conservative optional vein-contrast pilot, a machine-readable audit schema, and a validator.
-- Public-data sync and a resumable inventory tool for the separate labeling agent. No iNaturalist write automation.
+Protocol **2.0.0** uses the project owner’s categories, intentionally different from the paper’s original groups:
 
-The site reads **Primary flower color (8625)** by default; the older **Flower Color (43)** is optional. **Oxalis petal vein contrast v1 (23007)** is active as a pilot field. The October 2026 feasibility review inspected 100 observations / 174 photos and added 87 field values across 63 observations with the owner's explicit authorization. See [the pilot report](docs/calibration.html) and its downloadable audit. This was one agent's review, not independent-rater validation. Existing community labels are not assumed to follow this protocol.
+- **Redwood Sorrel Petal Color (23008):** White / Pink / Purple / Cannot be determined. Figure 1: Pink A–F, Purple G–H, White I–P.
+- **Redwood Sorrel Petal Vein Contrast (23010):** Low / Medium / High / Cannot be determined. High O,P; Medium A,F,H; all other panels Low.
+- **Redwood Sorrel White Center Ring (23011):** Present / Absent / Cannot be determined. Present A,B,G,H; Absent D,F.
+- **Redwood Sorrel Petal Pigment Variation (23012):** None / Low / High / Cannot be determined. None B,D,G; High F; Low is the written intermediate category, with no assigned plate anchor.
 
-**Protocol v1.1.0 clarifies the unresolved white/blue boundary.** The original paper includes nearly white-looking blue flowers but supplies no reproducible cutoff. Schematics are not calibration standards. Seven original pilot color decisions (two blue, five white) were identified for withdrawal; the report shows which withdrawals have been verified and the current retained counts. The original v1.0.0 audit remains available as history, not a training key. Bulk color labeling awaits identifiable author-labeled references or clarification and an independent human review; never force labels to match the paper's geographic pattern.
+The site includes four visual-guide tabs, a map for each trait, three comparable color maps, four count/percentage charts, public observation links, filters, and CSV exports. Ring presence is excluded from pigment variation. See [the protocol](docs/protocol.md) for all rules and uncertainty cases.
 
-## Preview
+The fields were created on 18 October 2026. Their first public API snapshot contains **zero observations**. Empty maps/charts are expected until fresh labels are submitted. No synthetic observations are included. Old fields 8625, 43, and 23007 are not queried, converted, or used as fallback. Existing iNaturalist labels have not been rewritten by this pivot.
 
-```sh
-npm start
-```
-
-Open `http://127.0.0.1:4173`. Serve the files over HTTP; do not double-click the HTML, because module and JSON loading needs a web server. There are no npm dependencies to install. Fonts, iNaturalist photos, live API refresh, and OSM tiles use the network; Leaflet itself is bundled. The dated snapshot and guide work without API access.
-
-## Deploy on GitHub Pages
-
-1. Create a GitHub repository and upload this project's source. Do not upload `tmp/` or `review-work/`.
-2. Open the repository's **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, select your branch (usually `main`), and select the **`/docs`** folder. Save.
-4. Wait for GitHub Pages to publish. Open the URL shown in Settings.
-
-All site asset URLs are relative, so both `username.github.io/` and `username.github.io/repository-name/` work. `docs/.nojekyll` keeps the site buildless. No Sites-hosting account or separate service is required. Push changes to the configured Pages branch to publish them.
-
-For the platform's current setup details, see [GitHub's Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
-
-## Hand off the labeling work
-
-Give the reviewing agent **`docs/agent-handoff.md`**, **`docs/protocol.md`**, and **`docs/data/project.json`**. Its first job is a calibration pilot with independent review, followed by authorized production writes using an appropriate iNaturalist account. The site itself cannot change observations.
+## Preview and deploy
 
 ```sh
-npm run prepare-review
-npm run validate-reviews -- review-work/reviews.jsonl
+node scripts/serve.mjs
 ```
 
-`prepare-review` inventories all photo-bearing records of both taxa, all grades, worldwide. It does not rely on flowering annotations, download bulk images, or assign traits. Allow roughly one request per second; runtime depends on the number of records. It checkpoints batches in `review-work/` and resumes after interruption. The complete pass produces `review-work/candidates.jsonl` and a cutoff ID. To start a new pass after completing one, archive the old `review-work/` directory and run again. Preserve old reviews when reconciling new/changed records. The ID cutoff is not a historical database transaction: changes while scanning can require a later reconciliation pass.
+Open `http://127.0.0.1:4173` (or the port printed by the server). Use HTTP rather than opening HTML directly. Leaflet is bundled; fonts, photos, map tiles, and live API refresh need network access.
 
-The protocol deliberately abstains for ambiguous colors, unsuitable views, or conflicting flowers. Coverage must be reported as reviewed/labeled/skipped/blocked, not silently equated with successful labeling.
+In GitHub **Settings → Pages → Build and deployment**, use **Deploy from a branch**, your publishing branch (usually `main`), and **`/docs`**. Commit and push changes to publish them. `docs/.nojekyll` keeps the site buildless; relative asset URLs support project Pages paths. Do not commit `tmp/` or `review-work/`.
 
-## Update the maps
+## Labeling handoff
 
-Click **Refresh from iNaturalist** to read current values into your browser. This does not save changes to the repository or persist a visitor cache.
-
-To update the publicly served snapshot after labels have been added:
+Give the reviewing agent [docs/agent-handoff.md](docs/agent-handoff.md), [docs/protocol.md](docs/protocol.md), and [docs/data/project.json](docs/data/project.json). Use the new field IDs and fresh visual review. Existing pilot labels cannot be automatically translated. Independent double-scoring of a varied subset is recommended to check repeatability, particularly Medium contrast and Low variation.
 
 ```sh
-npm run sync
-npm test
+node scripts/prepare-review.mjs
+node scripts/validate-reviews.mjs review-work/protocol-2.0.0/reviews.jsonl
 ```
 
-Commit and push `docs/data/observations.json`. The sync uses public unauthenticated reads, full cursor pagination, deduplication, and rate limiting. It retains the previous file on any error or paging limit. API indexing can lag behind a new field write. No scheduled job is installed.
+The inventory includes all photo-bearing observations of both taxa, all grades, worldwide; it does not depend on flowering annotations. It checkpoints under a protocol-specific directory and resumes safely after interruption. A completed pass produces `candidates.jsonl` and a cutoff ID. Preserve previous audits and start a separate pass for later records or changed photos/identifications. There is no label-prediction or iNaturalist write automation in this repository.
 
-The vein field is configured as **23007**. Its pilot labels are available on the map, but independent agreement and class-coverage gates remain unmet. Keep the configuration, human protocol, and audit schema consistent when versioning the protocol. No credentials belong in configuration or GitHub Pages.
+`Cannot be determined` is a recorded, assessed outcome for a visible open flower. It is distinct from no flower, an unassessed trait, and a missing field. Log evidence and reasons, preserve existing data, and verify actual returned field values after writing.
 
-The October pilot files are in ignored `review-work/calibration-2026-10/`. `calibration-sample.mjs` records a deterministic, taxon-stratified sample from observations with a Flowers annotation; it is narrower than the production inventory. `calibration-images.py` prepares unenhanced previews for manual review. `calibration-record.mjs` records manual decisions; `calibration-audit.mjs` regenerates and validates the historical v1.0.0 decisions without silently changing their protocol version. `calibration-verify.mjs` checks all 100 records through the public observation-detail API, verifies submitted color withdrawals, and reconciles their atlas records; `calibration-report.mjs` overlays verified corrections and exports the public audit without coordinates or downloaded photos. `corrections.json` records each proposed/submitted/verified withdrawal with its reason and timestamps. Do not mark a withdrawal submitted without actually performing it in iNaturalist. These utilities do not predict or submit labels. Do not rerun sampling over an active review directory.
+## Data flow and graphs
 
-## Tests and limitations
+The website first loads `docs/data/observations.json`, a dated snapshot fetched from iNaturalist. **Refresh from iNaturalist** queries all four new fields, paginates by observation ID, deduplicates observations, and updates only that visitor’s browser. It does not save to GitHub. No recurring sync is installed.
+
+To publish an updated starting snapshot:
 
 ```sh
-npm test
-npm run validate-reviews -- docs/data/review.example.json
+node scripts/sync-data.mjs
+node --test
 ```
 
-Tests cover field conflicts, invalid values, public coordinate handling, privacy filters, CSV safety, pagination above 10,000 observations, retries, audit constraints, and the local static assets. Tests do not validate flower biology. The example review is synthetic, with dummy IDs, and is never included in map data.
+Commit/push the changed snapshot. Sync uses unauthenticated public API reads at about one request per second. It preserves the previous file on errors or incomplete pagination. Field-search indexing can lag behind new writes.
 
-Points are observations, not independent plants or population frequencies. Cultivation, uneven sampling, repeated visits/clones, color-dependent species identifications, and camera color affect interpretation. Obscured public coordinates are hidden by default; a visitor can include them with clear marking. The site never uses private coordinates. See the protocol for details.
+Maps include determinate categories and usable public coordinates, hiding obscured locations by default. Charts use the same species/date/grade/establishment filters but also include records without map coordinates. Each percentage’s denominator is the number of assessable labels for that particular trait. Indeterminate, missing, conflicting, and unsupported values are reported separately. Missing means absent among the union of fetched new-field records, not every unlabeled record on iNaturalist. The chart CSV includes uncertainty states; obscured coordinates remain omitted unless the location option is enabled.
 
-Photo licenses remain with their creators. Some teaching photos and all pilot examples are CC BY-NC: retain attribution and noncommercial use, or remove/replace them for a commercial adaptation. See the individual captions, `docs/credits.html`, and `docs/vendor/LEAFLET-LICENSE.txt`. The attached paper is cited but not distributed.
+## Historical pilot
 
-## Project layout
+The earlier 100-observation / 174-photo feasibility review used the previous fields and categories. After seven verified color withdrawals, it retained 80 field values on 58 observations. [The historical report](docs/calibration.html), original v1.0.0 audit, revised v1.1.0 audit, and [old protocol](docs/protocol-v1.1.0.md) remain available. They are not training labels or reliability validation for the new key.
 
-- `docs/index.html`, `docs/styles.css`, `docs/js/`: deployable site.
-- `docs/data/project.json`: taxon IDs, field IDs/names, protocol version.
-- `docs/data/observations.json`: dated public field-value snapshot.
-- `docs/protocol.md`, `docs/agent-handoff.md`: labeling instructions.
-- `docs/data/review.schema.json`, `docs/data/review.example.json`: audit format.
-- `scripts/`: local preview, read-only data tools, audit validation.
-- `test/`: meaningful data and integration checks.
+`docs/data/archive/` stores the old project configuration and observation snapshot. Historical `calibration-*` utilities continue to use their historical fields; the verification utility reconciles only the archived snapshot. `historical-review-validation.mjs` validates the old audit shape. These files must not populate the current atlas or silently upgrade decisions.
 
-Source paper: [Brinegar (2022), Madroño 69(4):304–326](https://doi.org/10.3120/0024-9637-69.4.304). Field/API guidance: [iNaturalist observation fields](https://help.inaturalist.org/en/support/solutions/articles/151000178357-how-to-use-observation-fields) and [API recommended practices](https://www.inaturalist.org/pages/api+recommended+practices).
+## Checks and limitations
+
+```sh
+node --test
+node scripts/validate-reviews.mjs docs/data/review.example.json
+```
+
+Tests cover field isolation, conflicts, explicit uncertainty, chart denominators, public coordinate handling, filtering, CSV safety, cursor pagination beyond 10,000 records, retries, audit validation, and relative site assets. The synthetic audit example is never used as map data. Software checks do not establish biological accuracy or agreement between reviewers.
+
+Observations are not independent plants or population frequencies. Camera color, uneven sampling, repeated visits, clones, cultivation, and color-influenced species identifications affect interpretation. The website never uses private coordinates or iNaturalist credentials.
+
+The paper is cited, not redistributed. Schematics are original project drawings. Historical pilot photographs retain their individual attribution and licenses, including noncommercial restrictions. See [credits](docs/credits.html).
+
+Source: [Brinegar (2022), Madroño 69(4):304–326](https://doi.org/10.3120/0024-9637-69.4.304). Current scoring rules are defined by this project, not asserted to reproduce that study.
