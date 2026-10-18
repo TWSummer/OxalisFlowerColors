@@ -1,0 +1,14 @@
+{
+  "name": "oxalis-flower-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test",
+    "sync": "node scripts/sync-data.mjs",
+    "prepare-review": "node scripts/prepare-review.mjs",
+    "validate-reviews": "node scripts/validate-reviews.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

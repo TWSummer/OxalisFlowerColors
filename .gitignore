@@ -1,0 +1,6 @@
+tmp/
+node_modules/
+review-work/
+*.log
+output/
+.DS_Store

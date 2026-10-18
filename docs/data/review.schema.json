@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Oxalis review audit entry v1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["observation_id", "taxon_id", "reviewer", "reviewed_at", "protocol_version", "examined_photo_ids", "color", "veins", "existing_fields", "write_status", "verified_fields"],
+  "properties": {
+    "observation_id": { "type": "integer", "minimum": 1 },
+    "taxon_id": { "type": "integer", "minimum": 1 },
+    "reviewer": { "type": "string", "minLength": 1 },
+    "reviewed_at": { "type": "string", "format": "date-time" },
+    "protocol_version": { "const": "1.0.0" },
+    "examined_photo_ids": { "type": "array", "items": { "type": "integer", "minimum": 1 }, "uniqueItems": true },
+    "color": { "$ref": "#/$defs/color" },
+    "veins": { "$ref": "#/$defs/veins" },
+    "existing_fields": { "type": "array", "items": { "$ref": "#/$defs/field" } },
+    "write_status": { "enum": ["not_attempted", "already_present", "conflict", "blocked", "attempted", "verified", "failed"] },
+    "verified_fields": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["field_id", "value", "verified_at"], "properties": { "field_id": { "type": "integer", "minimum": 1 }, "value": { "type": "string" }, "verified_at": { "type": "string", "format": "date-time" } } } }
+  },
+  "$defs": {
+    "field": { "type": "object", "additionalProperties": false, "required": ["field_id", "value"], "properties": { "field_id": { "type": "integer", "minimum": 1 }, "value": { "type": "string" } } },
+    "trait": {
+      "type": "object",
+      "required": ["value", "status", "confidence", "reason", "evidence"],
+      "additionalProperties": false,
+      "properties": {
+        "value": { "type": ["string", "null"] },
+        "status": { "enum": ["scored", "no_open_flower", "unscorable", "uncertain_color", "mixed_flowers", "conflicting_photos", "subject_unclear", "unexpected_trait", "out_of_scope", "not_assessed"] },
+        "confidence": { "enum": ["high", "medium", "low", "not_applicable"] },
+        "reason": { "type": "string", "minLength": 1 },
+        "evidence": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["photo_id", "flower", "source_diameter_px", "assessment_diameter_px", "visible_upper_petals"], "properties": { "photo_id": { "type": "integer", "minimum": 1 }, "flower": { "type": "string", "minLength": 1 }, "source_diameter_px": { "type": "number", "exclusiveMinimum": 0 }, "assessment_diameter_px": { "type": "number", "exclusiveMinimum": 0 }, "visible_upper_petals": { "type": "integer", "minimum": 0, "maximum": 5 } } } }
+      }
+    },
+    "color": { "allOf": [{ "$ref": "#/$defs/trait" }, { "properties": { "value": { "enum": ["white", "blue", "purple", "pink", null] } } }] },
+    "veins": { "allOf": [{ "$ref": "#/$defs/trait" }, { "properties": { "value": { "enum": ["conspicuous", "faint_or_not_visible", "unscorable", null] } } }] }
+  }
+}

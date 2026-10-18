@@ -1,0 +1,449 @@
+{
+  "records": [
+    {
+      "id": 166660,
+      "observed_on": "2006-05-29",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.2658638,
+          37.2968781
+        ]
+      },
+      "positional_accuracy": 200,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "lynnwatson"
+      },
+      "ofvs": [
+        {
+          "field_id": 9,
+          "name": "Flowering Phenology",
+          "value": "flower"
+        },
+        {
+          "field_id": 43,
+          "name": "Flower Color",
+          "value": "white"
+        },
+        {
+          "field_id": 44,
+          "name": "Flower Petals",
+          "value": "5petals"
+        },
+        {
+          "field_id": 59,
+          "name": "Plant Community",
+          "value": "redwood forest"
+        }
+      ],
+      "photos": [
+        {
+          "id": 223017,
+          "url": "https://static.inaturalist.org/photos/223017/square.jpg",
+          "license_code": null,
+          "attribution": "(c) NatureShutterbug, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 70158331,
+      "observed_on": "2020-06-02",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.08284,
+          40.866517
+        ]
+      },
+      "positional_accuracy": 10049,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "justthatpratte"
+      },
+      "ofvs": [
+        {
+          "field_id": 8625,
+          "name": "Primary flower color",
+          "value": "white"
+        },
+        {
+          "field_id": 9806,
+          "name": "Secondary flower color",
+          "value": "pink"
+        },
+        {
+          "field_id": 10,
+          "name": "Habitat",
+          "value": "Garden,   Northern California, Coastal Woods,  Coastal Wetlands"
+        }
+      ],
+      "photos": [
+        {
+          "id": 113996957,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/113996957/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Levin Pratte, some rights reserved (CC BY-NC)"
+        },
+        {
+          "id": 113997056,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/113997056/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Levin Pratte, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 200170716,
+      "observed_on": "2024-02-22",
+      "quality_grade": "research",
+      "license_code": "cc0",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.2262422001,
+          37.17774837
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "truthseqr"
+      },
+      "ofvs": [
+        {
+          "field_id": 8625,
+          "name": "Primary flower color",
+          "value": "pink"
+        },
+        {
+          "field_id": 9,
+          "name": "Flowering Phenology",
+          "value": "flower"
+        }
+      ],
+      "photos": [
+        {
+          "id": 353112768,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/353112768/square.jpeg",
+          "license_code": "cc0",
+          "attribution": "no rights reserved"
+        },
+        {
+          "id": 353112800,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/353112800/square.jpeg",
+          "license_code": "cc0",
+          "attribution": "no rights reserved"
+        },
+        {
+          "id": 353112787,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/353112787/square.jpeg",
+          "license_code": "cc0",
+          "attribution": "no rights reserved"
+        },
+        {
+          "id": 353112802,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/353112802/square.jpeg",
+          "license_code": "cc0",
+          "attribution": "no rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 202743140,
+      "observed_on": "2024-03-14",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.5183944444,
+          38.7642027778
+        ]
+      },
+      "positional_accuracy": 6,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "wildmare64"
+      },
+      "ofvs": [
+        {
+          "field_id": 8625,
+          "name": "Primary flower color",
+          "value": "pink"
+        }
+      ],
+      "photos": [
+        {
+          "id": 358106179,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/358106179/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Sarah Reid, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 202743142,
+      "observed_on": "2024-03-14",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.5179222222,
+          38.7653166667
+        ]
+      },
+      "positional_accuracy": 4,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "wildmare64"
+      },
+      "ofvs": [
+        {
+          "field_id": 8625,
+          "name": "Primary flower color",
+          "value": "pink"
+        }
+      ],
+      "photos": [
+        {
+          "id": 358106194,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/358106194/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Sarah Reid, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 203057566,
+      "observed_on": "2024-03-17",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.0661388889,
+          38.4255444444
+        ]
+      },
+      "positional_accuracy": 19,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "wildmare64"
+      },
+      "ofvs": [
+        {
+          "field_id": 8625,
+          "name": "Primary flower color",
+          "value": "pink"
+        }
+      ],
+      "photos": [
+        {
+          "id": 358712115,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/358712115/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Sarah Reid, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 203058290,
+      "observed_on": "2024-03-17",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.0684138889,
+          38.4221333333
+        ]
+      },
+      "positional_accuracy": 4,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "wildmare64"
+      },
+      "ofvs": [
+        {
+          "field_id": 8625,
+          "name": "Primary flower color",
+          "value": "pink"
+        }
+      ],
+      "photos": [
+        {
+          "id": 358713524,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/358713524/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Sarah Reid, some rights reserved (CC BY-NC)"
+        }
+      ]
+    }
+  ],
+  "complete": true,
+  "fetchedAt": "2026-10-18T03:05:31.731Z",
+  "protocolVersion": "1.0.0",
+  "source": "iNaturalist public API v1; unauthenticated",
+  "fields": [
+    {
+      "id": 8625,
+      "name": "Primary flower color",
+      "values": [
+        "white",
+        "blue",
+        "purple",
+        "pink"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Flower Color"
+    }
+  ]
+}
