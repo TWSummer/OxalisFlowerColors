@@ -10,7 +10,7 @@ test('bundled Leaflet matches the official 1.9.4 integrity hashes', async () => 
   }
 });
 test('all local HTML assets exist and remain relative for project Pages', async () => {
-  for (const page of ['index.html', 'credits.html']) {
+  for (const page of ['index.html', 'credits.html', 'calibration.html']) {
     const html = await readFile(new URL(page, docs), 'utf8');
     const refs = [...html.matchAll(/(?:src|href)="([^"]+)"/g)].map(m => m[1]).filter(v => !v.startsWith('#') && !v.startsWith('https://'));
     for (const ref of refs) { assert.ok(!ref.startsWith('/'), `${page}: absolute path ${ref}`); assert.ok((await stat(new URL(ref, docs))).isFile(), ref); }

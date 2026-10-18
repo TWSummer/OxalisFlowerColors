@@ -1,6 +1,6 @@
 # Oxalis flower scoring protocol
 
-Version 1.0.0 · 17 October 2026 · Status: proposed protocol, awaiting pilot validation
+Version 1.0.0 · Rules dated 17 October 2026 · Status updated 18 October: single-agent feasibility review complete; independent validation pending
 
 ## Purpose and scope
 
@@ -18,9 +18,9 @@ This protocol adds operational rules for consistent review. Its pixel thresholds
 
 The older [Flower Color, field 43](https://www.inaturalist.org/observation_fields/43) can hold relevant legacy data. The atlas offers it as an opt-in alternate source. Do not equate `lavender` with `purple` automatically. Do not duplicate or overwrite an existing legacy color merely to populate field 8625; flag it for reconciliation and use the atlas's alternate-field option meanwhile.
 
-**Pattern:** use only one proposed optional trait, **Oxalis petal vein contrast v1**. Proposed allowed values: `conspicuous|faint_or_not_visible|unscorable`. No field ID has been assigned or invented. `data/project.json` contains its description and a null ID. Search existing iNaturalist fields again before creating one; select an existing field only if its definition and values fit. Do not use “Oxalis Flower Morph”: its S/M/L categories concern a different trait. Once the pilot passes and a compatible field exists, put its actual numeric ID and exact name into `data/project.json`, then refresh the data.
+**Pattern:** use only one optional pilot trait, [**Oxalis petal vein contrast v1, field 23007**](https://www.inaturalist.org/observation_fields/23007). Allowed values: `conspicuous|faint_or_not_visible|unscorable`. This field was created for the owner-authorized October 2026 pilot and is configured in `data/project.json`. Its short iNaturalist description links here for the full rules. Do not use “Oxalis Flower Morph”: its S/M/L categories concern a different trait.
 
-The website can display pattern records once configured, but routine pattern writing must wait for the pilot decision. Color labeling can proceed independently. A pattern value does not certify the color value, and vice versa.
+The website displays saved pilot pattern records. Routine expansion still needs the reliability assessment below. A pattern value does not certify the color value, and vice versa.
 
 ## Review order and blinding
 
@@ -64,7 +64,15 @@ Use the same best evidence flower as for color where possible. Rescale it for vi
 - **`faint_or_not_visible`**: sufficient resolution, focus, and exposure to assess fine petal detail, but the conspicuous criterion is clearly not met. This includes faint veins and veins not visibly pigmented. It does **not** mean anatomical veins are absent. Do not force a confident negative when detail is insufficient.
 - **`unscorable`**: inadequate detail/lighting, fewer than three assessable petals, or a borderline judgment at the threshold. Do not equate this value with faint veins. It is excluded from pattern maps.
 
-Do not grade vein intensity into more levels or score vein color, basal spot color, or “pattern types” in this version. Additional traits can be reconsidered after the pilot. An obvious vein pattern may be scorable even when background hue is uncertain; evaluate each trait separately.
+Do not grade vein intensity into more levels or score vein color, basal spot color, or “pattern types” in this version. An obvious vein pattern may be scorable even when background hue is uncertain; evaluate each trait separately.
+
+### October 2026 exploratory findings
+
+The [100-observation feasibility report](calibration.html) supports continuing contrast as a pilot: both conspicuous and faint states occurred within white flowers, and faint states also occurred in pink and purple flowers. It does not establish reliability or biological significance. Only three faint cases were scored, and most sampled photographs could not support a vein score.
+
+**Branching:** longitudinal lines with occasional or repeated distal Y-forks were visible in some flowers. Fork visibility and number varied among petals, images, and focus levels. No defensible discrete branching types emerged. Do not label a vein “unbranched” because a fork cannot be resolved. A future study could trace primary lines and count visible distal forks per petal using standardized macros, with at least three complete upper petals and independent reviewers. That would be a new, unvalidated measurement, not an extension to this field.
+
+**Vein color:** exploratory notes include purple, pink-purple, and weak gray/blue-gray appearances. Saturation varied with exposure, background pigmentation, blur, and reflected light; paired photos sometimes changed the apparent hue substantially. These notes do not establish distinct biological vein-color classes. Keep vein hue out of routine fields for now. Test it using detailed, neutrally lit photographs with a color reference and independent reviewers before defining broad classes. Invisible veins have unknown hue, not “white” or “colorless.” Vein-color notes were added partway through the pilot, so there is no systematic 100-case hue frequency estimate.
 
 ## Multiple flowers or multiple photographs
 
@@ -93,7 +101,9 @@ For color, report a confusion matrix including an “abstain” outcome, exact a
 
 For veins, require at least **90% overall agreement**, **kappa ≥0.80** including `unscorable`, both scorable states well represented (aim for at least 20 each), and at least **70% scorable coverage among the clear open-flower photos**. Also confirm that contrasting vein states occur within at least one color class; otherwise it adds little beyond color in the pilot. Treat these as feasibility gates, not proof of biological significance. If the gate fails, omit routine vein labeling and keep a color-only project.
 
-Adjudicate disagreements before writing any pilot labels. Retain the original independent judgments. During production, independently audit at least 10% of newly scored observations (sample across labels and reviewers) and review all unexpected traits. Pause the affected class and recalibrate if consistency falls below the chosen gate. Version any rule changes; do not mix versions silently.
+Normally adjudicate disagreements before writing pilot labels. For the October 2026 feasibility run, the project owner explicitly requested adding eligible fields during review; 87 values were saved across 63 observations before independent review. This authorized exception does not satisfy the reliability gate. The sample included 50 observations per taxon drawn from Flowers-annotated records, rather than the balanced calibration set described above. Pink, blue, and faint-vein coverage fell short; agreement and kappa cannot be calculated with one reviewer. Expand those classes and obtain a blinded human second review before production.
+
+Retain the original independent judgments. During production, independently audit at least 10% of newly scored observations (sample across labels and reviewers) and review all unexpected traits. Pause the affected class and recalibrate if consistency falls below the chosen gate. Version any rule changes; do not mix versions silently.
 
 ## Applying a label to iNaturalist
 

@@ -10,7 +10,7 @@ A static GitHub Pages website and a reproducible labeling protocol for **Oxalis 
 - Agent/human instructions, a conservative optional vein-contrast pilot, a machine-readable audit schema, and a validator.
 - Public-data sync and a resumable inventory tool for the separate labeling agent. No iNaturalist write automation.
 
-The site reads **Primary flower color (8625)** by default; the older **Flower Color (43)** is optional. The optional vein field has **no ID yet** and is visibly inactive. Pilot rules are proposed, not validated. Existing community labels are not assumed to follow this protocol. No fields or observation labels have been created by building this site.
+The site reads **Primary flower color (8625)** by default; the older **Flower Color (43)** is optional. **Oxalis petal vein contrast v1 (23007)** is active as a pilot field. The October 2026 feasibility review inspected 100 observations / 174 photos and added 87 field values across 63 observations with the owner's explicit authorization. See [the pilot report](docs/calibration.html) and its downloadable audit. This was one agent's review, not independent-rater validation. Existing community labels are not assumed to follow this protocol.
 
 ## Preview
 
@@ -27,7 +27,7 @@ Open `http://127.0.0.1:4173`. Serve the files over HTTP; do not double-click the
 3. Under **Build and deployment**, choose **Deploy from a branch**, select your branch (usually `main`), and select the **`/docs`** folder. Save.
 4. Wait for GitHub Pages to publish. Open the URL shown in Settings.
 
-All site asset URLs are relative, so both `username.github.io/` and `username.github.io/repository-name/` work. `docs/.nojekyll` keeps the site buildless. No Sites-hosting account or separate service is required. This project has been prepared locally; no GitHub repository or deployment has been created.
+All site asset URLs are relative, so both `username.github.io/` and `username.github.io/repository-name/` work. `docs/.nojekyll` keeps the site buildless. No Sites-hosting account or separate service is required. Push changes to the configured Pages branch to publish them.
 
 For the platform's current setup details, see [GitHub's Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
 
@@ -57,7 +57,9 @@ npm test
 
 Commit and push `docs/data/observations.json`. The sync uses public unauthenticated reads, full cursor pagination, deduplication, and rate limiting. It retains the previous file on any error or paging limit. API indexing can lag behind a new field write. No scheduled job is installed.
 
-If the vein pilot passes, create/select a compatible iNaturalist text field with the protocol's definition and values. Enter its real numeric ID and exact name in `docs/data/project.json`; rerun sync. Keep the configuration, human protocol, and audit schema consistent when versioning the protocol. No credentials belong in configuration or GitHub Pages.
+The vein field is configured as **23007**. Its pilot labels are available on the map, but independent agreement and class-coverage gates remain unmet. Keep the configuration, human protocol, and audit schema consistent when versioning the protocol. No credentials belong in configuration or GitHub Pages.
+
+The October pilot files are in ignored `review-work/calibration-2026-10/`. `calibration-sample.mjs` records a deterministic, taxon-stratified sample from observations with a Flowers annotation; it is narrower than the production inventory. `calibration-images.py` prepares unenhanced previews for manual review. `calibration-record.mjs` records manual decisions; `calibration-audit.mjs` validates them. `calibration-verify.mjs` checks all 100 records through the public observation-detail API and reconciles their atlas records; `calibration-report.mjs` exports the verified public audit without coordinates or downloaded photos. These utilities do not predict or submit labels. Do not rerun sampling over an active review directory.
 
 ## Tests and limitations
 
@@ -70,7 +72,7 @@ Tests cover field conflicts, invalid values, public coordinate handling, privacy
 
 Points are observations, not independent plants or population frequencies. Cultivation, uneven sampling, repeated visits/clones, color-dependent species identifications, and camera color affect interpretation. Obscured public coordinates are hidden by default; a visitor can include them with clear marking. The site never uses private coordinates. See the protocol for details.
 
-Photo licenses remain with their creators. One embedded teaching photo is CC BY-NC: retain attribution and noncommercial use, or remove/replace it for a commercial adaptation. See `docs/credits.html` and `docs/vendor/LEAFLET-LICENSE.txt`. The attached paper is cited but not distributed.
+Photo licenses remain with their creators. Some teaching photos and all pilot examples are CC BY-NC: retain attribution and noncommercial use, or remove/replace them for a commercial adaptation. See the individual captions, `docs/credits.html`, and `docs/vendor/LEAFLET-LICENSE.txt`. The attached paper is cited but not distributed.
 
 ## Project layout
 

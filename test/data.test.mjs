@@ -68,7 +68,9 @@ test('cursor pagination crosses 10,000 results and deduplicates field queries', 
     return { results: Array.from({ length }, (_, i) => observation(cursor + i + 1)) };
   };
   const data = await fetchFieldRecords(config, { request });
-  assert.equal(data.records.length, 10205); assert.equal(data.complete, true); assert.equal(calls, 53);
+  assert.equal(data.records.length, 10205); assert.equal(data.complete, true);
+  // Primary color and the active vein field each paginate; the legacy fixture has one page.
+  assert.equal(calls, 52 * (config.patternField.id ? 2 : 1) + 1);
 });
 test('partial limit is explicit and stuck pagination fails', async () => {
   const full = Array.from({ length: 200 }, (_, i) => observation(i + 1));

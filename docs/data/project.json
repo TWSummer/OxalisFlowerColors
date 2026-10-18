@@ -8,7 +8,7 @@
   "colorField": { "id": 8625, "name": "Primary flower color", "values": ["white", "blue", "purple", "pink"] },
   "legacyColorField": { "id": 43, "name": "Flower Color" },
   "patternField": {
-    "id": null,
+    "id": 23007,
     "name": "Oxalis petal vein contrast v1",
     "status": "pilot",
     "values": ["conspicuous", "faint_or_not_visible", "unscorable"],

@@ -1,6 +1,6 @@
 # Handoff to a flower-labeling agent
 
-Read `protocol.md` and `data/project.json` in full before reviewing observations. The protocol is version 1.0.0 and has **not yet passed a reliability pilot**. Your first task is to prepare and score the pilot, not to bulk-write guesses.
+Read `protocol.md`, `calibration.html`, and `data/project.json` before reviewing observations. Protocol version 1.0.0 has **not yet passed independent reliability validation**. A 100-observation single-agent feasibility review is complete. Its public audit is `data/calibration-2026-10.json`; retain the original judgments when arranging independent review. Do not treat those judgments as ground truth.
 
 ## Task
 
@@ -8,7 +8,7 @@ Review all photo-bearing iNaturalist observations currently identified as Oxalis
 
 Keep geography, species name, and existing trait labels out of the visual decision. Do not alter identifications. Do not infer flower presence from a flowering annotation alone. Never classify a closed bud or the underside as upper-petal color. Read the protocol for image-quality, mixed-flower, uncertainty, and non-overwrite rules.
 
-Optional vein contrast is a proposed pilot extension: `conspicuous`, `faint_or_not_visible`, or `unscorable`. **No pattern field exists in this project's configuration yet.** A null field ID means do not submit it. Evaluate its reproducibility and incremental information before creating/selecting a compatible field. Do not repurpose “Oxalis Flower Morph.”
+Optional vein contrast is a pilot extension: `conspicuous`, `faint_or_not_visible`, or `unscorable`, using **field 23007, Oxalis petal vein contrast v1**. During the owner-authorized pilot, uncertain/unscorable values stayed in the audit. Do not create another field or repurpose “Oxalis Flower Morph.” Vein color and branching have exploratory notes only; neither is a supported labeling category. The pilot found image-dependent hue and variable distal forks without a reproducible class boundary.
 
 ## Before production
 

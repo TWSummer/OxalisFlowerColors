@@ -16,7 +16,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
     <a class="wordmark" href="#"><img src="assets/favicon.svg" alt="" width="32" height="32"> Oxalis <span>Flower Atlas</span></a>
-    <nav aria-label="Main navigation"><a href="#guide">Field guide</a><a href="#atlas">Explore the maps</a><a href="#method">The method</a></nav>
+    <nav aria-label="Main navigation"><a href="#guide">Field guide</a><a href="#atlas">Explore the maps</a><a href="calibration.html">Pilot results</a><a href="#method">The method</a></nav>
   </header>
   <main id="main">
     <section class="hero wrap">
@@ -45,7 +45,7 @@
       <div id="vein-guide" role="tabpanel" aria-labelledby="tab-veins" hidden>
         <div class="pattern-intro"><h3>One useful pattern trait, kept deliberately simple.</h3><p>The paper describes variation in purple venation, especially among white flowers. Test vein contrast as an independent photographic trait. It is a project proposal, not a classification validated by the paper.</p></div>
         <div id="pattern-cards" class="pattern-grid"></div>
-        <p class="small">Assess at a displayed flower diameter of 300 px, using a source flower at least 300 px across. Require three clear upper petals. Do not sharpen, recolor, or upscale. The <a href="protocol.md">full protocol</a> defines the threshold and pilot acceptance criteria.</p>
+        <p class="small">Assess at a displayed flower diameter of 300 px, using a source flower at least 300 px across. Require three clear upper petals. Do not sharpen, recolor, or upscale. The <a href="protocol.md">full protocol</a> defines the threshold. The <a href="calibration.html">100-observation pilot</a> supports further testing of contrast; vein hue and branching remain exploratory. Independent reliability has not been established.</p>
       </div>
       <details class="photo-detail"><summary>See two real-photo teaching examples <span>with source credits</span></summary><div id="teaching-photos" class="teaching-grid"></div><p class="small">These illustrate the scoring task. They are not a validated training set or new iNaturalist field submissions. The four diagrams above are conceptual examples, not calibrated color standards. Consult Figure 1 in the paper for the full photographic reference plate.</p></details>
     </section>
@@ -68,7 +68,7 @@
           <aside class="map-sidebar"><p class="eyebrow" id="legend-title">Petal background</p><div id="legend"></div><div class="map-total"><strong id="mapped-count">—</strong><span>mapped observations</span></div><p id="coverage" class="small"></p><div class="sidebar-rule"></div><p class="small">Select a legend item to isolate it. Select it again to show all.</p><button id="download" class="small-button">Download filtered CSV ↓</button><p class="small" id="export-note">Export includes the selected categories and location-privacy setting.</p></aside>
           <div class="map-frame"><div class="map-actions"><button id="fit" class="map-button">Fit records</button><button id="west" class="map-button">West coast</button><button id="world" class="map-button">World</button></div><div id="map" aria-label="Map of labeled Oxalis observations"></div><div id="map-message" class="map-message" hidden></div><div class="map-footer"><span id="map-caption">Only public coordinates are used.</span><span id="display-count"></span></div></div>
         </div>
-        <div class="below-map"><p><span class="status-dot"></span> Community labels are shown as recorded; they have not been audited against this protocol.</p><button id="compare-toggle" class="text-link" aria-expanded="false" aria-controls="compare-panel">Compare colors side by side +</button></div>
+        <div class="below-map"><p><span class="status-dot"></span> Labels are shown as recorded. <a href="calibration.html">Pilot judgments are documented</a>; independent reliability is not established. Other community labels are not assumed to follow this protocol.</p><button id="compare-toggle" class="text-link" aria-expanded="false" aria-controls="compare-panel">Compare colors side by side +</button></div>
         <div id="compare-panel" hidden><p class="small">Four maps at the same extent. They use the current species, grade, date, cultivation, and privacy filters, independently of the main map’s selected color.</p><div id="compare-maps" class="compare-grid"></div></div>
         <details class="records-panel"><summary>Browse the mapped records <span id="record-total"></span></summary><div id="records" class="record-grid"></div><button id="more-records" class="small-button" hidden>Show more records</button></details>
       </div>
