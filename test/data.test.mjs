@@ -52,6 +52,14 @@ test('chart denominators count only assessable labels, without requiring map coo
   assert.deepEqual(summary,{counts:{white:1,pink:1,purple:0},assessable:2,undetermined:1,missing:1,conflict:1,unrecognized:1,total:6});
   assert.equal(summarizeTrait([],'ring').assessable,0);
 });
+
+test('ring revision counts Faint and Clear separately and never translates old Present', () => {
+  const values = ['Absent', 'Faint', 'Clear', 'Cannot be determined', 'Present'];
+  const rows = values.map((value, i) => classify({ ...observation(i + 1), ofvs: [{ field_id: config.fields.ring.id, value }] }, config));
+  assert.deepEqual(summarizeTrait(rows, 'ring'), { counts: { absent: 1, faint: 1, clear: 1 }, assessable: 3, undetermined: 1, missing: 0, conflict: 0, unrecognized: 1, total: 5 });
+  assert.equal(rows[4].ring, null);
+  assert.equal(rows[4].ringState, 'unrecognized');
+});
 test('photo URLs require recognized licenses and trusted HTTPS hosts', () => {
   assert.equal(photoUrl({ url: 'https://static.inaturalist.org/photos/1/square.jpg', license_code: null }), null);
   assert.equal(photoUrl({ url: 'javascript:alert(1)', license_code: 'cc0' }), null);

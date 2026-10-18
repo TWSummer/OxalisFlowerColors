@@ -4,16 +4,18 @@ A static GitHub Pages website and labeling protocol for **Oxalis oregana** and *
 
 ## Current project key
 
-Protocol **2.0.0** uses the project owner’s categories, intentionally different from the paper’s original groups:
+Protocol **2.1.0** uses the project owner’s categories, intentionally different from the paper’s original groups:
 
 - **Redwood Sorrel Petal Color (23008):** White / Pink / Purple / Cannot be determined. Figure 1: Pink A–F, Purple G–H, White I–P.
 - **Redwood Sorrel Petal Vein Contrast (23010):** Low / Medium / High / Cannot be determined. High O,P; Medium A,F,H; all other panels Low.
-- **Redwood Sorrel White Center Ring (23011):** Present / Absent / Cannot be determined. Present A,B,G,H; Absent D,F.
+- **Redwood Sorrel White Center Ring (23011):** Absent / Faint / Clear / Cannot be determined. Clear A,B,G,H; Absent D,F; Faint is a visible weak band, with no Figure 1 anchor. Poor views are indeterminate.
 - **Redwood Sorrel Petal Pigment Variation (23012):** None / Low / High / Cannot be determined. None B,D,G; High F; Low is the written intermediate category, with no assigned plate anchor.
 
 The site includes four visual-guide tabs, a map for each trait, three comparable color maps, four count/percentage charts, public observation links, filters, and CSV exports. Ring presence is excluded from pigment variation. See [the protocol](docs/protocol.md) for all rules and uncertainty cases.
 
-The fields were created on 18 October 2026. Their first public API snapshot contains **zero observations**. Empty maps/charts are expected until fresh labels are submitted. No synthetic observations are included. Old fields 8625, 43, and 23007 are not queried, converted, or used as fallback. Existing iNaturalist labels have not been rewritten by this pivot.
+The fields were created on 18 October 2026. A [first 25-observation trial](docs/trial-25-report.md) added all four fields on 25 observations. The report preserves the original results and documents the subsequent ring revision under protocol 2.1.0. No synthetic observations are included. Old fields 8625, 43, and 23007 are not queried, converted, or used as fallback, and their existing values were preserved. Older Present ring values require visual reassessment; the atlas does not silently translate them to Clear.
+
+An [additional 100-observation batch](docs/additional-100-report.md) added 400 verified field values under protocol 2.1.0, with 209 photos examined. Its [audit](docs/data/additional-100-2026-10-18.jsonl) and [summary with skips](docs/data/additional-100-2026-10-18-summary.json) preserve the decisions and verification. The current snapshot contains 125 observations. These single-agent reviews do not establish agreement between independent reviewers.
 
 ## Preview and deploy
 
@@ -31,7 +33,7 @@ Give the reviewing agent [docs/agent-handoff.md](docs/agent-handoff.md), [docs/p
 
 ```sh
 node scripts/prepare-review.mjs
-node scripts/validate-reviews.mjs review-work/protocol-2.0.0/reviews.jsonl
+node scripts/validate-reviews.mjs review-work/protocol-2.1.0/reviews.jsonl
 ```
 
 The inventory includes all photo-bearing observations of both taxa, all grades, worldwide; it does not depend on flowering annotations. It checkpoints under a protocol-specific directory and resumes safely after interruption. A completed pass produces `candidates.jsonl` and a cutoff ID. Preserve previous audits and start a separate pass for later records or changed photos/identifications. There is no label-prediction or iNaturalist write automation in this repository.

@@ -12,8 +12,9 @@ export const GUIDE = {
     high: ['A strong contrasting vein network is a dominant visual feature, as in O and P.', 'white', 'high']
   },
   ring: {
-    present: ['A distinct white band separates the yellow/orange center from the colored outer petal. Veins may cross the band.', 'pink', 'low', { ring: true }],
-    absent: ['The colored petal continues toward the yellow/orange center with no intervening white band. The center must be clearly visible.', 'pink', 'low']
+    absent: ['No pale or white band interrupts the colored tissue before the yellow/orange throat. At least three petal bases must be clearly visible; a hidden band is not an absent band.', 'pink', 'low'],
+    faint: ['A weak pale band blends softly into the outer tissue just outside the throat on at least three petals. The view is adequate: Faint describes the ring, not uncertainty. Width alone does not decide the category.', 'pink', 'low', { ring: 'faint' }],
+    clear: ['A distinct white band separates the yellow/orange throat from the colored outer petal on at least three petals. Veins may cross it.', 'pink', 'low', { ring: 'clear' }]
   },
   variation: {
     none: ['Nearly uniform background outside the throat, veins, and any white center ring. Overall pale or dark flowers can both be None.', 'pink', 'low'],

@@ -1,0 +1,144 @@
+{
+  "protocolVersion": "2.0.0",
+  "title": "Oxalis Flower Atlas",
+  "taxa": [
+    {
+      "id": 47757,
+      "name": "Oxalis oregana",
+      "commonName": "Oregon woodsorrel"
+    },
+    {
+      "id": 1464017,
+      "name": "Oxalis smalliana",
+      "commonName": "Redwood sorrel"
+    }
+  ],
+  "apiBase": "https://api.inaturalist.org/v1",
+  "requestIntervalMs": 1100,
+  "paper": {
+    "author": "Chris Brinegar",
+    "year": 2022,
+    "title": "The true redwood sorrel: Reinstatement of Oxalis smalliana (Oxalidaceae) as a species separate from Oxalis oregana",
+    "journal": "Madroño 69(4): 304–326",
+    "doi": "https://doi.org/10.3120/0024-9637-69.4.304"
+  },
+  "fields": {
+    "color": {
+      "name": "Redwood Sorrel Petal Color",
+      "description": "Upper petal background, ignoring veins and throat. Our Fig.1 key: Pink A-F; Purple G-H; White I-P. Cannot be determined if unresolved. Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#petal-color",
+      "id": 23008,
+      "values": [
+        "White",
+        "Pink",
+        "Purple",
+        "Cannot be determined"
+      ]
+    },
+    "veins": {
+      "name": "Redwood Sorrel Petal Vein Contrast",
+      "description": "Vein contrast against upper petal background. Our Fig.1 key: High O,P; Medium A,F,H; Low B,C,D,E,G,I,J,K,L,M,N. Unclear: Cannot be determined. Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#petal-vein-contrast",
+      "id": 23010,
+      "values": [
+        "Low",
+        "Medium",
+        "High",
+        "Cannot be determined"
+      ]
+    },
+    "ring": {
+      "name": "Redwood Sorrel White Center Ring",
+      "description": "Distinct white band between outer petal color and yellow/orange center. Fig.1: Present A,B,G,H; Absent D,F. All-white or unclear: Cannot be determined. Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#white-center-ring",
+      "id": 23011,
+      "values": [
+        "Present",
+        "Absent",
+        "Cannot be determined"
+      ]
+    },
+    "variation": {
+      "name": "Redwood Sorrel Petal Pigment Variation",
+      "description": "Interveinal pigment variation, excluding throat, veins, white center ring and shadows. Fig.1: None B,D,G; High F; Low is subtle variation. Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#petal-pigment-variation",
+      "id": 23012,
+      "values": [
+        "None",
+        "Low",
+        "High",
+        "Cannot be determined"
+      ]
+    }
+  },
+  "figure1Anchors": {
+    "color": {
+      "Pink": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "Purple": [
+        "G",
+        "H"
+      ],
+      "White": [
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P"
+      ]
+    },
+    "veins": {
+      "High": [
+        "O",
+        "P"
+      ],
+      "Medium": [
+        "A",
+        "F",
+        "H"
+      ],
+      "Low": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ]
+    },
+    "ring": {
+      "Present": [
+        "A",
+        "B",
+        "G",
+        "H"
+      ],
+      "Absent": [
+        "D",
+        "F"
+      ]
+    },
+    "variation": {
+      "None": [
+        "B",
+        "D",
+        "G"
+      ],
+      "Low": [],
+      "High": [
+        "F"
+      ]
+    }
+  },
+  "categoryBasis": "Project owner interpretation of Brinegar (2022) Figure 1; intentionally different from the paper categories."
+}

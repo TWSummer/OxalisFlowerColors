@@ -12,8 +12,9 @@ export const TRAITS = {
     high: { label: 'High', fill: '#71508b', stroke: '#49335a' }
   } },
   ring: { label: 'White center ring', options: {
-    present: { label: 'Present', fill: '#76b8ad', stroke: '#30665b' },
-    absent: { label: 'Absent', fill: '#dca87d', stroke: '#8c603a' }
+    absent: { label: 'Absent', fill: '#dca87d', stroke: '#8c603a' },
+    faint: { label: 'Faint', fill: '#c4d9be', stroke: '#6a8660' },
+    clear: { label: 'Clear', fill: '#76b8ad', stroke: '#30665b' }
   } },
   variation: { label: 'Petal pigment variation', options: {
     none: { label: 'None', fill: '#ddd0bd', stroke: '#8c7961' },

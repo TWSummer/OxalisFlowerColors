@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Redwood Sorrel review audit entry v2.0.0",
+  "title": "Redwood Sorrel review audit entry v2.1.0",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -36,7 +36,7 @@
       "format": "date-time"
     },
     "protocol_version": {
-      "const": "2.0.0"
+      "const": "2.1.0"
     },
     "examined_photo_ids": {
       "type": "array",
@@ -316,8 +316,9 @@
           "properties": {
             "value": {
               "enum": [
-                "Present",
                 "Absent",
+                "Faint",
+                "Clear",
                 "Cannot be determined",
                 null
               ]

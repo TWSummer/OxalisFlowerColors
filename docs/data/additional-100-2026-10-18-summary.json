@@ -1,0 +1,274 @@
+{
+  "protocol_version": "2.1.0",
+  "verified_at": "2026-10-18T23:13:17.298Z",
+  "source": "iNaturalist public observation-detail API; unauthenticated",
+  "observations": 100,
+  "field_values": 400,
+  "examined_photos": 209,
+  "taxa": {
+    "47757": 53,
+    "1464017": 47
+  },
+  "counts": {
+    "color": {
+      "White": 63,
+      "Pink": 12,
+      "Purple": 20,
+      "Cannot be determined": 5
+    },
+    "veins": {
+      "Low": 23,
+      "Medium": 31,
+      "High": 11,
+      "Cannot be determined": 35
+    },
+    "ring": {
+      "Absent": 2,
+      "Faint": 3,
+      "Clear": 19,
+      "Cannot be determined": 76
+    },
+    "variation": {
+      "None": 47,
+      "Low": 2,
+      "High": 0,
+      "Cannot be determined": 51
+    }
+  },
+  "selection_method": "Interleaved seeded ordering within both taxa from the previously retrieved Flowers-annotated public pool. All historical-pilot and already-new-field-labeled observations excluded. Current public details and photos refreshed before review. Convenience/annotation-selected sample, not population frequency or independent validation. Continue candidates until 100 new observations are verified.",
+  "seed": "redwood-additional100-2026-10-18-v2.1.0",
+  "candidates_reviewed": 127,
+  "skipped_or_blocked": [
+    {
+      "index": 3,
+      "observation_id": 118978727,
+      "reason": "Cultivated plant with marked clover-like leaves and cupped violet flower raises target-taxon identification doubt; leave fields untouched pending identification review.",
+      "examined_photo_ids": [
+        201083271,
+        201083300,
+        201083252
+      ]
+    },
+    {
+      "index": 4,
+      "observation_id": 193676394,
+      "reason": "Open flower only about 80 source pixels across; below even the color minimum. Replaced with a more informative candidate.",
+      "examined_photo_ids": [
+        340247002
+      ]
+    },
+    {
+      "index": 13,
+      "observation_id": 26331859,
+      "reason": "Largest open flower approximately 140 source pixels; below color threshold.",
+      "examined_photo_ids": [
+        40880147
+      ]
+    },
+    {
+      "index": 12,
+      "observation_id": 777061,
+      "reason": "Observer permits only site curators to add observation fields; no fields submitted."
+    },
+    {
+      "index": 16,
+      "observation_id": 368201965,
+      "reason": "Flower approximately 105 source pixels across; below color threshold.",
+      "examined_photo_ids": [
+        672483280
+      ]
+    },
+    {
+      "index": 36,
+      "observation_id": 388461484,
+      "reason": "Strong cyan/magenta cast leaves color uncertain, and the roughly 240 px flower is below structural thresholds. Replaced with a more informative candidate.",
+      "examined_photo_ids": [
+        711465879
+      ]
+    },
+    {
+      "index": 38,
+      "observation_id": 268664049,
+      "reason": "Buds and side-facing cupped flowers; fewer than three upper petals adequately exposed, so replaced with an informative open-flower record.",
+      "examined_photo_ids": [
+        482953489
+      ]
+    },
+    {
+      "index": 45,
+      "observation_id": 379930811,
+      "reason": "Only a small side/underside view of a closed or cupped flower; no adequate upper-petal view.",
+      "examined_photo_ids": [
+        695025228
+      ]
+    },
+    {
+      "index": 53,
+      "observation_id": 3962741,
+      "reason": "Small flower has clipped, featureless white highlights; color and structural traits cannot be resolved reliably.",
+      "examined_photo_ids": [
+        4672199
+      ]
+    },
+    {
+      "index": 55,
+      "observation_id": 367629951,
+      "reason": "Both close-ups are side/transmitted-light views; fewer than three clearly exposed upper petal surfaces.",
+      "examined_photo_ids": [
+        671392339,
+        671392348
+      ]
+    },
+    {
+      "index": 58,
+      "observation_id": 363208991,
+      "reason": "Largest flower about 140 source pixels across, below the color minimum.",
+      "examined_photo_ids": [
+        662980082
+      ]
+    },
+    {
+      "index": 60,
+      "observation_id": 153405448,
+      "reason": "Cupped flower partly hidden by foliage; fewer than three clearly visible upper petals.",
+      "examined_photo_ids": [
+        264952443
+      ]
+    },
+    {
+      "index": 62,
+      "observation_id": 102796032,
+      "reason": "Only a side/underside view of a cupped flower; upper petal surfaces insufficiently exposed.",
+      "examined_photo_ids": [
+        171915079
+      ]
+    },
+    {
+      "index": 64,
+      "observation_id": 698677,
+      "reason": "Original image is only 512 x 384; flower about 110 pixels across, below color threshold.",
+      "examined_photo_ids": [
+        876493
+      ]
+    },
+    {
+      "index": 74,
+      "observation_id": 387048623,
+      "reason": "Strongly defocused pale lilac flower; color boundary and all structural traits unresolved, replaced with a more informative candidate.",
+      "examined_photo_ids": [
+        708707705
+      ]
+    },
+    {
+      "index": 80,
+      "observation_id": 14466227,
+      "reason": "Largest flowers below 300 px and soft/overexposed; White versus pale pigmentation varies with exposure and cannot be resolved. Replaced with an informative candidate.",
+      "examined_photo_ids": [
+        21530911,
+        21530912,
+        21530915
+      ]
+    },
+    {
+      "index": 83,
+      "observation_id": 385513596,
+      "reason": "Largest open flowers about 120 source pixels; below color minimum.",
+      "examined_photo_ids": [
+        705775908
+      ]
+    },
+    {
+      "index": 86,
+      "observation_id": 153898587,
+      "reason": "Only a closed flower/bud; no open upper-petal view.",
+      "examined_photo_ids": [
+        265865933
+      ]
+    },
+    {
+      "index": 90,
+      "observation_id": 217391788,
+      "reason": "All flowers are tiny and side-facing; no adequate upper-petal view.",
+      "examined_photo_ids": [
+        384577120
+      ]
+    },
+    {
+      "index": 91,
+      "observation_id": 396690649,
+      "reason": "Flowers are closed or curled/wilted with upper surfaces hidden; no suitable fresh open flower.",
+      "examined_photo_ids": [
+        727483668,
+        727483700
+      ]
+    },
+    {
+      "index": 96,
+      "observation_id": 220412046,
+      "reason": "Cupped flower in strong directional light; fewer than three clearly assessable upper petals and hidden center.",
+      "examined_photo_ids": [
+        390238866,
+        390238840,
+        390238879
+      ]
+    },
+    {
+      "index": 103,
+      "observation_id": 370509956,
+      "reason": "Small dark flower; hue boundary and structural details cannot be resolved reliably.",
+      "examined_photo_ids": [
+        676843870
+      ]
+    },
+    {
+      "index": 108,
+      "observation_id": 221595907,
+      "reason": "Small soft-focus views with inconsistent pink/violet rendering; no reliably assessable trait.",
+      "examined_photo_ids": [
+        392440372,
+        392440302,
+        392440434,
+        392440496,
+        392440552
+      ]
+    },
+    {
+      "index": 109,
+      "observation_id": 71384833,
+      "reason": "Curled, wet, partly closed flower with hidden upper surfaces; no suitable fresh open view.",
+      "examined_photo_ids": [
+        116237742,
+        116237754
+      ]
+    },
+    {
+      "index": 115,
+      "observation_id": 385857624,
+      "reason": "Only tiny flowers, well below the source-size thresholds.",
+      "examined_photo_ids": [
+        706435711
+      ]
+    },
+    {
+      "index": 119,
+      "observation_id": 38643617,
+      "reason": "Drooping and curled petals; no adequate fresh upper-petal view.",
+      "examined_photo_ids": [
+        61447437
+      ]
+    },
+    {
+      "index": 124,
+      "observation_id": 364090585,
+      "reason": "Wilted curled flower in patchy sunlight; no suitable open flower.",
+      "examined_photo_ids": [
+        664638497
+      ]
+    }
+  ],
+  "missing_values": [],
+  "conflicting_values": [],
+  "preexisting_field_changes": [],
+  "unexpected_new_fields": [],
+  "photo_list_changes": []
+}

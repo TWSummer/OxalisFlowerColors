@@ -1,5 +1,5 @@
 {
-  "protocolVersion": "2.0.0",
+  "protocolVersion": "2.1.0",
   "title": "Oxalis Flower Atlas",
   "taxa": [
     {
@@ -47,11 +47,12 @@
     },
     "ring": {
       "name": "Redwood Sorrel White Center Ring",
-      "description": "Distinct white band between outer petal color and yellow/orange center. Fig.1: Present A,B,G,H; Absent D,F. All-white or unclear: Cannot be determined. Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#white-center-ring",
+      "description": "White band outside yellow/orange throat: Absent=no band in a clear view; Faint=weak band; Clear=distinct band. Poor view/all-white: Cannot be determined. Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#white-center-ring",
       "id": 23011,
       "values": [
-        "Present",
         "Absent",
+        "Faint",
+        "Clear",
         "Cannot be determined"
       ]
     },
@@ -117,15 +118,16 @@
       ]
     },
     "ring": {
-      "Present": [
+      "Absent": [
+        "D",
+        "F"
+      ],
+      "Faint": [],
+      "Clear": [
         "A",
         "B",
         "G",
         "H"
-      ],
-      "Absent": [
-        "D",
-        "F"
       ]
     },
     "variation": {

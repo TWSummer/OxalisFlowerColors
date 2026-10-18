@@ -3,7 +3,7 @@
   "taxon_id": 47757,
   "reviewer": "SYNTHETIC EXAMPLE ONLY - do not submit",
   "reviewed_at": "2026-10-18T12:00:00-05:00",
-  "protocol_version": "2.0.0",
+  "protocol_version": "2.1.0",
   "examined_photo_ids": [
     1
   ],

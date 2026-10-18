@@ -1,6 +1,6 @@
 # Redwood Sorrel flower-trait protocol
 
-Protocol 2.0.0 · 18 October 2026 · applies to **Oxalis oregana** (47757) and **Oxalis smalliana** (1464017), including their iNaturalist descendants. Use all observation dates, grades, and locations. Record cultivated status rather than silently discarding cultivated plants.
+Protocol 2.1.0 · 18 October 2026 · applies to **Oxalis oregana** (47757) and **Oxalis smalliana** (1464017), including their iNaturalist descendants. Use all observation dates, grades, and locations. Record cultivated status rather than silently discarding cultivated plants.
 
 These are **our project categories**, following the project owner’s interpretation of Figure 1 in [Brinegar (2022), p. 308](https://doi.org/10.3120/0024-9637-69.4.304). They intentionally differ from the paper. Do not use the paper’s original color captions, geographic pattern, species identification, or old community fields to override this key. The website drawings are conceptual aids, not measured colors or substitute reference photographs.
 
@@ -10,7 +10,7 @@ All four are new text fields, used independently. Submit the spelling and capita
 
 - [Redwood Sorrel Petal Color — 23008](https://www.inaturalist.org/observation_fields/23008): `White`, `Pink`, `Purple`, `Cannot be determined`.
 - [Redwood Sorrel Petal Vein Contrast — 23010](https://www.inaturalist.org/observation_fields/23010): `Low`, `Medium`, `High`, `Cannot be determined`.
-- [Redwood Sorrel White Center Ring — 23011](https://www.inaturalist.org/observation_fields/23011): `Present`, `Absent`, `Cannot be determined`.
+- [Redwood Sorrel White Center Ring — 23011](https://www.inaturalist.org/observation_fields/23011): `Absent`, `Faint`, `Clear`, `Cannot be determined`.
 - [Redwood Sorrel Petal Pigment Variation — 23012](https://www.inaturalist.org/observation_fields/23012): `None`, `Low`, `High`, `Cannot be determined`.
 
 The names have no version suffix. The audit records the protocol version separately. Verify IDs, names, and allowed values against [project.json](data/project.json) before writing. Do not repurpose Primary flower color (8625), Flower Color (43), or Oxalis petal vein contrast v1 (23007). Their values are not inputs to the new atlas.
@@ -47,13 +47,18 @@ The plate assignments are the reference key. The old two-line/half-petal rule an
 
 ## White center ring
 
-Look for a **distinct white band immediately outside the yellow/orange throat and inside the colored outer petal**. Across the flower, the band should form a ring-like zone. Individual veins may interrupt it; it need not be a perfectly continuous geometric circle.
+Look for a **white or paler band immediately outside the yellow/orange throat and inside the colored outer petal**. Across the flower, the band should form a ring-like zone. Individual veins may interrupt it; it need not be a perfectly continuous geometric circle. This field scores how distinct the band looks in an adequate photograph, not pigment chemistry.
 
-- **Present:** this band and its boundary against the colored outer petal are clearly visible on at least three petals. Figure 1 **A, B, G, H**.
-- **Absent:** at least three petal bases and the center transition are clear, and the colored background continues toward the yellow/orange throat without an intervening white band. Figure 1 **D, F**. A pale middle farther along the petal, as in F, is not this center ring.
-- **Cannot be determined:** the center is hidden, blurred, shadowed, or overexposed; the transition is ambiguous; or an all-white flower has no distinguishable outer boundary for a separate ring. An all-white flower is neither automatically Present nor automatically Absent.
+First check whether the bases and the entire throat-to-petal transition can be inspected on at least three petals. A cupped or oblique flower can hide a ring inside the flower even when the outer petals are clear. If that transition cannot be assessed, use Cannot be determined before considering the three appearance categories.
 
-No ring assignments are prescribed for the other Figure 1 panels. A pale but visibly pink/lilac zone is not automatically a white ring; unresolved whiteness is indeterminate.
+- **Absent:** in an adequate view of at least three petal bases, the colored background continues to the yellow/orange throat without an intervening pale or white band. Figure 1 **D, F**. A pale middle farther along the petal, as in F, is not this center ring. Not seeing a ring because it is hidden is not evidence of absence.
+- **Faint:** a weak pale band can actually be seen immediately outside the throat on at least three petals, but blends into the outer tissue rather than standing out as a distinct white ring. It may be narrow or retain a slight pink/lilac tint. The band must repeat across petals and be separable from glare or shadow. **Faint is a visible feature, not a confidence label.** No Figure 1 panel has been designated a Faint anchor.
+- **Clear:** a distinct white band and its boundary against the colored outer tissue are readily visible on at least three petals. Figure 1 **A, B, G, H**. Veins may cross the band. Width alone does not decide Faint versus Clear: a narrow but sharply contrasting white band can be Clear.
+- **Cannot be determined:** the center is hidden, angled away, blurred, shadowed, or overexposed; a possible ring cannot be distinguished from lighting; the Absent/Faint/Clear boundary remains unresolved; suitable views disagree; or an all-white flower has no distinguishable outer boundary for a separate ring. An all-white flower is not automatically Absent, Faint, or Clear.
+
+[Observation 294114815](https://www.inaturalist.org/observations/294114815) is a working **Faint** example: subtle basal paling blends into the pale pink petals. The project owner placed it near the Faint/Absent boundary; this is not an independently validated anchor. [Observation 347719180](https://www.inaturalist.org/observations/347719180) is **Cannot be determined**: its cupped, oblique center could conceal a pale circle. Do not use it as an Absent example.
+
+Protocol 2.1.0 replaces the old `Present` option with `Faint` and `Clear`; the field ID stays 23011. Reinspect older Present values rather than automatically converting them to Clear. The atlas treats a remaining Present value as unsupported, not as a new category. The [2.0.0 protocol](protocol-v2.0.0.md) and initial trial audit remain historical records.
 
 ## Petal pigment variation
 
@@ -86,7 +91,7 @@ After each write, re-read the observation and verify the exact field ID and valu
 
 The earlier 100-observation pilot used different categories. Its [historical report](calibration.html) and [old protocol](protocol-v1.1.0.md) remain available, but do not validate these new fields. Fresh image review is required; do not translate its labels automatically.
 
-Before scaling, it is useful to independently double-score a varied subset covering all categories, especially Medium contrast, Low variation, and white flowers without a ring boundary. Compare per-trait disagreements and indeterminate rates. Record agreed boundary examples with photo IDs and permissions. This is a recommendation for checking repeatability, not a claim that such validation has already happened or an additional authorization requirement.
+Before scaling, it is useful to independently double-score a varied subset covering all categories, especially Medium contrast, Low variation, Absent/Faint/Clear ring boundaries, and white flowers without a ring boundary. Compare per-trait disagreements and indeterminate rates. Record agreed boundary examples with photo IDs and permissions. This is a recommendation for checking repeatability, not a claim that such validation has already happened or an additional authorization requirement.
 
 Maps use only public coordinates and determinate values from the four new fields. Charts use all fetched records matching species/grade/date/establishment filters, including those without usable map coordinates. Percentages divide by **assessable labels for that trait**; indeterminate, missing, conflicting, and unsupported values are reported separately. A missing count covers only the union of records fetched through the new fields, not every unreviewed observation on iNaturalist. Records are deduplicated by observation ID, not by individual plant.
 
