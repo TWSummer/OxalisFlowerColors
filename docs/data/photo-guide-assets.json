@@ -1,0 +1,1294 @@
+{
+  "reviewedAt": "2026-10-18",
+  "protocolVersion": "2.1.0",
+  "reviewManifest": "review-work/guide-review-2026-10-18/manifest.json",
+  "decisionsSource": "review-work/guide-review-2026-10-18/decisions.json",
+  "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
+  "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+  "sourceHashes": {
+    "manifest": "c2d346cd1a8c60cc107320911e0af65f13b7ae34a7a797628c66a313570dad19",
+    "decisions": "1ad55c98f543df4a33eb138272ed5d31515b16fd0db99892c448805c436f6a8c",
+    "baseline": "9ed51ee7b08844148088458b0ae2c24cc5778d2a7974cbc54e1a1a4a4b8fe6d7"
+  },
+  "method": "Focal crops copied byte-for-byte from earlier review evidence. Original source index and evidence photo ID cross-checked against the source manifest; each example category checked against the fresh 125-observation visual re-review. Only CC0, CC BY, and CC BY-NC photo licenses accepted from the fresh public API baseline.",
+  "assets": [
+    {
+      "src": "assets/photo-guide/269380404-484653403.jpg",
+      "observationId": 269380404,
+      "photoId": 484653403,
+      "reviewIndex": 102,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 98,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/098.jpg",
+      "sha256": "45c7990e2c7db7ed29d445f02319ee71d187d4dfad76e08e49429321affa298d",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 484653403,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 765,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 484653403,
+      "reviewedValues": {
+        "color": "White",
+        "veins": "Low",
+        "ring": "Cannot be determined",
+        "variation": "None"
+      },
+      "attribution": "(c) Big Year, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/484653403",
+      "observationUrl": "https://www.inaturalist.org/observations/269380404",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/484653403/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/270419247-486327241.jpg",
+      "observationId": 270419247,
+      "photoId": 486327241,
+      "reviewIndex": 92,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 84,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/084.jpg",
+      "sha256": "267ef32a873f7b7673bb4194f49bfd342e5b7d4bc0cd3fe4b18cdfc0aae4a27c",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 486327241,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 555,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 486327241,
+      "reviewedValues": {
+        "color": "White",
+        "veins": "Low",
+        "ring": "Cannot be determined",
+        "variation": "None"
+      },
+      "attribution": "no rights reserved",
+      "licenseCode": "cc0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/486327241",
+      "observationUrl": "https://www.inaturalist.org/observations/270419247",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/486327241/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/102048918-170515136.jpg",
+      "observationId": 102048918,
+      "photoId": 170515136,
+      "reviewIndex": 66,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 49,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/049.jpg",
+      "sha256": "36f13060cbe1a982f130af4714505bb7a474f35dd4a6b1c54fd612095c52380d",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 170515136,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 515,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 170515136,
+      "reviewedValues": {
+        "color": "White",
+        "veins": "High",
+        "ring": "Cannot be determined",
+        "variation": "None"
+      },
+      "attribution": "(c) laziphotos, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/170515136",
+      "observationUrl": "https://www.inaturalist.org/observations/102048918",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/170515136/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/347719180-634046692.jpg",
+      "observationId": 347719180,
+      "photoId": 634046692,
+      "reviewIndex": 19,
+      "sourceRoot": "review-work/calibration-2026-10",
+      "sourceIndex": 85,
+      "sourceCropPath": "review-work/calibration-2026-10/crops/085.jpg",
+      "sha256": "47de83015499970395b96cf6232781c2600c171e545109ab944c7d9a6170690c",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 634046692,
+        "flower": "Fresh focal flower in manually selected crop x=480, y=840, width=390; source-pixel measurements approximate.",
+        "source_diameter_px": 390,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 634046692,
+      "reviewedValues": {
+        "color": "Pink",
+        "veins": "Low",
+        "ring": "Cannot be determined",
+        "variation": "None"
+      },
+      "attribution": "(c) Amy Frost-Wicks, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/634046692",
+      "observationUrl": "https://www.inaturalist.org/observations/347719180",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/634046692/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/139749730-239087144.jpg",
+      "observationId": 139749730,
+      "photoId": 239087144,
+      "reviewIndex": 60,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 42,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/042.jpg",
+      "sha256": "57d6e6445f42f33fd9d11b75258b0bffa32c91babeef6ed51f4acd81822b13f4",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 239087144,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 470,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 4
+      },
+      "sourceManifestPhotoId": 239087144,
+      "reviewedValues": {
+        "color": "Pink",
+        "veins": "Cannot be determined",
+        "ring": "Clear",
+        "variation": "Cannot be determined"
+      },
+      "attribution": "(c) jrmorris, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/239087144",
+      "observationUrl": "https://www.inaturalist.org/observations/139749730",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/239087144/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/27136204-42187392.jpg",
+      "observationId": 27136204,
+      "photoId": 42187392,
+      "reviewIndex": 63,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 46,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/046.jpg",
+      "sha256": "9398fd8ef04d177942e34c9cf05dfb7687f72055b30ca0b29bd72af58a75899f",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 42187392,
+        "flower": "Open flower in third photo; checked the other views",
+        "source_diameter_px": 310,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 42187392,
+      "reviewedValues": {
+        "color": "Pink",
+        "veins": "Low",
+        "ring": "Clear",
+        "variation": "Low"
+      },
+      "attribution": "(c) madfox, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/42187392",
+      "observationUrl": "https://www.inaturalist.org/observations/27136204",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/42187392/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/215814088-381601842.jpg",
+      "observationId": 215814088,
+      "photoId": 381601842,
+      "reviewIndex": 77,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 66,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/066.jpg",
+      "sha256": "01a00a8088ee13fdd5dddb80f420af5954e4038e7b3f94c832b4026661df2602",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 381601842,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 450,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 381601842,
+      "reviewedValues": {
+        "color": "Purple",
+        "veins": "Low",
+        "ring": "Clear",
+        "variation": "None"
+      },
+      "attribution": "(c) vtforester, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/381601842",
+      "observationUrl": "https://www.inaturalist.org/observations/215814088",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/381601842/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/362970560-662531762.jpg",
+      "observationId": 362970560,
+      "photoId": 662531762,
+      "reviewIndex": 99,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 94,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/094.jpg",
+      "sha256": "474be492c5a9c9f826aa112b4c143f06d1b20c1cdcb50e63ddfb7e03b44bf7e2",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 662531762,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 1240,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 662531762,
+      "reviewedValues": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Clear",
+        "variation": "None"
+      },
+      "attribution": "(c) Eric Duran, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/662531762",
+      "observationUrl": "https://www.inaturalist.org/observations/362970560",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/662531762/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/77541853-126823320.jpg",
+      "observationId": 77541853,
+      "photoId": 126823320,
+      "reviewIndex": 38,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 18,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/018.jpg",
+      "sha256": "4a81d217f60139ff9d55451a69fa5402892002b5ecd2259d1262053677ae64bb",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 126823320,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 450,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 126823320,
+      "reviewedValues": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Clear",
+        "variation": "None"
+      },
+      "attribution": "(c) Dillon Doss, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/126823320",
+      "observationUrl": "https://www.inaturalist.org/observations/77541853",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/126823320/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/269478378-484529223.jpg",
+      "observationId": 269478378,
+      "photoId": 484529223,
+      "reviewIndex": 13,
+      "sourceRoot": "review-work/calibration-2026-10",
+      "sourceIndex": 65,
+      "sourceCropPath": "review-work/calibration-2026-10/crops/065.jpg",
+      "sha256": "aefc8f2ffea357a47174b4535a4c569bf16675052223614da55f4c5119fdfd25",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 484529223,
+        "flower": "Fresh focal flower in manually selected crop x=600, y=870, width=395; source-pixel measurements approximate.",
+        "source_diameter_px": 395,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 484529223,
+      "reviewedValues": {
+        "color": "Cannot be determined",
+        "veins": "High",
+        "ring": "Cannot be determined",
+        "variation": "None"
+      },
+      "attribution": "(c) g-flo, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/484529223",
+      "observationUrl": "https://www.inaturalist.org/observations/269478378",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/484529223/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/79171578-129649576.jpg",
+      "observationId": 79171578,
+      "photoId": 129649576,
+      "reviewIndex": 3,
+      "sourceRoot": "review-work/calibration-2026-10",
+      "sourceIndex": 12,
+      "sourceCropPath": "review-work/calibration-2026-10/crops/012.jpg",
+      "sha256": "473d95858a82bc30e31b8b8ceff70b343dbe622f105eee33de81c2dba184cd50",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 129649576,
+        "flower": "Fresh focal flower in manually selected crop x=1140, y=520, width=470; source-pixel measurements approximate.",
+        "source_diameter_px": 470,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 129649576,
+      "reviewedValues": {
+        "color": "White",
+        "veins": "Low",
+        "ring": "Cannot be determined",
+        "variation": "None"
+      },
+      "attribution": "(c) Dan Blanchard, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/129649576",
+      "observationUrl": "https://www.inaturalist.org/observations/79171578",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/129649576/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/48617846-77152494.jpg",
+      "observationId": 48617846,
+      "photoId": 77152494,
+      "reviewIndex": 1,
+      "sourceRoot": "review-work/calibration-2026-10",
+      "sourceIndex": 7,
+      "sourceCropPath": "review-work/calibration-2026-10/crops/007.jpg",
+      "sha256": "9b81ba6ae6b2b7b87c3344c0c8721cc23810d74c4a88ebb73c62d5fa55ac0f4d",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 77152494,
+        "flower": "Fresh focal flower in manually selected crop x=410, y=705, width=845; source-pixel measurements approximate.",
+        "source_diameter_px": 845,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 77152494,
+      "reviewedValues": {
+        "color": "White",
+        "veins": "Medium",
+        "ring": "Cannot be determined",
+        "variation": "None"
+      },
+      "attribution": "(c) ejmanzano, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/77152494",
+      "observationUrl": "https://www.inaturalist.org/observations/48617846",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/77152494/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/349126189-636828048.jpg",
+      "observationId": 349126189,
+      "photoId": 636828048,
+      "reviewIndex": 65,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 48,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/048.jpg",
+      "sha256": "a664bc3c343d9015bad94d08a3ac17fba362dd17a36a3879f7203a6de584e3c8",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 636828048,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 530,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 636828048,
+      "reviewedValues": {
+        "color": "Pink",
+        "veins": "Medium",
+        "ring": "Clear",
+        "variation": "Low"
+      },
+      "attribution": "(c) Paloma, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/636828048",
+      "observationUrl": "https://www.inaturalist.org/observations/349126189",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/636828048/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/305108427-550088222.jpg",
+      "observationId": 305108427,
+      "photoId": 550088222,
+      "reviewIndex": 57,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 39,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/039.jpg",
+      "sha256": "dc2f0d5856389a8e321ecd7db43581d29d29523dc6dd8a813da2bbfb0a26a227",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 550088222,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 410,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 550088222,
+      "reviewedValues": {
+        "color": "White",
+        "veins": "High",
+        "ring": "Cannot be determined",
+        "variation": "None"
+      },
+      "attribution": "(c) kindcrow, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/550088222",
+      "observationUrl": "https://www.inaturalist.org/observations/305108427",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/550088222/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/273527894-491939104.jpg",
+      "observationId": 273527894,
+      "photoId": 491939104,
+      "reviewIndex": 125,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 127,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/127.jpg",
+      "sha256": "d5fb205bcf0eff430e872708bac9a97ca8e11a5f5bd267d355f9b31a92091192",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 491939104,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 1400,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 491939104,
+      "reviewedValues": {
+        "color": "White",
+        "veins": "High",
+        "ring": "Cannot be determined",
+        "variation": "None"
+      },
+      "attribution": "(c) jwlowe, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/491939104",
+      "observationUrl": "https://www.inaturalist.org/observations/273527894",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/491939104/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/377017094-689396749.jpg",
+      "observationId": 377017094,
+      "photoId": 689396749,
+      "reviewIndex": 23,
+      "sourceRoot": "review-work/calibration-2026-10",
+      "sourceIndex": 95,
+      "sourceCropPath": "review-work/calibration-2026-10/crops/095.jpg",
+      "sha256": "0b05278c81e95eb72820f74402380e886a45c18a21e44b016ecd52ab4a89180c",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 689396749,
+        "flower": "Fresh focal flower in manually selected crop x=485, y=645, width=580; source-pixel measurements approximate.",
+        "source_diameter_px": 580,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 3
+      },
+      "sourceManifestPhotoId": 689396749,
+      "reviewedValues": {
+        "color": "White",
+        "veins": "Cannot be determined",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "attribution": "(c) Trevor Harding, some rights reserved (CC BY)",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/689396749",
+      "observationUrl": "https://www.inaturalist.org/observations/377017094",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/689396749/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/70158331-113996957.jpg",
+      "observationId": 70158331,
+      "photoId": 113996957,
+      "reviewIndex": 103,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 99,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/099.jpg",
+      "sha256": "b9542c1f0998a0eef011206946925ca8ac43aedb3f93d71e9a22cfa8635b2548",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 113996957,
+        "flower": "Larger upper flower in first photo",
+        "source_diameter_px": 355,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 4
+      },
+      "sourceManifestPhotoId": 113996957,
+      "reviewedValues": {
+        "color": "White",
+        "veins": "Cannot be determined",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "attribution": "(c) Levin Pratte, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/113996957",
+      "observationUrl": "https://www.inaturalist.org/observations/70158331",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/113996957/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/113980346-192513436.jpg",
+      "observationId": 113980346,
+      "photoId": 192513436,
+      "reviewIndex": 46,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 26,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/026.jpg",
+      "sha256": "9ac359ac95a54b669a0ee3a26dbbd2fc0eacb09704e8f6192660094235e82897",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 192513436,
+        "flower": "Front-facing flower in first photo; checked both flowers in the other views",
+        "source_diameter_px": 350,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 192513436,
+      "reviewedValues": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Absent",
+        "variation": "Low"
+      },
+      "attribution": "(c) moedailey, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/192513436",
+      "observationUrl": "https://www.inaturalist.org/observations/113980346",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/192513436/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/159722286-275973290.jpg",
+      "observationId": 159722286,
+      "photoId": 275973290,
+      "reviewIndex": 104,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 100,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/100.jpg",
+      "sha256": "75bc107ad941cf03c522a3e744220ba3d702becfba01350534477839e6ac0f80",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 275973290,
+        "flower": "Lower right open flower",
+        "source_diameter_px": 330,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 275973290,
+      "reviewedValues": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Absent",
+        "variation": "Low"
+      },
+      "attribution": "(c) weavergirl, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/275973290",
+      "observationUrl": "https://www.inaturalist.org/observations/159722286",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/275973290/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/272127265-489563506.jpg",
+      "observationId": 272127265,
+      "photoId": 489563506,
+      "reviewIndex": 121,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 122,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/122.jpg",
+      "sha256": "3451cb575cca440d6f6e0ddb938c13a56760ef31b37eaa20fb5011634b0f32a5",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 489563506,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 550,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 489563506,
+      "reviewedValues": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Faint",
+        "variation": "Low"
+      },
+      "attribution": "(c) Trevor Van Loon, some rights reserved (CC BY)",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/489563506",
+      "observationUrl": "https://www.inaturalist.org/observations/272127265",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/489563506/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/118710031-200599983.jpg",
+      "observationId": 118710031,
+      "photoId": 200599983,
+      "reviewIndex": 6,
+      "sourceRoot": "review-work/calibration-2026-10",
+      "sourceIndex": 25,
+      "sourceCropPath": "review-work/calibration-2026-10/crops/025.jpg",
+      "sha256": "8f5a300f5d628287fa9c417188ed11908fde4b75684d89f511eaf5f00c806a62",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 200599983,
+        "flower": "Fresh focal flower in manually selected crop x=620, y=820, width=435; source-pixel measurements approximate.",
+        "source_diameter_px": 435,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 200599983,
+      "reviewedValues": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Clear",
+        "variation": "Low"
+      },
+      "attribution": "(c) sjrayfie, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/200599983",
+      "observationUrl": "https://www.inaturalist.org/observations/118710031",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/200599983/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/118082164-199471119.jpg",
+      "observationId": 118082164,
+      "photoId": 199471119,
+      "reviewIndex": 54,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 34,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/034.jpg",
+      "sha256": "16685a4ac77cc036ed0123d1ff2f730eb8c5728dd8ed7953d39e0257e0b5a9c6",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 199471119,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 440,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 199471119,
+      "reviewedValues": {
+        "color": "Purple",
+        "veins": "Low",
+        "ring": "Clear",
+        "variation": "Low"
+      },
+      "attribution": "(c) Brittany, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/199471119",
+      "observationUrl": "https://www.inaturalist.org/observations/118082164",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/199471119/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/70128629-113946319.jpg",
+      "observationId": 70128629,
+      "photoId": 113946319,
+      "reviewIndex": 35,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 14,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/014.jpg",
+      "sha256": "d20daee6cd88b73bec935e81206b801e4b322819f9bec2322ebd44bfa1b7c8c0",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 113946319,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 560,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 4
+      },
+      "sourceManifestPhotoId": 113946319,
+      "reviewedValues": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Clear",
+        "variation": "Cannot be determined"
+      },
+      "attribution": "(c) Sarah Larsen, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/113946319",
+      "observationUrl": "https://www.inaturalist.org/observations/70128629",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/113946319/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/155249432-268333318.jpg",
+      "observationId": 155249432,
+      "photoId": 268333318,
+      "reviewIndex": 89,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 79,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/079.jpg",
+      "sha256": "e413b9f1b2a09ec1d6be78447da5ba2efebee7136138cd4a39eb0319615adc2b",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 268333318,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 475,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 268333318,
+      "reviewedValues": {
+        "color": "White",
+        "veins": "Cannot be determined",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "attribution": "(c) Julia Prange, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/268333318",
+      "observationUrl": "https://www.inaturalist.org/observations/155249432",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/268333318/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/73489352-119984737.jpg",
+      "observationId": 73489352,
+      "photoId": 119984737,
+      "reviewIndex": 109,
+      "sourceRoot": "review-work/additional-100-2026-10-18",
+      "sourceIndex": 106,
+      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/106.jpg",
+      "sha256": "1e4d77219b864e111ff93bce04cc645f158bd93b46d9c39ac7a6e5509028b485",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 119984737,
+        "flower": "Focal open flower in source photo",
+        "source_diameter_px": 910,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 119984737,
+      "reviewedValues": {
+        "color": "Purple",
+        "veins": "Low",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "attribution": "(c) Michael Hawk, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "photoUrl": "https://www.inaturalist.org/photos/119984737",
+      "observationUrl": "https://www.inaturalist.org/observations/73489352",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/119984737/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    }
+  ],
+  "uses": [
+    {
+      "trait": "color",
+      "value": "White",
+      "reviewIndex": 102,
+      "observationId": 269380404,
+      "photoId": 484653403,
+      "src": "assets/photo-guide/269380404-484653403.jpg",
+      "reviewedReason": "White broad tissue."
+    },
+    {
+      "trait": "color",
+      "value": "White",
+      "reviewIndex": 92,
+      "observationId": 270419247,
+      "photoId": 486327241,
+      "src": "assets/photo-guide/270419247-486327241.jpg",
+      "reviewedReason": "Near-white cool tissue."
+    },
+    {
+      "trait": "color",
+      "value": "White",
+      "reviewIndex": 66,
+      "observationId": 102048918,
+      "photoId": 170515136,
+      "src": "assets/photo-guide/102048918-170515136.jpg",
+      "reviewedReason": "White interveinal background."
+    },
+    {
+      "trait": "color",
+      "value": "Pink",
+      "reviewIndex": 19,
+      "observationId": 347719180,
+      "photoId": 634046692,
+      "src": "assets/photo-guide/347719180-634046692.jpg",
+      "reviewedReason": "Rose/magenta tissue matches Pink C/D."
+    },
+    {
+      "trait": "color",
+      "value": "Pink",
+      "reviewIndex": 60,
+      "observationId": 139749730,
+      "photoId": 239087144,
+      "src": "assets/photo-guide/139749730-239087144.jpg",
+      "reviewedReason": "Pale rose/lilac tissue matches Pink."
+    },
+    {
+      "trait": "color",
+      "value": "Pink",
+      "reviewIndex": 63,
+      "observationId": 27136204,
+      "photoId": 42187392,
+      "src": "assets/photo-guide/27136204-42187392.jpg",
+      "reviewedReason": "Rose-pink broad tissue."
+    },
+    {
+      "trait": "color",
+      "value": "Purple",
+      "reviewIndex": 77,
+      "observationId": 215814088,
+      "photoId": 381601842,
+      "src": "assets/photo-guide/215814088-381601842.jpg",
+      "reviewedReason": "Clearly violet broad tissue."
+    },
+    {
+      "trait": "color",
+      "value": "Purple",
+      "reviewIndex": 99,
+      "observationId": 362970560,
+      "photoId": 662531762,
+      "src": "assets/photo-guide/362970560-662531762.jpg",
+      "reviewedReason": "Violet outer background."
+    },
+    {
+      "trait": "color",
+      "value": "Purple",
+      "reviewIndex": 38,
+      "observationId": 77541853,
+      "photoId": 126823320,
+      "src": "assets/photo-guide/77541853-126823320.jpg",
+      "reviewedReason": "Violet broad tissue."
+    },
+    {
+      "trait": "color",
+      "value": "Cannot be determined",
+      "reviewIndex": 13,
+      "observationId": 269478378,
+      "photoId": 484529223,
+      "src": "assets/photo-guide/269478378-484529223.jpg",
+      "reviewedReason": "Broad tissue remains unresolved between cool white and pale pigmented lilac."
+    },
+    {
+      "trait": "veins",
+      "value": "Low",
+      "reviewIndex": 102,
+      "observationId": 269380404,
+      "photoId": 484653403,
+      "src": "assets/photo-guide/269380404-484653403.jpg",
+      "reviewedReason": "Fine lines very faint."
+    },
+    {
+      "trait": "veins",
+      "value": "Low",
+      "reviewIndex": 3,
+      "observationId": 79171578,
+      "photoId": 129649576,
+      "src": "assets/photo-guide/79171578-129649576.jpg",
+      "reviewedReason": "Vein lines are pale and subtle at 300 px; revised from Medium."
+    },
+    {
+      "trait": "veins",
+      "value": "Low",
+      "reviewIndex": 77,
+      "observationId": 215814088,
+      "photoId": 381601842,
+      "src": "assets/photo-guide/215814088-381601842.jpg",
+      "reviewedReason": "Fine lines subtle relative to saturated background."
+    },
+    {
+      "trait": "veins",
+      "value": "Medium",
+      "reviewIndex": 1,
+      "observationId": 48617846,
+      "photoId": 77152494,
+      "src": "assets/photo-guide/48617846-77152494.jpg",
+      "reviewedReason": "Pink lines are readily visible but secondary to the pale background; revised from High."
+    },
+    {
+      "trait": "veins",
+      "value": "Medium",
+      "reviewIndex": 38,
+      "observationId": 77541853,
+      "photoId": 126823320,
+      "src": "assets/photo-guide/77541853-126823320.jpg",
+      "reviewedReason": "Veins visible but secondary."
+    },
+    {
+      "trait": "veins",
+      "value": "Medium",
+      "reviewIndex": 65,
+      "observationId": 349126189,
+      "photoId": 636828048,
+      "src": "assets/photo-guide/349126189-636828048.jpg",
+      "reviewedReason": "Visible vein lines remain secondary."
+    },
+    {
+      "trait": "veins",
+      "value": "High",
+      "reviewIndex": 66,
+      "observationId": 102048918,
+      "photoId": 170515136,
+      "src": "assets/photo-guide/102048918-170515136.jpg",
+      "reviewedReason": "Bold purple network dominates."
+    },
+    {
+      "trait": "veins",
+      "value": "High",
+      "reviewIndex": 57,
+      "observationId": 305108427,
+      "photoId": 550088222,
+      "src": "assets/photo-guide/305108427-550088222.jpg",
+      "reviewedReason": "Bold contrasting network dominates."
+    },
+    {
+      "trait": "veins",
+      "value": "High",
+      "reviewIndex": 125,
+      "observationId": 273527894,
+      "photoId": 491939104,
+      "src": "assets/photo-guide/273527894-491939104.jpg",
+      "reviewedReason": "Dark contrasting network dominates."
+    },
+    {
+      "trait": "veins",
+      "value": "Cannot be determined",
+      "reviewIndex": 23,
+      "observationId": 377017094,
+      "photoId": 689396749,
+      "src": "assets/photo-guide/377017094-689396749.jpg",
+      "reviewedReason": "Defocus prevents judging vein prominence."
+    },
+    {
+      "trait": "veins",
+      "value": "Cannot be determined",
+      "reviewIndex": 103,
+      "observationId": 70158331,
+      "photoId": 113996957,
+      "src": "assets/photo-guide/70158331-113996957.jpg",
+      "reviewedReason": "Clipped highlights may inflate contrast; unresolved."
+    },
+    {
+      "trait": "ring",
+      "value": "Absent",
+      "reviewIndex": 46,
+      "observationId": 113980346,
+      "photoId": 192513436,
+      "src": "assets/photo-guide/113980346-192513436.jpg",
+      "reviewedReason": "Colored background reaches throat without distinct intervening pale band."
+    },
+    {
+      "trait": "ring",
+      "value": "Absent",
+      "reviewIndex": 104,
+      "observationId": 159722286,
+      "photoId": 275973290,
+      "src": "assets/photo-guide/159722286-275973290.jpg",
+      "reviewedReason": "Colored background reaches yellow throat without pale band on visible bases."
+    },
+    {
+      "trait": "ring",
+      "value": "Faint",
+      "reviewIndex": 121,
+      "observationId": 272127265,
+      "photoId": 489563506,
+      "src": "assets/photo-guide/272127265-489563506.jpg",
+      "reviewedReason": "Weak pale basal band blends into colored tissue."
+    },
+    {
+      "trait": "ring",
+      "value": "Clear",
+      "reviewIndex": 99,
+      "observationId": 362970560,
+      "photoId": 662531762,
+      "src": "assets/photo-guide/362970560-662531762.jpg",
+      "reviewedReason": "Broad white basal band has a distinct boundary against violet tissue."
+    },
+    {
+      "trait": "ring",
+      "value": "Clear",
+      "reviewIndex": 6,
+      "observationId": 118710031,
+      "photoId": 200599983,
+      "src": "assets/photo-guide/118710031-200599983.jpg",
+      "reviewedReason": "White band is distinct outside the yellow throat."
+    },
+    {
+      "trait": "ring",
+      "value": "Clear",
+      "reviewIndex": 63,
+      "observationId": 27136204,
+      "photoId": 42187392,
+      "src": "assets/photo-guide/27136204-42187392.jpg",
+      "reviewedReason": "Distinct white basal band around the throat."
+    },
+    {
+      "trait": "ring",
+      "value": "Cannot be determined",
+      "reviewIndex": 19,
+      "observationId": 347719180,
+      "photoId": 634046692,
+      "src": "assets/photo-guide/347719180-634046692.jpg",
+      "reviewedReason": "User-corrected cupped view may hide an inner band; uncertainty retained."
+    },
+    {
+      "trait": "ring",
+      "value": "Cannot be determined",
+      "reviewIndex": 1,
+      "observationId": 48617846,
+      "photoId": 77152494,
+      "src": "assets/photo-guide/48617846-77152494.jpg",
+      "reviewedReason": "No separate outer ring boundary on white petals."
+    },
+    {
+      "trait": "variation",
+      "value": "None",
+      "reviewIndex": 19,
+      "observationId": 347719180,
+      "photoId": 634046692,
+      "src": "assets/photo-guide/347719180-634046692.jpg",
+      "reviewedReason": "Nearly uniform broad pink tissue; folds and flecks excluded."
+    },
+    {
+      "trait": "variation",
+      "value": "None",
+      "reviewIndex": 77,
+      "observationId": 215814088,
+      "photoId": 381601842,
+      "src": "assets/photo-guide/215814088-381601842.jpg",
+      "reviewedReason": "Approximately uniform colored background outside the separate ring."
+    },
+    {
+      "trait": "variation",
+      "value": "None",
+      "reviewIndex": 102,
+      "observationId": 269380404,
+      "photoId": 484653403,
+      "src": "assets/photo-guide/269380404-484653403.jpg",
+      "reviewedReason": "Approximately uniform white background beyond throat and fine veins."
+    },
+    {
+      "trait": "variation",
+      "value": "None",
+      "reviewIndex": 99,
+      "observationId": 362970560,
+      "photoId": 662531762,
+      "src": "assets/photo-guide/362970560-662531762.jpg",
+      "reviewedReason": "Colored outer tissue is nearly uniform; the large separate center ring is excluded."
+    },
+    {
+      "trait": "variation",
+      "value": "Low",
+      "reviewIndex": 104,
+      "observationId": 159722286,
+      "photoId": 275973290,
+      "src": "assets/photo-guide/159722286-275973290.jpg",
+      "reviewedReason": "User-designated Low anchor: broad paler middle regions and stronger pigment toward other petal regions, beyond narrow vein lines; revised from None."
+    },
+    {
+      "trait": "variation",
+      "value": "Low",
+      "reviewIndex": 121,
+      "observationId": 272127265,
+      "photoId": 489563506,
+      "src": "assets/photo-guide/272127265-489563506.jpg",
+      "reviewedReason": "User-designated Low anchor: modest broad lighter and darker regions within the colored petals, without F-like separated zones; revised from None."
+    },
+    {
+      "trait": "variation",
+      "value": "Low",
+      "reviewIndex": 54,
+      "observationId": 118082164,
+      "photoId": 199471119,
+      "src": "assets/photo-guide/118082164-199471119.jpg",
+      "reviewedReason": "Modest repeated gradient toward stronger pink-purple outer regions; Low retained."
+    },
+    {
+      "trait": "variation",
+      "value": "Cannot be determined",
+      "reviewIndex": 35,
+      "observationId": 70128629,
+      "photoId": 113946319,
+      "src": "assets/photo-guide/70128629-113946319.jpg",
+      "reviewedReason": "Direct glare and shadows prevent pigment-gradient assessment."
+    },
+    {
+      "trait": "variation",
+      "value": "Cannot be determined",
+      "reviewIndex": 89,
+      "observationId": 155249432,
+      "photoId": 268333318,
+      "src": "assets/photo-guide/155249432-268333318.jpg",
+      "reviewedReason": "Glare and defocus prevent variation scoring."
+    },
+    {
+      "trait": "variation",
+      "value": "Cannot be determined",
+      "reviewIndex": 109,
+      "observationId": 73489352,
+      "photoId": 119984737,
+      "src": "assets/photo-guide/73489352-119984737.jpg",
+      "reviewedReason": "Strong differences in illumination prevent attributing broad changes to pigment."
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "protocol_version": "2.1.0",
+  "review_scope": "All 125 observations labeled with the four Redwood Sorrel fields. Focal close-ups re-reviewed; alternate views checked for proposed corrections. Earlier full-photo audits preserved.",
+  "observations": 125,
+  "expected_fields": 500,
+  "corrected_values": 17,
+  "unchanged_values": 483,
+  "verified_at": "2026-10-19T01:30:15.611Z",
+  "verification_source": "iNaturalist public observation-detail API",
+  "mismatches": [],
+  "unrelated_changes": [],
+  "counts": {
+    "color": {
+      "White": 78,
+      "Pink": 16,
+      "Purple": 25,
+      "Cannot be determined": 6
+    },
+    "veins": {
+      "Low": 30,
+      "Medium": 43,
+      "High": 16,
+      "Cannot be determined": 36
+    },
+    "ring": {
+      "Absent": 2,
+      "Faint": 4,
+      "Clear": 26,
+      "Cannot be determined": 93
+    },
+    "variation": {
+      "None": 55,
+      "Low": 16,
+      "High": 0,
+      "Cannot be determined": 54
+    }
+  },
+  "corrections": [
+    {
+      "observation_id": 48617846,
+      "changes": [
+        {
+          "trait": "veins",
+          "field_id": 23010,
+          "before": "High",
+          "after": "Medium",
+          "reason": "Pink lines are readily visible but secondary to the pale background; revised from High."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 73278626,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "Subtle broad paling inside the colored petal and stronger pigment toward the outer regions repeats beyond the narrow center ring; revised to Low."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 79171578,
+      "changes": [
+        {
+          "trait": "veins",
+          "field_id": 23010,
+          "before": "Medium",
+          "after": "Low",
+          "reason": "Vein lines are pale and subtle at 300 px; revised from Medium."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 118710031,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "Modest broad lighter interiors and deeper outer tissue repeat across petals outside the white basal ring; revised to Low."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 294114815,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "Subtle broad paling toward petal interiors with slightly stronger outer tissue repeats beyond the faint center band; revised to Low."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 391771143,
+      "changes": [
+        {
+          "trait": "veins",
+          "field_id": 23010,
+          "before": "Medium",
+          "after": "Low",
+          "reason": "Very pale fine lines are subtle at 300 px; revised from Medium."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 74492984,
+      "changes": [
+        {
+          "trait": "veins",
+          "field_id": 23010,
+          "before": "High",
+          "after": "Medium",
+          "reason": "Fine pink-purple lines are clear but remain secondary to the broad white background; revised to Medium."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 110713967,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "Modest broad paling toward the petal interiors and deeper outer areas repeat beyond the narrow basal band; revised to Low."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 113980346,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "Subtle broad lighter petal interiors and stronger outer/background patches repeat across petals beyond the vein lines; revised to Low."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 45032032,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "Broad lighter mid-petal patches and stronger outer tissue repeat on several petals; revised to Low."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 27136204,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "Subtle broad paling within colored tissue and stronger outer regions repeat outside the separate white band; revised to Low."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 349126189,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "Modest broad lighter interiors and more pigmented outer regions repeat beyond the narrow center band; revised to Low."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 357728689,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "Subtle broad paling of inner/middle colored tissue and deeper outer regions repeat beyond the white ring; revised to Low."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 345204113,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "Subtle broad lighter interiors and stronger colored outer regions repeat outside the narrow basal band; revised to Low."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 159722286,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "User-designated Low anchor: broad paler middle regions and stronger pigment toward other petal regions, beyond narrow vein lines; revised from None."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 43522185,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "Subtle broad paling within colored petal interiors and stronger outer regions repeat outside the separate ring; revised to Low."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    },
+    {
+      "observation_id": 272127265,
+      "changes": [
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Low",
+          "reason": "User-designated Low anchor: modest broad lighter and darker regions within the colored petals, without F-like separated zones; revised from None."
+        }
+      ],
+      "verified_at": "2026-10-19T01:30:15.611Z"
+    }
+  ]
+}

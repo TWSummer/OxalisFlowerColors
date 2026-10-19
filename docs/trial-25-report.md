@@ -1,5 +1,7 @@
 # First trial of the new Redwood Sorrel fields
 
+**Historical trial results:** the later [125-observation re-review](guide-review-report.md) supersedes affected judgments and supplies the current photographic guide. The original counts and audits below are preserved unchanged.
+
 18 October 2026 · original protocol 2.0.0; ring revision under 2.1.0
 
 ## Current ring revision

@@ -1,5 +1,7 @@
 # Additional 100-observation labeling batch
 
+**Historical batch results:** the later [125-observation re-review](guide-review-report.md) supersedes affected judgments and supplies the current photographic guide. The original counts and audit below are preserved unchanged.
+
 18 October 2026 · protocol 2.1.0
 
 All four Redwood Sorrel fields were added to **100 additional observations**, comprising 53 currently identified as *Oxalis oregana* and 47 as *O. smalliana*. None overlaps the historical 100-observation pilot or its 25-observation new-field trial. The labeled observations contain **209 examined photos**.

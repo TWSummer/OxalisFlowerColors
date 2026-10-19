@@ -4,6 +4,8 @@ Protocol 2.1.0 · 18 October 2026 · applies to **Oxalis oregana** (47757) and *
 
 These are **our project categories**, following the project owner’s interpretation of Figure 1 in [Brinegar (2022), p. 308](https://doi.org/10.3120/0024-9637-69.4.304). They intentionally differ from the paper. Do not use the paper’s original color captions, geographic pattern, species identification, or old community fields to override this key. The website drawings are conceptual aids, not measured colors or substitute reference photographs.
 
+Use the [photographic scoring guide](photo-guide.html) alongside these rules. It shows close-ups spanning the reviewed categories, with explanations and image-level credits. The 18 October 2026 review added the owner's two Low-variation anchors and clarified the existing rules; field IDs and allowed values remain unchanged. The [125-observation re-review](guide-review-report.md) records all retained and corrected decisions. These examples are a working calibration set, not independent validation.
+
 ## Fields and exact values
 
 All four are new text fields, used independently. Submit the spelling and capitalization below.
@@ -64,12 +66,14 @@ Protocol 2.1.0 replaces the old `Present` option with `Faint` and `Clear`; the f
 
 This is a **photographic score of broad pigment-intensity variation within the petal background**, not a chemical measurement. Compare the base, middle, and margins of the same petal, then check that the pattern repeats on at least three suitable petals. Exclude the yellow/orange throat, narrow vein lines, **the distinct white center ring**, shadows, glare, folds, damage, and aging.
 
-- **None:** nearly uniform interveinal background after those exclusions. Small ordinary photographic fluctuations do not establish variation. Figure 1 **B, D, G**. A uniformly pale flower and a uniformly dark flower can both score None. Ring presence alone does not move B or G out of None.
-- **Low:** a subtle, repeatable gradient or modest light/dark difference across the background, without strongly separated pale and dark regions. The difference must survive comparison across petals/views and not track shadow or a fold. **No Figure 1 panel has been designated a Low anchor.** Use the written rule; flag recurring disagreements for review.
+- **None:** nearly uniform interveinal background after those exclusions. Small ordinary photographic fluctuations do not establish variation. Figure 1 **B, D, G**. A uniformly pale flower and a uniformly dark flower can both score None. Ring presence alone does not move B or G out of None. Do not use None simply because the flower has one overall hue: repeated broad paling within that hue can qualify as Low.
+- **Low:** a subtle, repeatable gradient or modest light/dark difference across the background, without strongly separated pale and dark regions. The difference must survive comparison across petals/views and not track shadow or a fold. **Observations [159722286](https://www.inaturalist.org/observations/159722286) and [272127265](https://www.inaturalist.org/observations/272127265) are owner-specified Low anchors.** Their modest broad paling outside the throat and narrow vein lines is sufficient; an F-like near-white middle is not required. No Figure 1 panel has been designated a Low anchor.
 - **High:** clearly distinct pale and dark background regions, as in **F**: pink toward the center, nearly white in the petal middle, and deeper pink near the margins. This is broad tissue variation, not merely dark vein lines or a center ring.
 - **Cannot be determined:** the image cannot separate pigment variation from illumination, fails the visibility/detail rules, lies unresolved between None/Low or Low/High, or suitable views/flowers conflict.
 
 A white flower can score None if adequately shown; do not invent variation from its veins or yellow throat. Variation among different flowers is not this trait. If their within-petal scores disagree, record Cannot be determined for the observation and explain the disagreement.
+
+Compare [None and Low close-ups](photo-guide.html#variation) before scoring. A compact basal band is assessed as the ring and excluded here. A pale region extending farther into the petal background can contribute to variation. If the two cannot be separated in the available views, use Cannot be determined. Do not raise Low to High for dark narrow veins, stronger saturation of the whole flower, or a sharply contrasting white center ring alone.
 
 ## Uncertainty, skips, and disagreement
 

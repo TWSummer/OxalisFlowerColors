@@ -1,0 +1,726 @@
+{
+  "protocolVersion": "2.1.0",
+  "reviewedAt": "2026-10-18",
+  "introduction": "All 125 observations carrying our four project fields were re-reviewed. These close-ups were chosen to show the range within categories and the boundaries between them. “Pigment variation” is a visual score of the photographed tissue; it does not measure chemical pigment.",
+  "traits": [
+    {
+      "key": "color",
+      "label": "Petal Color",
+      "fieldName": "Redwood Sorrel Petal Color",
+      "fieldId": 23008,
+      "summary": "Judge the broad upper petal tissue between the veins. Exclude the yellow/orange throat, any separate white center ring, and the vein lines themselves. Our Figure 1 key is Pink A–F, Purple G–H, and White I–P.",
+      "categories": [
+        {
+          "value": "White",
+          "definition": "White or near-white interveinal tissue, including a cool cast. Colored veins alone do not make a flower Pink or Purple.",
+          "examples": [
+            {
+              "observationId": 269380404,
+              "photoId": 484653403,
+              "src": "assets/photo-guide/269380404-484653403.jpg",
+              "displaySize": 300,
+              "alt": "An open white flower with very faint petal lines and a yellow-green center.",
+              "title": "White with very faint veins",
+              "caption": "The broad tissue is white and the fine lines are barely visible. Judge the petals outside the yellow throat.",
+              "attribution": "(c) Big Year, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/484653403",
+              "observationUrl": "https://www.inaturalist.org/observations/269380404",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 270419247,
+              "photoId": 486327241,
+              "src": "assets/photo-guide/270419247-486327241.jpg",
+              "displaySize": 300,
+              "alt": "A cool near-white flower with faint veins.",
+              "title": "Cool near-white still counts as White",
+              "caption": "The tissue has a cool appearance but remains near-white. This project includes pale cool-looking flowers in White rather than treating every lilac cast as pigment.",
+              "attribution": "no rights reserved",
+              "licenseCode": "cc0",
+              "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/486327241",
+              "observationUrl": "https://www.inaturalist.org/observations/270419247",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 102048918,
+              "photoId": 170515136,
+              "src": "assets/photo-guide/102048918-170515136.jpg",
+              "displaySize": 300,
+              "alt": "A white flower crossed by a bold purple vein network.",
+              "title": "Purple lines, white background",
+              "caption": "The purple vein network is strong, but the spaces between its lines are white. This is White color with High vein contrast.",
+              "attribution": "(c) laziphotos, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/170515136",
+              "observationUrl": "https://www.inaturalist.org/observations/102048918",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        },
+        {
+          "value": "Pink",
+          "definition": "Rose, magenta, or pale pink-lilac background tissue, matching A–F in our reference key. Saturation alone does not separate Pink from Purple.",
+          "examples": [
+            {
+              "observationId": 347719180,
+              "photoId": 634046692,
+              "src": "assets/photo-guide/347719180-634046692.jpg",
+              "displaySize": 300,
+              "alt": "A cupped flower with saturated rose-magenta upper petals.",
+              "title": "Saturated rose and magenta",
+              "caption": "The broad rose/magenta tissue fits Pink, as do C and D in our Figure 1 key. Its cupped center makes the ring uncertain, but does not erase the visible petal color.",
+              "attribution": "(c) Amy Frost-Wicks, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/634046692",
+              "observationUrl": "https://www.inaturalist.org/observations/347719180",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 139749730,
+              "photoId": 239087144,
+              "src": "assets/photo-guide/139749730-239087144.jpg",
+              "displaySize": 300,
+              "alt": "A pale rose-lilac flower with a white basal band.",
+              "title": "Pale pink-lilac",
+              "caption": "The visible broad tissue is pale rose/lilac and falls in Pink. Soft detail makes some structural traits uncertain; the background color is still discernible.",
+              "attribution": "(c) jrmorris, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/239087144",
+              "observationUrl": "https://www.inaturalist.org/observations/139749730",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 27136204,
+              "photoId": 42187392,
+              "src": "assets/photo-guide/27136204-42187392.jpg",
+              "displaySize": 300,
+              "alt": "An open rose-pink flower surrounding a distinct white basal band.",
+              "title": "Rose-pink around a white center",
+              "caption": "The outer petal background is rose-pink. Exclude the white basal band when deciding the flower’s background color.",
+              "attribution": "(c) madfox, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/42187392",
+              "observationUrl": "https://www.inaturalist.org/observations/27136204",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        },
+        {
+          "value": "Purple",
+          "definition": "Clearly violet background tissue like G and H. The violet must be in the broad tissue, not confined to vein lines.",
+          "examples": [
+            {
+              "observationId": 215814088,
+              "photoId": 381601842,
+              "src": "assets/photo-guide/215814088-381601842.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with subtle veins and a white center ring.",
+              "title": "Violet with subtle veins",
+              "caption": "Clearly violet tissue occupies the broad parts of the petals. The fine veins are subtle against it, so the color is Purple even with Low vein contrast.",
+              "attribution": "(c) vtforester, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/381601842",
+              "observationUrl": "https://www.inaturalist.org/observations/215814088",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 362970560,
+              "photoId": 662531762,
+              "src": "assets/photo-guide/362970560-662531762.jpg",
+              "displaySize": 300,
+              "alt": "Violet outer petals around a broad, distinct white basal ring.",
+              "title": "Violet outside a broad white ring",
+              "caption": "Use the violet outer tissue for color. The broad white center band is a separately scored ring and does not make this a White flower.",
+              "attribution": "(c) Eric Duran, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/662531762",
+              "observationUrl": "https://www.inaturalist.org/observations/362970560",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 77541853,
+              "photoId": 126823320,
+              "src": "assets/photo-guide/77541853-126823320.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with visible darker veins and a white basal ring.",
+              "title": "Violet with visible vein lines",
+              "caption": "The spaces between the darker lines are themselves violet. Both background pigment and veins are visible; the background establishes Purple.",
+              "attribution": "(c) Dillon Doss, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/126823320",
+              "observationUrl": "https://www.inaturalist.org/observations/77541853",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        },
+        {
+          "value": "Cannot be determined",
+          "definition": "Use this when the visible background remains unresolved between categories or the available view does not provide reliable color evidence.",
+          "examples": [
+            {
+              "observationId": 269478378,
+              "photoId": 484529223,
+              "src": "assets/photo-guide/269478378-484529223.jpg",
+              "displaySize": 300,
+              "alt": "A pale flower with bold magenta veins whose broad background is uncertain between cool white and pale lilac.",
+              "title": "Cool white or pale pigmented lilac?",
+              "caption": "The broad tissue cannot be placed confidently between cool white and pale lilac pigment. Its bold magenta veins can still be scored High independently.",
+              "attribution": "(c) g-flo, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/484529223",
+              "observationUrl": "https://www.inaturalist.org/observations/269478378",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "veins",
+      "label": "Petal Vein Contrast",
+      "fieldName": "Redwood Sorrel Petal Vein Contrast",
+      "fieldId": 23010,
+      "summary": "At the standard 300-pixel view, judge how strongly vein lines stand out from their immediate petal background. Assess prominence, not vein color, number, or branching.",
+      "categories": [
+        {
+          "value": "Low",
+          "definition": "Lines are faint, subtle, or not visible in an otherwise adequate image. Low does not mean veins are anatomically absent.",
+          "examples": [
+            {
+              "observationId": 269380404,
+              "photoId": 484653403,
+              "src": "assets/photo-guide/269380404-484653403.jpg",
+              "displaySize": 300,
+              "alt": "A sharply shown white flower with very faint vein lines.",
+              "title": "At the faint end",
+              "caption": "Fine lines are barely visible against the white tissue. The clear broad background supports Low rather than an uncertainty caused by blur.",
+              "attribution": "(c) Big Year, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/484653403",
+              "observationUrl": "https://www.inaturalist.org/observations/269380404",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 79171578,
+              "photoId": 129649576,
+              "src": "assets/photo-guide/79171578-129649576.jpg",
+              "displaySize": 300,
+              "alt": "An ivory-white flower with pale subtle veins.",
+              "title": "Pale lines remain subtle",
+              "caption": "The pale vein lines are visible on close inspection but remain subtle at this standard size. They do not carry the readily visible contrast required for Medium.",
+              "attribution": "(c) Dan Blanchard, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/129649576",
+              "observationUrl": "https://www.inaturalist.org/observations/79171578",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 215814088,
+              "photoId": 381601842,
+              "src": "assets/photo-guide/215814088-381601842.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower whose fine veins remain subtle against the colored tissue.",
+              "title": "Low on colored petals",
+              "caption": "Fine veins blend into the saturated violet background. A deeply colored flower can still have Low vein contrast.",
+              "attribution": "(c) vtforester, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/381601842",
+              "observationUrl": "https://www.inaturalist.org/observations/215814088",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        },
+        {
+          "value": "Medium",
+          "definition": "Veins are readily visible but remain secondary to the broad petal background. Figure 1 A, F, and H define this class.",
+          "examples": [
+            {
+              "observationId": 48617846,
+              "photoId": 77152494,
+              "src": "assets/photo-guide/48617846-77152494.jpg",
+              "displaySize": 300,
+              "alt": "A white flower with readily visible pink vein lines.",
+              "title": "Visible pink lines on white",
+              "caption": "Pink vein lines are easy to see, but the pale background still leads the overall impression. Re-review placed this in Medium rather than High.",
+              "attribution": "(c) ejmanzano, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/77152494",
+              "observationUrl": "https://www.inaturalist.org/observations/48617846",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 77541853,
+              "photoId": 126823320,
+              "src": "assets/photo-guide/77541853-126823320.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with visible but secondary darker vein lines.",
+              "title": "Visible lines on violet",
+              "caption": "The darker lines stand out from nearby violet tissue without dominating the flower. Contrast is assessed against the local background.",
+              "attribution": "(c) Dillon Doss, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/126823320",
+              "observationUrl": "https://www.inaturalist.org/observations/77541853",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 349126189,
+              "photoId": 636828048,
+              "src": "assets/photo-guide/349126189-636828048.jpg",
+              "displaySize": 300,
+              "alt": "A pale pink-lilac flower with visible vein lines and a narrow white basal band.",
+              "title": "Lines within pale pink-lilac",
+              "caption": "The lines are readily visible in the pink-lilac tissue but remain secondary. Broad changes in the background are assessed separately as pigment variation.",
+              "attribution": "(c) Paloma, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/636828048",
+              "observationUrl": "https://www.inaturalist.org/observations/349126189",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        },
+        {
+          "value": "High",
+          "definition": "A strongly contrasting vein network is a dominant visual feature across the visible petals. Compare Figure 1 O and P.",
+          "examples": [
+            {
+              "observationId": 102048918,
+              "photoId": 170515136,
+              "src": "assets/photo-guide/102048918-170515136.jpg",
+              "displaySize": 300,
+              "alt": "A white flower with a dominant branching purple vein network.",
+              "title": "A dominant purple network",
+              "caption": "The bold purple network is a leading feature of the white petals. The white spaces between lines still establish White petal color.",
+              "attribution": "(c) laziphotos, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/170515136",
+              "observationUrl": "https://www.inaturalist.org/observations/102048918",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 305108427,
+              "photoId": 550088222,
+              "src": "assets/photo-guide/305108427-550088222.jpg",
+              "displaySize": 300,
+              "alt": "A white flower with bold contrasting colored vein lines across the petals.",
+              "title": "Strong lines across the petals",
+              "caption": "The contrasting network draws attention across the flower at the standard size. This is prominence across broad visible petals, not simply the presence of a few colored lines.",
+              "attribution": "(c) kindcrow, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/550088222",
+              "observationUrl": "https://www.inaturalist.org/observations/305108427",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 273527894,
+              "photoId": 491939104,
+              "src": "assets/photo-guide/273527894-491939104.jpg",
+              "displaySize": 300,
+              "alt": "An open white flower with a dark prominent vein network.",
+              "title": "Dark network on white tissue",
+              "caption": "Dark lines dominate the visible white petals. The ridges, shadows, and colored lines do not by themselves establish pigment variation in the broad tissue.",
+              "attribution": "(c) jwlowe, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/491939104",
+              "observationUrl": "https://www.inaturalist.org/observations/273527894",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        },
+        {
+          "value": "Cannot be determined",
+          "definition": "Blur, inadequate source detail, glare, or clipped highlights prevent a reliable comparison between lines and background.",
+          "examples": [
+            {
+              "observationId": 377017094,
+              "photoId": 689396749,
+              "src": "assets/photo-guide/377017094-689396749.jpg",
+              "displaySize": 300,
+              "alt": "A defocused white flower whose vein detail is not resolved.",
+              "title": "Blur is not Low contrast",
+              "caption": "The white background is discernible, but defocus removes the detail needed to judge vein prominence. Do not turn missing detail into Low.",
+              "attribution": "(c) Trevor Harding, some rights reserved (CC BY)",
+              "licenseCode": "cc-by",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/689396749",
+              "observationUrl": "https://www.inaturalist.org/observations/377017094",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 70158331,
+              "photoId": 113996957,
+              "src": "assets/photo-guide/70158331-113996957.jpg",
+              "displaySize": 300,
+              "alt": "A white flower with clipped highlights and visible dark lines.",
+              "title": "Highlights distort the comparison",
+              "caption": "Clipped bright tissue may exaggerate the contrast of surviving dark lines. The apparent line strength cannot be scored reliably.",
+              "attribution": "(c) Levin Pratte, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/113996957",
+              "observationUrl": "https://www.inaturalist.org/observations/70158331",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ring",
+      "label": "White Center Ring",
+      "fieldName": "Redwood Sorrel White Center Ring",
+      "fieldId": 23011,
+      "summary": "Inspect the transition immediately outside the yellow/orange throat on at least three visible petal bases. Judge whether a separate pale band is absent, faint, or clearly bounded against the outer tissue.",
+      "categories": [
+        {
+          "value": "Absent",
+          "definition": "Colored petal tissue reaches the throat without an intervening pale or white band. The bases must be exposed well enough to establish absence.",
+          "examples": [
+            {
+              "observationId": 113980346,
+              "photoId": 192513436,
+              "src": "assets/photo-guide/113980346-192513436.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower whose exposed colored petal bases reach the throat without a white ring.",
+              "title": "Colored tissue reaches the throat",
+              "caption": "The visible violet background continues to the throat without a distinct intervening pale band. Subtle light and dark areas farther out are scored as variation instead.",
+              "attribution": "(c) moedailey, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/192513436",
+              "observationUrl": "https://www.inaturalist.org/observations/113980346",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 159722286,
+              "photoId": 275973290,
+              "src": "assets/photo-guide/159722286-275973290.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with colored bases reaching the yellow throat and modest paler areas farther along the petals.",
+              "title": "Paler middles do not make a ring",
+              "caption": "Colored tissue reaches the yellow throat on the visible bases. The paler areas farther along the petals belong to Low variation, not a separate basal ring.",
+              "attribution": "(c) weavergirl, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/275973290",
+              "observationUrl": "https://www.inaturalist.org/observations/159722286",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        },
+        {
+          "value": "Faint",
+          "definition": "A weak pale band is visible just outside the throat but blends softly into the outer colored tissue. Faint describes a visible feature, not uncertain evidence.",
+          "note": "This is the only licensed Faint example selected from the 125 reviewed observations. Observation 294114815 remains a linked working comparison in the protocol; its all-rights-reserved photo is not reproduced here.",
+          "examples": [
+            {
+              "observationId": 272127265,
+              "photoId": 489563506,
+              "src": "assets/photo-guide/272127265-489563506.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with a weak pale basal band blending softly into the outer tissue.",
+              "title": "A weak, softly blended band",
+              "caption": "A pale basal band is visible, but its boundary blends into the surrounding violet tissue. Its weak separation supports Faint rather than Clear.",
+              "attribution": "(c) Trevor Van Loon, some rights reserved (CC BY)",
+              "licenseCode": "cc-by",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/489563506",
+              "observationUrl": "https://www.inaturalist.org/observations/272127265",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        },
+        {
+          "value": "Clear",
+          "definition": "A distinct white band separates the throat from colored outer tissue on at least three petals. Width alone does not determine the category: a narrow but distinct band can be Clear.",
+          "examples": [
+            {
+              "observationId": 362970560,
+              "photoId": 662531762,
+              "src": "assets/photo-guide/362970560-662531762.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with a broad white basal ring and a clearly defined outer boundary.",
+              "title": "Broad and clearly bounded",
+              "caption": "The large white basal region has a distinct outer boundary against violet tissue. Its size is striking, but it remains a center ring and is excluded from pigment variation.",
+              "attribution": "(c) Eric Duran, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/662531762",
+              "observationUrl": "https://www.inaturalist.org/observations/362970560",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 118710031,
+              "photoId": 200599983,
+              "src": "assets/photo-guide/118710031-200599983.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with a distinct white band outside its yellow throat.",
+              "title": "A distinct band outside the throat",
+              "caption": "The white band is clearly separate from both the yellow throat and violet outer tissue. Vein lines crossing the petals do not remove that distinction.",
+              "attribution": "(c) sjrayfie, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/200599983",
+              "observationUrl": "https://www.inaturalist.org/observations/118710031",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 27136204,
+              "photoId": 42187392,
+              "src": "assets/photo-guide/27136204-42187392.jpg",
+              "displaySize": 300,
+              "alt": "A rose-pink flower with a distinct white ring around the throat.",
+              "title": "A white band against rose-pink",
+              "caption": "The white basal band stands apart from the rose-pink outer tissue across the visible petal bases. The background color of the flower does not change the ring rule.",
+              "attribution": "(c) madfox, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/42187392",
+              "observationUrl": "https://www.inaturalist.org/observations/27136204",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        },
+        {
+          "value": "Cannot be determined",
+          "definition": "Use this for a hidden or unresolved transition, or for white petals with no distinguishable outer boundary for a separate ring. White petals are not automatically an absent ring.",
+          "examples": [
+            {
+              "observationId": 347719180,
+              "photoId": 634046692,
+              "src": "assets/photo-guide/347719180-634046692.jpg",
+              "displaySize": 300,
+              "alt": "A cupped magenta flower whose oblique center may hide a white basal band.",
+              "title": "A cupped center can hide a band",
+              "caption": "The oblique, cupped center may conceal a pale circle. The project owner corrected this to Cannot be determined; a partly hidden band cannot establish Absent.",
+              "attribution": "(c) Amy Frost-Wicks, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/634046692",
+              "observationUrl": "https://www.inaturalist.org/observations/347719180",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 48617846,
+              "photoId": 77152494,
+              "src": "assets/photo-guide/48617846-77152494.jpg",
+              "displaySize": 300,
+              "alt": "A white flower with no distinguishable outer boundary for a separate white center ring.",
+              "title": "White tissue has no separate boundary",
+              "caption": "The petals are white, so no separate outer ring boundary can be identified. This is insufficient evidence for Absent, Faint, or Clear.",
+              "attribution": "(c) ejmanzano, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/77152494",
+              "observationUrl": "https://www.inaturalist.org/observations/48617846",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "variation",
+      "label": "Petal Pigment Variation",
+      "fieldName": "Redwood Sorrel Petal Pigment Variation",
+      "fieldId": 23012,
+      "summary": "Look for repeated changes in pigment intensity within the broad background of a petal. Exclude the throat, narrow veins, a separate white center ring, shadows, glare, folds, and damage.",
+      "categories": [
+        {
+          "value": "None",
+          "definition": "The broad background is nearly uniform after the exclusions above. Both pale and deeply colored flowers can be None; a center ring alone does not increase variation.",
+          "examples": [
+            {
+              "observationId": 347719180,
+              "photoId": 634046692,
+              "src": "assets/photo-guide/347719180-634046692.jpg",
+              "displaySize": 300,
+              "alt": "A magenta flower with nearly uniform broad petal color.",
+              "title": "Nearly uniform pink",
+              "caption": "The broad pink tissue is nearly uniform. Folds and small flecks do not form a repeated broad pigment gradient.",
+              "attribution": "(c) Amy Frost-Wicks, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/634046692",
+              "observationUrl": "https://www.inaturalist.org/observations/347719180",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 215814088,
+              "photoId": 381601842,
+              "src": "assets/photo-guide/215814088-381601842.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with uniform colored tissue outside a distinct white basal ring.",
+              "title": "Nearly uniform violet",
+              "caption": "The colored background is approximately uniform once the separate white basal ring is excluded. A ring is not a pale middle zone within the colored petal.",
+              "attribution": "(c) vtforester, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/381601842",
+              "observationUrl": "https://www.inaturalist.org/observations/215814088",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 269380404,
+              "photoId": 484653403,
+              "src": "assets/photo-guide/269380404-484653403.jpg",
+              "displaySize": 300,
+              "alt": "A white flower with approximately uniform tissue outside the yellow center and fine veins.",
+              "title": "Nearly uniform white",
+              "caption": "The white tissue is approximately uniform outside the throat and fine veins. Neither the yellow center nor faint colored lines establishes broad variation.",
+              "attribution": "(c) Big Year, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/484653403",
+              "observationUrl": "https://www.inaturalist.org/observations/269380404",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 362970560,
+              "photoId": 662531762,
+              "src": "assets/photo-guide/362970560-662531762.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with nearly uniform outer tissue and a large separate white center ring.",
+              "title": "A broad ring is still excluded",
+              "caption": "The violet outer tissue is nearly uniform. The large, separately bounded white center ring is excluded from this trait, so it does not push the score to Low or High.",
+              "attribution": "(c) Eric Duran, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/662531762",
+              "observationUrl": "https://www.inaturalist.org/observations/362970560",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        },
+        {
+          "value": "Low",
+          "definition": "A subtle but repeatable gradient or modest light/dark difference occurs across the broad tissue, without strongly separated pale and dark zones. An F-like near-white middle is not required.",
+          "note": "The first two photographs are the project owner’s Low anchors. Compare the broad tissue rather than only the flower’s overall hue.",
+          "examples": [
+            {
+              "observationId": 159722286,
+              "photoId": 275973290,
+              "src": "assets/photo-guide/159722286-275973290.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with modest broad paling in the petal middles and stronger pigment elsewhere.",
+              "title": "Owner’s anchor: paler middle regions",
+              "caption": "The project owner assigns Low here. Broad middle regions are paler than other petal regions beyond the narrow veins; the modest difference is enough even without sharply separated zones.",
+              "attribution": "(c) weavergirl, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/275973290",
+              "observationUrl": "https://www.inaturalist.org/observations/159722286",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 272127265,
+              "photoId": 489563506,
+              "src": "assets/photo-guide/272127265-489563506.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower showing modest lighter and darker background regions within the petals.",
+              "title": "Owner’s anchor: modest broad variation",
+              "caption": "The project owner assigns Low here. Modest lighter and darker regions occur within the colored petals, beyond the narrow vein lines and faint basal ring.",
+              "attribution": "(c) Trevor Van Loon, some rights reserved (CC BY)",
+              "licenseCode": "cc-by",
+              "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/489563506",
+              "observationUrl": "https://www.inaturalist.org/observations/272127265",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 118082164,
+              "photoId": 199471119,
+              "src": "assets/photo-guide/118082164-199471119.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with a modest repeated gradient toward stronger pink-purple outer regions.",
+              "title": "A more noticeable gradient, still Low",
+              "caption": "The repeated gradient toward stronger pink-purple outer regions is more noticeable, but the tissue does not form the strongly separated pale and dark zones of Figure 1 F.",
+              "attribution": "(c) Brittany, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/199471119",
+              "observationUrl": "https://www.inaturalist.org/observations/118082164",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        },
+        {
+          "value": "High",
+          "definition": "Clearly distinct pale and dark broad background regions occur across the petals, as in Figure 1 F: pink toward the base, a nearly white middle, and deeper pink near the margins.",
+          "note": "No confident High example was found among the 125 reviewed observations. Figure 1 F remains the reference. Dark veins, stronger overall saturation, and a separate white center ring are not sufficient.",
+          "examples": []
+        },
+        {
+          "value": "Cannot be determined",
+          "definition": "Use this when broad light/dark changes cannot be separated from illumination or image quality, or the boundary between variation categories remains unresolved.",
+          "examples": [
+            {
+              "observationId": 70128629,
+              "photoId": 113946319,
+              "src": "assets/photo-guide/70128629-113946319.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with glare and shadows across its petals.",
+              "title": "Glare and shadow overlap the tissue",
+              "caption": "Direct glare and shadows change the apparent intensity across the petals. The available image cannot establish whether a broad pigment gradient is present.",
+              "attribution": "(c) Sarah Larsen, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/113946319",
+              "observationUrl": "https://www.inaturalist.org/observations/70128629",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 155249432,
+              "photoId": 268333318,
+              "src": "assets/photo-guide/155249432-268333318.jpg",
+              "displaySize": 300,
+              "alt": "A white flower with droplets, bright wet glare, and soft focus.",
+              "title": "Wet glare and soft focus",
+              "caption": "Bright wet surfaces and defocus prevent reliable comparison of background intensity. Apparent pale patches cannot be assigned to pigment variation.",
+              "attribution": "(c) Julia Prange, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/268333318",
+              "observationUrl": "https://www.inaturalist.org/observations/155249432",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 73489352,
+              "photoId": 119984737,
+              "src": "assets/photo-guide/73489352-119984737.jpg",
+              "displaySize": 300,
+              "alt": "An oblique violet flower with strongly uneven illumination across the petals.",
+              "title": "Uneven illumination is unresolved",
+              "caption": "Strong differences in illumination produce broad light and dark areas. They cannot confidently be attributed to pigment, so the score remains Cannot be determined.",
+              "attribution": "(c) Michael Hawk, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/119984737",
+              "observationUrl": "https://www.inaturalist.org/observations/73489352",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
