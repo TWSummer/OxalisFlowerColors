@@ -47,7 +47,7 @@
     },
     "ring": {
       "name": "Redwood Sorrel White Center Ring",
-      "description": "White band outside yellow/orange throat: Absent=no band in a clear view; Faint=weak band; Clear=distinct band. Poor view/all-white: Cannot be determined. Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#white-center-ring",
+      "description": "Ring outside yellow/orange throat: Absent=no band; Faint=weak localized band; Clear=obvious edges. Unresolved ring vs pigment variation: Cannot be determined. Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#white-center-ring",
       "id": 23011,
       "values": [
         "Absent",

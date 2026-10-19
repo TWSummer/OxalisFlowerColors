@@ -723,12 +723,12 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Cannot be determined"
         },
         {
           "field_id": 23012,
           "name": "Redwood Sorrel Petal Pigment Variation",
-          "value": "Low"
+          "value": "Cannot be determined"
         }
       ],
       "photos": [
@@ -1043,12 +1043,12 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Cannot be determined"
         },
         {
           "field_id": 23012,
           "name": "Redwood Sorrel Petal Pigment Variation",
-          "value": "Low"
+          "value": "Cannot be determined"
         }
       ],
       "photos": [
@@ -1726,7 +1726,7 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Faint"
         },
         {
           "field_id": 23012,
@@ -3018,7 +3018,7 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Absent"
+          "value": "Faint"
         },
         {
           "field_id": 23012,
@@ -3240,12 +3240,12 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Cannot be determined"
         },
         {
           "field_id": 23012,
           "name": "Redwood Sorrel Petal Pigment Variation",
-          "value": "Low"
+          "value": "Cannot be determined"
         }
       ],
       "photos": [
@@ -3318,7 +3318,7 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Faint"
         },
         {
           "field_id": 23012,
@@ -3469,7 +3469,7 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Faint"
         },
         {
           "field_id": 23012,
@@ -3623,7 +3623,7 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Cannot be determined"
         },
         {
           "field_id": 23012,
@@ -3919,7 +3919,7 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Absent"
+          "value": "Faint"
         },
         {
           "field_id": 23012,
@@ -6464,12 +6464,12 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Cannot be determined"
         },
         {
           "field_id": 23012,
           "name": "Redwood Sorrel Petal Pigment Variation",
-          "value": "None"
+          "value": "Cannot be determined"
         }
       ],
       "photos": [
@@ -7339,7 +7339,7 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Faint"
         },
         {
           "field_id": 23012,
@@ -7622,12 +7622,12 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Cannot be determined"
         },
         {
           "field_id": 23012,
           "name": "Redwood Sorrel Petal Pigment Variation",
-          "value": "Low"
+          "value": "Cannot be determined"
         }
       ],
       "photos": [
@@ -7987,7 +7987,7 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Cannot be determined"
         },
         {
           "field_id": 23008,
@@ -7997,7 +7997,7 @@
         {
           "field_id": 23012,
           "name": "Redwood Sorrel Petal Pigment Variation",
-          "value": "Low"
+          "value": "Cannot be determined"
         }
       ],
       "photos": [
@@ -8197,12 +8197,12 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Cannot be determined"
         },
         {
           "field_id": 23012,
           "name": "Redwood Sorrel Petal Pigment Variation",
-          "value": "None"
+          "value": "Cannot be determined"
         },
         {
           "field_id": 23010,
@@ -8275,12 +8275,12 @@
         {
           "field_id": 23011,
           "name": "Redwood Sorrel White Center Ring",
-          "value": "Clear"
+          "value": "Cannot be determined"
         },
         {
           "field_id": 23012,
           "name": "Redwood Sorrel Petal Pigment Variation",
-          "value": "None"
+          "value": "Cannot be determined"
         }
       ],
       "photos": [
@@ -9562,7 +9562,7 @@
     }
   ],
   "complete": true,
-  "fetchedAt": "2026-10-19T01:31:07.083Z",
+  "fetchedAt": "2026-10-19T02:52:56.046Z",
   "protocolVersion": "2.1.0",
   "source": "iNaturalist public API v1; unauthenticated",
   "fields": [
@@ -9590,7 +9590,7 @@
     },
     {
       "name": "Redwood Sorrel White Center Ring",
-      "description": "White band outside yellow/orange throat: Absent=no band in a clear view; Faint=weak band; Clear=distinct band. Poor view/all-white: Cannot be determined. Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#white-center-ring",
+      "description": "Ring outside yellow/orange throat: Absent=no band; Faint=weak localized band; Clear=obvious edges. Unresolved ring vs pigment variation: Cannot be determined. Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#white-center-ring",
       "id": 23011,
       "values": [
         "Absent",

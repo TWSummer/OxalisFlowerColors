@@ -1,7 +1,7 @@
 {
   "protocolVersion": "2.1.0",
   "reviewedAt": "2026-10-18",
-  "introduction": "All 125 observations carrying our four project fields were re-reviewed. These close-ups were chosen to show the range within categories and the boundaries between them. “Pigment variation” is a visual score of the photographed tissue; it does not measure chemical pigment.",
+  "introduction": "All 125 observations carrying our four project fields were re-reviewed, followed by a ring-boundary review of all 32 previously determinate ring labels. These examples use the latest decisions and show both category ranges and unresolved boundaries. “Pigment variation” is a visual score of photographed tissue; it does not measure chemical pigment.",
   "traits": [
     {
       "key": "color",
@@ -85,7 +85,7 @@
               "photoId": 239087144,
               "src": "assets/photo-guide/139749730-239087144.jpg",
               "displaySize": 300,
-              "alt": "A pale rose-lilac flower with a white basal band.",
+              "alt": "A pale rose-lilac flower with diffuse inner paling.",
               "title": "Pale pink-lilac",
               "caption": "The visible broad tissue is pale rose/lilac and falls in Pink. Soft detail makes some structural traits uncertain; the background color is still discernible.",
               "attribution": "(c) jrmorris, some rights reserved (CC BY-NC)",
@@ -100,9 +100,9 @@
               "photoId": 42187392,
               "src": "assets/photo-guide/27136204-42187392.jpg",
               "displaySize": 300,
-              "alt": "An open rose-pink flower surrounding a distinct white basal band.",
-              "title": "Rose-pink around a white center",
-              "caption": "The outer petal background is rose-pink. Exclude the white basal band when deciding the flower’s background color.",
+              "alt": "An open rose-pink flower with a diffuse pale inner area and no obvious outer boundary.",
+              "title": "Rose-pink with diffuse inner paling",
+              "caption": "The outer petal background is rose-pink. The diffuse pale inner area has no obvious outer edge, so its identity as a center ring versus broad pigment variation remains unresolved.",
               "attribution": "(c) madfox, some rights reserved (CC BY-NC)",
               "licenseCode": "cc-by-nc",
               "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
@@ -136,9 +136,9 @@
               "photoId": 662531762,
               "src": "assets/photo-guide/362970560-662531762.jpg",
               "displaySize": 300,
-              "alt": "Violet outer petals around a broad, distinct white basal ring.",
-              "title": "Violet outside a broad white ring",
-              "caption": "Use the violet outer tissue for color. The broad white center band is a separately scored ring and does not make this a White flower.",
+              "alt": "Violet outer petals grading into a broad diffuse pale inner zone.",
+              "title": "Violet with diffuse inner paling",
+              "caption": "The broad outer tissue is violet. The pale inner zone blends into it without an obvious outer edge; color remains Purple while ring and pigment variation are both unresolved.",
               "attribution": "(c) Eric Duran, some rights reserved (CC BY-NC)",
               "licenseCode": "cc-by-nc",
               "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
@@ -389,20 +389,27 @@
       "label": "White Center Ring",
       "fieldName": "Redwood Sorrel White Center Ring",
       "fieldId": 23011,
-      "summary": "Inspect the transition immediately outside the yellow/orange throat on at least three visible petal bases. Judge whether a separate pale band is absent, faint, or clearly bounded against the outer tissue.",
+      "summary": "Inspect the transition immediately outside the yellow/orange throat on at least three visible petal bases. First decide whether a localized band can be separated from broad petal paling. Clear requires an obvious, traceable outer edge; diffuse paling alone does not establish a ring.",
       "categories": [
         {
           "value": "Absent",
           "definition": "Colored petal tissue reaches the throat without an intervening pale or white band. The bases must be exposed well enough to establish absence.",
+          "note": "After the ring-boundary correction, none of the 125 reviewed observations remains a verified Absent example. Figure 1 D and F remain the reference definition. The two former photo examples are now Faint because a weak localized band is visible.",
+          "examples": []
+        },
+        {
+          "value": "Faint",
+          "definition": "An actual weak, localized pale band is visible just outside the throat on at least three petal bases, but its outer edge blends softly into colored tissue. Faint is a visible band, not a substitute for uncertainty about diffuse paling.",
+          "note": "The first two examples are owner-corrected Faint anchors. A weak visible band rules out Absent even when its edge is too soft for Clear.",
           "examples": [
             {
               "observationId": 113980346,
               "photoId": 192513436,
               "src": "assets/photo-guide/113980346-192513436.jpg",
               "displaySize": 300,
-              "alt": "A violet flower whose exposed colored petal bases reach the throat without a white ring.",
-              "title": "Colored tissue reaches the throat",
-              "caption": "The visible violet background continues to the throat without a distinct intervening pale band. Subtle light and dark areas farther out are scored as variation instead.",
+              "alt": "A violet flower with a weak localized pale circle around the yellow center.",
+              "title": "Owner’s anchor: a weak pale circle",
+              "caption": "A weak pale circle can be seen around the yellow center. Its presence rules out the earlier Absent label, while the softly defined outer boundary supports Faint.",
               "attribution": "(c) moedailey, some rights reserved (CC BY-NC)",
               "licenseCode": "cc-by-nc",
               "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
@@ -415,31 +422,24 @@
               "photoId": 275973290,
               "src": "assets/photo-guide/159722286-275973290.jpg",
               "displaySize": 300,
-              "alt": "A violet flower with colored bases reaching the yellow throat and modest paler areas farther along the petals.",
-              "title": "Paler middles do not make a ring",
-              "caption": "Colored tissue reaches the yellow throat on the visible bases. The paler areas farther along the petals belong to Low variation, not a separate basal ring.",
+              "alt": "A violet flower with a soft pale rim around the yellow-orange throat and broader modest petal paling.",
+              "title": "Owner’s anchor: a soft pale rim",
+              "caption": "The pale rim immediately around the yellow/orange center is visible but softly bounded. Score that localized band Faint; broader modest paling elsewhere in the petals remains Low variation.",
               "attribution": "(c) weavergirl, some rights reserved (CC BY-NC)",
               "licenseCode": "cc-by-nc",
               "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
               "photoUrl": "https://www.inaturalist.org/photos/275973290",
               "observationUrl": "https://www.inaturalist.org/observations/159722286",
               "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
-            }
-          ]
-        },
-        {
-          "value": "Faint",
-          "definition": "A weak pale band is visible just outside the throat but blends softly into the outer colored tissue. Faint describes a visible feature, not uncertain evidence.",
-          "note": "This is the only licensed Faint example selected from the 125 reviewed observations. Observation 294114815 remains a linked working comparison in the protocol; its all-rights-reserved photo is not reproduced here.",
-          "examples": [
+            },
             {
               "observationId": 272127265,
               "photoId": 489563506,
               "src": "assets/photo-guide/272127265-489563506.jpg",
               "displaySize": 300,
-              "alt": "A violet flower with a weak pale basal band blending softly into the outer tissue.",
-              "title": "A weak, softly blended band",
-              "caption": "A pale basal band is visible, but its boundary blends into the surrounding violet tissue. Its weak separation supports Faint rather than Clear.",
+              "alt": "A violet flower with a weak localized pale basal band blending softly into outer tissue.",
+              "title": "A weak, localized basal band",
+              "caption": "A weak pale band is localized immediately outside the throat, but blends softly into the surrounding violet tissue. The modest broad changes farther out are scored separately as Low variation.",
               "attribution": "(c) Trevor Van Loon, some rights reserved (CC BY)",
               "licenseCode": "cc-by",
               "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -451,16 +451,68 @@
         },
         {
           "value": "Clear",
-          "definition": "A distinct white band separates the throat from colored outer tissue on at least three petals. Width alone does not determine the category: a narrow but distinct band can be Clear.",
+          "definition": "A localized white band has an obvious outer edge that can be traced against the colored tissue on at least three visible petal bases. Width alone does not decide the category: a narrow band with an obvious edge can be Clear.",
+          "note": "Observation 77541853 is the project owner’s Clear anchor. Locate the outer edge of the band before choosing Clear.",
+          "examples": [
+            {
+              "observationId": 77541853,
+              "photoId": 126823320,
+              "src": "assets/photo-guide/77541853-126823320.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with an obvious white band and a traceable outer edge around the yellow throat.",
+              "title": "Owner’s anchor: obvious edges",
+              "caption": "An obvious white band surrounds the yellow throat. Its outer edge can be traced against violet tissue on at least three petal bases, establishing Clear.",
+              "attribution": "(c) Dillon Doss, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/126823320",
+              "observationUrl": "https://www.inaturalist.org/observations/77541853",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 215814088,
+              "photoId": 381601842,
+              "src": "assets/photo-guide/215814088-381601842.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with a localized white basal band and a clearly traceable outer boundary.",
+              "title": "A defined edge against violet",
+              "caption": "The localized white band has a readily traceable outer edge against the saturated violet background on at least three petals. This edge separates a ring from diffuse inner paling.",
+              "attribution": "(c) vtforester, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/381601842",
+              "observationUrl": "https://www.inaturalist.org/observations/215814088",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
+            {
+              "observationId": 349126189,
+              "photoId": 636828048,
+              "src": "assets/photo-guide/349126189-636828048.jpg",
+              "displaySize": 300,
+              "alt": "A pink-lilac flower with a narrow white basal band and an obvious outer edge.",
+              "title": "A narrow band can be Clear",
+              "caption": "The narrow white band outside the orange throat has an obvious outer edge against pink-lilac tissue on at least three bases. Modest broad variation remains beyond the band.",
+              "attribution": "(c) Paloma, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/636828048",
+              "observationUrl": "https://www.inaturalist.org/observations/349126189",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            }
+          ]
+        },
+        {
+          "value": "Cannot be determined",
+          "definition": "Use this when diffuse inner paling cannot be separated into a localized ring versus broad pigment variation, when the transition is hidden or unresolved, or when white petals have no separate outer ring boundary.",
           "examples": [
             {
               "observationId": 362970560,
               "photoId": 662531762,
               "src": "assets/photo-guide/362970560-662531762.jpg",
               "displaySize": 300,
-              "alt": "A violet flower with a broad white basal ring and a clearly defined outer boundary.",
-              "title": "Broad and clearly bounded",
-              "caption": "The large white basal region has a distinct outer boundary against violet tissue. Its size is striking, but it remains a center ring and is excluded from pigment variation.",
+              "alt": "A violet flower with a broad diffuse pale inner zone whose ring boundary cannot be isolated.",
+              "title": "Diffuse paling is not a defined ring",
+              "caption": "The broad pale inner zone blends into violet tissue in both photographs. There is neither an obvious Clear edge nor enough evidence to isolate a localized Faint band from broad pigment variation.",
               "attribution": "(c) Eric Duran, some rights reserved (CC BY-NC)",
               "licenseCode": "cc-by-nc",
               "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
@@ -469,41 +521,20 @@
               "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
             },
             {
-              "observationId": 118710031,
-              "photoId": 200599983,
-              "src": "assets/photo-guide/118710031-200599983.jpg",
-              "displaySize": 300,
-              "alt": "A violet flower with a distinct white band outside its yellow throat.",
-              "title": "A distinct band outside the throat",
-              "caption": "The white band is clearly separate from both the yellow throat and violet outer tissue. Vein lines crossing the petals do not remove that distinction.",
-              "attribution": "(c) sjrayfie, some rights reserved (CC BY-NC)",
-              "licenseCode": "cc-by-nc",
-              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-              "photoUrl": "https://www.inaturalist.org/photos/200599983",
-              "observationUrl": "https://www.inaturalist.org/observations/118710031",
-              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
-            },
-            {
               "observationId": 27136204,
               "photoId": 42187392,
               "src": "assets/photo-guide/27136204-42187392.jpg",
               "displaySize": 300,
-              "alt": "A rose-pink flower with a distinct white ring around the throat.",
-              "title": "A white band against rose-pink",
-              "caption": "The white basal band stands apart from the rose-pink outer tissue across the visible petal bases. The background color of the flower does not change the ring rule.",
+              "alt": "A rose-pink flower with a diffuse pale inner area that cannot be separated into a ring or broad variation.",
+              "title": "An unresolved pale inner area",
+              "caption": "The pale inner area grades into rose-pink tissue without an obvious outer edge. Other views do not resolve whether it is a separate center ring or broad background variation.",
               "attribution": "(c) madfox, some rights reserved (CC BY-NC)",
               "licenseCode": "cc-by-nc",
               "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
               "photoUrl": "https://www.inaturalist.org/photos/42187392",
               "observationUrl": "https://www.inaturalist.org/observations/27136204",
               "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
-            }
-          ]
-        },
-        {
-          "value": "Cannot be determined",
-          "definition": "Use this for a hidden or unresolved transition, or for white petals with no distinguishable outer boundary for a separate ring. White petals are not automatically an absent ring.",
-          "examples": [
+            },
             {
               "observationId": 347719180,
               "photoId": 634046692,
@@ -543,7 +574,7 @@
       "label": "Petal Pigment Variation",
       "fieldName": "Redwood Sorrel Petal Pigment Variation",
       "fieldId": 23012,
-      "summary": "Look for repeated changes in pigment intensity within the broad background of a petal. Exclude the throat, narrow veins, a separate white center ring, shadows, glare, folds, and damage.",
+      "summary": "Look for repeated changes in pigment intensity within the broad background of a petal. Exclude the throat, narrow veins, a separately established center ring, shadows, glare, folds, and damage. If an ambiguous pale zone changes the score depending on whether it is included, use Cannot be determined.",
       "categories": [
         {
           "value": "None",
@@ -593,21 +624,6 @@
               "photoUrl": "https://www.inaturalist.org/photos/484653403",
               "observationUrl": "https://www.inaturalist.org/observations/269380404",
               "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
-            },
-            {
-              "observationId": 362970560,
-              "photoId": 662531762,
-              "src": "assets/photo-guide/362970560-662531762.jpg",
-              "displaySize": 300,
-              "alt": "A violet flower with nearly uniform outer tissue and a large separate white center ring.",
-              "title": "A broad ring is still excluded",
-              "caption": "The violet outer tissue is nearly uniform. The large, separately bounded white center ring is excluded from this trait, so it does not push the score to Low or High.",
-              "attribution": "(c) Eric Duran, some rights reserved (CC BY-NC)",
-              "licenseCode": "cc-by-nc",
-              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-              "photoUrl": "https://www.inaturalist.org/photos/662531762",
-              "observationUrl": "https://www.inaturalist.org/observations/362970560",
-              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
             }
           ]
         },
@@ -647,18 +663,18 @@
               "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
             },
             {
-              "observationId": 118082164,
-              "photoId": 199471119,
-              "src": "assets/photo-guide/118082164-199471119.jpg",
+              "observationId": 349126189,
+              "photoId": 636828048,
+              "src": "assets/photo-guide/349126189-636828048.jpg",
               "displaySize": 300,
-              "alt": "A violet flower with a modest repeated gradient toward stronger pink-purple outer regions.",
-              "title": "A more noticeable gradient, still Low",
-              "caption": "The repeated gradient toward stronger pink-purple outer regions is more noticeable, but the tissue does not form the strongly separated pale and dark zones of Figure 1 F.",
-              "attribution": "(c) Brittany, some rights reserved (CC BY-NC)",
+              "alt": "A pink-lilac flower with modest broad petal variation beyond a clearly bounded narrow white center band.",
+              "title": "Modest variation beyond a clear band",
+              "caption": "The narrow center band has an obvious edge and can be excluded. Beyond it, modest broad lighter interiors and more pigmented outer regions repeat across the colored petals without F-like strongly separated zones.",
+              "attribution": "(c) Paloma, some rights reserved (CC BY-NC)",
               "licenseCode": "cc-by-nc",
               "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-              "photoUrl": "https://www.inaturalist.org/photos/199471119",
-              "observationUrl": "https://www.inaturalist.org/observations/118082164",
+              "photoUrl": "https://www.inaturalist.org/photos/636828048",
+              "observationUrl": "https://www.inaturalist.org/observations/349126189",
               "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
             }
           ]
@@ -671,8 +687,23 @@
         },
         {
           "value": "Cannot be determined",
-          "definition": "Use this when broad light/dark changes cannot be separated from illumination or image quality, or the boundary between variation categories remains unresolved.",
+          "definition": "Use this when broad light/dark changes cannot be separated from illumination or image quality, when category boundaries remain unresolved, or when including versus excluding an ambiguous pale inner zone would change the score.",
           "examples": [
+            {
+              "observationId": 362970560,
+              "photoId": 662531762,
+              "src": "assets/photo-guide/362970560-662531762.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with diffuse inner paling whose inclusion or exclusion would change the pigment-variation score.",
+              "title": "Ring exclusion would change the score",
+              "caption": "The pale inner zone cannot confidently be separated into a center ring versus broad pigment variation. Excluding it would suggest a different score from including it, so None, Low, and High are all unsupported until that distinction is resolved.",
+              "attribution": "(c) Eric Duran, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/662531762",
+              "observationUrl": "https://www.inaturalist.org/observations/362970560",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+            },
             {
               "observationId": 70128629,
               "photoId": 113946319,

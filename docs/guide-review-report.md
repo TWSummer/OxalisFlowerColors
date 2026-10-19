@@ -2,6 +2,8 @@
 
 18 October 2026 (local project date) · protocol 2.1.0, with clarified photographic anchors
 
+**Historical pass:** the later [ring-boundary review](ring-edge-review-report.md) supersedes affected ring and variation scores, counts, and guide examples below. This report preserves the earlier decisions and verification; use the later report and current guide for labeling.
+
 All **125 observations carrying the four Redwood Sorrel fields** were re-reviewed for all four traits. **17 field values changed and 483 stayed unchanged.** The owner's examples [159722286](https://www.inaturalist.org/observations/159722286) and [272127265](https://www.inaturalist.org/observations/272127265) now both have **Low Petal Pigment Variation**. There were 13 None-to-Low variation corrections and four reductions in vein contrast. No petal-color or ring score changed.
 
 The [photographic scoring guide](photo-guide.html) contains **39 trait-specific example cards from 25 licensed photographs**, with close-ups, explanations, original-photo links, attribution, and individual licenses. It illustrates ranges within categories and why a trait may be indeterminate. All displayed sources carry CC0, CC BY, or CC BY-NC photo licenses, checked against fresh public metadata. Crops preserve the source colors and are displayed at no more than 300 pixels wide.

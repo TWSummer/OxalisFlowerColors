@@ -1,0 +1,473 @@
+{
+  "protocol_version": "2.1.0",
+  "review_scope": "All 32 previously determinate ring scores; 93 existing indeterminate ring scores retained. Other traits revisited only where separating a ring from pigment variation was unresolved.",
+  "verified_at": "2026-10-19T02:52:31.215Z",
+  "observations": 32,
+  "verified_field_values": 128,
+  "mismatches": [],
+  "unrelated_changes": [],
+  "corrections": [
+    {
+      "observation_id": 73278626,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Faint",
+        "variation": "Low"
+      },
+      "reasons": {
+        "ring": "A localized pale band encircles the throat, but its outer edge blends softly into violet tissue in both views. It does not meet the owner’s requirement for obvious Clear-ring edges."
+      },
+      "examined_photo_ids": [
+        119612626,
+        119612647
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Faint"
+        }
+      ]
+    },
+    {
+      "observation_id": 118710031,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Faint",
+        "variation": "Low"
+      },
+      "reasons": {
+        "ring": "A weak localized pale band is visible immediately outside the throat. Its outer boundary is soft rather than readily traceable, so it is Faint under the clarified rule."
+      },
+      "examined_photo_ids": [
+        200599983
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Faint"
+        }
+      ]
+    },
+    {
+      "observation_id": 124076011,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Pink",
+        "veins": "Medium",
+        "ring": "Faint",
+        "variation": "Cannot be determined"
+      },
+      "reasons": {
+        "ring": "Both views show weak localized paling immediately outside the orange throat. A band is visible, but its softly blended outer edge is insufficient for Clear."
+      },
+      "examined_photo_ids": [
+        210265098,
+        210265107
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Faint"
+        }
+      ]
+    },
+    {
+      "observation_id": 343235423,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Purple",
+        "veins": "Low",
+        "ring": "Faint",
+        "variation": "Cannot be determined"
+      },
+      "reasons": {
+        "ring": "A compact pale halo is visible outside the throat, but it blends into the surrounding pink tissue. The localized feature supports Faint rather than Clear."
+      },
+      "examined_photo_ids": [
+        625192632
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Faint"
+        }
+      ]
+    },
+    {
+      "observation_id": 361316839,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "reasons": {
+        "ring": "The broad pale inner region grades gradually into the outer petals. The image does not establish where a separate ring would end and broad pigment variation would begin.",
+        "variation": "The pale inner region cannot be separated confidently into a center ring versus broad pigment variation. Excluding it could produce a different score from including it; neither None nor Low/High is justified until that distinction is resolved."
+      },
+      "examined_photo_ids": [
+        659394020
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Cannot be determined"
+        },
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Cannot be determined"
+        }
+      ]
+    },
+    {
+      "observation_id": 284624895,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Pink",
+        "veins": "Low",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "reasons": {
+        "ring": "Broad inner paling merges gradually into the violet outer petals. The cupped view does not establish a separate band with a locatable outer extent.",
+        "variation": "The pale inner region cannot be separated confidently into a center ring versus broad pigment variation. Excluding it could produce a different score from including it; neither None nor Low/High is justified until that distinction is resolved."
+      },
+      "examined_photo_ids": [
+        511537741
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Cannot be determined"
+        },
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Cannot be determined"
+        }
+      ]
+    },
+    {
+      "observation_id": 113980346,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Faint",
+        "variation": "Low"
+      },
+      "reasons": {
+        "ring": "Owner correction: a weak pale/white circle is visible encircling the yellow center. The visible band rules out Absent, but its weak outer boundary supports Faint."
+      },
+      "examined_photo_ids": [
+        192513436
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Absent",
+          "after": "Faint"
+        }
+      ]
+    },
+    {
+      "observation_id": 118082164,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Purple",
+        "veins": "Low",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "reasons": {
+        "ring": "A broad pale inner zone grades toward stronger pigment farther out. Its extent cannot be isolated as a ring rather than broad petal pigment variation.",
+        "variation": "The pale inner region cannot be separated confidently into a center ring versus broad pigment variation. Excluding it could produce a different score from including it; neither None nor Low/High is justified until that distinction is resolved."
+      },
+      "examined_photo_ids": [
+        199471119
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Cannot be determined"
+        },
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "Low",
+          "after": "Cannot be determined"
+        }
+      ]
+    },
+    {
+      "observation_id": 139749730,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Pink",
+        "veins": "Cannot be determined",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "reasons": {
+        "ring": "Soft, oblique detail shows broad inner paling without an obvious outer boundary. The alternate distant view does not resolve a localized ring versus a broad pigment gradient."
+      },
+      "examined_photo_ids": [
+        239087144,
+        239087170
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Cannot be determined"
+        }
+      ]
+    },
+    {
+      "observation_id": 27136204,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Pink",
+        "veins": "Low",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "reasons": {
+        "ring": "Owner-flagged ambiguity: the diffuse pale inner region lacks an obvious outer edge. The alternate views do not establish whether it is a separate center ring or broad pigment variation.",
+        "variation": "The pale inner region cannot be separated confidently into a center ring versus broad pigment variation. Excluding it could produce a different score from including it; neither None nor Low/High is justified until that distinction is resolved."
+      },
+      "examined_photo_ids": [
+        42187392,
+        42187369,
+        42187420
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Cannot be determined"
+        },
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "Low",
+          "after": "Cannot be determined"
+        }
+      ]
+    },
+    {
+      "observation_id": 357728689,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Purple",
+        "veins": "Low",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "reasons": {
+        "ring": "Both views show pale inner tissue merging gradually into violet petal background. A separate ring’s outer extent cannot be located reliably.",
+        "variation": "The pale inner region cannot be separated confidently into a center ring versus broad pigment variation. Excluding it could produce a different score from including it; neither None nor Low/High is justified until that distinction is resolved."
+      },
+      "examined_photo_ids": [
+        652497205,
+        652497123
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Cannot be determined"
+        },
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "Low",
+          "after": "Cannot be determined"
+        }
+      ]
+    },
+    {
+      "observation_id": 345204113,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Purple",
+        "veins": "Low",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "reasons": {
+        "ring": "Pale inner tissue extends gradually along the petals in both views. No separate outer boundary identifies which tissue should be excluded as a ring.",
+        "variation": "The pale inner region cannot be separated confidently into a center ring versus broad pigment variation. Excluding it could produce a different score from including it; neither None nor Low/High is justified until that distinction is resolved."
+      },
+      "examined_photo_ids": [
+        629070771,
+        629070796
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Cannot be determined"
+        },
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "Low",
+          "after": "Cannot be determined"
+        }
+      ]
+    },
+    {
+      "observation_id": 362970560,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "reasons": {
+        "ring": "Owner-flagged ambiguity: a broad diffuse pale center blends into violet outer tissue in both photographs. Its poorly defined outer edge does not establish a Clear ring or a separately localized Faint band.",
+        "variation": "The pale inner region cannot be separated confidently into a center ring versus broad pigment variation. Excluding it could produce a different score from including it; neither None nor Low/High is justified until that distinction is resolved."
+      },
+      "examined_photo_ids": [
+        662531762,
+        662531784
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Cannot be determined"
+        },
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "None",
+          "after": "Cannot be determined"
+        }
+      ]
+    },
+    {
+      "observation_id": 159722286,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Purple",
+        "veins": "Medium",
+        "ring": "Faint",
+        "variation": "Low"
+      },
+      "reasons": {
+        "ring": "Owner correction: a weak pale rim encircles the yellow/orange center. It is visible enough to rule out Absent, but has the soft boundary of Faint. The broader petal paling remains the owner’s Low-variation anchor."
+      },
+      "examined_photo_ids": [
+        275973290
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Absent",
+          "after": "Faint"
+        }
+      ]
+    },
+    {
+      "observation_id": 43522185,
+      "reviewed_at": "2026-10-19T02:43:46.848Z",
+      "values": {
+        "color": "Purple",
+        "veins": "Low",
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
+      },
+      "reasons": {
+        "ring": "The broad inner paling fades into the surrounding petals without a separable outer boundary. It cannot be assigned confidently to a ring rather than broad pigment variation.",
+        "variation": "The pale inner region cannot be separated confidently into a center ring versus broad pigment variation. Excluding it could produce a different score from including it; neither None nor Low/High is justified until that distinction is resolved."
+      },
+      "examined_photo_ids": [
+        69051085
+      ],
+      "changes": [
+        {
+          "trait": "ring",
+          "field_id": 23011,
+          "before": "Clear",
+          "after": "Cannot be determined"
+        },
+        {
+          "trait": "variation",
+          "field_id": 23012,
+          "before": "Low",
+          "after": "Cannot be determined"
+        }
+      ]
+    }
+  ],
+  "ring_counts_in_review": {
+    "Absent": 0,
+    "Faint": 10,
+    "Clear": 13,
+    "Cannot be determined": 9
+  },
+  "current_counts_all_125": {
+    "color": {
+      "White": 78,
+      "Pink": 16,
+      "Purple": 25,
+      "Cannot be determined": 6
+    },
+    "veins": {
+      "Low": 30,
+      "Medium": 43,
+      "High": 16,
+      "Cannot be determined": 36
+    },
+    "ring": {
+      "Absent": 0,
+      "Faint": 10,
+      "Clear": 13,
+      "Cannot be determined": 102
+    },
+    "variation": {
+      "None": 52,
+      "Low": 11,
+      "High": 0,
+      "Cannot be determined": 62
+    }
+  },
+  "snapshot_verification": {
+    "fetched_at": "2026-10-19T02:52:56.046Z",
+    "observations": 125,
+    "expected_values": 500,
+    "mismatches": []
+  }
+}

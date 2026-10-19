@@ -7,6 +7,7 @@ import { validateGuide } from '../docs/js/photo-guide.js';
 
 const ROOT = path.resolve(fileURLToPath(new URL('../', import.meta.url)));
 const REVIEW_ROOT = 'review-work/guide-review-2026-10-18';
+const RING_REVIEW_ROOT = 'review-work/ring-edge-review-2026-10-18';
 const REVIEW_DATE = '2026-10-18';
 const LICENSE_URLS = {
   cc0: 'https://creativecommons.org/publicdomain/zero/1.0/',
@@ -33,15 +34,15 @@ const TRAITS = [
         value: 'Pink', definition: 'Rose, magenta, or pale pink-lilac background tissue, matching A–F in our reference key. Saturation alone does not separate Pink from Purple.',
         selections: [
           [19, 'Saturated rose and magenta', 'The broad rose/magenta tissue fits Pink, as do C and D in our Figure 1 key. Its cupped center makes the ring uncertain, but does not erase the visible petal color.', 'A cupped flower with saturated rose-magenta upper petals.'],
-          [60, 'Pale pink-lilac', 'The visible broad tissue is pale rose/lilac and falls in Pink. Soft detail makes some structural traits uncertain; the background color is still discernible.', 'A pale rose-lilac flower with a white basal band.'],
-          [63, 'Rose-pink around a white center', 'The outer petal background is rose-pink. Exclude the white basal band when deciding the flower’s background color.', 'An open rose-pink flower surrounding a distinct white basal band.']
+          [60, 'Pale pink-lilac', 'The visible broad tissue is pale rose/lilac and falls in Pink. Soft detail makes some structural traits uncertain; the background color is still discernible.', 'A pale rose-lilac flower with diffuse inner paling.'],
+          [63, 'Rose-pink with diffuse inner paling', 'The outer petal background is rose-pink. The diffuse pale inner area has no obvious outer edge, so its identity as a center ring versus broad pigment variation remains unresolved.', 'An open rose-pink flower with a diffuse pale inner area and no obvious outer boundary.']
         ]
       },
       {
         value: 'Purple', definition: 'Clearly violet background tissue like G and H. The violet must be in the broad tissue, not confined to vein lines.',
         selections: [
           [77, 'Violet with subtle veins', 'Clearly violet tissue occupies the broad parts of the petals. The fine veins are subtle against it, so the color is Purple even with Low vein contrast.', 'A violet flower with subtle veins and a white center ring.'],
-          [99, 'Violet outside a broad white ring', 'Use the violet outer tissue for color. The broad white center band is a separately scored ring and does not make this a White flower.', 'Violet outer petals around a broad, distinct white basal ring.'],
+          [99, 'Violet with diffuse inner paling', 'The broad outer tissue is violet. The pale inner zone blends into it without an obvious outer edge; color remains Purple while ring and pigment variation are both unresolved.', 'Violet outer petals grading into a broad diffuse pale inner zone.'],
           [38, 'Violet with visible vein lines', 'The spaces between the darker lines are themselves violet. Both background pigment and veins are visible; the background establishes Purple.', 'A violet flower with visible darker veins and a white basal ring.']
         ]
       },
@@ -90,31 +91,36 @@ const TRAITS = [
   },
   {
     key: 'ring', label: 'White Center Ring', fieldId: 23011,
-    summary: 'Inspect the transition immediately outside the yellow/orange throat on at least three visible petal bases. Judge whether a separate pale band is absent, faint, or clearly bounded against the outer tissue.',
+    summary: 'Inspect the transition immediately outside the yellow/orange throat on at least three visible petal bases. First decide whether a localized band can be separated from broad petal paling. Clear requires an obvious, traceable outer edge; diffuse paling alone does not establish a ring.',
     categories: [
       {
         value: 'Absent', definition: 'Colored petal tissue reaches the throat without an intervening pale or white band. The bases must be exposed well enough to establish absence.',
+        note: 'After the ring-boundary correction, none of the 125 reviewed observations remains a verified Absent example. Figure 1 D and F remain the reference definition. The two former photo examples are now Faint because a weak localized band is visible.',
+        selections: []
+      },
+      {
+        value: 'Faint', definition: 'An actual weak, localized pale band is visible just outside the throat on at least three petal bases, but its outer edge blends softly into colored tissue. Faint is a visible band, not a substitute for uncertainty about diffuse paling.',
+        note: 'The first two examples are owner-corrected Faint anchors. A weak visible band rules out Absent even when its edge is too soft for Clear.',
         selections: [
-          [46, 'Colored tissue reaches the throat', 'The visible violet background continues to the throat without a distinct intervening pale band. Subtle light and dark areas farther out are scored as variation instead.', 'A violet flower whose exposed colored petal bases reach the throat without a white ring.'],
-          [104, 'Paler middles do not make a ring', 'Colored tissue reaches the yellow throat on the visible bases. The paler areas farther along the petals belong to Low variation, not a separate basal ring.', 'A violet flower with colored bases reaching the yellow throat and modest paler areas farther along the petals.']
+          [46, 'Owner’s anchor: a weak pale circle', 'A weak pale circle can be seen around the yellow center. Its presence rules out the earlier Absent label, while the softly defined outer boundary supports Faint.', 'A violet flower with a weak localized pale circle around the yellow center.'],
+          [104, 'Owner’s anchor: a soft pale rim', 'The pale rim immediately around the yellow/orange center is visible but softly bounded. Score that localized band Faint; broader modest paling elsewhere in the petals remains Low variation.', 'A violet flower with a soft pale rim around the yellow-orange throat and broader modest petal paling.'],
+          [121, 'A weak, localized basal band', 'A weak pale band is localized immediately outside the throat, but blends softly into the surrounding violet tissue. The modest broad changes farther out are scored separately as Low variation.', 'A violet flower with a weak localized pale basal band blending softly into outer tissue.']
         ]
       },
       {
-        value: 'Faint', definition: 'A weak pale band is visible just outside the throat but blends softly into the outer colored tissue. Faint describes a visible feature, not uncertain evidence.',
-        note: 'This is the only licensed Faint example selected from the 125 reviewed observations. Observation 294114815 remains a linked working comparison in the protocol; its all-rights-reserved photo is not reproduced here.',
-        selections: [[121, 'A weak, softly blended band', 'A pale basal band is visible, but its boundary blends into the surrounding violet tissue. Its weak separation supports Faint rather than Clear.', 'A violet flower with a weak pale basal band blending softly into the outer tissue.']]
-      },
-      {
-        value: 'Clear', definition: 'A distinct white band separates the throat from colored outer tissue on at least three petals. Width alone does not determine the category: a narrow but distinct band can be Clear.',
+        value: 'Clear', definition: 'A localized white band has an obvious outer edge that can be traced against the colored tissue on at least three visible petal bases. Width alone does not decide the category: a narrow band with an obvious edge can be Clear.',
+        note: 'Observation 77541853 is the project owner’s Clear anchor. Locate the outer edge of the band before choosing Clear.',
         selections: [
-          [99, 'Broad and clearly bounded', 'The large white basal region has a distinct outer boundary against violet tissue. Its size is striking, but it remains a center ring and is excluded from pigment variation.', 'A violet flower with a broad white basal ring and a clearly defined outer boundary.'],
-          [6, 'A distinct band outside the throat', 'The white band is clearly separate from both the yellow throat and violet outer tissue. Vein lines crossing the petals do not remove that distinction.', 'A violet flower with a distinct white band outside its yellow throat.'],
-          [63, 'A white band against rose-pink', 'The white basal band stands apart from the rose-pink outer tissue across the visible petal bases. The background color of the flower does not change the ring rule.', 'A rose-pink flower with a distinct white ring around the throat.']
+          [38, 'Owner’s anchor: obvious edges', 'An obvious white band surrounds the yellow throat. Its outer edge can be traced against violet tissue on at least three petal bases, establishing Clear.', 'A violet flower with an obvious white band and a traceable outer edge around the yellow throat.'],
+          [77, 'A defined edge against violet', 'The localized white band has a readily traceable outer edge against the saturated violet background on at least three petals. This edge separates a ring from diffuse inner paling.', 'A violet flower with a localized white basal band and a clearly traceable outer boundary.'],
+          [65, 'A narrow band can be Clear', 'The narrow white band outside the orange throat has an obvious outer edge against pink-lilac tissue on at least three bases. Modest broad variation remains beyond the band.', 'A pink-lilac flower with a narrow white basal band and an obvious outer edge.']
         ]
       },
       {
-        value: 'Cannot be determined', definition: 'Use this for a hidden or unresolved transition, or for white petals with no distinguishable outer boundary for a separate ring. White petals are not automatically an absent ring.',
+        value: 'Cannot be determined', definition: 'Use this when diffuse inner paling cannot be separated into a localized ring versus broad pigment variation, when the transition is hidden or unresolved, or when white petals have no separate outer ring boundary.',
         selections: [
+          [99, 'Diffuse paling is not a defined ring', 'The broad pale inner zone blends into violet tissue in both photographs. There is neither an obvious Clear edge nor enough evidence to isolate a localized Faint band from broad pigment variation.', 'A violet flower with a broad diffuse pale inner zone whose ring boundary cannot be isolated.'],
+          [63, 'An unresolved pale inner area', 'The pale inner area grades into rose-pink tissue without an obvious outer edge. Other views do not resolve whether it is a separate center ring or broad background variation.', 'A rose-pink flower with a diffuse pale inner area that cannot be separated into a ring or broad variation.'],
           [19, 'A cupped center can hide a band', 'The oblique, cupped center may conceal a pale circle. The project owner corrected this to Cannot be determined; a partly hidden band cannot establish Absent.', 'A cupped magenta flower whose oblique center may hide a white basal band.'],
           [1, 'White tissue has no separate boundary', 'The petals are white, so no separate outer ring boundary can be identified. This is insufficient evidence for Absent, Faint, or Clear.', 'A white flower with no distinguishable outer boundary for a separate white center ring.']
         ]
@@ -123,15 +129,14 @@ const TRAITS = [
   },
   {
     key: 'variation', label: 'Petal Pigment Variation', fieldId: 23012,
-    summary: 'Look for repeated changes in pigment intensity within the broad background of a petal. Exclude the throat, narrow veins, a separate white center ring, shadows, glare, folds, and damage.',
+    summary: 'Look for repeated changes in pigment intensity within the broad background of a petal. Exclude the throat, narrow veins, a separately established center ring, shadows, glare, folds, and damage. If an ambiguous pale zone changes the score depending on whether it is included, use Cannot be determined.',
     categories: [
       {
         value: 'None', definition: 'The broad background is nearly uniform after the exclusions above. Both pale and deeply colored flowers can be None; a center ring alone does not increase variation.',
         selections: [
           [19, 'Nearly uniform pink', 'The broad pink tissue is nearly uniform. Folds and small flecks do not form a repeated broad pigment gradient.', 'A magenta flower with nearly uniform broad petal color.'],
           [77, 'Nearly uniform violet', 'The colored background is approximately uniform once the separate white basal ring is excluded. A ring is not a pale middle zone within the colored petal.', 'A violet flower with uniform colored tissue outside a distinct white basal ring.'],
-          [102, 'Nearly uniform white', 'The white tissue is approximately uniform outside the throat and fine veins. Neither the yellow center nor faint colored lines establishes broad variation.', 'A white flower with approximately uniform tissue outside the yellow center and fine veins.'],
-          [99, 'A broad ring is still excluded', 'The violet outer tissue is nearly uniform. The large, separately bounded white center ring is excluded from this trait, so it does not push the score to Low or High.', 'A violet flower with nearly uniform outer tissue and a large separate white center ring.']
+          [102, 'Nearly uniform white', 'The white tissue is approximately uniform outside the throat and fine veins. Neither the yellow center nor faint colored lines establishes broad variation.', 'A white flower with approximately uniform tissue outside the yellow center and fine veins.']
         ]
       },
       {
@@ -140,7 +145,7 @@ const TRAITS = [
         selections: [
           [104, 'Owner’s anchor: paler middle regions', 'The project owner assigns Low here. Broad middle regions are paler than other petal regions beyond the narrow veins; the modest difference is enough even without sharply separated zones.', 'A violet flower with modest broad paling in the petal middles and stronger pigment elsewhere.'],
           [121, 'Owner’s anchor: modest broad variation', 'The project owner assigns Low here. Modest lighter and darker regions occur within the colored petals, beyond the narrow vein lines and faint basal ring.', 'A violet flower showing modest lighter and darker background regions within the petals.'],
-          [54, 'A more noticeable gradient, still Low', 'The repeated gradient toward stronger pink-purple outer regions is more noticeable, but the tissue does not form the strongly separated pale and dark zones of Figure 1 F.', 'A violet flower with a modest repeated gradient toward stronger pink-purple outer regions.']
+          [65, 'Modest variation beyond a clear band', 'The narrow center band has an obvious edge and can be excluded. Beyond it, modest broad lighter interiors and more pigmented outer regions repeat across the colored petals without F-like strongly separated zones.', 'A pink-lilac flower with modest broad petal variation beyond a clearly bounded narrow white center band.']
         ]
       },
       {
@@ -149,8 +154,9 @@ const TRAITS = [
         selections: []
       },
       {
-        value: 'Cannot be determined', definition: 'Use this when broad light/dark changes cannot be separated from illumination or image quality, or the boundary between variation categories remains unresolved.',
+        value: 'Cannot be determined', definition: 'Use this when broad light/dark changes cannot be separated from illumination or image quality, when category boundaries remain unresolved, or when including versus excluding an ambiguous pale inner zone would change the score.',
         selections: [
+          [99, 'Ring exclusion would change the score', 'The pale inner zone cannot confidently be separated into a center ring versus broad pigment variation. Excluding it would suggest a different score from including it, so None, Low, and High are all unsupported until that distinction is resolved.', 'A violet flower with diffuse inner paling whose inclusion or exclusion would change the pigment-variation score.'],
           [35, 'Glare and shadow overlap the tissue', 'Direct glare and shadows change the apparent intensity across the petals. The available image cannot establish whether a broad pigment gradient is present.', 'A violet flower with glare and shadows across its petals.'],
           [89, 'Wet glare and soft focus', 'Bright wet surfaces and defocus prevent reliable comparison of background intensity. Apparent pale patches cannot be assigned to pigment variation.', 'A white flower with droplets, bright wet glare, and soft focus.'],
           [109, 'Uneven illumination is unresolved', 'Strong differences in illumination produce broad light and dark areas. They cannot confidently be attributed to pigment, so the score remains Cannot be determined.', 'An oblique violet flower with strongly uneven illumination across the petals.']
@@ -162,6 +168,23 @@ const TRAITS = [
 
 const json = async relative => JSON.parse(await readFile(path.join(ROOT, relative), 'utf8'));
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+
+export function mergeReviewDecisions(original, updates) {
+  const merged = new Map(original.map(decision => [decision.observation_id, structuredClone(decision)]));
+  assert.equal(merged.size, original.length, 'Duplicate original review IDs');
+  assert.equal(new Set(updates.map(decision => decision.observation_id)).size, updates.length, 'Duplicate boundary-review IDs');
+  for (const update of updates) {
+    const prior = merged.get(update.observation_id);
+    assert.ok(prior, `Boundary review is outside the original set: ${update.observation_id}`);
+    merged.set(update.observation_id, {
+      ...prior, ...update, index: prior.index,
+      values: { ...prior.values, ...update.values },
+      reasons: { ...prior.reasons, ...update.reasons },
+      examined_photo_ids: [...new Set([...prior.examined_photo_ids, ...update.examined_photo_ids])]
+    });
+  }
+  return [...merged.values()];
+}
 
 export function jpegDimensions(bytes) {
   assert.equal(bytes.readUInt16BE(0), 0xffd8, 'Expected a JPEG crop');
@@ -181,8 +204,21 @@ export function jpegDimensions(bytes) {
 }
 
 export async function buildPhotoGuide() {
-  const [manifest, baseline, decisions] = await Promise.all(['manifest.json', 'baseline.json', 'decisions.json'].map(file => json(`${REVIEW_ROOT}/${file}`)));
-  assert.equal(decisions.length, 125, 'Expected the complete 125-observation re-review');
+  const [manifest, baseline, originalDecisions, ringBaseline, ringDecisions] = await Promise.all([
+    ...['manifest.json', 'baseline.json', 'decisions.json'].map(file => json(`${REVIEW_ROOT}/${file}`)),
+    ...['baseline.json', 'decisions.json'].map(file => json(`${RING_REVIEW_ROOT}/${file}`))
+  ]);
+  assert.equal(originalDecisions.length, 125, 'Expected the complete 125-observation re-review');
+  assert.equal(ringDecisions.length, 32, 'Expected all 32 determinate ring observations to be re-reviewed');
+  assert.equal(ringBaseline.records.length, 32, 'Expected fresh photo metadata for all 32 boundary-review records');
+  assert.deepEqual(new Set(ringBaseline.records.map(record => record.id)), new Set(ringDecisions.map(record => record.observation_id)), 'Fresh metadata must cover exactly the latest boundary-review set');
+  const decisions = mergeReviewDecisions(originalDecisions, ringDecisions);
+  assert.ok(decisions.every(decision => decision.values.ring !== 'Absent'), 'The empty Absent note no longer matches current decisions');
+  const licensedRecords = new Map(baseline.records.map(record => [record.id, { record, checkedAt: baseline.checked_at, source: `${REVIEW_ROOT}/baseline.json` }]));
+  for (const record of ringBaseline.records) {
+    assert.ok(licensedRecords.has(record.id), `Fresh baseline record is outside the original set: ${record.id}`);
+    licensedRecords.set(record.id, { record, checkedAt: ringBaseline.checked_at, source: `${RING_REVIEW_ROOT}/baseline.json` });
+  }
   const sourceManifests = new Map();
   const assets = new Map();
   const uses = [];
@@ -208,7 +244,7 @@ export async function buildPhotoGuide() {
         assert.equal(originalEntry?.observation_id, entry.observation_id, `Source-index mismatch at ${reviewIndex}`);
         assert.ok(originalEntry.photos.some(photo => photo.id === photoId), `Evidence photo absent from source manifest at ${reviewIndex}`);
         assert.equal(entry.crop_path, `${entry.source_root}/crops/${String(entry.source_index).padStart(3, '0')}.jpg`, `Unexpected crop path at ${reviewIndex}`);
-        const record = baseline.records.find(record => record.id === entry.observation_id);
+        const { record, checkedAt: licenseCheckedAt, source: licenseMetadataSource } = licensedRecords.get(entry.observation_id);
         const photo = record?.photos.find(photo => photo.id === photoId);
         assert.ok(photo && LICENSE_URLS[photo.license_code], `Photo license not authorized at ${reviewIndex}`);
         assert.ok(photo.attribution, `Missing exact API attribution at ${reviewIndex}`);
@@ -225,7 +261,7 @@ export async function buildPhotoGuide() {
         if (!assets.has(src)) {
           await copyFile(path.join(ROOT, entry.crop_path), path.join(ROOT, 'docs', src));
           assert.equal(hash(await readFile(path.join(ROOT, 'docs', src))), hash(bytes), `Copied crop changed at ${reviewIndex}`);
-          assets.set(src, { src, observationId: entry.observation_id, photoId, reviewIndex, sourceRoot: entry.source_root, sourceIndex: entry.source_index, sourceCropPath: entry.crop_path, sha256: hash(bytes), pixelDimensions: dimensions, displaySize, focalEvidence: evidence[0], sourceManifestPhotoId: photoId, reviewedValues: decision.values, attribution: photo.attribution, licenseCode: photo.license_code, licenseUrl: LICENSE_URLS[photo.license_code], licenseCheckedAt: baseline.checked_at, photoUrl, observationUrl, sourceApiPhotoUrl: photo.url, cropNote });
+          assets.set(src, { src, observationId: entry.observation_id, photoId, reviewIndex, sourceRoot: entry.source_root, sourceIndex: entry.source_index, sourceCropPath: entry.crop_path, sha256: hash(bytes), pixelDimensions: dimensions, displaySize, focalEvidence: evidence[0], sourceManifestPhotoId: photoId, reviewedValues: decision.values, attribution: photo.attribution, licenseCode: photo.license_code, licenseUrl: LICENSE_URLS[photo.license_code], licenseCheckedAt, licenseMetadataSource, photoUrl, observationUrl, sourceApiPhotoUrl: photo.url, cropNote });
         } else assert.equal(assets.get(src).sha256, hash(bytes), 'Conflicting crops share an asset path');
         uses.push({ trait: trait.key, value: category.value, reviewIndex, observationId: entry.observation_id, photoId, src, reviewedReason: decision.reasons[trait.key] });
       }
@@ -234,8 +270,8 @@ export async function buildPhotoGuide() {
     }
     traits.push({ key: trait.key, label: trait.label, fieldName: `Redwood Sorrel ${trait.label}`, fieldId: trait.fieldId, summary: trait.summary, categories });
   }
-  const guide = validateGuide({ protocolVersion: manifest.protocol_version, reviewedAt: REVIEW_DATE, introduction: 'All 125 observations carrying our four project fields were re-reviewed. These close-ups were chosen to show the range within categories and the boundaries between them. “Pigment variation” is a visual score of the photographed tissue; it does not measure chemical pigment.', traits });
-  const provenance = { reviewedAt: REVIEW_DATE, protocolVersion: manifest.protocol_version, reviewManifest: `${REVIEW_ROOT}/manifest.json`, decisionsSource: `${REVIEW_ROOT}/decisions.json`, licenseMetadataSource: `${REVIEW_ROOT}/baseline.json`, licenseCheckedAt: baseline.checked_at, sourceHashes: { manifest: hash(await readFile(path.join(ROOT, REVIEW_ROOT, 'manifest.json'))), decisions: hash(await readFile(path.join(ROOT, REVIEW_ROOT, 'decisions.json'))), baseline: hash(await readFile(path.join(ROOT, REVIEW_ROOT, 'baseline.json'))) }, method: 'Focal crops copied byte-for-byte from earlier review evidence. Original source index and evidence photo ID cross-checked against the source manifest; each example category checked against the fresh 125-observation visual re-review. Only CC0, CC BY, and CC BY-NC photo licenses accepted from the fresh public API baseline.', assets: [...assets.values()], uses };
+  const guide = validateGuide({ protocolVersion: manifest.protocol_version, reviewedAt: REVIEW_DATE, introduction: 'All 125 observations carrying our four project fields were re-reviewed, followed by a ring-boundary review of all 32 previously determinate ring labels. These examples use the latest decisions and show both category ranges and unresolved boundaries. “Pigment variation” is a visual score of photographed tissue; it does not measure chemical pigment.', traits });
+  const provenance = { reviewedAt: REVIEW_DATE, protocolVersion: manifest.protocol_version, reviewManifest: `${REVIEW_ROOT}/manifest.json`, decisionsSource: `${REVIEW_ROOT}/decisions.json`, latestDecisionsSource: `${RING_REVIEW_ROOT}/decisions.json`, licenseMetadataSource: `${REVIEW_ROOT}/baseline.json`, latestLicenseMetadataSource: `${RING_REVIEW_ROOT}/baseline.json`, licenseCheckedAt: ringBaseline.checked_at, sourceHashes: { manifest: hash(await readFile(path.join(ROOT, REVIEW_ROOT, 'manifest.json'))), decisions: hash(await readFile(path.join(ROOT, REVIEW_ROOT, 'decisions.json'))), baseline: hash(await readFile(path.join(ROOT, REVIEW_ROOT, 'baseline.json'))), ringDecisions: hash(await readFile(path.join(ROOT, RING_REVIEW_ROOT, 'decisions.json'))), ringBaseline: hash(await readFile(path.join(ROOT, RING_REVIEW_ROOT, 'baseline.json'))) }, method: 'Focal crops copied byte-for-byte from earlier review evidence. Original source index and evidence photo ID cross-checked against the source manifest. Latest ring-boundary decisions are merged by observation ID over the 125-observation re-review while preserving original review indexes; every example category matches the merged decision. Fresh ring-baseline photo metadata supersedes earlier metadata for those records. Each asset identifies its license check source and time. Only CC0, CC BY, and CC BY-NC photo licenses accepted.', assets: [...assets.values()], uses };
   await writeFile(path.join(ROOT, 'docs/data/photo-guide.json'), JSON.stringify(guide, null, 2) + '\n');
   await writeFile(path.join(ROOT, 'docs/data/photo-guide-assets.json'), JSON.stringify(provenance, null, 2) + '\n');
   return { uniquePhotos: assets.size, examples: uses.length, categories: traits.reduce((sum, trait) => sum + trait.categories.length, 0), licenses: [...new Set([...assets.values()].map(asset => asset.licenseCode))] };

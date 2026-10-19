@@ -3,14 +3,18 @@
   "protocolVersion": "2.1.0",
   "reviewManifest": "review-work/guide-review-2026-10-18/manifest.json",
   "decisionsSource": "review-work/guide-review-2026-10-18/decisions.json",
+  "latestDecisionsSource": "review-work/ring-edge-review-2026-10-18/decisions.json",
   "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
-  "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+  "latestLicenseMetadataSource": "review-work/ring-edge-review-2026-10-18/baseline.json",
+  "licenseCheckedAt": "2026-10-19T02:38:12.071Z",
   "sourceHashes": {
     "manifest": "c2d346cd1a8c60cc107320911e0af65f13b7ae34a7a797628c66a313570dad19",
     "decisions": "1ad55c98f543df4a33eb138272ed5d31515b16fd0db99892c448805c436f6a8c",
-    "baseline": "9ed51ee7b08844148088458b0ae2c24cc5778d2a7974cbc54e1a1a4a4b8fe6d7"
+    "baseline": "9ed51ee7b08844148088458b0ae2c24cc5778d2a7974cbc54e1a1a4a4b8fe6d7",
+    "ringDecisions": "5c4af6b6ab3f4d538f4c35c69548e6c0bbc86ac88f37bb7acc0d27d487170c7e",
+    "ringBaseline": "074db82e2212c2c406c42400801903453e9654a2d024a5a8ca42f82a713335e0"
   },
-  "method": "Focal crops copied byte-for-byte from earlier review evidence. Original source index and evidence photo ID cross-checked against the source manifest; each example category checked against the fresh 125-observation visual re-review. Only CC0, CC BY, and CC BY-NC photo licenses accepted from the fresh public API baseline.",
+  "method": "Focal crops copied byte-for-byte from earlier review evidence. Original source index and evidence photo ID cross-checked against the source manifest. Latest ring-boundary decisions are merged by observation ID over the 125-observation re-review while preserving original review indexes; every example category matches the merged decision. Fresh ring-baseline photo metadata supersedes earlier metadata for those records. Each asset identifies its license check source and time. Only CC0, CC BY, and CC BY-NC photo licenses accepted.",
   "assets": [
     {
       "src": "assets/photo-guide/269380404-484653403.jpg",
@@ -44,6 +48,7 @@
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/484653403",
       "observationUrl": "https://www.inaturalist.org/observations/269380404",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/484653403/square.jpeg",
@@ -81,6 +86,7 @@
       "licenseCode": "cc0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/486327241",
       "observationUrl": "https://www.inaturalist.org/observations/270419247",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/486327241/square.jpeg",
@@ -118,6 +124,7 @@
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/170515136",
       "observationUrl": "https://www.inaturalist.org/observations/102048918",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/170515136/square.jpeg",
@@ -155,6 +162,7 @@
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/634046692",
       "observationUrl": "https://www.inaturalist.org/observations/347719180",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/634046692/square.jpg",
@@ -185,13 +193,14 @@
       "reviewedValues": {
         "color": "Pink",
         "veins": "Cannot be determined",
-        "ring": "Clear",
+        "ring": "Cannot be determined",
         "variation": "Cannot be determined"
       },
       "attribution": "(c) jrmorris, some rights reserved (CC BY-NC)",
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseCheckedAt": "2026-10-19T02:38:12.071Z",
+      "licenseMetadataSource": "review-work/ring-edge-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/239087144",
       "observationUrl": "https://www.inaturalist.org/observations/139749730",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/239087144/square.jpg",
@@ -222,13 +231,14 @@
       "reviewedValues": {
         "color": "Pink",
         "veins": "Low",
-        "ring": "Clear",
-        "variation": "Low"
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
       },
       "attribution": "(c) madfox, some rights reserved (CC BY-NC)",
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseCheckedAt": "2026-10-19T02:38:12.071Z",
+      "licenseMetadataSource": "review-work/ring-edge-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/42187392",
       "observationUrl": "https://www.inaturalist.org/observations/27136204",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/42187392/square.jpeg",
@@ -265,7 +275,8 @@
       "attribution": "(c) vtforester, some rights reserved (CC BY-NC)",
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseCheckedAt": "2026-10-19T02:38:12.071Z",
+      "licenseMetadataSource": "review-work/ring-edge-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/381601842",
       "observationUrl": "https://www.inaturalist.org/observations/215814088",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/381601842/square.jpeg",
@@ -296,13 +307,14 @@
       "reviewedValues": {
         "color": "Purple",
         "veins": "Medium",
-        "ring": "Clear",
-        "variation": "None"
+        "ring": "Cannot be determined",
+        "variation": "Cannot be determined"
       },
       "attribution": "(c) Eric Duran, some rights reserved (CC BY-NC)",
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseCheckedAt": "2026-10-19T02:38:12.071Z",
+      "licenseMetadataSource": "review-work/ring-edge-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/662531762",
       "observationUrl": "https://www.inaturalist.org/observations/362970560",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/662531762/square.jpg",
@@ -339,7 +351,8 @@
       "attribution": "(c) Dillon Doss, some rights reserved (CC BY-NC)",
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseCheckedAt": "2026-10-19T02:38:12.071Z",
+      "licenseMetadataSource": "review-work/ring-edge-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/126823320",
       "observationUrl": "https://www.inaturalist.org/observations/77541853",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/126823320/square.jpg",
@@ -377,6 +390,7 @@
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/484529223",
       "observationUrl": "https://www.inaturalist.org/observations/269478378",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/484529223/square.jpeg",
@@ -414,6 +428,7 @@
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/129649576",
       "observationUrl": "https://www.inaturalist.org/observations/79171578",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/129649576/square.jpeg",
@@ -451,6 +466,7 @@
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/77152494",
       "observationUrl": "https://www.inaturalist.org/observations/48617846",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/77152494/square.jpeg",
@@ -487,7 +503,8 @@
       "attribution": "(c) Paloma, some rights reserved (CC BY-NC)",
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseCheckedAt": "2026-10-19T02:38:12.071Z",
+      "licenseMetadataSource": "review-work/ring-edge-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/636828048",
       "observationUrl": "https://www.inaturalist.org/observations/349126189",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/636828048/square.jpg",
@@ -525,6 +542,7 @@
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/550088222",
       "observationUrl": "https://www.inaturalist.org/observations/305108427",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/550088222/square.jpg",
@@ -562,6 +580,7 @@
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/491939104",
       "observationUrl": "https://www.inaturalist.org/observations/273527894",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/491939104/square.jpg",
@@ -599,6 +618,7 @@
       "licenseCode": "cc-by",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/689396749",
       "observationUrl": "https://www.inaturalist.org/observations/377017094",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/689396749/square.jpg",
@@ -636,6 +656,7 @@
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/113996957",
       "observationUrl": "https://www.inaturalist.org/observations/70158331",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/113996957/square.jpeg",
@@ -666,13 +687,14 @@
       "reviewedValues": {
         "color": "Purple",
         "veins": "Medium",
-        "ring": "Absent",
+        "ring": "Faint",
         "variation": "Low"
       },
       "attribution": "(c) moedailey, some rights reserved (CC BY-NC)",
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseCheckedAt": "2026-10-19T02:38:12.071Z",
+      "licenseMetadataSource": "review-work/ring-edge-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/192513436",
       "observationUrl": "https://www.inaturalist.org/observations/113980346",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/192513436/square.jpg",
@@ -703,13 +725,14 @@
       "reviewedValues": {
         "color": "Purple",
         "veins": "Medium",
-        "ring": "Absent",
+        "ring": "Faint",
         "variation": "Low"
       },
       "attribution": "(c) weavergirl, some rights reserved (CC BY-NC)",
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseCheckedAt": "2026-10-19T02:38:12.071Z",
+      "licenseMetadataSource": "review-work/ring-edge-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/275973290",
       "observationUrl": "https://www.inaturalist.org/observations/159722286",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/275973290/square.jpg",
@@ -746,84 +769,11 @@
       "attribution": "(c) Trevor Van Loon, some rights reserved (CC BY)",
       "licenseCode": "cc-by",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseCheckedAt": "2026-10-19T02:38:12.071Z",
+      "licenseMetadataSource": "review-work/ring-edge-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/489563506",
       "observationUrl": "https://www.inaturalist.org/observations/272127265",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/489563506/square.jpg",
-      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
-    },
-    {
-      "src": "assets/photo-guide/118710031-200599983.jpg",
-      "observationId": 118710031,
-      "photoId": 200599983,
-      "reviewIndex": 6,
-      "sourceRoot": "review-work/calibration-2026-10",
-      "sourceIndex": 25,
-      "sourceCropPath": "review-work/calibration-2026-10/crops/025.jpg",
-      "sha256": "8f5a300f5d628287fa9c417188ed11908fde4b75684d89f511eaf5f00c806a62",
-      "pixelDimensions": {
-        "width": 300,
-        "height": 300
-      },
-      "displaySize": 300,
-      "focalEvidence": {
-        "photo_id": 200599983,
-        "flower": "Fresh focal flower in manually selected crop x=620, y=820, width=435; source-pixel measurements approximate.",
-        "source_diameter_px": 435,
-        "assessment_diameter_px": 300,
-        "visible_upper_petals": 5
-      },
-      "sourceManifestPhotoId": 200599983,
-      "reviewedValues": {
-        "color": "Purple",
-        "veins": "Medium",
-        "ring": "Clear",
-        "variation": "Low"
-      },
-      "attribution": "(c) sjrayfie, some rights reserved (CC BY-NC)",
-      "licenseCode": "cc-by-nc",
-      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
-      "photoUrl": "https://www.inaturalist.org/photos/200599983",
-      "observationUrl": "https://www.inaturalist.org/observations/118710031",
-      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/200599983/square.jpeg",
-      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
-    },
-    {
-      "src": "assets/photo-guide/118082164-199471119.jpg",
-      "observationId": 118082164,
-      "photoId": 199471119,
-      "reviewIndex": 54,
-      "sourceRoot": "review-work/additional-100-2026-10-18",
-      "sourceIndex": 34,
-      "sourceCropPath": "review-work/additional-100-2026-10-18/crops/034.jpg",
-      "sha256": "16685a4ac77cc036ed0123d1ff2f730eb8c5728dd8ed7953d39e0257e0b5a9c6",
-      "pixelDimensions": {
-        "width": 300,
-        "height": 300
-      },
-      "displaySize": 300,
-      "focalEvidence": {
-        "photo_id": 199471119,
-        "flower": "Focal open flower in source photo",
-        "source_diameter_px": 440,
-        "assessment_diameter_px": 300,
-        "visible_upper_petals": 5
-      },
-      "sourceManifestPhotoId": 199471119,
-      "reviewedValues": {
-        "color": "Purple",
-        "veins": "Low",
-        "ring": "Clear",
-        "variation": "Low"
-      },
-      "attribution": "(c) Brittany, some rights reserved (CC BY-NC)",
-      "licenseCode": "cc-by-nc",
-      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
-      "photoUrl": "https://www.inaturalist.org/photos/199471119",
-      "observationUrl": "https://www.inaturalist.org/observations/118082164",
-      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/199471119/square.jpeg",
       "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
     },
     {
@@ -857,7 +807,8 @@
       "attribution": "(c) Sarah Larsen, some rights reserved (CC BY-NC)",
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseCheckedAt": "2026-10-19T02:38:12.071Z",
+      "licenseMetadataSource": "review-work/ring-edge-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/113946319",
       "observationUrl": "https://www.inaturalist.org/observations/70128629",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/113946319/square.jpg",
@@ -895,6 +846,7 @@
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/268333318",
       "observationUrl": "https://www.inaturalist.org/observations/155249432",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/268333318/square.jpg",
@@ -932,6 +884,7 @@
       "licenseCode": "cc-by-nc",
       "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
       "licenseCheckedAt": "2026-10-18T23:56:00.920Z",
+      "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
       "photoUrl": "https://www.inaturalist.org/photos/119984737",
       "observationUrl": "https://www.inaturalist.org/observations/73489352",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/119984737/square.jpeg",
@@ -1130,21 +1083,21 @@
     },
     {
       "trait": "ring",
-      "value": "Absent",
+      "value": "Faint",
       "reviewIndex": 46,
       "observationId": 113980346,
       "photoId": 192513436,
       "src": "assets/photo-guide/113980346-192513436.jpg",
-      "reviewedReason": "Colored background reaches throat without distinct intervening pale band."
+      "reviewedReason": "Owner correction: a weak pale/white circle is visible encircling the yellow center. The visible band rules out Absent, but its weak outer boundary supports Faint."
     },
     {
       "trait": "ring",
-      "value": "Absent",
+      "value": "Faint",
       "reviewIndex": 104,
       "observationId": 159722286,
       "photoId": 275973290,
       "src": "assets/photo-guide/159722286-275973290.jpg",
-      "reviewedReason": "Colored background reaches yellow throat without pale band on visible bases."
+      "reviewedReason": "Owner correction: a weak pale rim encircles the yellow/orange center. It is visible enough to rule out Absent, but has the soft boundary of Faint. The broader petal paling remains the owner’s Low-variation anchor."
     },
     {
       "trait": "ring",
@@ -1153,34 +1106,52 @@
       "observationId": 272127265,
       "photoId": 489563506,
       "src": "assets/photo-guide/272127265-489563506.jpg",
-      "reviewedReason": "Weak pale basal band blends into colored tissue."
+      "reviewedReason": "A weak localized basal band is visible but blends softly into violet tissue. Retain Faint; the owner’s Low variation refers to modest broad changes beyond the basal band."
     },
     {
       "trait": "ring",
       "value": "Clear",
+      "reviewIndex": 38,
+      "observationId": 77541853,
+      "photoId": 126823320,
+      "src": "assets/photo-guide/77541853-126823320.jpg",
+      "reviewedReason": "Owner-specified Clear anchor: an obvious white band surrounds the yellow throat, with a traceable outer edge against violet tissue on at least three petal bases."
+    },
+    {
+      "trait": "ring",
+      "value": "Clear",
+      "reviewIndex": 77,
+      "observationId": 215814088,
+      "photoId": 381601842,
+      "src": "assets/photo-guide/215814088-381601842.jpg",
+      "reviewedReason": "A localized white band outside the yellow throat has a readily traceable outer edge against saturated violet tissue on at least three petals."
+    },
+    {
+      "trait": "ring",
+      "value": "Clear",
+      "reviewIndex": 65,
+      "observationId": 349126189,
+      "photoId": 636828048,
+      "src": "assets/photo-guide/349126189-636828048.jpg",
+      "reviewedReason": "A narrow white band immediately outside the orange throat has an obvious outer edge against pink-lilac tissue on at least three petal bases. Modest variation remains outside that band."
+    },
+    {
+      "trait": "ring",
+      "value": "Cannot be determined",
       "reviewIndex": 99,
       "observationId": 362970560,
       "photoId": 662531762,
       "src": "assets/photo-guide/362970560-662531762.jpg",
-      "reviewedReason": "Broad white basal band has a distinct boundary against violet tissue."
+      "reviewedReason": "Owner-flagged ambiguity: a broad diffuse pale center blends into violet outer tissue in both photographs. Its poorly defined outer edge does not establish a Clear ring or a separately localized Faint band."
     },
     {
       "trait": "ring",
-      "value": "Clear",
-      "reviewIndex": 6,
-      "observationId": 118710031,
-      "photoId": 200599983,
-      "src": "assets/photo-guide/118710031-200599983.jpg",
-      "reviewedReason": "White band is distinct outside the yellow throat."
-    },
-    {
-      "trait": "ring",
-      "value": "Clear",
+      "value": "Cannot be determined",
       "reviewIndex": 63,
       "observationId": 27136204,
       "photoId": 42187392,
       "src": "assets/photo-guide/27136204-42187392.jpg",
-      "reviewedReason": "Distinct white basal band around the throat."
+      "reviewedReason": "Owner-flagged ambiguity: the diffuse pale inner region lacks an obvious outer edge. The alternate views do not establish whether it is a separate center ring or broad pigment variation."
     },
     {
       "trait": "ring",
@@ -1229,15 +1200,6 @@
     },
     {
       "trait": "variation",
-      "value": "None",
-      "reviewIndex": 99,
-      "observationId": 362970560,
-      "photoId": 662531762,
-      "src": "assets/photo-guide/362970560-662531762.jpg",
-      "reviewedReason": "Colored outer tissue is nearly uniform; the large separate center ring is excluded."
-    },
-    {
-      "trait": "variation",
       "value": "Low",
       "reviewIndex": 104,
       "observationId": 159722286,
@@ -1257,11 +1219,20 @@
     {
       "trait": "variation",
       "value": "Low",
-      "reviewIndex": 54,
-      "observationId": 118082164,
-      "photoId": 199471119,
-      "src": "assets/photo-guide/118082164-199471119.jpg",
-      "reviewedReason": "Modest repeated gradient toward stronger pink-purple outer regions; Low retained."
+      "reviewIndex": 65,
+      "observationId": 349126189,
+      "photoId": 636828048,
+      "src": "assets/photo-guide/349126189-636828048.jpg",
+      "reviewedReason": "Modest broad lighter interiors and more pigmented outer regions repeat beyond the narrow center band; revised to Low."
+    },
+    {
+      "trait": "variation",
+      "value": "Cannot be determined",
+      "reviewIndex": 99,
+      "observationId": 362970560,
+      "photoId": 662531762,
+      "src": "assets/photo-guide/362970560-662531762.jpg",
+      "reviewedReason": "The pale inner region cannot be separated confidently into a center ring versus broad pigment variation. Excluding it could produce a different score from including it; neither None nor Low/High is justified until that distinction is resolved."
     },
     {
       "trait": "variation",

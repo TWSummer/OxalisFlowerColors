@@ -13,8 +13,8 @@ export const GUIDE = {
   },
   ring: {
     absent: ['No pale or white band interrupts the colored tissue before the yellow/orange throat. At least three petal bases must be clearly visible; a hidden band is not an absent band.', 'pink', 'low'],
-    faint: ['A weak pale band blends softly into the outer tissue just outside the throat on at least three petals. The view is adequate: Faint describes the ring, not uncertainty. Width alone does not decide the category.', 'pink', 'low', { ring: 'faint' }],
-    clear: ['A distinct white band separates the yellow/orange throat from the colored outer petal on at least three petals. Veins may cross it.', 'pink', 'low', { ring: 'clear' }]
+    faint: ['A weak, localized pale band is visible just outside the throat on at least three petals and blends softly into the outer tissue. Faint describes an identifiable band, not unresolved broad paling or uncertainty.', 'pink', 'low', { ring: 'faint' }],
+    clear: ['The white band has obvious edges: its outer boundary against colored tissue can be located and traced on at least three petals. Compare photo-guide anchor 77541853. Veins may cross it.', 'pink', 'low', { ring: 'clear' }]
   },
   variation: {
     none: ['Nearly uniform background outside the throat, veins, and any white center ring. Overall pale or dark flowers can both be None.', 'pink', 'low'],
