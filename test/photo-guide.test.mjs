@@ -74,6 +74,7 @@ test('the published photographic guide matches its licensed asset provenance and
   const guide = validateGuide(await readJson('../docs/data/photo-guide.json'));
   const provenance = await readJson('../docs/data/photo-guide-assets.json');
   const config = await readJson('../docs/data/project.json');
+  const targetedAudit = (await readFile(new URL('../docs/data/targeted-examples-2026-10-18.jsonl', import.meta.url), 'utf8')).trim().split(/\r?\n/).map(line => JSON.parse(line));
   const assets = new Map(provenance.assets.map(asset => [asset.src, asset]));
   assert.equal(assets.size, provenance.assets.length, 'One provenance entry per unique image');
   assert.equal(guide.protocolVersion, config.protocolVersion);
@@ -89,6 +90,13 @@ test('the published photographic guide matches its licensed asset provenance and
       assert.equal(asset.reviewedValues[trait.key], category.value);
       for (const key of ['attribution', 'licenseCode', 'licenseUrl', 'photoUrl', 'observationUrl', 'displaySize']) assert.equal(example[key], asset[key]);
       assert.ok(provenance.uses.some(use => use.trait === trait.key && use.value === category.value && use.src === example.src));
+      if (asset.sourceKind === 'targeted-follow-up') {
+        assert.equal(example.fieldWriteStatus, asset.fieldWriteStatus);
+        assert.equal(example.publicAuditSource, asset.publicAuditSource);
+        assert.equal(asset.publicAuditSource, 'data/targeted-examples-2026-10-18.jsonl');
+        assert.ok(['verified', 'blocked'].includes(asset.fieldWriteStatus));
+        if (asset.fieldWriteStatus === 'blocked') assert.match(example.caption, /Scored reference only: observation fields were not submitted because the observer restricts additions to site curators\./);
+      }
     }
   }
   for (const asset of assets.values()) {
@@ -99,18 +107,29 @@ test('the published photographic guide matches its licensed asset provenance and
     assert.ok(licenseLabel(asset.licenseCode));
     assert.equal(asset.focalEvidence.photo_id, asset.photoId);
     assert.ok(asset.licenseCheckedAt);
+    if (asset.sourceKind === 'targeted-follow-up') {
+      const review = targetedAudit.find(record => record.observation_id === asset.observationId);
+      assert.equal(review?.write_status, asset.fieldWriteStatus, 'Published audit distinguishes saved labels from blocked references');
+      for (const key of Object.keys(config.fields)) assert.equal(review[key].value, asset.reviewedValues[key]);
+      if (asset.fieldWriteStatus === 'blocked') assert.deepEqual(review.verified_fields, []);
+      else for (const [key, field] of Object.entries(config.fields)) assert.ok(review.verified_fields.some(item => item.field_id === field.id && item.value === asset.reviewedValues[key]));
+    }
   }
 });
 
 test('guide categories and license credits match local re-review inputs when those inputs are available', async t => {
   const base = new URL('../review-work/guide-review-2026-10-18/', import.meta.url);
   const ringBase = new URL('../review-work/ring-edge-review-2026-10-18/', import.meta.url);
-  let decisions, baseline, ringDecisions, ringBaseline;
+  const targetedBase = new URL('../review-work/targeted-examples-2026-10-18/', import.meta.url);
+  let decisions, baseline, ringDecisions, ringBaseline, targetedDecisions, targetedManifest, targetedReviews;
   try {
     decisions = JSON.parse(await readFile(new URL('decisions.json', base), 'utf8'));
     baseline = JSON.parse(await readFile(new URL('baseline.json', base), 'utf8'));
     ringDecisions = JSON.parse(await readFile(new URL('decisions.json', ringBase), 'utf8'));
     ringBaseline = JSON.parse(await readFile(new URL('baseline.json', ringBase), 'utf8'));
+    targetedDecisions = JSON.parse(await readFile(new URL('decisions.json', targetedBase), 'utf8'));
+    targetedManifest = JSON.parse(await readFile(new URL('manifest.json', targetedBase), 'utf8'));
+    targetedReviews = (await readFile(new URL('reviews.jsonl', targetedBase), 'utf8')).trim().split(/\r?\n/).map(line => JSON.parse(line));
   } catch (error) {
     if (error.code === 'ENOENT') return t.skip('Local review inputs are intentionally not included in the public repository.');
     throw error;
@@ -118,11 +137,29 @@ test('guide categories and license credits match local re-review inputs when tho
   const guide = JSON.parse(await readFile(new URL('../docs/data/photo-guide.json', import.meta.url), 'utf8'));
   const provenance = JSON.parse(await readFile(new URL('../docs/data/photo-guide-assets.json', import.meta.url), 'utf8'));
   for (const trait of guide.traits) for (const category of trait.categories) for (const example of category.examples) {
+    const asset = provenance.assets.find(asset => asset.src === example.src);
+    if (asset.sourceKind === 'targeted-follow-up') {
+      const decision = targetedDecisions.find(record => record.observation_id === example.observationId);
+      const record = targetedManifest.observations.find(record => record.observation_id === example.observationId);
+      const photo = record?.photos.find(photo => photo.id === example.photoId);
+      const review = targetedReviews.find(record => record.observation_id === example.observationId);
+      assert.equal(decision?.values[trait.key], category.value);
+      assert.equal(review?.[trait.key].value, category.value);
+      assert.equal(photo?.license_code, example.licenseCode);
+      assert.equal(photo?.attribution, example.attribution);
+      assert.equal(decision.photo_id, example.photoId);
+      assert.ok(decision.examined_photo_ids.includes(example.photoId));
+      assert.equal(asset.reviewIndex, null, 'Targeted observations have no old-125 review index');
+      assert.equal(asset.sourceIndex, record.index);
+      assert.equal(asset.licenseCheckedAt, record.retrieved_at);
+      assert.equal(asset.licenseMetadataSource, 'review-work/targeted-examples-2026-10-18/manifest.json');
+      assert.equal(asset.fieldWriteStatus, review.write_status);
+      continue;
+    }
     const prior = decisions.find(record => record.observation_id === example.observationId);
     const latest = ringDecisions.find(record => record.observation_id === example.observationId);
     const freshRecord = ringBaseline.records.find(record => record.id === example.observationId);
     const photo = (freshRecord ?? baseline.records.find(record => record.id === example.observationId))?.photos.find(photo => photo.id === example.photoId);
-    const asset = provenance.assets.find(asset => asset.src === example.src);
     assert.equal(latest?.values[trait.key] ?? prior?.values[trait.key], category.value);
     assert.equal(photo?.license_code, example.licenseCode);
     assert.equal(photo?.attribution, example.attribution);
@@ -156,8 +193,12 @@ test('the latest ring guide preserves owner anchors and treats diffuse paling as
   const guide = JSON.parse(await readFile(new URL('../docs/data/photo-guide.json', import.meta.url), 'utf8'));
   const category = (trait, value) => guide.traits.find(item => item.key === trait).categories.find(item => item.value === value);
   const ids = (trait, value) => category(trait, value).examples.map(example => example.observationId);
-  assert.deepEqual(ids('ring', 'Absent'), []);
-  assert.match(category('ring', 'Absent').note, /none of the 125/);
+  assert.deepEqual(ids('ring', 'Absent'), [262772803, 25044378]);
+  assert.match(category('ring', 'Absent').note, /targeted follow-up/);
+  assert.deepEqual(ids('variation', 'High'), [25044378]);
+  assert.match(category('variation', 'High').note, /One working High reference/);
+  assert.equal(category('variation', 'High').examples[0].fieldWriteStatus, 'blocked');
+  assert.equal(category('ring', 'Absent').examples[0].fieldWriteStatus, 'verified');
   assert.deepEqual(ids('ring', 'Clear'), [77541853, 215814088, 349126189]);
   assert.deepEqual(ids('ring', 'Faint'), [113980346, 159722286, 272127265]);
   assert.ok(ids('ring', 'Cannot be determined').includes(362970560));

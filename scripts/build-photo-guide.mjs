@@ -8,6 +8,8 @@ import { validateGuide } from '../docs/js/photo-guide.js';
 const ROOT = path.resolve(fileURLToPath(new URL('../', import.meta.url)));
 const REVIEW_ROOT = 'review-work/guide-review-2026-10-18';
 const RING_REVIEW_ROOT = 'review-work/ring-edge-review-2026-10-18';
+const TARGETED_REVIEW_ROOT = 'review-work/targeted-examples-2026-10-18';
+const TARGETED_PUBLIC_AUDIT = 'data/targeted-examples-2026-10-18.jsonl';
 const REVIEW_DATE = '2026-10-18';
 const LICENSE_URLS = {
   cc0: 'https://creativecommons.org/publicdomain/zero/1.0/',
@@ -95,7 +97,7 @@ const TRAITS = [
     categories: [
       {
         value: 'Absent', definition: 'Colored petal tissue reaches the throat without an intervening pale or white band. The bases must be exposed well enough to establish absence.',
-        note: 'After the ring-boundary correction, none of the 125 reviewed observations remains a verified Absent example. Figure 1 D and F remain the reference definition. The two former photo examples are now Faint because a weak localized band is visible.',
+        note: 'These examples were found in an eight-observation targeted follow-up after the original 125 lacked a confident Absent example. Check the exposed bases immediately beside the throat; pale regions farther out do not form a center ring.',
         selections: []
       },
       {
@@ -150,7 +152,7 @@ const TRAITS = [
       },
       {
         value: 'High', definition: 'Clearly distinct pale and dark broad background regions occur across the petals, as in Figure 1 F: pink toward the base, a nearly white middle, and deeper pink near the margins.',
-        note: 'No confident High example was found among the 125 reviewed observations. Figure 1 F remains the reference. Dark veins, stronger overall saturation, and a separate white center ring are not sufficient.',
+        note: 'One working High reference was found in the targeted follow-up. It shows the broad pale/dark pattern used in Figure 1 F; it is not an independent validation of the category. Dark veins, stronger overall saturation, and a separate white center ring are not sufficient.',
         selections: []
       },
       {
@@ -163,6 +165,27 @@ const TRAITS = [
         ]
       }
     ]
+  }
+];
+
+const TARGETED_SELECTIONS = [
+  {
+    trait: 'ring', value: 'Absent', observationId: 262772803, photoId: 471937573,
+    title: 'Pigmented bases meet the orange throat',
+    caption: 'Violet-pink tissue reaches the orange throat directly across the visible petal bases, without an intervening pale band. White anthers are inside the throat. The other photographs include plant context supporting the focal flower’s identity.',
+    alt: 'A violet flower with strongly contrasting veins whose pigmented petal bases meet the orange throat directly.'
+  },
+  {
+    trait: 'ring', value: 'Absent', observationId: 25044378, photoId: 38753930,
+    title: 'Pale middles lie beyond colored bases',
+    caption: 'The narrow colored bases meet the orange throat directly across at least three petals. The nearly white middle regions occur farther along the petals, beyond those bases, so they are broad variation rather than a white center ring.',
+    alt: 'A flower with colored bases meeting the orange throat and near-white petal middles farther out.'
+  },
+  {
+    trait: 'variation', value: 'High', observationId: 25044378, photoId: 38753930,
+    title: 'Near-white middles between pigmented regions',
+    caption: 'Broad near-white middle regions contrast with darker pink-lilac bases and distal tips on at least three petals. The pattern repeats between the narrow veins under even illumination. This composition appears to match Figure 1 F, but the score follows the visible broad tissue pattern itself.',
+    alt: 'An open pink-lilac flower with near-white broad petal middles, darker colored bases, and more pigmented distal tips.'
   }
 ];
 
@@ -204,16 +227,25 @@ export function jpegDimensions(bytes) {
 }
 
 export async function buildPhotoGuide() {
-  const [manifest, baseline, originalDecisions, ringBaseline, ringDecisions] = await Promise.all([
+  const [manifest, baseline, originalDecisions, ringBaseline, ringDecisions, targetedManifest, targetedDecisions, targetedReviewBytes] = await Promise.all([
     ...['manifest.json', 'baseline.json', 'decisions.json'].map(file => json(`${REVIEW_ROOT}/${file}`)),
-    ...['baseline.json', 'decisions.json'].map(file => json(`${RING_REVIEW_ROOT}/${file}`))
+    ...['baseline.json', 'decisions.json'].map(file => json(`${RING_REVIEW_ROOT}/${file}`)),
+    ...['manifest.json', 'decisions.json'].map(file => json(`${TARGETED_REVIEW_ROOT}/${file}`)),
+    readFile(path.join(ROOT, TARGETED_REVIEW_ROOT, 'reviews.jsonl'))
   ]);
+  const targetedReviews = targetedReviewBytes.toString('utf8').trim().split(/\r?\n/).map(line => JSON.parse(line));
+  assert.equal(targetedDecisions.length, 8, 'Expected eight targeted follow-up decisions');
+  assert.equal(targetedReviews.length, 8, 'Expected eight targeted follow-up review records');
+  assert.equal(targetedManifest.protocolVersion, manifest.protocol_version, 'Targeted protocol must match the guide');
+  assert.equal(new Set(targetedDecisions.map(decision => decision.observation_id)).size, 8, 'Duplicate targeted observation IDs');
+  assert.deepEqual(new Set(targetedReviews.map(review => review.observation_id)), new Set(targetedDecisions.map(decision => decision.observation_id)), 'Targeted reviews and decisions must cover the same observations');
   assert.equal(originalDecisions.length, 125, 'Expected the complete 125-observation re-review');
   assert.equal(ringDecisions.length, 32, 'Expected all 32 determinate ring observations to be re-reviewed');
   assert.equal(ringBaseline.records.length, 32, 'Expected fresh photo metadata for all 32 boundary-review records');
   assert.deepEqual(new Set(ringBaseline.records.map(record => record.id)), new Set(ringDecisions.map(record => record.observation_id)), 'Fresh metadata must cover exactly the latest boundary-review set');
   const decisions = mergeReviewDecisions(originalDecisions, ringDecisions);
-  assert.ok(decisions.every(decision => decision.values.ring !== 'Absent'), 'The empty Absent note no longer matches current decisions');
+  assert.ok(decisions.every(decision => decision.values.ring !== 'Absent'), 'The original-125 scope note no longer matches current decisions');
+  assert.ok(targetedDecisions.every(decision => !decisions.some(original => original.observation_id === decision.observation_id)), 'Targeted observations must be additional to the original 125');
   const licensedRecords = new Map(baseline.records.map(record => [record.id, { record, checkedAt: baseline.checked_at, source: `${REVIEW_ROOT}/baseline.json` }]));
   for (const record of ringBaseline.records) {
     assert.ok(licensedRecords.has(record.id), `Fresh baseline record is outside the original set: ${record.id}`);
@@ -270,8 +302,61 @@ export async function buildPhotoGuide() {
     }
     traits.push({ key: trait.key, label: trait.label, fieldName: `Redwood Sorrel ${trait.label}`, fieldId: trait.fieldId, summary: trait.summary, categories });
   }
-  const guide = validateGuide({ protocolVersion: manifest.protocol_version, reviewedAt: REVIEW_DATE, introduction: 'All 125 observations carrying our four project fields were re-reviewed, followed by a ring-boundary review of all 32 previously determinate ring labels. These examples use the latest decisions and show both category ranges and unresolved boundaries. “Pigment variation” is a visual score of photographed tissue; it does not measure chemical pigment.', traits });
-  const provenance = { reviewedAt: REVIEW_DATE, protocolVersion: manifest.protocol_version, reviewManifest: `${REVIEW_ROOT}/manifest.json`, decisionsSource: `${REVIEW_ROOT}/decisions.json`, latestDecisionsSource: `${RING_REVIEW_ROOT}/decisions.json`, licenseMetadataSource: `${REVIEW_ROOT}/baseline.json`, latestLicenseMetadataSource: `${RING_REVIEW_ROOT}/baseline.json`, licenseCheckedAt: ringBaseline.checked_at, sourceHashes: { manifest: hash(await readFile(path.join(ROOT, REVIEW_ROOT, 'manifest.json'))), decisions: hash(await readFile(path.join(ROOT, REVIEW_ROOT, 'decisions.json'))), baseline: hash(await readFile(path.join(ROOT, REVIEW_ROOT, 'baseline.json'))), ringDecisions: hash(await readFile(path.join(ROOT, RING_REVIEW_ROOT, 'decisions.json'))), ringBaseline: hash(await readFile(path.join(ROOT, RING_REVIEW_ROOT, 'baseline.json'))) }, method: 'Focal crops copied byte-for-byte from earlier review evidence. Original source index and evidence photo ID cross-checked against the source manifest. Latest ring-boundary decisions are merged by observation ID over the 125-observation re-review while preserving original review indexes; every example category matches the merged decision. Fresh ring-baseline photo metadata supersedes earlier metadata for those records. Each asset identifies its license check source and time. Only CC0, CC BY, and CC BY-NC photo licenses accepted.', assets: [...assets.values()], uses };
+  // Additional observations use their own IDs and review inputs, never the old 125-index mapper.
+  for (const selection of TARGETED_SELECTIONS) {
+    const { trait, value, observationId, photoId, title, caption, alt } = selection;
+    const category = traits.find(item => item.key === trait)?.categories.find(item => item.value === value);
+    const decision = targetedDecisions.find(item => item.observation_id === observationId);
+    const review = targetedReviews.find(item => item.observation_id === observationId);
+    const record = targetedManifest.observations.find(item => item.observation_id === observationId);
+    assert.ok(category && decision && review && record, `Missing targeted inputs for ${observationId}`);
+    assert.equal(decision.values[trait], value, `Targeted category mismatch at ${observationId}/${trait}`);
+    assert.equal(review.protocol_version, manifest.protocol_version, 'Targeted review protocol mismatch');
+    assert.ok(['verified', 'blocked'].includes(review.write_status), `Targeted field-write outcome is not finalized for ${observationId}`);
+    const fieldWriteStatus = review.write_status;
+    const fieldWriteNote = fieldWriteStatus === 'blocked'
+      ? 'Scored reference only: observation fields were not submitted because the observer restricts additions to site curators.'
+      : 'Observation fields verified on iNaturalist.';
+    if (fieldWriteStatus === 'blocked') {
+      assert.equal(observationId, 25044378, 'Unexpected blocked guide reference needs an explicit reason');
+      assert.deepEqual(review.verified_fields, [], 'Blocked reference must not claim verified field values');
+    } else {
+      for (const field of TRAITS) assert.ok(review.verified_fields.some(item => item.field_id === field.fieldId && item.value === decision.values[field.key]), `Missing verified targeted field ${field.key}`);
+    }
+    for (const key of ['color', 'veins', 'ring', 'variation']) {
+      assert.equal(review[key].value, decision.values[key], `Targeted decision/review value mismatch at ${observationId}/${key}`);
+      assert.equal(review[key].reason, decision.reasons[key], `Targeted decision/review reason mismatch at ${observationId}/${key}`);
+    }
+    assert.equal(decision.photo_id, photoId, `Targeted focal photo mismatch at ${observationId}`);
+    assert.ok(decision.examined_photo_ids.includes(photoId) && review.examined_photo_ids.includes(photoId), 'Targeted focal photo was not reviewed');
+    const evidence = review[trait].evidence;
+    assert.equal(evidence.length, 1, 'Expected one targeted focal flower');
+    assert.equal(evidence[0].photo_id, photoId);
+    assert.equal(evidence[0].source_diameter_px, decision.source_diameter_px);
+    const photo = record.photos.find(item => item.id === photoId);
+    assert.ok(photo && LICENSE_URLS[photo.license_code], `Targeted photo license not authorized at ${observationId}`);
+    assert.ok(photo.attribution && record.retrieved_at, 'Missing targeted attribution or license-check time');
+    const sourceCropPath = `${TARGETED_REVIEW_ROOT}/crops/${observationId}.jpg`;
+    const bytes = await readFile(path.join(ROOT, sourceCropPath));
+    const dimensions = jpegDimensions(bytes);
+    assert.equal(dimensions.width, dimensions.height, 'Expected a square targeted crop');
+    const displaySize = Math.min(300, dimensions.width, evidence[0].assessment_diameter_px);
+    assert.ok(displaySize >= 100 && displaySize <= evidence[0].source_diameter_px, 'Targeted display would enlarge the evidence');
+    const src = `assets/photo-guide/${observationId}-${photoId}.jpg`;
+    const photoUrl = `https://www.inaturalist.org/photos/${photoId}`;
+    const observationUrl = `https://www.inaturalist.org/observations/${observationId}`;
+    const cropNote = 'Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop.';
+    category.examples.push({ observationId, photoId, src, displaySize, alt, title, caption: fieldWriteStatus === 'blocked' ? `${caption} ${fieldWriteNote}` : caption, attribution: photo.attribution, licenseCode: photo.license_code, licenseUrl: LICENSE_URLS[photo.license_code], photoUrl, observationUrl, cropNote, fieldWriteStatus, fieldWriteNote, publicAuditSource: TARGETED_PUBLIC_AUDIT });
+    if (!assets.has(src)) {
+      await copyFile(path.join(ROOT, sourceCropPath), path.join(ROOT, 'docs', src));
+      assert.equal(hash(await readFile(path.join(ROOT, 'docs', src))), hash(bytes), 'Targeted crop changed while copying');
+      assets.set(src, { src, observationId, photoId, reviewIndex: null, sourceKind: 'targeted-follow-up', sourceRoot: TARGETED_REVIEW_ROOT, sourceIndex: record.index, sourceCropPath, sourceManifest: `${TARGETED_REVIEW_ROOT}/manifest.json`, decisionsSource: `${TARGETED_REVIEW_ROOT}/decisions.json`, reviewsSource: `${TARGETED_REVIEW_ROOT}/reviews.jsonl`, cropCoordinates: decision.crop, sha256: hash(bytes), pixelDimensions: dimensions, displaySize, focalEvidence: evidence[0], sourceManifestPhotoId: photoId, reviewedValues: decision.values, attribution: photo.attribution, licenseCode: photo.license_code, licenseUrl: LICENSE_URLS[photo.license_code], licenseCheckedAt: record.retrieved_at, licenseMetadataSource: `${TARGETED_REVIEW_ROOT}/manifest.json`, photoUrl, observationUrl, sourceApiPhotoUrl: photo.url, cropNote, fieldWriteStatus, fieldWriteNote, publicAuditSource: TARGETED_PUBLIC_AUDIT });
+    } else assert.equal(assets.get(src).sha256, hash(bytes), 'Conflicting targeted crops share an asset path');
+    uses.push({ trait, value, reviewIndex: null, sourceKind: 'targeted-follow-up', observationId, photoId, src, reviewedReason: decision.reasons[trait], decisionsSource: `${TARGETED_REVIEW_ROOT}/decisions.json`, fieldWriteStatus, publicAuditSource: TARGETED_PUBLIC_AUDIT });
+  }
+  const guide = validateGuide({ protocolVersion: manifest.protocol_version, reviewedAt: REVIEW_DATE, introduction: 'The original 125 observations were re-reviewed, followed by a boundary review of all 32 previously determinate ring labels. Eight additional observations were then assessed in a targeted search for Absent-ring and High-variation examples. This deliberately selected collection shows category ranges and unresolved boundaries. “Pigment variation” is a visual score of photographed tissue; it does not measure chemical pigment.', traits });
+  const provenance = { reviewedAt: REVIEW_DATE, protocolVersion: manifest.protocol_version, reviewManifest: `${REVIEW_ROOT}/manifest.json`, decisionsSource: `${REVIEW_ROOT}/decisions.json`, latestDecisionsSource: `${RING_REVIEW_ROOT}/decisions.json`, licenseMetadataSource: `${REVIEW_ROOT}/baseline.json`, latestLicenseMetadataSource: `${RING_REVIEW_ROOT}/baseline.json`, targetedManifestSource: `${TARGETED_REVIEW_ROOT}/manifest.json`, targetedDecisionsSource: `${TARGETED_REVIEW_ROOT}/decisions.json`, targetedReviewsSource: `${TARGETED_REVIEW_ROOT}/reviews.jsonl`, licenseCheckedAt: [...assets.values()].map(asset => asset.licenseCheckedAt).sort().at(-1), sourceHashes: { manifest: hash(await readFile(path.join(ROOT, REVIEW_ROOT, 'manifest.json'))), decisions: hash(await readFile(path.join(ROOT, REVIEW_ROOT, 'decisions.json'))), baseline: hash(await readFile(path.join(ROOT, REVIEW_ROOT, 'baseline.json'))), ringDecisions: hash(await readFile(path.join(ROOT, RING_REVIEW_ROOT, 'decisions.json'))), ringBaseline: hash(await readFile(path.join(ROOT, RING_REVIEW_ROOT, 'baseline.json'))), targetedManifest: hash(await readFile(path.join(ROOT, TARGETED_REVIEW_ROOT, 'manifest.json'))), targetedDecisions: hash(await readFile(path.join(ROOT, TARGETED_REVIEW_ROOT, 'decisions.json'))), targetedReviews: hash(targetedReviewBytes) }, method: 'Focal crops copied byte-for-byte from earlier review evidence. Original source index and evidence photo ID cross-checked against the source manifest. Latest ring-boundary decisions are merged by observation ID over the 125-observation re-review while preserving original review indexes; every original example matches the merged decision. Fresh ring-baseline photo metadata supersedes earlier metadata for those records. Additional targeted observations are checked separately against their own manifest, decisions, and review evidence rather than entering the original index mapper. Each asset identifies its license check source and time. Only CC0, CC BY, and CC BY-NC photo licenses accepted.', assets: [...assets.values()], uses };
+  provenance.targetedPublicAuditSource = TARGETED_PUBLIC_AUDIT;
   await writeFile(path.join(ROOT, 'docs/data/photo-guide.json'), JSON.stringify(guide, null, 2) + '\n');
   await writeFile(path.join(ROOT, 'docs/data/photo-guide-assets.json'), JSON.stringify(provenance, null, 2) + '\n');
   return { uniquePhotos: assets.size, examples: uses.length, categories: traits.reduce((sum, trait) => sum + trait.categories.length, 0), licenses: [...new Set([...assets.values()].map(asset => asset.licenseCode))] };

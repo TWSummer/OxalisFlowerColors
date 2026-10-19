@@ -6,15 +6,21 @@
   "latestDecisionsSource": "review-work/ring-edge-review-2026-10-18/decisions.json",
   "licenseMetadataSource": "review-work/guide-review-2026-10-18/baseline.json",
   "latestLicenseMetadataSource": "review-work/ring-edge-review-2026-10-18/baseline.json",
-  "licenseCheckedAt": "2026-10-19T02:38:12.071Z",
+  "targetedManifestSource": "review-work/targeted-examples-2026-10-18/manifest.json",
+  "targetedDecisionsSource": "review-work/targeted-examples-2026-10-18/decisions.json",
+  "targetedReviewsSource": "review-work/targeted-examples-2026-10-18/reviews.jsonl",
+  "licenseCheckedAt": "2026-10-19T03:12:05.998Z",
   "sourceHashes": {
     "manifest": "c2d346cd1a8c60cc107320911e0af65f13b7ae34a7a797628c66a313570dad19",
     "decisions": "1ad55c98f543df4a33eb138272ed5d31515b16fd0db99892c448805c436f6a8c",
     "baseline": "9ed51ee7b08844148088458b0ae2c24cc5778d2a7974cbc54e1a1a4a4b8fe6d7",
     "ringDecisions": "5c4af6b6ab3f4d538f4c35c69548e6c0bbc86ac88f37bb7acc0d27d487170c7e",
-    "ringBaseline": "074db82e2212c2c406c42400801903453e9654a2d024a5a8ca42f82a713335e0"
+    "ringBaseline": "074db82e2212c2c406c42400801903453e9654a2d024a5a8ca42f82a713335e0",
+    "targetedManifest": "03a3dab617185025a801f79cb5ad3dee46eaa1370e82081489af4fda3b7a49ad",
+    "targetedDecisions": "169065baf651f6bda3badf8f81cfc2cf11291f08ba7307fa23f07d73a2540236",
+    "targetedReviews": "9fa62acffcd1048ef05b9525d11b9f39566ada635fc1f63c3f175004a4403d37"
   },
-  "method": "Focal crops copied byte-for-byte from earlier review evidence. Original source index and evidence photo ID cross-checked against the source manifest. Latest ring-boundary decisions are merged by observation ID over the 125-observation re-review while preserving original review indexes; every example category matches the merged decision. Fresh ring-baseline photo metadata supersedes earlier metadata for those records. Each asset identifies its license check source and time. Only CC0, CC BY, and CC BY-NC photo licenses accepted.",
+  "method": "Focal crops copied byte-for-byte from earlier review evidence. Original source index and evidence photo ID cross-checked against the source manifest. Latest ring-boundary decisions are merged by observation ID over the 125-observation re-review while preserving original review indexes; every original example matches the merged decision. Fresh ring-baseline photo metadata supersedes earlier metadata for those records. Additional targeted observations are checked separately against their own manifest, decisions, and review evidence rather than entering the original index mapper. Each asset identifies its license check source and time. Only CC0, CC BY, and CC BY-NC photo licenses accepted.",
   "assets": [
     {
       "src": "assets/photo-guide/269380404-484653403.jpg",
@@ -889,6 +895,106 @@
       "observationUrl": "https://www.inaturalist.org/observations/73489352",
       "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/119984737/square.jpeg",
       "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop."
+    },
+    {
+      "src": "assets/photo-guide/262772803-471937573.jpg",
+      "observationId": 262772803,
+      "photoId": 471937573,
+      "reviewIndex": null,
+      "sourceKind": "targeted-follow-up",
+      "sourceRoot": "review-work/targeted-examples-2026-10-18",
+      "sourceIndex": 7,
+      "sourceCropPath": "review-work/targeted-examples-2026-10-18/crops/262772803.jpg",
+      "sourceManifest": "review-work/targeted-examples-2026-10-18/manifest.json",
+      "decisionsSource": "review-work/targeted-examples-2026-10-18/decisions.json",
+      "reviewsSource": "review-work/targeted-examples-2026-10-18/reviews.jsonl",
+      "cropCoordinates": [
+        290,
+        570,
+        900
+      ],
+      "sha256": "0e8f93f5d0c86bab2110a3c9ac1a6e3fcaed68ce36ce83dad7640debe4cf8306",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 471937573,
+        "flower": "Fresh focal flower in manually selected square crop x=290, y=570, width=900; approximate flower diameter recorded separately. Source colors unchanged; nominal 300 px assessment crop.",
+        "source_diameter_px": 850,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 471937573,
+      "reviewedValues": {
+        "color": "Purple",
+        "veins": "High",
+        "ring": "Absent",
+        "variation": "Low"
+      },
+      "attribution": "(c) Tyler Busby, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-19T03:06:38.407Z",
+      "licenseMetadataSource": "review-work/targeted-examples-2026-10-18/manifest.json",
+      "photoUrl": "https://www.inaturalist.org/photos/471937573",
+      "observationUrl": "https://www.inaturalist.org/observations/262772803",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/471937573/square.jpg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop.",
+      "fieldWriteStatus": "verified",
+      "fieldWriteNote": "Observation fields verified on iNaturalist.",
+      "publicAuditSource": "data/targeted-examples-2026-10-18.jsonl"
+    },
+    {
+      "src": "assets/photo-guide/25044378-38753930.jpg",
+      "observationId": 25044378,
+      "photoId": 38753930,
+      "reviewIndex": null,
+      "sourceKind": "targeted-follow-up",
+      "sourceRoot": "review-work/targeted-examples-2026-10-18",
+      "sourceIndex": 9,
+      "sourceCropPath": "review-work/targeted-examples-2026-10-18/crops/25044378.jpg",
+      "sourceManifest": "review-work/targeted-examples-2026-10-18/manifest.json",
+      "decisionsSource": "review-work/targeted-examples-2026-10-18/decisions.json",
+      "reviewsSource": "review-work/targeted-examples-2026-10-18/reviews.jsonl",
+      "cropCoordinates": [
+        790,
+        490,
+        420
+      ],
+      "sha256": "8f146428796014ac908b3c03d2b52ccb25bec13ae4ca40ccbf7694fc472fd645",
+      "pixelDimensions": {
+        "width": 300,
+        "height": 300
+      },
+      "displaySize": 300,
+      "focalEvidence": {
+        "photo_id": 38753930,
+        "flower": "Fresh focal flower in manually selected square crop x=790, y=490, width=420; approximate flower diameter recorded separately. Source colors unchanged; nominal 300 px assessment crop.",
+        "source_diameter_px": 390,
+        "assessment_diameter_px": 300,
+        "visible_upper_petals": 5
+      },
+      "sourceManifestPhotoId": 38753930,
+      "reviewedValues": {
+        "color": "Pink",
+        "veins": "Medium",
+        "ring": "Absent",
+        "variation": "High"
+      },
+      "attribution": "(c) JJ Johnson, some rights reserved (CC BY-NC)",
+      "licenseCode": "cc-by-nc",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "licenseCheckedAt": "2026-10-19T03:12:05.998Z",
+      "licenseMetadataSource": "review-work/targeted-examples-2026-10-18/manifest.json",
+      "photoUrl": "https://www.inaturalist.org/photos/38753930",
+      "observationUrl": "https://www.inaturalist.org/observations/25044378",
+      "sourceApiPhotoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/38753930/square.jpeg",
+      "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop.",
+      "fieldWriteStatus": "blocked",
+      "fieldWriteNote": "Scored reference only: observation fields were not submitted because the observer restricts additions to site curators.",
+      "publicAuditSource": "data/targeted-examples-2026-10-18.jsonl"
     }
   ],
   "uses": [
@@ -1260,6 +1366,46 @@
       "photoId": 119984737,
       "src": "assets/photo-guide/73489352-119984737.jpg",
       "reviewedReason": "Strong differences in illumination prevent attributing broad changes to pigment."
+    },
+    {
+      "trait": "ring",
+      "value": "Absent",
+      "reviewIndex": null,
+      "sourceKind": "targeted-follow-up",
+      "observationId": 262772803,
+      "photoId": 471937573,
+      "src": "assets/photo-guide/262772803-471937573.jpg",
+      "reviewedReason": "Pigmented violet/pink tissue meets the orange throat directly across the visible petal bases. No white/pale band intervenes; white anthers within the throat are excluded. The plant-context view supports the same flower identity.",
+      "decisionsSource": "review-work/targeted-examples-2026-10-18/decisions.json",
+      "fieldWriteStatus": "verified",
+      "publicAuditSource": "data/targeted-examples-2026-10-18.jsonl"
+    },
+    {
+      "trait": "ring",
+      "value": "Absent",
+      "reviewIndex": null,
+      "sourceKind": "targeted-follow-up",
+      "observationId": 25044378,
+      "photoId": 38753930,
+      "src": "assets/photo-guide/25044378-38753930.jpg",
+      "reviewedReason": "The narrow colored petal bases meet the orange throat directly on at least three petals. The nearly white regions lie farther along the petals, outside those colored bases, rather than forming a white band immediately around the throat.",
+      "decisionsSource": "review-work/targeted-examples-2026-10-18/decisions.json",
+      "fieldWriteStatus": "blocked",
+      "publicAuditSource": "data/targeted-examples-2026-10-18.jsonl"
+    },
+    {
+      "trait": "variation",
+      "value": "High",
+      "reviewIndex": null,
+      "sourceKind": "targeted-follow-up",
+      "observationId": 25044378,
+      "photoId": 38753930,
+      "src": "assets/photo-guide/25044378-38753930.jpg",
+      "reviewedReason": "Distinct broad near-white middle regions contrast with more pigmented bases and pink/lilac distal tissue on at least three petals. The repeated pale/dark pattern extends between veins and is visible under even illumination. The composition also appears to match Figure F, but the score follows the visible broad tissue pattern itself.",
+      "decisionsSource": "review-work/targeted-examples-2026-10-18/decisions.json",
+      "fieldWriteStatus": "blocked",
+      "publicAuditSource": "data/targeted-examples-2026-10-18.jsonl"
     }
-  ]
+  ],
+  "targetedPublicAuditSource": "data/targeted-examples-2026-10-18.jsonl"
 }

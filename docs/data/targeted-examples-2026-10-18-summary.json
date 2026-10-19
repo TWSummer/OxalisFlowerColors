@@ -1,0 +1,58 @@
+{
+  "protocol_version": "2.1.0",
+  "verified_at": "2026-10-19T03:25:03.060Z",
+  "reviewed_observations": 8,
+  "observations": 6,
+  "field_values": 24,
+  "blocked_observations": 2,
+  "blocked_references": [
+    {
+      "observation_id": 5774777,
+      "checked_at": "2026-10-19T03:16:36.633Z",
+      "reason": "Observation Fields UI has a disabled input: Observer only allows site curators to add observation fields. No write attempted."
+    },
+    {
+      "observation_id": 25044378,
+      "checked_at": "2026-10-19T03:16:36.635Z",
+      "reason": "Observation Fields UI has a disabled input: Observer only allows site curators to add observation fields. No write attempted."
+    }
+  ],
+  "skips": [
+    {
+      "observation_id": 5537385,
+      "examined_photo_ids": [
+        6834420
+      ],
+      "reason": "Held flower with uncertain attachment and incomplete plant context. Not selected for labeling or as a guide example; stronger attached/context-supported examples are available."
+    }
+  ],
+  "selection_method": "Targeted search for guide examples of High petal pigment variation and Absent white center ring; selection is deliberately not representative. All four fields visually reviewed on each labeled observation. Stop when usable licensed examples of both are found, with no more than100 newly labeled observations.",
+  "counts": {
+    "color": {
+      "White": 0,
+      "Pink": 3,
+      "Purple": 3,
+      "Cannot be determined": 0
+    },
+    "veins": {
+      "Low": 2,
+      "Medium": 3,
+      "High": 1,
+      "Cannot be determined": 0
+    },
+    "ring": {
+      "Absent": 2,
+      "Faint": 2,
+      "Clear": 0,
+      "Cannot be determined": 2
+    },
+    "variation": {
+      "None": 0,
+      "Low": 2,
+      "High": 0,
+      "Cannot be determined": 4
+    }
+  },
+  "mismatches": [],
+  "unrelated_changes": []
+}

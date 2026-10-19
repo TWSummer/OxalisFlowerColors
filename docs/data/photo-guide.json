@@ -1,7 +1,7 @@
 {
   "protocolVersion": "2.1.0",
   "reviewedAt": "2026-10-18",
-  "introduction": "All 125 observations carrying our four project fields were re-reviewed, followed by a ring-boundary review of all 32 previously determinate ring labels. These examples use the latest decisions and show both category ranges and unresolved boundaries. “Pigment variation” is a visual score of photographed tissue; it does not measure chemical pigment.",
+  "introduction": "The original 125 observations were re-reviewed, followed by a boundary review of all 32 previously determinate ring labels. Eight additional observations were then assessed in a targeted search for Absent-ring and High-variation examples. This deliberately selected collection shows category ranges and unresolved boundaries. “Pigment variation” is a visual score of photographed tissue; it does not measure chemical pigment.",
   "traits": [
     {
       "key": "color",
@@ -394,8 +394,45 @@
         {
           "value": "Absent",
           "definition": "Colored petal tissue reaches the throat without an intervening pale or white band. The bases must be exposed well enough to establish absence.",
-          "note": "After the ring-boundary correction, none of the 125 reviewed observations remains a verified Absent example. Figure 1 D and F remain the reference definition. The two former photo examples are now Faint because a weak localized band is visible.",
-          "examples": []
+          "note": "These examples were found in an eight-observation targeted follow-up after the original 125 lacked a confident Absent example. Check the exposed bases immediately beside the throat; pale regions farther out do not form a center ring.",
+          "examples": [
+            {
+              "observationId": 262772803,
+              "photoId": 471937573,
+              "src": "assets/photo-guide/262772803-471937573.jpg",
+              "displaySize": 300,
+              "alt": "A violet flower with strongly contrasting veins whose pigmented petal bases meet the orange throat directly.",
+              "title": "Pigmented bases meet the orange throat",
+              "caption": "Violet-pink tissue reaches the orange throat directly across the visible petal bases, without an intervening pale band. White anthers are inside the throat. The other photographs include plant context supporting the focal flower’s identity.",
+              "attribution": "(c) Tyler Busby, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/471937573",
+              "observationUrl": "https://www.inaturalist.org/observations/262772803",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop.",
+              "fieldWriteStatus": "verified",
+              "fieldWriteNote": "Observation fields verified on iNaturalist.",
+              "publicAuditSource": "data/targeted-examples-2026-10-18.jsonl"
+            },
+            {
+              "observationId": 25044378,
+              "photoId": 38753930,
+              "src": "assets/photo-guide/25044378-38753930.jpg",
+              "displaySize": 300,
+              "alt": "A flower with colored bases meeting the orange throat and near-white petal middles farther out.",
+              "title": "Pale middles lie beyond colored bases",
+              "caption": "The narrow colored bases meet the orange throat directly across at least three petals. The nearly white middle regions occur farther along the petals, beyond those bases, so they are broad variation rather than a white center ring. Scored reference only: observation fields were not submitted because the observer restricts additions to site curators.",
+              "attribution": "(c) JJ Johnson, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/38753930",
+              "observationUrl": "https://www.inaturalist.org/observations/25044378",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop.",
+              "fieldWriteStatus": "blocked",
+              "fieldWriteNote": "Scored reference only: observation fields were not submitted because the observer restricts additions to site curators.",
+              "publicAuditSource": "data/targeted-examples-2026-10-18.jsonl"
+            }
+          ]
         },
         {
           "value": "Faint",
@@ -682,8 +719,27 @@
         {
           "value": "High",
           "definition": "Clearly distinct pale and dark broad background regions occur across the petals, as in Figure 1 F: pink toward the base, a nearly white middle, and deeper pink near the margins.",
-          "note": "No confident High example was found among the 125 reviewed observations. Figure 1 F remains the reference. Dark veins, stronger overall saturation, and a separate white center ring are not sufficient.",
-          "examples": []
+          "note": "One working High reference was found in the targeted follow-up. It shows the broad pale/dark pattern used in Figure 1 F; it is not an independent validation of the category. Dark veins, stronger overall saturation, and a separate white center ring are not sufficient.",
+          "examples": [
+            {
+              "observationId": 25044378,
+              "photoId": 38753930,
+              "src": "assets/photo-guide/25044378-38753930.jpg",
+              "displaySize": 300,
+              "alt": "An open pink-lilac flower with near-white broad petal middles, darker colored bases, and more pigmented distal tips.",
+              "title": "Near-white middles between pigmented regions",
+              "caption": "Broad near-white middle regions contrast with darker pink-lilac bases and distal tips on at least three petals. The pattern repeats between the narrow veins under even illumination. This composition appears to match Figure 1 F, but the score follows the visible broad tissue pattern itself. Scored reference only: observation fields were not submitted because the observer restricts additions to site curators.",
+              "attribution": "(c) JJ Johnson, some rights reserved (CC BY-NC)",
+              "licenseCode": "cc-by-nc",
+              "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+              "photoUrl": "https://www.inaturalist.org/photos/38753930",
+              "observationUrl": "https://www.inaturalist.org/observations/25044378",
+              "cropNote": "Cropped around the focal flower and resized for the scoring view; no color or contrast adjustment. Copied unchanged from the reviewed crop.",
+              "fieldWriteStatus": "blocked",
+              "fieldWriteNote": "Scored reference only: observation fields were not submitted because the observer restricts additions to site curators.",
+              "publicAuditSource": "data/targeted-examples-2026-10-18.jsonl"
+            }
+          ]
         },
         {
           "value": "Cannot be determined",

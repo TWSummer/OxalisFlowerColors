@@ -12,6 +12,8 @@ The owner’s feedback led to a fresh check of **all 32 previously determinate r
 
 The [photographic guide](photo-guide.html#ring) and [protocol](protocol.md#white-center-ring) now show those boundaries. No confirmed Absent-ring photograph remains in the reviewed 125; Figure 1 D/F retain that definition. High pigment variation also still lacks a confirmed photographic example in this set. These gaps are stated rather than filled with ambiguous images.
 
+**Later follow-up:** the [targeted example search](targeted-examples-report.md) subsequently added six labeled observations and licensed Absent/High guide photographs. The counts below preserve this earlier 125-observation review; the High photograph is a scored reference whose observer settings prevented field submission.
+
 ## Scope and verification
 
 This pass re-examined the standard-size focal crops for all 32 determinate ring scores and consulted alternate views for borderline cases. Earlier photo inventories and source-size measurements remain in the audit. This is a same-reviewer correction following owner feedback, not independent validation. The other 93 ring scores were already Cannot be determined and were not newly visually reviewed in this pass.
