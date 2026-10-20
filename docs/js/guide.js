@@ -19,7 +19,7 @@ export const GUIDE = {
   variation: {
     none: ['Nearly uniform background outside the throat, veins, and any white center ring. Overall pale or dark flowers can both be None.', 'pink', 'low'],
     low: ['A subtle but repeatable change in background pigment intensity across the petal, without clearly distinct pale and dark zones.', 'pink', 'low', { variation: 'low' }],
-    high: ['Clearly distinct pale and dark regions across the petal, as in F: pink near the base, nearly white middle, deeper pink margin.', 'pink', 'medium', { variation: 'high' }]
+    high: ['Strong, repeatable variation in broad petal background, outside the throat, ring, and veins. Any arrangement of clearly lighter and darker regions can qualify; F illustrates one pattern, not a required sequence.', 'pink', 'medium', { variation: 'high' }]
   }
 };
 export function drawGuide(config) {

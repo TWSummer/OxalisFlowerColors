@@ -58,7 +58,7 @@
     },
     "variation": {
       "name": "Redwood Sorrel Petal Pigment Variation",
-      "description": "Interveinal pigment variation, excluding throat, veins, white center ring and shadows. Fig.1: None B,D,G; High F; Low is subtle variation. Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#petal-pigment-variation",
+      "description": "Petal background variation outside throat, ring and veins; exclude lighting. None=uniform; Low=subtle; High=strong variation in any arrangement (F is one example). Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#petal-pigment-variation",
       "id": 23012,
       "values": [
         "None",

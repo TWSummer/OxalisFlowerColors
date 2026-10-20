@@ -23,7 +23,8 @@ export function validateReview(r, config) {
       if (!keys(e, ['photo_id', 'flower', 'source_diameter_px', 'assessment_diameter_px', 'visible_upper_petals'], `${name}.evidence`)) continue;
       if (!positiveInt(e.photo_id) || !r.examined_photo_ids?.includes(e.photo_id) || !nonempty(e.flower)) errors.push(`${name}: evidence must refer to an examined photo and describe the flower`);
       if (![e.source_diameter_px, e.assessment_diameter_px].every(v => Number.isFinite(v) && v > 0) || !Number.isInteger(e.visible_upper_petals) || e.visible_upper_petals < 0 || e.visible_upper_petals > 5) errors.push(`${name}: invalid evidence measurements`);
-      if (t.status === 'scored' && (e.source_diameter_px < (name === 'color' ? 150 : 300) || e.visible_upper_petals < 3 || (name !== 'color' && e.assessment_diameter_px !== 300))) errors.push(`${name}: scored evidence fails size/petal/viewing rules`);
+      // The legacy assessment_diameter_px key records square crop width, not flower diameter.
+      if (t.status === 'scored' && (e.source_diameter_px < (name === 'color' ? 150 : 300) || e.visible_upper_petals < 3 || (name !== 'color' && e.assessment_diameter_px !== 300))) errors.push(`${name}: scored evidence fails source-size/petal/crop-width rules`);
     }
   }
   if (!Array.isArray(r.existing_fields)) errors.push('existing_fields must be an array');

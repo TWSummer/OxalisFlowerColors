@@ -181,10 +181,12 @@
               },
               "source_diameter_px": {
                 "type": "number",
+                "description": "Approximate focal flower diameter in the original source image, before cropping or resizing.",
                 "exclusiveMinimum": 0
               },
               "assessment_diameter_px": {
                 "type": "number",
+                "description": "Legacy property name: displayed width of the square assessment crop, not measured flower diameter. Standard veins/ring/variation reviews use a tight 300 by 300 px crop of the whole flower with a small margin. Smaller color-only evidence must not be enlarged.",
                 "exclusiveMinimum": 0
               },
               "visible_upper_petals": {

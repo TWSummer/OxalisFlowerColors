@@ -191,7 +191,7 @@
       "label": "Petal Vein Contrast",
       "fieldName": "Redwood Sorrel Petal Vein Contrast",
       "fieldId": 23010,
-      "summary": "At the standard 300-pixel view, judge how strongly vein lines stand out from their immediate petal background. Assess prominence, not vein color, number, or branching.",
+      "summary": "In a tight 300 × 300 px square crop of the whole flower, judge how strongly vein lines stand out from their immediate petal background. Keep all tips and only a small margin. Assess prominence, not vein color, number, or branching.",
       "categories": [
         {
           "value": "Low",
@@ -718,8 +718,8 @@
         },
         {
           "value": "High",
-          "definition": "Clearly distinct pale and dark broad background regions occur across the petals, as in Figure 1 F: pink toward the base, a nearly white middle, and deeper pink near the margins.",
-          "note": "One working High reference was found in the targeted follow-up. It shows the broad pale/dark pattern used in Figure 1 F; it is not an independent validation of the category. Dark veins, stronger overall saturation, and a separate white center ring are not sufficient.",
+          "definition": "Strong, repeatable variation in broad petal background creates clearly lighter and darker regions outside the throat, identifiable center ring, and narrow veins. Any spatial arrangement can qualify: gradients, broad patches, or contrasting bases, middles, tips, or margins.",
+          "note": "One working High reference is shown. The variation must be evident on at least three suitable petals after excluding lighting, folds, damage, and aging; its layout need not be identical. Figure 1 F and this reference show one arrangement, not a required sequence. Neither a pale middle nor nearly white tissue is necessary. Dark veins, stronger overall saturation, and a separate white center ring are not sufficient. This reference does not establish independent reviewer agreement.",
           "examples": [
             {
               "observationId": 25044378,
