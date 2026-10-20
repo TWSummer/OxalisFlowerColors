@@ -42,7 +42,7 @@ node scripts/validate-reviews.mjs review-work/protocol-2.1.0/reviews.jsonl
 
 The inventory includes all photo-bearing observations of both taxa, all grades, worldwide; it does not depend on flowering annotations. It checkpoints under a protocol-specific directory and resumes safely after interruption. A completed pass produces `candidates.jsonl` and a cutoff ID. Preserve previous audits and start a separate pass for later records or changed photos/identifications. There is no label-prediction or iNaturalist write automation in this repository.
 
-`Cannot be determined` is a recorded, assessed outcome for a visible open flower. It is distinct from no flower, an unassessed trait, and a missing field. Log evidence and reasons, preserve existing data, and verify actual returned field values after writing.
+`Cannot be determined` is a recorded, assessed outcome for a visible open flower. It is distinct from no flower, an unassessed trait, and a missing field. Log evidence and reasons, preserve existing data, and verify actual returned field values after writing. Follow the handoff's [save-and-verify procedure](docs/agent-handoff.md#submit-and-verify): submit one field, wait for completion, and confirm it through a fresh observation-detail response before the next field or navigation. iNaturalist shows the selected value before it has finished saving; the [save investigation](docs/save-verification.md) explains the earlier false confirmations.
 
 ## Data flow and graphs
 

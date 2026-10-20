@@ -1,0 +1,531 @@
+{
+  "protocol_version": "2.1.0",
+  "local_project_date": "2026-10-19",
+  "selection_method": "Seeded ordering within two previously retrieved Flowers-annotated pools, interleaved taxa; prioritized single-photo observations to make complete-photo review efficient. Historical pilot and current atlas observations excluded. All source photos and current public details refreshed. Convenience sample selected for usable flower evidence, not a population sample.",
+  "seed": "oxalis-new100-2026-10-19-protocol2.1.0",
+  "observations": 100,
+  "verified_fields": 400,
+  "examined_photos_in_labeled_observations": 100,
+  "candidates_screened": 150,
+  "screened_photo_count": 150,
+  "skipped_or_not_selected": [
+    {
+      "index": 5,
+      "observation_id": 352385588,
+      "photo_id": 643164319,
+      "petals": 0,
+      "flower": "only closed pendant flowers",
+      "skip": "only closed pendant flowers"
+    },
+    {
+      "index": 6,
+      "observation_id": 271768743,
+      "photo_id": 488878074,
+      "petals": 0,
+      "flower": "Distant open flowers below 150 source pixels in best top view",
+      "skip": "Distant open flowers below 150 source pixels in best top view"
+    },
+    {
+      "index": 9,
+      "observation_id": 160484727,
+      "photo_id": 277320296,
+      "petals": 0,
+      "flower": "only closed flowers",
+      "skip": "only closed flowers"
+    },
+    {
+      "index": 23,
+      "observation_id": 58384959,
+      "photo_id": 93207638,
+      "petals": 0,
+      "flower": "open flower too small for 150-pixel color threshold",
+      "skip": "open flower too small for 150-pixel color threshold"
+    },
+    {
+      "index": 28,
+      "observation_id": 153009278,
+      "photo_id": 264215056,
+      "petals": 0,
+      "flower": "held damaged or senescent flower with insufficient fresh upper tissue",
+      "skip": "held damaged or senescent flower with insufficient fresh upper tissue"
+    },
+    {
+      "index": 31,
+      "observation_id": 245302058,
+      "photo_id": 437719482,
+      "petals": 0,
+      "flower": "visible flowers below 150 source pixels",
+      "skip": "visible flowers below 150 source pixels"
+    },
+    {
+      "index": 33,
+      "observation_id": 207856195,
+      "photo_id": 367705057,
+      "petals": 0,
+      "flower": "distant flowers below 150 source pixels",
+      "skip": "distant flowers below 150 source pixels"
+    },
+    {
+      "index": 34,
+      "observation_id": 164475234,
+      "photo_id": 284581871,
+      "petals": 0,
+      "flower": "distant soft flowers below 150 source pixels",
+      "skip": "distant soft flowers below 150 source pixels"
+    },
+    {
+      "index": 40,
+      "observation_id": 356911411,
+      "photo_id": 650907638,
+      "petals": 0,
+      "flower": "only underside and folded pendant flower",
+      "skip": "only underside and folded pendant flower"
+    },
+    {
+      "index": 43,
+      "observation_id": 383512230,
+      "photo_id": 701940894,
+      "petals": 0,
+      "flower": "closed pendant flower",
+      "skip": "closed pendant flower"
+    },
+    {
+      "index": 47,
+      "observation_id": 134498386,
+      "photo_id": 229263911,
+      "petals": 0,
+      "flower": "no visible open flower",
+      "skip": "no visible open flower"
+    },
+    {
+      "index": 51,
+      "observation_id": 161333477,
+      "photo_id": 278857047,
+      "petals": 0,
+      "flower": "no visible open flower",
+      "skip": "no visible open flower"
+    },
+    {
+      "index": 54,
+      "observation_id": 351587611,
+      "photo_id": 641622399,
+      "petals": 0,
+      "flower": "small distant flowers below 150 source pixels",
+      "skip": "small distant flowers below 150 source pixels"
+    },
+    {
+      "index": 57,
+      "observation_id": 121685713,
+      "photo_id": 205944128,
+      "petals": 0,
+      "flower": "focal flower below 150 source pixels",
+      "skip": "focal flower below 150 source pixels"
+    },
+    {
+      "index": 59,
+      "observation_id": 301892545,
+      "photo_id": 544035182,
+      "petals": 0,
+      "flower": "small held flower below 150 source pixels",
+      "skip": "small held flower below 150 source pixels"
+    },
+    {
+      "index": 60,
+      "observation_id": 83662539,
+      "photo_id": 137424978,
+      "petals": 0,
+      "flower": "only closed flowers",
+      "skip": "only closed flowers"
+    },
+    {
+      "index": 62,
+      "observation_id": 120625866,
+      "photo_id": 204043106,
+      "petals": 0,
+      "flower": "distant flower below 150 source pixels",
+      "skip": "distant flower below 150 source pixels"
+    },
+    {
+      "index": 63,
+      "observation_id": 73228310,
+      "photo_id": 119530907,
+      "petals": 0,
+      "flower": "closed pendant flower",
+      "skip": "closed pendant flower"
+    },
+    {
+      "index": 64,
+      "observation_id": 166275659,
+      "photo_id": 287920943,
+      "petals": 0,
+      "flower": "closed pendant flower",
+      "skip": "closed pendant flower"
+    },
+    {
+      "index": 69,
+      "observation_id": 117687509,
+      "photo_id": 198778421,
+      "petals": 0,
+      "flower": "only closed pendant flowers",
+      "skip": "only closed pendant flowers"
+    },
+    {
+      "index": 70,
+      "observation_id": 49513449,
+      "photo_id": 78600844,
+      "petals": 0,
+      "flower": "side view lacks three visible upper petals; omitted from selected batch",
+      "skip": "side view lacks three visible upper petals; omitted from selected batch"
+    },
+    {
+      "index": 71,
+      "observation_id": 373469269,
+      "photo_id": 683189517,
+      "petals": 0,
+      "flower": "small flower below 150 source pixels",
+      "skip": "small flower below 150 source pixels"
+    },
+    {
+      "index": 72,
+      "observation_id": 310230483,
+      "photo_id": 559883582,
+      "petals": 0,
+      "flower": "small distant flower below 150 source pixels",
+      "skip": "small distant flower below 150 source pixels"
+    },
+    {
+      "index": 77,
+      "observation_id": 91182479,
+      "photo_id": 150784331,
+      "petals": 0,
+      "flower": "small distant flowers below 150 source pixels",
+      "skip": "small distant flowers below 150 source pixels"
+    },
+    {
+      "index": 82,
+      "observation_id": 263574560,
+      "photo_id": 473530113,
+      "petals": 0,
+      "flower": "closed and oblique flowers without suitable exposed upper surfaces",
+      "skip": "closed and oblique flowers without suitable exposed upper surfaces"
+    },
+    {
+      "index": 83,
+      "observation_id": 397092317,
+      "photo_id": 728273443,
+      "petals": 0,
+      "flower": "closed flower",
+      "skip": "closed flower"
+    },
+    {
+      "index": 84,
+      "observation_id": 290846096,
+      "photo_id": 523250251,
+      "petals": 0,
+      "flower": "no open flower visible",
+      "skip": "no open flower visible"
+    },
+    {
+      "index": 97,
+      "observation_id": 222723739,
+      "photo_id": 394561824,
+      "petals": 0,
+      "flower": "distant white flower below 150 source pixels",
+      "skip": "distant white flower below 150 source pixels"
+    },
+    {
+      "index": 99,
+      "observation_id": 287724247,
+      "photo_id": 517362195,
+      "petals": 0,
+      "flower": "distant white flowers below 150 source pixels",
+      "skip": "distant white flowers below 150 source pixels"
+    },
+    {
+      "index": 102,
+      "observation_id": 363184131,
+      "photo_id": 662932888,
+      "petals": 0,
+      "flower": "heavily spotted and damaged flower omitted from selected batch",
+      "skip": "heavily spotted and damaged flower omitted from selected batch"
+    },
+    {
+      "index": 105,
+      "observation_id": 326547039,
+      "photo_id": 591434253,
+      "petals": 0,
+      "flower": "closed held flower",
+      "skip": "closed held flower"
+    },
+    {
+      "index": 111,
+      "observation_id": 361625456,
+      "photo_id": 659988744,
+      "petals": 0,
+      "flower": "closed flowers",
+      "skip": "closed flowers"
+    },
+    {
+      "index": 113,
+      "observation_id": 155044030,
+      "photo_id": 267954272,
+      "petals": 0,
+      "flower": "small oblique flowers below 150 source pixels",
+      "skip": "small oblique flowers below 150 source pixels"
+    },
+    {
+      "index": 117,
+      "observation_id": 73900958,
+      "photo_id": 120714828,
+      "petals": 0,
+      "flower": "distant flowers below 150 source pixels",
+      "skip": "distant flowers below 150 source pixels"
+    },
+    {
+      "index": 122,
+      "observation_id": 68900605,
+      "photo_id": 111675000,
+      "petals": 0,
+      "flower": "closed pendant flowers",
+      "skip": "closed pendant flowers"
+    },
+    {
+      "index": 125,
+      "observation_id": 23747256,
+      "photo_id": 36739857,
+      "petals": 0,
+      "flower": "distant flowers and oblique views below suitable upper-surface threshold",
+      "skip": "distant flowers and oblique views below suitable upper-surface threshold"
+    },
+    {
+      "index": 127,
+      "observation_id": 231772835,
+      "photo_id": 411694559,
+      "petals": 0,
+      "flower": "small distant flowers below 150 source pixels",
+      "skip": "small distant flowers below 150 source pixels"
+    },
+    {
+      "index": 129,
+      "observation_id": 218046443,
+      "photo_id": 385808474,
+      "petals": 0,
+      "flower": "screened reserve; not selected for this batch",
+      "skip": "screened reserve; not selected for this batch"
+    },
+    {
+      "index": 131,
+      "observation_id": 94616805,
+      "photo_id": 156974298,
+      "petals": 0,
+      "flower": "closed flowers",
+      "skip": "closed flowers"
+    },
+    {
+      "index": 132,
+      "observation_id": 269686853,
+      "photo_id": 484928698,
+      "petals": 0,
+      "flower": "distant flowers below 150 source pixels",
+      "skip": "distant flowers below 150 source pixels"
+    },
+    {
+      "index": 137,
+      "observation_id": 77294123,
+      "photo_id": 126400330,
+      "petals": 0,
+      "flower": "screened reserve; not selected for this batch",
+      "skip": "screened reserve; not selected for this batch"
+    },
+    {
+      "index": 141,
+      "observation_id": 23008830,
+      "photo_id": 35669280,
+      "petals": 0,
+      "flower": "partly closed pendant flower",
+      "skip": "partly closed pendant flower"
+    },
+    {
+      "index": 142,
+      "observation_id": 161806383,
+      "photo_id": 279712517,
+      "petals": 0,
+      "flower": "small distant flowers below 150 source pixels",
+      "skip": "small distant flowers below 150 source pixels"
+    },
+    {
+      "index": 143,
+      "observation_id": 288030665,
+      "photo_id": 517935353,
+      "petals": 0,
+      "flower": "small oblique flowers below 150 source pixels",
+      "skip": "small oblique flowers below 150 source pixels"
+    },
+    {
+      "index": 144,
+      "observation_id": 160492181,
+      "photo_id": 277332936,
+      "petals": 0,
+      "flower": "screened reserve; not selected for this batch",
+      "skip": "screened reserve; not selected for this batch"
+    },
+    {
+      "index": 145,
+      "observation_id": 283847247,
+      "photo_id": 510067276,
+      "petals": 0,
+      "flower": "screened reserve; not selected for this batch",
+      "skip": "screened reserve; not selected for this batch"
+    },
+    {
+      "index": 146,
+      "observation_id": 352417555,
+      "photo_id": 643227802,
+      "petals": 0,
+      "flower": "small distant flowers below 150 source pixels",
+      "skip": "small distant flowers below 150 source pixels"
+    },
+    {
+      "index": 147,
+      "observation_id": 214723357,
+      "photo_id": 379564783,
+      "petals": 0,
+      "flower": "small flower below 150 source pixels",
+      "skip": "small flower below 150 source pixels"
+    },
+    {
+      "index": 149,
+      "observation_id": 124791369,
+      "photo_id": 211551988,
+      "petals": 0,
+      "flower": "screened reserve with differing flower appearances; not selected",
+      "skip": "screened reserve with differing flower appearances; not selected"
+    }
+  ],
+  "taxa": {
+    "Oxalis oregana": 44,
+    "Oxalis smalliana": 56
+  },
+  "counts": {
+    "color": {
+      "White": 47,
+      "Pink": 14,
+      "Purple": 22,
+      "Cannot be determined": 17
+    },
+    "veins": {
+      "Low": 24,
+      "Medium": 17,
+      "High": 6,
+      "Cannot be determined": 53
+    },
+    "ring": {
+      "Absent": 1,
+      "Faint": 2,
+      "Clear": 3,
+      "Cannot be determined": 94
+    },
+    "variation": {
+      "None": 19,
+      "Low": 2,
+      "High": 0,
+      "Cannot be determined": 79
+    }
+  },
+  "determinate": 157,
+  "indeterminate": 243,
+  "blocked": [],
+  "conflicts": [
+    {
+      "observation_id": 387013837,
+      "status": "changed_after_initial_verification; current value preserved",
+      "expected_fields": [
+        {
+          "field_id": 23008,
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "value": "Cannot be determined"
+        }
+      ],
+      "returned_fields": [
+        {
+          "field_id": 23008,
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "value": "Cannot be determined"
+        }
+      ],
+      "conflicts": [
+        {
+          "field_id": 23008,
+          "values": [
+            "Purple"
+          ]
+        }
+      ],
+      "observed_at": "2026-10-20T03:04:57.134Z",
+      "replacement_observation_id": 1625129
+    }
+  ],
+  "missing_values": [],
+  "pending_writes": [],
+  "preexisting_field_changes": [],
+  "unexpected_fields": [],
+  "photo_list_changes": [],
+  "verification_source": "Fresh unauthenticated iNaturalist observation-detail API responses; all expected exact field IDs and values reconciled after UI submissions",
+  "verification_started_at": "2026-10-20T04:59:10.412Z",
+  "verified_at": "2026-10-20T05:02:54.331Z",
+  "reliability_note": "Single-agent visual review under the owner-defined protocol; no independent inter-rater validation. Convenience sample does not estimate population frequencies.",
+  "observations_touched": 101,
+  "scored_observations": 101,
+  "cultivation": {
+    "marked_captive": 0,
+    "not_marked_captive": 100,
+    "unknown": 0
+  },
+  "quality_grades": {
+    "research": 70,
+    "needs_id": 28,
+    "casual": 2
+  },
+  "additional_unrelated_fields_preserved": [
+    {
+      "observation_id": 337484844,
+      "field_id": 8491,
+      "value": "0"
+    }
+  ],
+  "snapshot_verification": {
+    "fetched_at": "2026-10-20T05:05:00.542Z",
+    "snapshot_records": 232,
+    "completed_batch_observations": 100,
+    "completed_batch_expected_fields": 400,
+    "missing": [],
+    "conflicts": [],
+    "prior_observation_count": 131,
+    "prior_field_changes": [],
+    "logged_conflict_current_color": [
+      "Purple"
+    ]
+  }
+}

@@ -1,6 +1,74 @@
 {
   "records": [
     {
+      "id": 1625129,
+      "observed_on": "2015-05-25",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.011762,
+          41.375868
+        ]
+      },
+      "positional_accuracy": 99,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "knightericm"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 1993920,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1993920/square.jpg",
+          "license_code": "cc-by",
+          "attribution": "(c) Eric Knight, some rights reserved (CC BY)"
+        }
+      ]
+    },
+    {
       "id": 2869269,
       "observed_on": "2016-04-02",
       "quality_grade": "needs_id",
@@ -315,6 +383,74 @@
       ]
     },
     {
+      "id": 6291604,
+      "observed_on": "2017-05-20",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.4671235085,
+          39.0740803486
+        ]
+      },
+      "positional_accuracy": 8,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "loribd"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 7919430,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/7919430/square.jpeg",
+          "license_code": "cc-by-sa",
+          "attribution": "(c) Lori Brandt Dudzik, some rights reserved (CC BY-SA)"
+        }
+      ]
+    },
+    {
       "id": 8341595,
       "observed_on": "2017-10-09",
       "quality_grade": "needs_id",
@@ -379,6 +515,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/11086315/square.jpeg",
           "license_code": "cc-by-nc",
           "attribution": "(c) Justin Legge, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 10121876,
+      "observed_on": "2018-03-06",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.4360386111,
+          39.0606191667
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "graysquirrel"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 13956405,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/13956405/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Krissa Klein, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -673,6 +877,142 @@
       ]
     },
     {
+      "id": 22658433,
+      "observed_on": "2019-04-17",
+      "quality_grade": "research",
+      "license_code": "cc-by",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.7793840864,
+          39.2773807462
+        ]
+      },
+      "positional_accuracy": 19,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "sullivanribbit"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Faint"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 35108533,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/35108533/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) John Sullivan, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 26102626,
+      "observed_on": "2019-05-30",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.7298111572,
+          39.386540844
+        ]
+      },
+      "positional_accuracy": 70,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "jenniferkalt"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Clear"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Low"
+        }
+      ],
+      "photos": [
+        {
+          "id": 40503047,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40503047/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) jenniferkalt, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 27136204,
       "observed_on": "2019-06-07",
       "quality_grade": "needs_id",
@@ -753,6 +1093,74 @@
       ]
     },
     {
+      "id": 27727250,
+      "observed_on": "2019-06-21",
+      "quality_grade": "research",
+      "license_code": "cc-by",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.7729866667,
+          39.3274315278
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "kenk"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 43170579,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/43170579/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Ken Koll, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 28811420,
       "observed_on": "2019-05-29",
       "quality_grade": "needs_id",
@@ -827,6 +1235,210 @@
       ]
     },
     {
+      "id": 31990148,
+      "observed_on": "2019-09-02",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.9998468279,
+          40.4427724724
+        ]
+      },
+      "positional_accuracy": 734,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "brook"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 50127303,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/50127303/square.jpg",
+          "license_code": "cc-by",
+          "attribution": "(c) Brook, some rights reserved (CC BY)"
+        }
+      ]
+    },
+    {
+      "id": 32283085,
+      "observed_on": "2019-08-14",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.1324996948,
+          41.7802772522
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "vhawk"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 50619092,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/50619092/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) vhawk, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 32300879,
+      "observed_on": "2019-09-07",
+      "quality_grade": "needs_id",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.02195603,
+          41.36534358
+        ]
+      },
+      "positional_accuracy": 6,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "ashleydisney"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 50647465,
+          "url": "https://static.inaturalist.org/photos/50647465/square.jpeg",
+          "license_code": null,
+          "attribution": "(c) Ashley Disney, all rights reserved"
+        }
+      ]
+    },
+    {
       "id": 38285969,
       "observed_on": "2018-04-23",
       "quality_grade": "research",
@@ -891,6 +1503,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/60825338/square.jpg",
           "license_code": "cc-by-nc",
           "attribution": "(c) Alex Willett, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 39589090,
+      "observed_on": "2020-03-05",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.0066606161,
+          36.9977106247
+        ]
+      },
+      "positional_accuracy": 5,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "pafenton"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 62821879,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/62821879/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) pafenton, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -1067,6 +1747,142 @@
       ]
     },
     {
+      "id": 42649350,
+      "observed_on": "2020-04-19",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.5519634225,
+          47.448771419
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "ejain"
+      },
+      "ofvs": [
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 67727957,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/67727957/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Eric Jain, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 42681463,
+      "observed_on": "2020-04-19",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.887755,
+          43.10536117
+        ]
+      },
+      "positional_accuracy": 10,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "mcowen"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 67781345,
+          "url": "https://static.inaturalist.org/photos/67781345/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Mad, all rights reserved"
+        }
+      ]
+    },
+    {
       "id": 43522185,
       "observed_on": "2020-04-25",
       "quality_grade": "needs_id",
@@ -1203,6 +2019,74 @@
       ]
     },
     {
+      "id": 47904160,
+      "observed_on": "2020-05-25",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.05741117,
+          41.30987167
+        ]
+      },
+      "positional_accuracy": 48,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "aaron_echols"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 75988975,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/75988975/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Aaron Echols, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 48617846,
       "observed_on": "2020-06-05",
       "quality_grade": "research",
@@ -1281,6 +2165,74 @@
       ]
     },
     {
+      "id": 51552156,
+      "observed_on": "2020-06-29",
+      "quality_grade": "needs_id",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.4391642302,
+          42.6839457268
+        ]
+      },
+      "positional_accuracy": 1522,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "dustinurban"
+      },
+      "ofvs": [
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 81914664,
+          "url": "https://static.inaturalist.org/photos/81914664/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Dustin Urban, all rights reserved"
+        }
+      ]
+    },
+    {
       "id": 52853265,
       "observed_on": "2020-07-07",
       "quality_grade": "research",
@@ -1345,6 +2297,210 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/84039492/square.jpeg",
           "license_code": "cc-by-nc",
           "attribution": "(c) zapoteca, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 58147558,
+      "observed_on": "2009-05-09",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.9341359596,
+          47.8610614403
+        ]
+      },
+      "positional_accuracy": 31,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "asquithcm"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 92809715,
+          "url": "https://static.inaturalist.org/photos/92809715/square.jpeg",
+          "license_code": null,
+          "attribution": "(c) Chris Asquith, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 65341107,
+      "observed_on": "2016-04-06",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.9022260977,
+          46.1218136665
+        ]
+      },
+      "positional_accuracy": 420,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "cypripedium18"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 105149445,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/105149445/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) cypripedium18, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 67226160,
+      "observed_on": "2020-08-19",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.032846652,
+          40.4422006386
+        ]
+      },
+      "positional_accuracy": 265,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "patrickhoffman"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 108562057,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/108562057/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Patrick Hoffman, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -1508,6 +2664,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/113997056/square.jpeg",
           "license_code": "cc-by-nc",
           "attribution": "(c) Levin Pratte, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 70274860,
+      "observed_on": "2021-02-27",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0713055,
+          40.8723116667
+        ]
+      },
+      "positional_accuracy": 10,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "emily_shey"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 114211288,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/114211288/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Emily Sheydayi, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -1724,6 +2948,278 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/117943932/square.jpg",
           "license_code": "cc-by-nc",
           "attribution": "(c) supershirley, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 72392838,
+      "observed_on": "2021-03-29",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.207695,
+          37.2712333333
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "davidg3"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 118021891,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/118021891/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) David H. Gleit, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 72652227,
+      "observed_on": "2021-04-01",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.0630638333,
+          36.9971
+        ]
+      },
+      "positional_accuracy": 5,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "drizard"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 118490517,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/118490517/square.jpg",
+          "license_code": "cc0",
+          "attribution": "no rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 72661824,
+      "observed_on": "2021-03-31",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -121.9091033333,
+          36.9981416667
+        ]
+      },
+      "positional_accuracy": 10,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "katiesmith3"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 118508327,
+          "url": "https://static.inaturalist.org/photos/118508327/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Katie Smith, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 72837460,
+      "observed_on": "2021-04-03",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc-nd",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.18247632,
+          45.37067765
+        ]
+      },
+      "positional_accuracy": 9,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "jnelson"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 118830217,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/118830217/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Jon David Nelson, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -1966,6 +3462,142 @@
       ]
     },
     {
+      "id": 73552066,
+      "observed_on": "2021-04-10",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.7432333333,
+          39.2772616667
+        ]
+      },
+      "positional_accuracy": 22,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "dyllocean"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Faint"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 120088845,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/120088845/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) dyllocean, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 73716686,
+      "observed_on": "2021-04-10",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.424295,
+          38.70658
+        ]
+      },
+      "positional_accuracy": 16,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "cvalentino19"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 120385198,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/120385198/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Caroline Valentino, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 73983586,
       "observed_on": "2021-04-13",
       "quality_grade": "research",
@@ -2030,6 +3662,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/120861707/square.jpeg",
           "license_code": "cc-by-nc-nd",
           "attribution": "(c) Anna Caro, some rights reserved (CC BY-NC-ND)"
+        }
+      ]
+    },
+    {
+      "id": 74468451,
+      "observed_on": "2021-04-18",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.8735056669,
+          41.1428214674
+        ]
+      },
+      "positional_accuracy": 2972,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "sasquitch"
+      },
+      "ofvs": [
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 121709664,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/121709664/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) sasquitch, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -2120,6 +3820,356 @@
       ]
     },
     {
+      "id": 74650308,
+      "observed_on": "2021-04-18",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.7707883333,
+          39.3276666667
+        ]
+      },
+      "positional_accuracy": 38,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "sam_coleman"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 122032309,
+          "url": "https://static.inaturalist.org/photos/122032309/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Sam Coleman, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 74901989,
+      "observed_on": "2021-04-18",
+      "quality_grade": "casual",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.4914838,
+          42.7386886
+        ]
+      },
+      "positional_accuracy": 1593,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "beckymac"
+      },
+      "ofvs": [
+        {
+          "field_id": 13172,
+          "name": "Collecting Route #",
+          "value": "30"
+        },
+        {
+          "field_id": 13171,
+          "name": "Subroute",
+          "value": "-"
+        },
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 122477019,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/122477019/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Becky McRae, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 76320987,
+      "observed_on": "2021-05-01",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.2219882365,
+          43.372368305
+        ]
+      },
+      "positional_accuracy": 8,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "laurie_ney"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 124847848,
+          "url": "https://static.inaturalist.org/photos/124847848/square.jpeg",
+          "license_code": null,
+          "attribution": "(c) Laurie Ney, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 76325223,
+      "observed_on": "2021-05-01",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.3303978622,
+          37.4124923129
+        ]
+      },
+      "positional_accuracy": 1,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "wbsimey"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 124850265,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/124850265/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Brian Simison, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 76807454,
+      "observed_on": "2021-05-02",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.4062389722,
+          39.366692
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "sapienshane"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 125621433,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/125621433/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Shane Hanofee, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 77541853,
       "observed_on": "2021-05-05",
       "quality_grade": "needs_id",
@@ -2184,6 +4234,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/126823320/square.jpg",
           "license_code": "cc-by-nc",
           "attribution": "(c) Dillon Doss, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 78078512,
+      "observed_on": "2021-05-08",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.223078,
+          37.2514439722
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "casseia"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 127735974,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/127735974/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Cassie, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -2582,6 +4700,142 @@
       ]
     },
     {
+      "id": 90433661,
+      "observed_on": "2021-08-04",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0663494542,
+          40.8705330033
+        ]
+      },
+      "positional_accuracy": 175,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "malvaceousmugi"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "High"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 149462896,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/149462896/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) malvaceousmugi, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 93578248,
+      "observed_on": "2021-09-02",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -121.9139166667,
+          36.4582166667
+        ]
+      },
+      "positional_accuracy": 49,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "elizevz"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 155116698,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/155116698/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Elize Van Zandt, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 93884651,
       "observed_on": "2021-09-03",
       "quality_grade": "research",
@@ -2730,6 +4984,74 @@
       ]
     },
     {
+      "id": 94681578,
+      "observed_on": "2021-09-04",
+      "quality_grade": "needs_id",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0623594943,
+          40.8821526581
+        ]
+      },
+      "positional_accuracy": 3818,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "everet_frame"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 157091905,
+          "url": "https://static.inaturalist.org/photos/157091905/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Pande monium, all rights reserved"
+        }
+      ]
+    },
+    {
       "id": 102048918,
       "observed_on": "2021-05-22",
       "quality_grade": "research",
@@ -2794,6 +5116,278 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/170515136/square.jpeg",
           "license_code": "cc-by-nc",
           "attribution": "(c) laziphotos, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 105736309,
+      "observed_on": "2021-02-07",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -121.9046777778,
+          36.9835861111
+        ]
+      },
+      "positional_accuracy": 15,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "merav"
+      },
+      "ofvs": [
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Clear"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 177476350,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/177476350/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Merav Vonshak, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 106984797,
+      "observed_on": "2022-02-13",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.5744022056,
+          37.9050005462
+        ]
+      },
+      "positional_accuracy": 393,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "tamimau"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 179844971,
+          "url": "https://static.inaturalist.org/photos/179844971/square.jpeg",
+          "license_code": null,
+          "attribution": "(c) Tami Mau, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 107147873,
+      "observed_on": "2022-02-20",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.0849695,
+          37.0514055
+        ]
+      },
+      "positional_accuracy": 66,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "betweenthelyons"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 180152144,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/180152144/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Dean Lyons, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 107507187,
+      "observed_on": "2022-02-26",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.2052616667,
+          37.3099166667
+        ]
+      },
+      "positional_accuracy": 4,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "gina-genduso"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 180827701,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/180827701/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Gina Genduso, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -2956,6 +5550,210 @@
       ]
     },
     {
+      "id": 108931922,
+      "observed_on": "2022-03-17",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.8745554711,
+          41.0411180353
+        ]
+      },
+      "positional_accuracy": 196,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "tuesdaytumbleweed"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 183543001,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/183543001/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) tuesdaytumbleweed, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 109347092,
+      "observed_on": "2022-03-18",
+      "quality_grade": "casual",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0467484888,
+          41.32149842
+        ]
+      },
+      "positional_accuracy": 98,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "nancybruce"
+      },
+      "ofvs": [
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 184280621,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/184280621/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Nancy Bruce, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 109815191,
+      "observed_on": "2022-03-27",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": true,
+      "geoprivacy": "obscured",
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.4444974648,
+          43.5120945894
+        ]
+      },
+      "positional_accuracy": 27474,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "poultrypalace"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 185154523,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/185154523/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Madrone Ruggiero, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 110059085,
       "observed_on": "2022-03-31",
       "quality_grade": "needs_id",
@@ -3026,6 +5824,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/185600930/square.jpeg",
           "license_code": "cc-by-nc",
           "attribution": "(c) Eli, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 110248226,
+      "observed_on": "2022-03-27",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.8124866667,
+          40.9117166667
+        ]
+      },
+      "positional_accuracy": 3,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "gailkenny"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 185948897,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/185948897/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) gailkenny, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -3106,6 +5972,142 @@
           "url": "https://static.inaturalist.org/photos/186813257/square.jpg",
           "license_code": null,
           "attribution": "(c) Eric Bo Garcia, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 112749530,
+      "observed_on": "2022-04-24",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0491552,
+          41.3144119997
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "bholthus1021"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 190463014,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/190463014/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) bholthus1021, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 113295668,
+      "observed_on": "2022-04-28",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.746795,
+          39.2762716667
+        ]
+      },
+      "positional_accuracy": 64,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "sphilbin"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 191436515,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/191436515/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) sphilbin, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -3478,6 +6480,74 @@
       ]
     },
     {
+      "id": 120245745,
+      "observed_on": "2022-06-04",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -121.83554088,
+          36.28267929
+        ]
+      },
+      "positional_accuracy": 5,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "billhubick"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 203351858,
+          "url": "https://static.inaturalist.org/photos/203351858/square.jpeg",
+          "license_code": null,
+          "attribution": "(c) Bill Hubick, all rights reserved"
+        }
+      ]
+    },
+    {
       "id": 121173010,
       "observed_on": "2022-06-10",
       "quality_grade": "needs_id",
@@ -3631,6 +6701,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/210265107/square.jpeg",
           "license_code": "cc-by-nc",
           "attribution": "(c) Sean Daniels, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 133722092,
+      "observed_on": "2022-05-25",
+      "quality_grade": "research",
+      "license_code": "cc0",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.458805,
+          45.79602
+        ]
+      },
+      "positional_accuracy": 100,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "sedgequeen"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 227816550,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/227816550/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Barbara L. Wilson, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -3931,6 +7069,74 @@
       ]
     },
     {
+      "id": 153647430,
+      "observed_on": "2023-04-05",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -121.7174473597,
+          37.0241544446
+        ]
+      },
+      "positional_accuracy": 19,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "gefinley"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 265396505,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/265396505/square.jpeg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Gavin Finley, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 154056920,
       "observed_on": "2023-04-08",
       "quality_grade": "research",
@@ -3995,6 +7201,142 @@
           "url": "https://static.inaturalist.org/photos/266154255/square.jpg",
           "license_code": null,
           "attribution": "(c) Toby Orzano, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 155015877,
+      "observed_on": "2023-04-15",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.2882289441,
+          47.6576331491
+        ]
+      },
+      "positional_accuracy": 5,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "martin_shorb"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 267904789,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/267904789/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Martin Shorb, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 155197534,
+      "observed_on": "2023-04-11",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.5204028984,
+          38.7587500819
+        ]
+      },
+      "positional_accuracy": 508,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "lbarlas"
+      },
+      "ofvs": [
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 268238446,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/268238446/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) lbarlas, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -4153,6 +7495,142 @@
       ]
     },
     {
+      "id": 156334277,
+      "observed_on": "2023-04-23",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.4681170543,
+          39.0709985526
+        ]
+      },
+      "positional_accuracy": 249,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "scotrohrer2000"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Clear"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 270318374,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/270318374/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Scot Rohrer, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 156795581,
+      "observed_on": "2023-04-26",
+      "quality_grade": "needs_id",
+      "license_code": null,
+      "captive": false,
+      "obscured": true,
+      "geoprivacy": "obscured",
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0981313842,
+          40.590082116
+        ]
+      },
+      "positional_accuracy": 27939,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "alexs1"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 272685539,
+          "url": "https://static.inaturalist.org/photos/272685539/square.jpeg",
+          "license_code": null,
+          "attribution": "(c) Alex S, all rights reserved"
+        }
+      ]
+    },
+    {
       "id": 159722286,
       "observed_on": "2023-04-16",
       "quality_grade": "needs_id",
@@ -4217,6 +7695,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/275973290/square.jpg",
           "license_code": "cc-by-nc",
           "attribution": "(c) weavergirl, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 160459847,
+      "observed_on": "2023-05-07",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc-sa",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0246494817,
+          49.2286478487
+        ]
+      },
+      "positional_accuracy": 7,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "tom858"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 277274865,
+          "url": "https://static.inaturalist.org/photos/277274865/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Tom Hlavac, all rights reserved"
         }
       ]
     },
@@ -4297,6 +7843,74 @@
           "url": "https://static.inaturalist.org/photos/279351541/square.jpeg",
           "license_code": null,
           "attribution": "(c) Erin Galbraith, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 161762501,
+      "observed_on": "2023-05-12",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.6441521534,
+          39.5353893936
+        ]
+      },
+      "positional_accuracy": 8,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "christaz33"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 279635279,
+          "url": "https://static.inaturalist.org/photos/279635279/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Christa_Zetwick, all rights reserved"
         }
       ]
     },
@@ -4517,6 +8131,210 @@
       ]
     },
     {
+      "id": 167818426,
+      "observed_on": "2023-06-14",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.8525720761,
+          40.278847776
+        ]
+      },
+      "positional_accuracy": 7,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "jimtgrove"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 290765309,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/290765309/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Jim Grove, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 170210975,
+      "observed_on": "2023-06-24",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.8070099561,
+          39.3773202822
+        ]
+      },
+      "positional_accuracy": 641,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "possiblewalrus"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Absent"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Low"
+        }
+      ],
+      "photos": [
+        {
+          "id": 295186652,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/295186652/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Victoria W, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 171100594,
+      "observed_on": "2023-07-04",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.2320333333,
+          37.26833
+        ]
+      },
+      "positional_accuracy": 4,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "gina-genduso"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 296862500,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/296862500/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Gina Genduso, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 174026146,
       "observed_on": "2023-07-17",
       "quality_grade": "needs_id",
@@ -4587,6 +8405,210 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/302283957/square.jpeg",
           "license_code": "cc-by-nc",
           "attribution": "(c) ifreedman, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 175875265,
+      "observed_on": "1987-04-15",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.9454129,
+          40.3980237
+        ]
+      },
+      "positional_accuracy": 3826,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "lesfreck"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 305696274,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/305696274/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) FreckLes, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 176696183,
+      "observed_on": "2023-08-04",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0201416016,
+          41.3074455261
+        ]
+      },
+      "positional_accuracy": 8,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "seanmcgovern"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 307229295,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/307229295/square.jpeg",
+          "license_code": "cc-by-nc-nd",
+          "attribution": "(c) Sean McGovern, some rights reserved (CC BY-NC-ND)"
+        }
+      ]
+    },
+    {
+      "id": 181774456,
+      "observed_on": "2023-08-17",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0363298882,
+          41.3405713857
+        ]
+      },
+      "positional_accuracy": 3027,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "wirich"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 316802018,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/316802018/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) wirich, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -4854,6 +8876,278 @@
       ]
     },
     {
+      "id": 204688055,
+      "observed_on": "2024-03-30",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.1768618883,
+          45.533184
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "tellittothevoid"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 361829708,
+          "url": "https://static.inaturalist.org/photos/361829708/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Toby Orzano, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 208536178,
+      "observed_on": "2024-04-20",
+      "quality_grade": "needs_id",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0075088358,
+          41.3744418941
+        ]
+      },
+      "positional_accuracy": 176,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "annamammalbee"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "High"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 368974651,
+          "url": "https://static.inaturalist.org/photos/368974651/square.jpg",
+          "license_code": null,
+          "attribution": "(c) annamammalbee, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 208765897,
+      "observed_on": "2024-04-22",
+      "quality_grade": "needs_id",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0728587066,
+          40.8771419167
+        ]
+      },
+      "positional_accuracy": 124,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "keepmeganwild"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "High"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 369397993,
+          "url": "https://static.inaturalist.org/photos/369397993/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Megan Singer, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 208966994,
+      "observed_on": "2024-04-19",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.046775,
+          41.31947
+        ]
+      },
+      "positional_accuracy": 5,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "pirish761"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "High"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 369770692,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369770692/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) pirish761, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 209392054,
       "observed_on": "2024-04-25",
       "quality_grade": "research",
@@ -4965,6 +9259,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/370557925/square.jpg",
           "license_code": "cc-by-nc-sa",
           "attribution": "(c) Jim Gibson, some rights reserved (CC BY-NC-SA)"
+        }
+      ]
+    },
+    {
+      "id": 213211039,
+      "observed_on": "2024-04-22",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc-nd",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0129375,
+          40.31818283
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "valhikes"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 376792655,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/376792655/square.jpeg",
+          "license_code": "cc-by-nc-nd",
+          "attribution": "(c) Valerie Norton, some rights reserved (CC BY-NC-ND)"
         }
       ]
     },
@@ -5270,6 +9632,74 @@
       ]
     },
     {
+      "id": 216859007,
+      "observed_on": "2024-05-19",
+      "quality_grade": "needs_id",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.06751585,
+          40.86894541
+        ]
+      },
+      "positional_accuracy": 35,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "tiredartistt"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 383571951,
+          "url": "https://static.inaturalist.org/photos/383571951/square.jpeg",
+          "license_code": null,
+          "attribution": "(c) lyric aebi, all rights reserved"
+        }
+      ]
+    },
+    {
       "id": 217964142,
       "observed_on": "2024-05-20",
       "quality_grade": "needs_id",
@@ -5370,6 +9800,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/385652124/square.png",
           "license_code": "cc-by-nc-nd",
           "attribution": "(c) Valerie Norton, some rights reserved (CC BY-NC-ND)"
+        }
+      ]
+    },
+    {
+      "id": 219554678,
+      "observed_on": "2024-05-30",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0596695,
+          41.4012533333
+        ]
+      },
+      "positional_accuracy": 23,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "sarahmaimone"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 388625105,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/388625105/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) sarahmaimone, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -5596,6 +10094,210 @@
           "url": "https://static.inaturalist.org/photos/397065568/square.jpg",
           "license_code": null,
           "attribution": "(c) Scott Cummings, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 224528094,
+      "observed_on": "2024-06-15",
+      "quality_grade": "needs_id",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0111777833,
+          41.398905
+        ]
+      },
+      "positional_accuracy": 4,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "naturegirl316"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "High"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 397958259,
+          "url": "https://static.inaturalist.org/photos/397958259/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Ashlyn Rogers, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 226104840,
+      "observed_on": "2024-06-29",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.9690444444,
+          45.9273138889
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "sirenal"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 400958728,
+          "url": "https://static.inaturalist.org/photos/400958728/square.jpeg",
+          "license_code": null,
+          "attribution": "(c) Sirena Lao, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 226625342,
+      "observed_on": "2024-07-01",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.7486057953,
+          39.2771100696
+        ]
+      },
+      "positional_accuracy": 1056,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "tyler_rae"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 401951968,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/401951968/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) tyler_rae, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -6046,6 +10748,74 @@
       ]
     },
     {
+      "id": 263559632,
+      "observed_on": "2025-03-01",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.957160187,
+          38.4201711541
+        ]
+      },
+      "positional_accuracy": 34,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "permacopia"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 473499985,
+          "url": "https://static.inaturalist.org/photos/473499985/square.jpg",
+          "license_code": null,
+          "attribution": "(c) permacopia, all rights reserved"
+        }
+      ]
+    },
+    {
       "id": 263577412,
       "observed_on": "2025-03-01",
       "quality_grade": "research",
@@ -6128,6 +10898,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/473536136/square.jpeg",
           "license_code": "cc-by-nc",
           "attribution": "(c) Stormy Concoby, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 266701450,
+      "observed_on": "2025-03-23",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.9980166667,
+          41.2089283333
+        ]
+      },
+      "positional_accuracy": 4,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "aruejohns"
+      },
+      "ofvs": [
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 479198076,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/479198076/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Annelise Rue-Johns, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -6495,6 +11333,74 @@
       ]
     },
     {
+      "id": 271366556,
+      "observed_on": "2025-04-17",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.3392902089,
+          48.4939341387
+        ]
+      },
+      "positional_accuracy": 249,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "pete_bakes"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 488125159,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/488125159/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Peter Baker, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 272127265,
       "observed_on": "2025-04-12",
       "quality_grade": "research",
@@ -6773,6 +11679,142 @@
       ]
     },
     {
+      "id": 279740260,
+      "observed_on": "2025-05-08",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0158916667,
+          41.3698533333
+        ]
+      },
+      "positional_accuracy": 6,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "betweenthelyons"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 502361088,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/502361088/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Dean Lyons, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 281171859,
+      "observed_on": "2025-05-14",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.5215616667,
+          38.7894583333
+        ]
+      },
+      "positional_accuracy": 22,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "dtfrees"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 505065323,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/505065323/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Dylan Freebairn-Smith, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 281932712,
       "observed_on": "2025-05-17",
       "quality_grade": "needs_id",
@@ -6842,6 +11884,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/506486838/square.jpg",
           "license_code": "cc-by-nc",
           "attribution": "(c) Nick Barber, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 282498249,
+      "observed_on": "2025-05-19",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.8170083333,
+          39.376
+        ]
+      },
+      "positional_accuracy": 7,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "davidbygott"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 507542813,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/507542813/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) David Bygott, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -7225,6 +12335,210 @@
       ]
     },
     {
+      "id": 294433876,
+      "observed_on": "2025-07-01",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0201638333,
+          41.3053866667
+        ]
+      },
+      "positional_accuracy": 226,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "calochortusnv"
+      },
+      "ofvs": [
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "High"
+        },
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 529963835,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/529963835/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) calochortusnv, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 300563271,
+      "observed_on": "2025-07-23",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.0195548227,
+          38.4868212232
+        ]
+      },
+      "positional_accuracy": 143,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "ouzel"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 541564921,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/541564921/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Michael Warner, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 301125338,
+      "observed_on": "2025-07-11",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0200055,
+          41.3666283333
+        ]
+      },
+      "positional_accuracy": 13,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "migrantmendicant"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 542609052,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/542609052/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Andy, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 303015170,
       "observed_on": "2025-07-28",
       "quality_grade": "needs_id",
@@ -7471,6 +12785,74 @@
       ]
     },
     {
+      "id": 313205187,
+      "observed_on": "2025-08-24",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0712778567,
+          40.876058725
+        ]
+      },
+      "positional_accuracy": 231,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "samanthamarieleite"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 565578737,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/565578737/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) samanthamarieleite, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 314356568,
       "observed_on": "2025-09-15",
       "quality_grade": "research",
@@ -7551,6 +12933,74 @@
       ]
     },
     {
+      "id": 319676344,
+      "observed_on": "2025-10-06",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.78305,
+          39.675955
+        ]
+      },
+      "positional_accuracy": 12,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "cdowler"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 577889274,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/577889274/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Connie Dowler, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 328984030,
       "observed_on": "2025-08-15",
       "quality_grade": "research",
@@ -7615,6 +13065,74 @@
           "url": "https://static.inaturalist.org/photos/596250488/square.jpg",
           "license_code": null,
           "attribution": "(c) Brody Bills, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 332502842,
+      "observed_on": "2025-04-29",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0416249,
+          41.4015995
+        ]
+      },
+      "positional_accuracy": 7073,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "objetora"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 603442565,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/603442565/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) objetora, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -7707,6 +13225,351 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/606260309/square.jpg",
           "license_code": "cc-by",
           "attribution": "(c) Nathan Odgers, some rights reserved (CC BY)"
+        }
+      ]
+    },
+    {
+      "id": 337484844,
+      "observed_on": "2026-02-04",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.5720361453,
+          37.8927837881
+        ]
+      },
+      "positional_accuracy": 28,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "sidparker"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        },
+        {
+          "field_id": 8491,
+          "name": "Number of Western Pond Turtle Hatchlings Observed",
+          "value": "0"
+        }
+      ],
+      "photos": [
+        {
+          "id": 613517009,
+          "url": "https://static.inaturalist.org/photos/613517009/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Zid, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 337599435,
+      "observed_on": "2026-02-06",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.7429283333,
+          38.0282833333
+        ]
+      },
+      "positional_accuracy": 10,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "dcullen"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 613751894,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/613751894/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Delynne Cullen, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 337636587,
+      "observed_on": "2026-02-06",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.9653333333,
+          41.8418416667
+        ]
+      },
+      "positional_accuracy": 4,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "kaygar1011"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 613829860,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/613829860/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Kaylene Garnica, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 340097993,
+      "observed_on": "2025-05-24",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.8010722222,
+          40.2231361111
+        ]
+      },
+      "positional_accuracy": 5,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "floydehayes"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 618832435,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/618832435/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Floyd E. Hayes, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 341763917,
+      "observed_on": "2026-03-07",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.3095258997,
+          37.4111526
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "cyanderson"
+      },
+      "ofvs": [
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 622232982,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/622232982/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Chloe Y Anderson, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -8078,6 +13941,210 @@
       ]
     },
     {
+      "id": 345555675,
+      "observed_on": "2026-03-27",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.9692083333,
+          40.75925
+        ]
+      },
+      "positional_accuracy": 4,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "anniekoshea"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 629762274,
+          "url": "https://static.inaturalist.org/photos/629762274/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Annie O'Shea, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 345568693,
+      "observed_on": "2026-03-27",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.1263111667,
+          37.0463638333
+        ]
+      },
+      "positional_accuracy": 4,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "hotel_calochortus"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 629789235,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/629789235/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) hotel_calochortus, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 345608432,
+      "observed_on": "2026-03-27",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.8998172997,
+          40.2936076
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "the_brown_naturalist"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 629871832,
+          "url": "https://static.inaturalist.org/photos/629871832/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Juan Flores, all rights reserved"
+        }
+      ]
+    },
+    {
       "id": 347719180,
       "observed_on": "2026-04-05",
       "quality_grade": "research",
@@ -8154,6 +14221,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/634046758/square.jpg",
           "license_code": "cc-by-nc",
           "attribution": "(c) Amy Frost-Wicks, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 347990254,
+      "observed_on": "2026-04-06",
+      "quality_grade": "needs_id",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.0852055,
+          41.8024533333
+        ]
+      },
+      "positional_accuracy": 120,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "thewaterspirit"
+      },
+      "ofvs": [
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 634588721,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/634588721/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) The Water Spirit, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -8306,6 +14441,210 @@
       ]
     },
     {
+      "id": 352430234,
+      "observed_on": "2026-04-23",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.1008528333,
+          41.7733333333
+        ]
+      },
+      "positional_accuracy": 13,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "oliviaphillllips"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 643250664,
+          "url": "https://static.inaturalist.org/photos/643250664/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Olivia Phillips, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 353161146,
+      "observed_on": "2026-04-24",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.8454589844,
+          40.2628326416
+        ]
+      },
+      "positional_accuracy": 4,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "kairality"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 645608424,
+          "url": "https://static.inaturalist.org/photos/645608424/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Kai Seward, all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 357089876,
+      "observed_on": "2026-04-20",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.1170816,
+          41.8232416
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "achilleas_heel"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 651257346,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/651257346/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Josh Putnam, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
       "id": 357090772,
       "observed_on": "2026-04-20",
       "quality_grade": "research",
@@ -8444,6 +14783,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/652497205/square.jpg",
           "license_code": "cc-by-nc",
           "attribution": "(c) MJ Nehl, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 358526365,
+      "observed_on": "2026-05-04",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.5435681997,
+          44.4958248
+        ]
+      },
+      "positional_accuracy": null,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "amydessert"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "None"
+        }
+      ],
+      "photos": [
+        {
+          "id": 654053143,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/654053143/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) Amy Dessert, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -8653,6 +15060,74 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/659394020/square.jpg",
           "license_code": "cc-by-nc",
           "attribution": "(c) bnrc1951, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 362458924,
+      "observed_on": "2026-05-09",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.9098798441,
+          40.3079273389
+        ]
+      },
+      "positional_accuracy": 31,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "sophia_d1"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 661543973,
+          "url": "https://static.inaturalist.org/photos/661543973/square.jpg",
+          "license_code": null,
+          "attribution": "(c) Sophia D, all rights reserved"
         }
       ]
     },
@@ -8947,6 +15422,74 @@
       ]
     },
     {
+      "id": 374419291,
+      "observed_on": "2026-06-22",
+      "quality_grade": "research",
+      "license_code": null,
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.1103897095,
+          41.8135261536
+        ]
+      },
+      "positional_accuracy": 198,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "trustlife"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 684976614,
+          "url": "https://static.inaturalist.org/photos/684976614/square.jpg",
+          "license_code": null,
+          "attribution": "(c) trustlife, all rights reserved"
+        }
+      ]
+    },
+    {
       "id": 374804145,
       "observed_on": "2026-06-20",
       "quality_grade": "research",
@@ -9011,6 +15554,210 @@
           "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/685112848/square.jpg",
           "license_code": "cc-by-nc",
           "attribution": "(c) Sarah Coty, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 375042218,
+      "observed_on": "2026-06-24",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.1462631226,
+          40.7754249573
+        ]
+      },
+      "positional_accuracy": 7,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "rbush10"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 686156679,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/686156679/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) rbush10, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 375377320,
+      "observed_on": "2026-01-31",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.0965638333,
+          37.0583916667
+        ]
+      },
+      "positional_accuracy": 7,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "nttnhan"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Medium"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 686223408,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/686223408/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) nttnhan, some rights reserved (CC BY-NC)"
+        }
+      ]
+    },
+    {
+      "id": 375538699,
+      "observed_on": "2026-06-16",
+      "quality_grade": "research",
+      "license_code": "cc-by",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -124.1113195,
+          41.7698283333
+        ]
+      },
+      "positional_accuracy": 14,
+      "taxon": {
+        "id": 47757,
+        "name": "Oxalis oregana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          47757
+        ]
+      },
+      "user": {
+        "login": "forest-fungi"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "White"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 686545780,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/686545780/square.jpg",
+          "license_code": "cc-by",
+          "attribution": "(c) Luca Gagliano, some rights reserved (CC BY)"
         }
       ]
     },
@@ -9238,6 +15985,74 @@
           "url": "https://static.inaturalist.org/photos/693761846/square.jpg",
           "license_code": null,
           "attribution": "(c) Donald W. Grimm, Ph.D., all rights reserved"
+        }
+      ]
+    },
+    {
+      "id": 387013837,
+      "observed_on": "2026-05-21",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -123.862805683,
+          41.4104290771
+        ]
+      },
+      "positional_accuracy": 27671,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "deldreanium"
+      },
+      "ofvs": [
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Purple"
+        },
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 708643232,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/708643232/square.jpg",
+          "license_code": "cc-by-nc",
+          "attribution": "(c) ayserna, some rights reserved (CC BY-NC)"
         }
       ]
     },
@@ -9851,6 +16666,74 @@
       ]
     },
     {
+      "id": 402612151,
+      "observed_on": "2022-03-09",
+      "quality_grade": "research",
+      "license_code": "cc-by-nc",
+      "captive": false,
+      "obscured": false,
+      "geoprivacy": null,
+      "taxon_geoprivacy": null,
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          -122.5794078782,
+          37.8987070618
+        ]
+      },
+      "positional_accuracy": 1867,
+      "taxon": {
+        "id": 1464017,
+        "name": "Oxalis smalliana",
+        "ancestor_ids": [
+          48460,
+          47126,
+          211194,
+          47125,
+          47124,
+          70233,
+          47759,
+          47758,
+          864989,
+          1023136,
+          1464017
+        ]
+      },
+      "user": {
+        "login": "rencore"
+      },
+      "ofvs": [
+        {
+          "field_id": 23010,
+          "name": "Redwood Sorrel Petal Vein Contrast",
+          "value": "Low"
+        },
+        {
+          "field_id": 23008,
+          "name": "Redwood Sorrel Petal Color",
+          "value": "Pink"
+        },
+        {
+          "field_id": 23011,
+          "name": "Redwood Sorrel White Center Ring",
+          "value": "Cannot be determined"
+        },
+        {
+          "field_id": 23012,
+          "name": "Redwood Sorrel Petal Pigment Variation",
+          "value": "Cannot be determined"
+        }
+      ],
+      "photos": [
+        {
+          "id": 739123915,
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/739123915/square.jpg",
+          "license_code": "cc-by-nc-nd",
+          "attribution": "(c) rencore, some rights reserved (CC BY-NC-ND)"
+        }
+      ]
+    },
+    {
       "id": 403178181,
       "observed_on": "2026-09-24",
       "quality_grade": "research",
@@ -9994,7 +16877,7 @@
     }
   ],
   "complete": true,
-  "fetchedAt": "2026-10-19T04:33:20.426Z",
+  "fetchedAt": "2026-10-20T05:05:00.542Z",
   "protocolVersion": "2.1.0",
   "source": "iNaturalist public API v1; unauthenticated",
   "fields": [
@@ -10033,7 +16916,7 @@
     },
     {
       "name": "Redwood Sorrel Petal Pigment Variation",
-      "description": "Interveinal pigment variation, excluding throat, veins, white center ring and shadows. Fig.1: None B,D,G; High F; Low is subtle variation. Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#petal-pigment-variation",
+      "description": "Petal background variation outside throat, ring and veins; exclude lighting. None=uniform; Low=subtle; High=strong variation in any arrangement (F is one example). Rules: https://twsummer.github.io/OxalisFlowerColors/protocol.md#petal-pigment-variation",
       "id": 23012,
       "values": [
         "None",
